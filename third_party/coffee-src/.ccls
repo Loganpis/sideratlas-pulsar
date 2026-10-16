@@ -1,0 +1,17 @@
+clang++
+%cpp -std=c++17
+%h -std=c++17
+%h -x c++-header
+%cu -std=c++14
+%cu --cuda-gpu-arch=sm_61
+%cu -nocudalib
+-DUSE_SIMD
+-Isrc/
+-Ideps/fmt/
+-Ideps/vectorclass/
+-Ideps/cpptoml/include
+-Ideps/cxxopt/include
+-Ideps/catch/single_include
+-Iinclude
+-I/usr/local/cuda/include
+-I/usr/include

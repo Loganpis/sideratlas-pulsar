@@ -1,0 +1,230 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -29,10 +29,18 @@
+ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+ 
+-find_package(MPI REQUIRED)
+-set(HDF5_USE_STATIC_LIBRARIES ON)
++if(COFFEE_DEPENDENCY_PREFIX)
++  # Conda MPI wrapper output does not quote paths containing spaces.
++  set(MPI_INCLUDE_PATH "${COFFEE_DEPENDENCY_PREFIX}/include")
++  set(MPI_LIBRARIES "${COFFEE_DEPENDENCY_PREFIX}/lib/libmpi.dylib")
++  set(HDF5_INCLUDE_DIRS "${COFFEE_DEPENDENCY_PREFIX}/include")
++  set(HDF5_LIBRARIES "${COFFEE_DEPENDENCY_PREFIX}/lib/libhdf5.dylib")
++else()
++  find_package(MPI REQUIRED)
++  find_package(HDF5 REQUIRED)
++endif()
++set(HDF5_USE_STATIC_LIBRARIES OFF)
+ #find_package(HDF5 REQUIRED COMPONENTS CXX)
+-find_package(HDF5 REQUIRED)
+ #set(Boost_USE_MULTITHREADED OFF)
+ # set(Boost_USE_STATIC_LIBS ON)
+ # find_package(Boost COMPONENTS system filesystem REQUIRED)
+@@ -43,7 +51,7 @@
+ set(VECTORCLASS_INCLUDE_DIR deps/vectorclass)
+ set(CXXOPT_INCLUDE_DIR deps/cxxopt/include)
+ 
+-include_directories(${MPI_INCLUDE_PATH} ${CPPTOML_INCLUDE_DIR} ${CATCH_INCLUDE_DIR}
++include_directories(${HDF5_INCLUDE_DIRS} ${MPI_INCLUDE_PATH} ${CPPTOML_INCLUDE_DIR} ${CATCH_INCLUDE_DIR}
+   ${VECTORCLASS_INCLUDE_DIR} ${CXXOPT_INCLUDE_DIR} ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES}
+   src)
+   # ${Boost_INCLUDE_DIRS} src)
+@@ -100,6 +108,10 @@
+ endif()
+ 
+ # add_subdirectory(deps/fmt)
++option(portable_scalar "Use a portable one-lane VectorClass compatibility API" OFF)
++if(portable_scalar)
++  add_definitions(-DCOFFEE_PORTABLE_SCALAR)
++endif()
+ add_subdirectory(src)
+ # add_subdirectory(tools)
+ 
+@@ -112,3 +124,5 @@
+ 
+ # Add the original Fortran code as compile target too
+ #add_subdirectory(original)
++
++
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -29,7 +29,7 @@
+     "data/multi_array.cpp"
+     "sim_env.cpp"
+     "algorithms/field_solver_EZ.cpp"
+-    "algorithms/field_solver_EZ_spherical.cpp"
++    # CPU spherical implementation is an empty upstream stub.
+     "algorithms/pulsar.cpp"
+     "algorithms/damping_boundary.cpp"
+     "utils/memory.cpp"
+@@ -37,7 +37,7 @@
+ endif()
+ 
+ add_library(Coffee ${Coffee_src})
+-target_link_libraries(Coffee ${MPI_LIBRARIES} ${HDF5_LIBRARIES} ${Boost_LIBRARIES} stdc++fs)
++target_link_libraries(Coffee ${MPI_LIBRARIES} ${HDF5_LIBRARIES} ${Boost_LIBRARIES})
+ 
+ 
+ 
+@@ -69,3 +69,9 @@
+ 
+ add_executable(coffee-alfven3d "main-alfven3d.cpp")
+ target_link_libraries(coffee-alfven3d Coffee ${MPI_LIBRARIES} ${HDF5_LIBRARIES} ${Boost_LIBRARIES})
++
++# Project verification driver, separate from the upstream pulsar executable.
++if(NOT use_cuda)
++  add_executable(coffee-verification "main-verification.cpp")
++  target_link_libraries(coffee-verification Coffee)
++endif()
+--- a/src/utils/simd.h
++++ b/src/utils/simd.h
+@@ -3,12 +3,23 @@
+ 
+ // #include <immintrin.h>
+ #include "data/typedefs.h"
++#include <cmath>
+ 
+ namespace Coffee {
+ 
+ namespace simd {
+ 
+-#if !defined(USE_DOUBLE) && \
++#if defined(COFFEE_PORTABLE_SCALAR)
++#define USE_SIMD
++#include "scalar_lane.h"
++using Vec_f_t = ScalarLane;
++using Vec_i_t = int;
++using Vec_ui_t = unsigned int;
++using Vec_idx_t = unsigned int;
++using Vec_ib_t = bool;
++const Vec_f_t vec_inc = 0.0;
++constexpr int vec_width = 1;
++#elif !defined(USE_DOUBLE) && \
+     (defined(__AVX512F__) || defined(__AVX512__))
+ #define MAX_VECTOR_SIZE 512
+ #include "vectorclass.h"
+--- /dev/null
++++ b/src/utils/scalar_lane.h
+@@ -0,0 +1,26 @@
++// Project portability shim, 2026-10-14. Same GPL-2.0 as COFFEE.
++// One lane reproduces the VectorClass API used by the upstream CPU solver.
++// No field equation, finite difference, RK coefficient, or boundary is changed.
++struct ScalarLane {
++  Scalar value = 0;
++  ScalarLane() = default;
++  ScalarLane(Scalar x) : value(x) {}
++  void load(const Scalar* p) { value = *p; }
++  void store(Scalar* p) const { *p = value; }
++  ScalarLane& operator+=(ScalarLane x) { value += x.value; return *this; }
++  ScalarLane& operator-=(ScalarLane x) { value -= x.value; return *this; }
++  ScalarLane& operator*=(ScalarLane x) { value *= x.value; return *this; }
++  ScalarLane& operator/=(ScalarLane x) { value /= x.value; return *this; }
++  friend ScalarLane operator+(ScalarLane a, ScalarLane b) { return a.value+b.value; }
++  friend ScalarLane operator-(ScalarLane a, ScalarLane b) { return a.value-b.value; }
++  friend ScalarLane operator*(ScalarLane a, ScalarLane b) { return a.value*b.value; }
++  friend ScalarLane operator/(ScalarLane a, ScalarLane b) { return a.value/b.value; }
++  friend ScalarLane operator-(ScalarLane a) { return -a.value; }
++  friend bool operator>(ScalarLane a, ScalarLane b) { return a.value>b.value; }
++  friend bool operator<(ScalarLane a, ScalarLane b) { return a.value<b.value; }
++};
++inline ScalarLane sqrt(ScalarLane a) { return std::sqrt(a.value); }
++inline ScalarLane tanh(ScalarLane a) { return std::tanh(a.value); }
++inline ScalarLane max(ScalarLane a, ScalarLane b) { return a.value>b.value ? a:b; }
++inline ScalarLane select(bool cond, ScalarLane a, ScalarLane b) { return cond?a:b; }
++inline ScalarLane mul_add(ScalarLane a, ScalarLane b, ScalarLane c) { return a*b+c; }
+--- a/src/algorithms/field_solver_EZ.cpp
++++ b/src/algorithms/field_solver_EZ.cpp
+@@ -1,6 +1,6 @@
+ #include "field_solver_EZ.h"
+ 
+-#include <omp.h>
++// No OpenMP runtime calls are used in this source.
+ 
+ #include "algorithms/damping_boundary.h"
+ #include "algorithms/finite_diff_simd.h"
+@@ -11,7 +11,9 @@
+ namespace Coffee {
+ 
+ namespace simd {
++#ifndef COFFEE_PORTABLE_SCALAR
+ #include "vectormath_hyp.h"
++#endif
+ }
+ 
+ using namespace simd;
+--- a/src/algorithms/field_solver_EZ_spherical.cpp
++++ b/src/algorithms/field_solver_EZ_spherical.cpp
+@@ -1,6 +1,6 @@
+ #include "field_solver_EZ.h"
+ 
+-#include <omp.h>
++// No OpenMP runtime calls are used in this source.
+ 
+ #include "algorithms/damping_boundary.h"
+ #include "algorithms/finite_diff_simd.h"
+--- a/src/data/multi_array.cpp
++++ b/src/data/multi_array.cpp
+@@ -43,7 +43,10 @@
+ 
+ template <typename T>
+ void
+-multi_array<T>::assign_dev(const T& value) {}
++multi_array<T>::assign_dev(const T& value) {
++  // CPU fields call assign_dev too; initialize host storage rather than no-op.
++  assign(value);
++}
+ 
+ template <typename T>
+ void
+--- a/src/data/sim_data.cpp
++++ b/src/data/sim_data.cpp
+@@ -16,6 +16,9 @@
+   dU_EgtB_cum = multi_array<Scalar>(env.grid().extent());
+   dU_Epar_cum = multi_array<Scalar>(env.grid().extent());
+   dU_KO_cum = multi_array<Scalar>(env.grid().extent());
++  P.assign(0.0); divB.assign(0.0); divE.assign(0.0);
++  dU_EgtB.assign(0.0); dU_Epar.assign(0.0); dU_KO.assign(0.0);
++  dU_EgtB_cum.assign(0.0); dU_Epar_cum.assign(0.0); dU_KO_cum.assign(0.0);
+   Stagger st_e[3] = {Stagger(0b110), Stagger(0b101), Stagger(0b011)};
+   Stagger st_b[3] = {Stagger(0b001), Stagger(0b010), Stagger(0b100)};
+   B.set_stagger(st_b);
+--- /dev/null
++++ b/src/main-verification.cpp
+@@ -0,0 +1,35 @@
++// Verification driver only, GPL-2.0. Calls the unchanged COFFEE CPU EZ solver.
++#include "algorithms/field_solver_EZ.h"
++#include "data/sim_data.h"
++#include "sim_env.h"
++#include "utils/data_exporter.h"
++#include <cmath>
++using namespace Coffee;
++int main(int argc,char** argv) {
++  sim_environment env(&argc,&argv);
++  sim_data data(env);
++  field_solver_EZ solver(data,env);
++  Stagger collocated[3]={Stagger(0b111),Stagger(0b111),Stagger(0b111)};
++  data.E.set_stagger(collocated); data.B.set_stagger(collocated);
++  data.B0.set_stagger(collocated);
++  auto wave=[&](Scalar x,Scalar y,Scalar z) {
++    if(env.params().problem==3) return 0.2*std::exp(-std::pow((x+1.5)/.35,2));
++    return 0.2*std::sin(2*M_PI*x/env.params().size[0]);
++  };
++  data.E.initialize(); data.B.initialize(); data.B0.initialize();
++  data.E.initialize(1,wave);data.B.initialize(2,wave);
++  data.B.initialize(0,[](Scalar,Scalar,Scalar){return 1.0;});
++  solver.Bbg.initialize();
++  solver.Bbg.initialize(0,[](Scalar,Scalar,Scalar){return 1.0;});
++  data.P.assign(0.0); data.divB.assign(0.0);data.divE.assign(0.0);
++  data.dU_EgtB_cum.assign(0.0);data.dU_Epar_cum.assign(0.0);data.dU_KO_cum.assign(0.0);
++  env.send_guard_cells(data);
++  uint32_t step=0;data_exporter exporter(env,step);
++  for(;step<=env.params().max_steps;++step) {
++    Scalar time=step*env.params().dt;
++    if(step%env.params().data_interval==0)exporter.write_output(data,step,time);
++    if(step==env.params().max_steps)break;
++    solver.evolve_fields(time);
++  }
++  return 0;
++}

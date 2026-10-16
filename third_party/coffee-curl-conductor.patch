@@ -1,0 +1,301 @@
+--- a/src/algorithms/field_solver_EZ.cpp
++++ b/src/algorithms/field_solver_EZ.cpp
+@@ -5,6 +5,7 @@
+ #include "algorithms/damping_boundary.h"
+ #include "algorithms/finite_diff_simd.h"
+ #include "algorithms/pulsar.h"
++#include "algorithms/regularized_dipole.h"
+ #include "utils/simd.h"
+ #include "utils/timer.h"
+ 
+@@ -66,7 +67,8 @@
+   Btmp.copy_from(m_data.B);
+ 
+   Bbg = vector_field<Scalar>(m_data.env.grid());
+-  Bbg.copy_stagger(m_data.B);
++  Stagger collocated[3] = {Stagger(0b111), Stagger(0b111), Stagger(0b111)};
++  Bbg.set_stagger(collocated);
+   // If damp to vacuum background field
+   // Bbg.copy_from(m_data.B);
+   // For restart cases we should not just copy m_data.B.
+@@ -75,6 +77,8 @@
+       // Put your initial condition for Bx here
+       // return env.params().b0 * cube(env.params().radius) *
+       //        dipole_x(x, y, z, env.params().alpha, 0);
++      if (m_env.params().problem == 1)
++        return regularized_dipole_B(x, y, z, i, m_env.params(), m_env.grid());
+       return m_env.params().b0 *
+              quadru_dipole(
+                  x, y, z, m_env.params().p1, m_env.params().p2,
+@@ -225,7 +229,7 @@
+         Vec_f_t y = vec_inc * grid.delta[1] + grid.pos(1, j, 1);
+         Vec_f_t z = vec_inc * grid.delta[2] + grid.pos(2, k, 1);
+         Vec_f_t r = sqrt(x * x + y * y + z * z);
+-        Vec_f_t s = 0.5 * (1.0 - tanh((r - 3.0) / 0.5));
++        Vec_f_t s = 1.0;  // Uniform GLM propagation; no radial taper.
+ 
+         dbxvec = dbxvec * As - (rotEx + Px * s) * params.dt;
+         dbyvec = dbyvec * As - (rotEy + Py * s) * params.dt;
+@@ -710,134 +714,22 @@
+   v[2] = -dw * R1 * sinth * sinth0;
+ }
+ 
++// Conducting interior: preserve magnetic flux through Faraday's curl update.
++// Direct magnetic blending/reset is deliberately absent.
+ void
+ field_solver_EZ::boundary_pulsar(Scalar t) {
+-  int shift = m_env.params().shift_ghost;
+-  auto &grid = m_env.grid();
+-  auto &params = m_env.params();
+-  size_t ijk;
+-  auto &Ex = m_data.E.data(0);
+-  auto &Ey = m_data.E.data(1);
+-  auto &Ez = m_data.E.data(2);
+-  auto &Bx = m_data.B.data(0);
+-  auto &By = m_data.B.data(1);
+-  auto &Bz = m_data.B.data(2);
+-
+-  Scalar rl = 1.5 * params.radius;
+-  Scalar ri = 0.5 * params.radius;
+-  Scalar scaleEpar = 0.5 * grid.delta[0];
+-  Scalar scaleEperp = 0.25 * grid.delta[0];
+-  Scalar scaleBperp = scaleEpar;
+-  Scalar scaleBpar = scaleBperp;
+-  Scalar d1 = 0.0;  // Boundary experiment: anchor B at the same Rstar as E.
+-  Scalar d0 = 0;
+-  Scalar phase = params.omega * t;
+-  Scalar w = params.omega;
+-  Scalar Bxnew, Bynew, Bznew, Exnew, Eynew, Eznew;
+-
+-  for (int k = grid.guard[2] - shift;
+-       k < grid.dims[2] - grid.guard[2] + shift; k++) {
+-    for (int j = grid.guard[1] - shift;
+-         j < grid.dims[1] - grid.guard[1] + shift; j++) {
+-      // #pragma omp simd simdlen(8)
+-      for (int i = grid.guard[0] - shift;
+-           i < grid.dims[0] - grid.guard[0] + shift; i++) {
+-        ijk = i + (j + k * grid.dims[1]) * grid.dims[0];
+-
+-        Scalar x = grid.pos(0, i, 1);
+-        Scalar y = grid.pos(1, j, 1);
+-        Scalar z = grid.pos(2, k, 1);
+-        Scalar r2 = x * x + y * y + z * z;
+-        if (r2 < TINY) r2 = TINY;
+-        Scalar r = std::sqrt(r2);
+-
+-        if (r < rl) {
+-          Scalar th = acos(z / r);
+-          Scalar ph = atan2(y, x);
+-
+-          Scalar bxn =
+-              params.b0 *
+-              quadru_dipole(x, y, z, params.p1, params.p2, params.p3,
+-                            params.q11, params.q12, params.q13,
+-                            params.q22, params.q23, params.q_offset_x,
+-                            params.q_offset_y, params.q_offset_z, phase,
+-                            0);
+-          // dipole2(x, y, z, params.p1, params.p2, params.p3, phase,
+-          // 0);
+-          Scalar byn =
+-              params.b0 *
+-              quadru_dipole(x, y, z, params.p1, params.p2, params.p3,
+-                            params.q11, params.q12, params.q13,
+-                            params.q22, params.q23, params.q_offset_x,
+-                            params.q_offset_y, params.q_offset_z, phase,
+-                            1);
+-          // dipole2(x, y, z, params.p1, params.p2, params.p3, phase,
+-          // 1);
+-          Scalar bzn =
+-              params.b0 *
+-              quadru_dipole(x, y, z, params.p1, params.p2, params.p3,
+-                            params.q11, params.q12, params.q13,
+-                            params.q22, params.q23, params.q_offset_x,
+-                            params.q_offset_y, params.q_offset_z, phase,
+-                            2);
+-          // dipole2(x, y, z, params.p1, params.p2, params.p3, phase,
+-          // 2);
+-          Scalar s = shape(r, params.radius - d1, scaleBperp);
+-          Scalar bn_dot_r = bxn * x + byn * y + bzn * z;
+-          Scalar B_dot_r = Bx[ijk] * x + By[ijk] * y + Bz[ijk] * z;
+-          Bxnew = bn_dot_r * x / r2 * s + B_dot_r * x / r2 * (1 - s);
+-          Bynew = bn_dot_r * y / r2 * s + B_dot_r * y / r2 * (1 - s);
+-          Bznew = bn_dot_r * z / r2 * s + B_dot_r * z / r2 * (1 - s);
+-          s = shape(r, params.radius - d1, scaleBpar);
+-          Bxnew += (bxn - bn_dot_r * x / r2) * s +
+-                   (Bx[ijk] - B_dot_r * x / r2) * (1 - s);
+-          Bynew += (byn - bn_dot_r * y / r2) * s +
+-                   (By[ijk] - B_dot_r * y / r2) * (1 - s);
+-          Bznew += (bzn - bn_dot_r * z / r2) * s +
+-                   (Bz[ijk] - B_dot_r * z / r2) * (1 - s);
+-
+-          Bx[ijk] = Bxnew;
+-          By[ijk] = Bynew;
+-          Bz[ijk] = Bznew;
+-
+-          Scalar vx = -w * y;
+-          Scalar vy = w * x;
+-          Scalar vz = 0.0;
+-
+-          Scalar exn = -vy * Bz[ijk] + vz * By[ijk];
+-          Scalar eyn = vx * Bz[ijk] - vz * Bx[ijk];
+-          Scalar ezn = -vx * By[ijk] + vy * Bx[ijk];
+-          Scalar en_dot_r = (exn * x + eyn * y + ezn * z);
+-          Scalar E_dot_r = (Ex[ijk] * x + Ey[ijk] * y + Ez[ijk] * z);
+-          s = shape(r, params.radius - d0, scaleEperp);
+-          Exnew = en_dot_r * x / r2 * s + E_dot_r * x / r2 * (1 - s);
+-          Eynew = en_dot_r * y / r2 * s + E_dot_r * y / r2 * (1 - s);
+-          Eznew = en_dot_r * z / r2 * s + E_dot_r * z / r2 * (1 - s);
+-          s = shape(r, params.radius - d0, scaleEpar);
+-          Exnew += (exn - en_dot_r * x / r2) * s +
+-                   (Ex[ijk] - E_dot_r * x / r2) * (1 - s);
+-          Eynew += (eyn - en_dot_r * y / r2) * s +
+-                   (Ey[ijk] - E_dot_r * y / r2) * (1 - s);
+-          Eznew += (ezn - en_dot_r * z / r2) * s +
+-                   (Ez[ijk] - E_dot_r * z / r2) * (1 - s);
+-          // Bx[ijk] = Bxnew;
+-          // By[ijk] = Bynew;
+-          // Bz[ijk] = Bznew;
+-          Ex[ijk] = Exnew;
+-          Ey[ijk] = Eynew;
+-          Ez[ijk] = Eznew;
+-          if (r < ri) {
+-            Bx[ijk] = bxn;
+-            By[ijk] = byn;
+-            Bz[ijk] = bzn;
+-            Ex[ijk] = exn;
+-            Ey[ijk] = eyn;
+-            Ez[ijk] = ezn;
+-          }
+-        }
++  const auto &g=m_env.grid();const auto &p=m_env.params();
++  for(int k=g.guard[2];k<g.dims[2]-g.guard[2];++k)
++    for(int j=g.guard[1];j<g.dims[1]-g.guard[1];++j)
++      for(int i=g.guard[0];i<g.dims[0]-g.guard[0];++i) {
++        const Scalar x=g.pos(0,i,1),y=g.pos(1,j,1),z=g.pos(2,k,1);
++        const Scalar w=conductor_weight(std::sqrt(x*x+y*y+z*z),p.radius,g.delta[0]);
++        if(w==0) continue;
++        const Scalar vx=-p.omega*y,vy=p.omega*x;
++        const Scalar bx=m_data.B(0,i,j,k),by=m_data.B(1,i,j,k),bz=m_data.B(2,i,j,k);
++        const Scalar ec[3]={-vy*bz,vx*bz,-vx*by+vy*bx};
++        for(int c=0;c<3;++c) m_data.E(c,i,j,k)=(1-w)*m_data.E(c,i,j,k)+w*ec[c];
+       }
+-    }
+-  }
+ }
+ 
+ void
+--- /dev/null
++++ b/src/algorithms/regularized_dipole.h
+@@ -0,0 +1,48 @@
++#ifndef COFFEE_REGULARIZED_DIPOLE_H
++#define COFFEE_REGULARIZED_DIPOLE_H
++#include "data/grid.h"
++#include "sim_params.h"
++#include <cmath>
++namespace Coffee {
++// A=(mu cross r) f(r), f=r^-3 outside Rstar. Inside, the degree-four
++// Taylor polynomial of u^-3/2 at u=1 gives a finite C4 continuation.
++// Thus all source currents are confined inside the stated stellar radius.
++inline Scalar regularized_dipole_A(Scalar x, Scalar y, Scalar z, int c,
++                                  const sim_params &p) {
++  const Scalar r2=x*x+y*y+z*z, R=p.radius;
++  Scalar f;
++  if(r2>=R*R) f=1.0/(r2*std::sqrt(r2));
++  else {
++    const Scalar u=r2/(R*R)-1.0;
++    f=(1.0+u*(-1.5+u*(1.875+u*(-2.1875+u*2.4609375))))/(R*R*R);
++  }
++  const Scalar cross[3]={p.p2*z-p.p3*y,p.p3*x-p.p1*z,p.p1*y-p.p2*x};
++  return p.b0*cross[c]*f;
++}
++inline Scalar regularized_dipole_derivative(Scalar x,Scalar y,Scalar z,
++    int c,int axis,const sim_params &p,const Grid &g) {
++  Scalar v=0,xyz[3]={x,y,z};
++  const int offsets[4]={-2,-1,1,2};
++  const Scalar weights[4]={1,-8,8,-1};
++  for(int q=0;q<4;++q) {
++    const Scalar orig=xyz[axis]; xyz[axis]+=offsets[q]*g.delta[axis];
++    v+=weights[q]*regularized_dipole_A(xyz[0],xyz[1],xyz[2],c,p);
++    xyz[axis]=orig;
++  }
++  return v*g.inv_delta[axis]/12.0;
++}
++inline Scalar regularized_dipole_B(Scalar x,Scalar y,Scalar z,int c,
++                                  const sim_params &p,const Grid &g) {
++  const int j=(c+1)%3,k=(c+2)%3;
++  return regularized_dipole_derivative(x,y,z,k,j,p,g)-
++         regularized_dipole_derivative(x,y,z,j,k,p,g);
++}
++inline Scalar conductor_weight(Scalar r,Scalar R,Scalar h) {
++  // Compact C2 transition, width two cells, centered on the nominal surface.
++  if(r<=R-h) return 1.0;
++  if(r>=R+h) return 0.0;
++  const Scalar u=(r-R+h)/(2*h);
++  return 1-u*u*u*(10+u*(-15+6*u));
++}
++}
++#endif
+--- a/src/main-pulsar3d.cpp
++++ b/src/main-pulsar3d.cpp
+@@ -10,6 +10,7 @@
+ // #include "algorithms/metric.h"
+ // #include "algorithms/interpolation.h"
+ #include "algorithms/pulsar.h"
++#include "algorithms/regularized_dipole.h"
+ 
+ using namespace std;
+ using namespace Coffee;
+--- a/src/main-verification.cpp
++++ b/src/main-verification.cpp
+@@ -19,6 +19,10 @@
+   data.E.initialize(); data.B.initialize(); data.B0.initialize();
+   data.E.initialize(1,wave);data.B.initialize(2,wave);
+   data.B.initialize(0,[](Scalar,Scalar,Scalar){return 1.0;});
++  if(env.params().problem==4) {
++    data.E.initialize();data.B.initialize();
++    data.B.initialize(0,[&](Scalar x,Scalar,Scalar){return 1.0+0.2*std::cos(2*M_PI*x/env.params().size[0]);});
++  }
+   solver.Bbg.initialize();
+   solver.Bbg.initialize(0,[](Scalar,Scalar,Scalar){return 1.0;});
+   data.P.assign(0.0); data.divB.assign(0.0);data.divE.assign(0.0);
+--- a/src/user_pulsar3d_EZ.hpp
++++ b/src/user_pulsar3d_EZ.hpp
+@@ -1,31 +1,9 @@
+ #ifndef _USER_INIT_H_
+ #define _USER_INIT_H_
+-
+-// 3D pulsar, using field_solver_EZ_cylindrical
+-
+-Stagger st_e[3] = {Stagger(0b111), Stagger(0b111), Stagger(0b111)};
+-Stagger st_b[3] = {Stagger(0b111), Stagger(0b111), Stagger(0b111)};
+-data.E.set_stagger(st_e);
+-data.B.set_stagger(st_b);
+-data.B0.set_stagger(st_b);
+-
+-for (int i = 0; i < 3; ++i) {
+-  data.B.initialize(i, [&](Scalar x, Scalar y, Scalar z) {
+-    // Put your initial condition for Bx here
+-    // return env.params().b0 * cube(env.params().radius) *
+-    //        dipole_x(x, y, z, env.params().alpha, 0);
+-    return env.params().b0 *
+-           quadru_dipole(
+-               x, y, z, env.params().p1, env.params().p2,
+-               env.params().p3, env.params().q11, env.params().q12,
+-               env.params().q13, env.params().q22, env.params().q23,
+-               env.params().q_offset_x, env.params().q_offset_y,
+-               env.params().q_offset_z, 0, i);
+-  });
+-}
+-data.E.initialize();
+-data.B0.initialize();
+-data.P.assign(0.0);
+-data.P.sync_to_device();
+-
+-#endif  // _USER_INIT_H_
++Stagger collocated[3]={Stagger(0b111),Stagger(0b111),Stagger(0b111)};
++data.E.set_stagger(collocated);data.B.set_stagger(collocated);data.B0.set_stagger(collocated);
++for(int c=0;c<3;++c) data.B.initialize(c,[&](Scalar x,Scalar y,Scalar z){
++  return regularized_dipole_B(x,y,z,c,env.params(),env.grid());
++});
++data.E.initialize();data.B0.initialize();data.P.assign(0.0);
++#endif

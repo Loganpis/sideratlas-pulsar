@@ -1,0 +1,480 @@
+{
+  "scope": "User-approved Vela-informed illustration; no quantitative Vela reconstruction or physical convergence certification",
+  "visualization_scope_approved": true,
+  "field_verified_for_quantitative_emission": false,
+  "vela_validation": false,
+  "final_snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-001020.npz",
+  "final_snapshot_sha256": "fea546506dad0c969559c198a36bd7e7fddc0003b66d7b268d5971aa8616d215",
+  "final_field_quality": {
+    "shell": [
+      0.75,
+      2.0
+    ],
+    "relative_rms_divB_RLC": 9.206028433810163e-06,
+    "p95_abs_divB_RLC_over_B": 3.0133093411811754e-05,
+    "h_times_relative_rms_divB": 5.694450577614514e-07,
+    "p95_abs_EB_over_EBmag": 3.0716170253588234e-08,
+    "max_abs_EB_over_EBmag": 8.732493054432397e-08,
+    "E_exceeds_B_by_1e_6_fraction": 0.0
+  },
+  "source_moment_fit": {
+    "radius_max": 0.35,
+    "moment": [
+      0.9434057055294711,
+      -0.02900193568373055,
+      0.2533572535870387
+    ],
+    "magnitude": 0.9772642096404275,
+    "phase_error_deg": -1.760817575152578,
+    "inclination_deg": 74.97434404268434,
+    "relative_fit_residual": 0.04439035392720985
+  },
+  "divergence_shells": {
+    "0<r<0.35": {
+      "div_rms": 2.4001886489225817e-05,
+      "div_rms_over_B_RLC": 4.160589660350233e-07
+    },
+    "0.35<r<0.75": {
+      "div_rms": 4.0247413571697934e-06,
+      "div_rms_over_B_RLC": 4.051236032635241e-07
+    },
+    "0.75<r<1": {
+      "div_rms": 1.1075551119400388e-06,
+      "div_rms_over_B_RLC": 3.914303508337826e-07
+    },
+    "1<r<1.5": {
+      "div_rms": 5.873680663482906e-07,
+      "div_rms_over_B_RLC": 4.02582994408686e-07
+    },
+    "1.5<r<2": {
+      "div_rms": 1.5589796690544823e-05,
+      "div_rms_over_B_RLC": 1.7598981790922144e-05
+    },
+    "2<r<2.5": {
+      "div_rms": 0.0017173334818484992,
+      "div_rms_over_B_RLC": 0.002631595204192503
+    }
+  },
+  "luminosity_diagnostics": [
+    {
+      "radius": 1.0,
+      "luminosity_mu2_omega4_over_c3": 1.773269989850345,
+      "unsigned_flux_one_hemisphere": 9.310903988289583
+    },
+    {
+      "radius": 1.5,
+      "luminosity_mu2_omega4_over_c3": 1.7603594020669904,
+      "unsigned_flux_one_hemisphere": 8.457685664052555
+    },
+    {
+      "radius": 2.0,
+      "luminosity_mu2_omega4_over_c3": 1.7418800181528382,
+      "unsigned_flux_one_hemisphere": 8.14724087242247
+    }
+  ],
+  "grid_difference": {
+    "0.75<r<1": {
+      "cells": 3128,
+      "relative_l2_E": 0.07757603623108933,
+      "relative_l2_B": 0.07437825023190274,
+      "median_B_angle_deg": 2.131492641463087,
+      "p90_B_angle_deg": 10.77550278550019
+    },
+    "1<r<1.5": {
+      "cells": 12504,
+      "relative_l2_E": 0.09272057589023668,
+      "relative_l2_B": 0.08780208434962114,
+      "median_B_angle_deg": 2.1892059974779445,
+      "p90_B_angle_deg": 13.432390091907845
+    },
+    "1.5<r<2": {
+      "cells": 24680,
+      "relative_l2_E": 0.1264267917602009,
+      "relative_l2_B": 0.12362175766939457,
+      "median_B_angle_deg": 2.60252842729207,
+      "p90_B_angle_deg": 17.398340884413194
+    },
+    "0.75<r<2": {
+      "cells": 40312,
+      "relative_l2_E": 0.10272128914928527,
+      "relative_l2_B": 0.09494953246970692,
+      "median_B_angle_deg": 2.440183541228012,
+      "p90_B_angle_deg": 15.068497920460867
+    },
+    "outer_top10percent_curlB_over_B": {
+      "cells": 3719,
+      "relative_l2_E": 0.41029005791304834,
+      "relative_l2_B": 0.43762125237978355,
+      "median_B_angle_deg": 16.331418672431344,
+      "p90_B_angle_deg": 65.76287215643096
+    }
+  },
+  "rotation_2_to_3_difference": {
+    "from_time": 12.566370614359172,
+    "to_time": 18.84955592153876,
+    "cells": 134136,
+    "relative_l2_E": 0.043237463063588756,
+    "relative_l2_B": 0.03973198452413348,
+    "median_B_angle_deg": 0.5884144376039078,
+    "p90_B_angle_deg": 10.822904543155193
+  },
+  "quarter_rotation_rigid_pattern_difference": [
+    {
+      "time": 14.137166941154069,
+      "relative_l2_E": 0.01768086629217814,
+      "relative_l2_B": 0.01654808486280821
+    },
+    {
+      "time": 15.707963267948966,
+      "relative_l2_E": 0.036103760063636775,
+      "relative_l2_B": 0.03330610010015073
+    },
+    {
+      "time": 17.27875959474386,
+      "relative_l2_E": 0.0439774866652385,
+      "relative_l2_B": 0.03978112143720079
+    },
+    {
+      "time": 18.84955592153876,
+      "relative_l2_E": 0.036985386974242696,
+      "relative_l2_B": 0.035389819625432875
+    }
+  ],
+  "finite_domain_rim_escape_evidence": [
+    {
+      "pole": 1,
+      "fraction": 1.0,
+      "azimuth_deg": 324.84375,
+      "theta_deg": 62.13974637639238,
+      "status": 2,
+      "end_position": [
+        -0.530335582473313,
+        -0.8213606756507286,
+        -2.301284367330151
+      ],
+      "end_radius": 2.5003597598867375,
+      "max_cylinder_radius": 0.9776958573824119,
+      "signed_B_radial_cos": 0.5421383771177608,
+      "end_B_magnitude": 0.07973212080169458,
+      "length": 2.5979999999999355
+    },
+    {
+      "pole": 1,
+      "fraction": 1.0,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 61.393000683011984,
+      "status": 2,
+      "end_position": [
+        -0.21063015938554397,
+        -0.9526361754650037,
+        -2.302779577408471
+      ],
+      "end_radius": 2.5009347310509535,
+      "max_cylinder_radius": 0.9756437602154635,
+      "signed_B_radial_cos": 0.7790277838883235,
+      "end_B_magnitude": 0.12367743450254946,
+      "length": 2.365999999999961
+    },
+    {
+      "pole": 1,
+      "fraction": 1.0,
+      "azimuth_deg": 336.09375,
+      "theta_deg": 59.2800731344645,
+      "status": 2,
+      "end_position": [
+        -0.1496768858023428,
+        -0.964512451497021,
+        -2.3020906628351936
+      ],
+      "end_radius": 2.500461729191083,
+      "max_cylinder_radius": 0.9964101171611931,
+      "signed_B_radial_cos": 0.7150905293068018,
+      "end_B_magnitude": 0.1477118861866659,
+      "length": 2.545999999999941
+    },
+    {
+      "pole": 1,
+      "fraction": 0.96,
+      "azimuth_deg": 324.84375,
+      "theta_deg": 59.654156521336674,
+      "status": 1,
+      "end_position": [
+        0.392535220535486,
+        -0.9197520115033123,
+        -1.5559844148012183
+      ],
+      "end_radius": 1.8496256813554255,
+      "max_cylinder_radius": 1.0000138309169688,
+      "signed_B_radial_cos": 0.8139686115886943,
+      "end_B_magnitude": 0.2925376639453148,
+      "length": 1.330000000000001
+    },
+    {
+      "pole": 1,
+      "fraction": 0.96,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 58.9372806556915,
+      "status": 1,
+      "end_position": [
+        0.41790718852086683,
+        -0.9090236598128598,
+        -1.6545225792756877
+      ],
+      "end_radius": 1.9334982279924788,
+      "max_cylinder_radius": 1.000485098498214,
+      "signed_B_radial_cos": 0.8129922111009,
+      "end_B_magnitude": 0.27658263407807404,
+      "length": 1.422000000000001
+    },
+    {
+      "pole": 1,
+      "fraction": 0.96,
+      "azimuth_deg": 336.09375,
+      "theta_deg": 56.90887020908592,
+      "status": 1,
+      "end_position": [
+        0.6608592167068386,
+        -0.7513874049145951,
+        -1.5464529483587426
+      ],
+      "end_radius": 1.8419648905606516,
+      "max_cylinder_radius": 1.0006587513086895,
+      "signed_B_radial_cos": 0.8379705105046976,
+      "end_B_magnitude": 0.29022426501592213,
+      "length": 1.274000000000001
+    },
+    {
+      "pole": 1,
+      "fraction": 0.9,
+      "azimuth_deg": 324.84375,
+      "theta_deg": 55.92577173875314,
+      "status": 1,
+      "end_position": [
+        0.5462634661538032,
+        -0.8382806224844206,
+        -1.0663921558299665
+      ],
+      "end_radius": 1.4622962786326574,
+      "max_cylinder_radius": 1.0005589320411041,
+      "signed_B_radial_cos": 0.8101904874502979,
+      "end_B_magnitude": 0.7427134063942661,
+      "length": 0.8840000000000007
+    },
+    {
+      "pole": 1,
+      "fraction": 0.9,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 55.25370061471079,
+      "status": 1,
+      "end_position": [
+        0.5939814998354842,
+        -0.8047220257162815,
+        -1.0830212520561753
+      ],
+      "end_radius": 1.4742206731778837,
+      "max_cylinder_radius": 1.0001957612486303,
+      "signed_B_radial_cos": 0.8276229876372968,
+      "end_B_magnitude": 0.707510260549534,
+      "length": 0.8880000000000007
+    },
+    {
+      "pole": 1,
+      "fraction": 0.9,
+      "azimuth_deg": 336.09375,
+      "theta_deg": 53.35206582101805,
+      "status": 1,
+      "end_position": [
+        0.7265712094635082,
+        -0.6881637775871825,
+        -1.1145609640645597
+      ],
+      "end_radius": 1.4979056211326691,
+      "max_cylinder_radius": 1.0007372818099296,
+      "signed_B_radial_cos": 0.8310336186737224,
+      "end_B_magnitude": 0.6964201472830481,
+      "length": 0.8940000000000007
+    },
+    {
+      "pole": -1,
+      "fraction": 1.0,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 61.47137133552532,
+      "status": 2,
+      "end_position": [
+        0.3231787592217,
+        0.9153601841531473,
+        2.305508222305249
+      ],
+      "end_radius": 2.5015389144009075,
+      "max_cylinder_radius": 0.9707362036851007,
+      "signed_B_radial_cos": 0.7903351842646869,
+      "end_B_magnitude": 0.10739412992452213,
+      "length": 2.411999999999956
+    },
+    {
+      "pole": -1,
+      "fraction": 1.0,
+      "azimuth_deg": 330.46875,
+      "theta_deg": 60.46487313010289,
+      "status": 2,
+      "end_position": [
+        0.5198869881776526,
+        0.8419260606446237,
+        2.2970335359721212
+      ],
+      "end_radius": 2.501096766910387,
+      "max_cylinder_radius": 0.9895059232106725,
+      "signed_B_radial_cos": 0.6226623542244653,
+      "end_B_magnitude": 0.09034317267967204,
+      "length": 2.7779999999999156
+    },
+    {
+      "pole": -1,
+      "fraction": 0.96,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 59.01251648210431,
+      "status": 1,
+      "end_position": [
+        -0.42246815216049366,
+        0.9067544454742333,
+        1.6658265621729729
+      ],
+      "end_radius": 1.943106044254459,
+      "max_cylinder_radius": 1.0003414237035204,
+      "signed_B_radial_cos": 0.8064770636542969,
+      "end_B_magnitude": 0.27875525419933134,
+      "length": 1.430000000000001
+    },
+    {
+      "pole": -1,
+      "fraction": 0.96,
+      "azimuth_deg": 330.46875,
+      "theta_deg": 58.04627820489877,
+      "status": 1,
+      "end_position": [
+        -0.5334249908258645,
+        0.8461516148851538,
+        1.5655286136767896
+      ],
+      "end_radius": 1.8577929422976873,
+      "max_cylinder_radius": 1.0002573549893683,
+      "signed_B_radial_cos": 0.8241768312520912,
+      "end_B_magnitude": 0.3016910894733327,
+      "length": 1.312000000000001
+    },
+    {
+      "pole": -1,
+      "fraction": 0.9,
+      "azimuth_deg": 327.65625,
+      "theta_deg": 55.32423420197279,
+      "status": 1,
+      "end_position": [
+        -0.5926777150346086,
+        0.8056795712032925,
+        1.0880066201457919
+      ],
+      "end_radius": 1.4778852630816899,
+      "max_cylinder_radius": 1.0001932040125876,
+      "signed_B_radial_cos": 0.8335587019250892,
+      "end_B_magnitude": 0.7067146049077736,
+      "length": 0.8920000000000007
+    },
+    {
+      "pole": -1,
+      "fraction": 0.9,
+      "azimuth_deg": 330.46875,
+      "theta_deg": 54.4183858170926,
+      "status": 1,
+      "end_position": [
+        -0.6405990517263486,
+        0.7678763135105745,
+        1.0912933231848163
+      ],
+      "end_radius": 1.480176440547223,
+      "max_cylinder_radius": 1.00000058896147,
+      "signed_B_radial_cos": 0.829436723991256,
+      "end_B_magnitude": 0.7068388810774737,
+      "length": 0.8880000000000007
+    }
+  ],
+  "finite_domain_selected_seed_evidence": [
+    {
+      "pole": 1,
+      "counts_step008": {
+        "1": 689,
+        "2": 79
+      },
+      "escape_recheck_step002": {
+        "2": 79
+      },
+      "escape_outward_cos_min": 0.6776836397114081,
+      "escape_outward_cos_max": 0.9651331398185945,
+      "escape_cylinder_min": 0.017547701566346014,
+      "escape_cylinder_max": 0.9864608693796804
+    },
+    {
+      "pole": -1,
+      "counts_step008": {
+        "1": 687,
+        "2": 81
+      },
+      "escape_recheck_step002": {
+        "2": 81
+      },
+      "escape_outward_cos_min": 0.7513611228517475,
+      "escape_outward_cos_max": 0.9639883248069577,
+      "escape_cylinder_min": 0.036059127389211916,
+      "escape_cylinder_max": 0.9961930990185077
+    }
+  ],
+  "finite_domain_definition": "A branch is boundary-open if it crosses R_cyl=RLC or leaves r=2.5RLC with positive branch-radial direction. No claim of opening at infinity. No closed, null, horizon, or domain-error seeds are accepted.",
+  "limitation": "Rstar=.5RLC numerical source, finite cube\u00b13RLC, finite grid and source drift, unresolved sheet, prescribed primary supply and acceleration; rigidly rotated frozen final snapshot used for the constructed seamless illustration; a 512-spoke topology check finds a disconnected boundary-open interval missed by the 128-spoke single-rim sampling, so the injection surface remains an explicit approximation",
+  "audit_sources": {
+    "run_coffee_curl_audit.py": "b495dbf187021fcf687ca10d38caaf41dd5c8b0e5b48ebf39e5426bd3e90cb0c",
+    "run_coffee_assessment.py": "59b494e36a513710816aaf72faa24996b316db429fca5cb693186b70bed57e9b"
+  },
+  "final_emission": {
+    "results": "outputs/emission-quadrature/n97-final-illustration-a128-r6/results.json",
+    "results_sha256": "50fb25c32c383b1083e99a9aababd8663a8954dce451e550c38d3599a47ab044",
+    "seed_count": 1536,
+    "active_segments": 1418970,
+    "termination_counts": {
+      "r_max": 1536
+    },
+    "gamma_range": [
+      1000.0,
+      65227405.80336685
+    ],
+    "energy_erg_per_primary": 117.927987784937,
+    "fraction_energy_outside_light_cylinder": 0.7615058926737542,
+    "fraction_energy_inward_photons": 0.00888617434176412,
+    "max_energy_balance_error_erg": 8.881784197001252e-16,
+    "source_hashes_match": true,
+    "phase_profile_shape": [
+      12,
+      1000
+    ],
+    "quantitative_Vela_fit_claim": false
+  },
+  "focused_tests": {
+    "field_injection_tests": 8,
+    "quadrature_and_assessment_tests": 10,
+    "passed": true,
+    "scope": "Unit tests plus the declared final1536-stream numerical run; do not certify model realism"
+  },
+  "denser_sampling_attempt": {
+    "scope": "Attempted display sampling refinement of the declared Vela-informed finite-domain model",
+    "requested_seed_count": 6144,
+    "azimuths": 512,
+    "rings": 6,
+    "dt": 0.002,
+    "cap_boundary": "outgoing_sphere",
+    "completed": false,
+    "error": "Open cap is not star-shaped on sampled spokes",
+    "guard_preserved": true,
+    "no_seed_filtering": true,
+    "diagnostic": "outputs/final-field-audit/cap512-diagnosis.json",
+    "step_check": "outputs/final-field-audit/cap512-step-check.json",
+    "interpretation": "One northern spoke has disconnected sampled boundary-open intervals, stable under trace-step refinement .008 to .001. The single-rim injection approximation is not globally topology-converged. No dense particle-emission result is claimed."
+  }
+}

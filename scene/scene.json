@@ -1,0 +1,233 @@
+{
+  "scope": "User-approved Vela-informed visualization; explicitly approximate, not a quantitative reconstruction",
+  "source_run": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/n97-final-illustration-a128-r6",
+  "source_result_sha256": "50fb25c32c383b1083e99a9aababd8663a8954dce451e550c38d3599a47ab044",
+  "source_profiles_sha256": "d74a755cffd614ecb51228b8b2f163665abad696a8f5c4db90eed1bfec6a5d54",
+  "geometry_sha256": {
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-000000-000256.npz": "e8ea11ea230a66898b867adc698d24c3c5290a85107b0998ae1472b0c430d599",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-000256-000512.npz": "79ece5a5666be85bf4fffad3780c06ea35ce96616ed29fb2dc9535c8a43b28b4",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-000512-000768.npz": "742cae092a18b99d90251b2311d216f441005b568680bb2680104f90c28305dd",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-000768-001024.npz": "92b4e6ada21d6af43e79eeb13529f156289e776bd387f722a346797a0f581c67",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-001024-001280.npz": "6f9d855dcb6f4bf6048ccdd7bf1e96cdba95a53f2a827c8876d60b18ff6910fd",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981/trace-001280-001536.npz": "4ff3c5b866b3ba967195a5bdf3ba58d16f3bf2ce71c3ba64cda4b3c093aedb78"
+  },
+  "physical_protocol": {
+    "scope": "Emission quadrature study on one unreleased field; no Vela reconstruction",
+    "snapshot": {
+      "solver": "COFFEE CPU EZ",
+      "source_commit": "9986522d08b4d887e5ef9a53e12cecae4e376d22",
+      "source_url": "https://github.com/fizban007/CoffeeGPU",
+      "coordinate_units": "R_LC",
+      "time_units": "Omega*t",
+      "field_units": "mu/R_LC^3; common Gaussian c=1 E and B scale",
+      "staggering": "All E/B components collocated at Stagger(111) nodes; no averaging",
+      "hdf5_storage_order": "z,y,x; transposed to component,x,y,z",
+      "export_precision": "Upstream fld HDF5 casts double evolution to float32",
+      "output_time_method": "filename index * data_interval * dt; output precedes evolution",
+      "dipole_phase_zero": "mu in +x,+z plane; positive rotation about +z",
+      "magnetic_phase_rad": 18.84955592153876,
+      "inclination_deg": 75.0,
+      "star_radius": 0.5,
+      "normalization_factor": 1.0,
+      "raw_hdf5_sha256": "04bc3c64611b359864a6852314cdb444c086c420dde15ba697257b30cf904afa",
+      "config": {
+        "dt": 0.018479956785822312,
+        "max_steps": 1020,
+        "data_interval": 85,
+        "snapshot_interval": 1020,
+        "periodic_boundary": [
+          false,
+          false,
+          false
+        ],
+        "N": [
+          97,
+          97,
+          97
+        ],
+        "guard": [
+          3,
+          3,
+          3
+        ],
+        "lower": [
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "size": [
+          6.0,
+          6.0,
+          6.0
+        ],
+        "nodes": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shift_ghost": 0,
+        "downsample": 1,
+        "calc_current": true,
+        "clean_ep": true,
+        "check_egb": true,
+        "use_edotb_damping": false,
+        "pml": [
+          12,
+          12,
+          12
+        ],
+        "pmllen": 12,
+        "sigpml": 0.3352941176470588,
+        "divB_clean": false,
+        "ch2": 1.0,
+        "tau": 27.05634032562221,
+        "KOeps": 0.05,
+        "KO_geometry": false,
+        "problem": 1,
+        "radius": 0.5,
+        "omega": 1.0,
+        "b0": 1.0,
+        "p1": 0.9659258262890683,
+        "p2": 0.0,
+        "p3": 0.25881904510252074,
+        "q11": 0.0,
+        "q12": 0.0,
+        "q13": 0.0,
+        "q22": 0.0,
+        "q23": 0.0
+      },
+      "emission_release_allowed": false,
+      "caveat": "Numerical force-free field. No physical E_parallel or radiation population is inferred.",
+      "portable_patch_sha256": "54538e6a5ad06436dceb5a374467a1098b8138efbf156faa8832feddb960e75b",
+      "boundary_model": "curl_radiative_experiment",
+      "binary_sha256": "5139a443cca9e7b6f6560c7bf57589ef65a239afcb4818a5c836ff2e652a9ded",
+      "repair_patch_sha256": "9b0095d5accd8d5258c04d67bb0f236ea4533ed05ccc5ef65bf32d49e569d90e",
+      "repair_model": "D4-curl finite C4 dipole initialization; E-only rotating conductor; uniform GLM; collocated background; electric incoming-characteristic penalty layer (no direct magnetic damping)",
+      "physical_glm_damping_time": 0.5,
+      "physical_sponge_peak_rate": 18.143663512476067,
+      "absorber_patch_sha256": "5d7463478636e196de2a5ed57702f7b78fef6e9d56b349178cd8fd8e8e4fb68c",
+      "absorber_model": "Tangential E relaxed toward -n cross (B-B_initial), normal E preserved; cubic face-weighted layer; full-step exponential splitting; B changed only by Faraday curl, uniform GLM gradient and KO dissipation",
+      "source_file_sha256": {
+        "src/algorithms/field_solver_EZ.cpp": "babf2f680c3397951832961fb41ef19ca1c22bc82f705e5695979a6522d7915e",
+        "src/algorithms/damping_boundary.cpp": "85c761ee5eaa523e5bb0f28dcf17acc55ec7b2c9d8972531112eab3b75d8db6e",
+        "src/algorithms/regularized_dipole.h": "6ee174e096679e291a1491d3c71f22b63ada46f0de068c3223fb6136223da133",
+        "src/main-pulsar3d.cpp": "6b6359bbcc39d15ffa95bce3870c3904103e0cf8817e34a62621a567ec4ddb81",
+        "src/main-verification.cpp": "8bba0f338caa6777ce09593476293d4b8c060c52000bd75e32c8294ab7dfc773"
+      },
+      "path": "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-001020.npz",
+      "sha256": "fea546506dad0c969559c198a36bd7e7fddc0003b66d7b268d5971aa8616d215"
+    },
+    "cap": {
+      "inclination_deg": 75.0,
+      "seed_radius": 0.7,
+      "inner_radius": 0.68,
+      "field_time": 18.84955592153876,
+      "magnetic_phase": 18.84955592153876,
+      "step": 0.008,
+      "max_length": 15.0,
+      "outer_radius": 2.5,
+      "azimuths": 128,
+      "rings": 6,
+      "annulus_inner": 0.9,
+      "annulus_outer": 0.96,
+      "bisections": 14,
+      "bracket_samples": 33,
+      "rim_boundary": "outgoing_sphere"
+    },
+    "transport": {
+      "dt": 0.002,
+      "max_time": 12.0,
+      "r_min": 0.68,
+      "r_max": 2.0,
+      "curvature_step": 0.0001
+    },
+    "physical_scale": {
+      "period_s": 0.08937108859019084,
+      "period_derivative": 1.2229370554818526e-13,
+      "moment_of_inertia_g_cm2": 1e+45,
+      "inclination_deg": 75.0
+    },
+    "observer_deg": 65.0,
+    "observer_widths_deg": [
+      2.0
+    ],
+    "phase_bins": 1000,
+    "initial_gamma": 1000.0,
+    "acceleration": {
+      "rate_inside_cm_inverse": 0.04,
+      "rate_outside_cm_inverse": 0.25,
+      "transition_radius_rlc": 1.0
+    },
+    "acceleration_convention": "Barnard Eq.2 per laboratory path; spherical radius switch; no velocity projection",
+    "seed_loading": "magnetic flux at finite injection surface; normalized, no inferred primary supply",
+    "cap_boundary_scope": "Finite-domain boundary-open rim and seeds: cylinder crossing or verified outgoing escape at r=2.5 RLC; not a proof of opening at infinity; every selected annular seed separately reaches this outgoing boundary",
+    "projection": "conservative cell-time fractions through finite latitude/phase bins; linear midpoint reconstruction",
+    "source_hashes": {
+      "run_emission_quadrature.py": "c8b8f78082737257e1b8c326055affe52bc15483a53e389113ea4f8896f844de",
+      "src/pulsar/__init__.py": "d27eb3eabac50f98c60400fcefd353c0746bd6c6104e558ecb6d7a7e45bafd2b",
+      "src/pulsar/emission_projection.py": "af7d5160415ba89a3425f2d71ff44c5734dacb6018c1258ef0750cee32cd5bec",
+      "src/pulsar/emission_quadrature.py": "a36e3d0bf171f5300bf6fa679b08f775ed8e9031977e0a000197bf0c30079bd6",
+      "src/pulsar/energetics.py": "dee0f9356ce28694e6b546174e4713d172f90776fa76a8ed52b812d4fe411eb1",
+      "src/pulsar/field_benchmarks.py": "3ddd7efb68b3bb2e200b5464b5139c66cb89bcc881edefdf0a9370c41a86218b",
+      "src/pulsar/field_injection.py": "8fee1e68927c5c007eb2b0e3fcd1c1d5fab867354d4ff61b67987f0c68dd36f7",
+      "src/pulsar/figures.py": "b6cee2b3b11e69f0b7fb21226cdfe1a33ca98a10f02c8f270e5c9ca38c5f1a17",
+      "src/pulsar/injection.py": "f98636e70c435524a3c761a3d372133ac3df7a0721b43fd13668b069dca13cc9",
+      "src/pulsar/model.py": "b12f313f39482f869f9492de040885ed8c2b12168de46181aca8da2fb1342cc4",
+      "src/pulsar/multiband.py": "1603bc153a6775496911f50206c12f25773f01ebd0abbdb98c9f1f399c805766",
+      "src/pulsar/nonthermal.py": "baa9982e4a210cd2c93913b16caef37a31832c20b86a4e124f2559ff5e5fb790",
+      "src/pulsar/observations.py": "26f79c4123deafd9d887482501cd4370bc698bb1ab1fd8a75d5082da716420f6",
+      "src/pulsar/outer_transport.py": "5201d67cebdb6b82dc7488703d4608b1ed1135b74a67367db53024cea80ea732",
+      "src/pulsar/plasma.py": "2f4395eec08add4a2032d9c28d86a77707ccece7c6a6c224a05dead8185cc1dc",
+      "src/pulsar/published_acceleration.py": "dea3e8710af12894d4d3967ece8a8f3fbbdfb41af2db68d6cc4c1c0576590517",
+      "src/pulsar/radiation.py": "e6e2f95a018705eb38dddcef471ae81ea5026cdf7f7e16ff5271e721e730a8dc",
+      "src/pulsar/response.py": "32cb25f8c97ed12abd17ab1b2a6b6e9a438a8b15293ef4724fb5b7c6ce029db6",
+      "src/pulsar/snapshot_fields.py": "e2c58d26d0e178984cf1e38eeaca9987ecb2b0ec1afb9aca3dab8e0e944a0d7e",
+      "src/pulsar/spectral_observations.py": "015e215e880fd6db3db7e6553987bc8437926ebf188ea4597c27637fd0c4113a",
+      "src/pulsar/trajectories.py": "3406a7235a0780a9b340ecdf2545a8803c266e9be7ad090726fbc49bb20ffd89",
+      "src/pulsar/validation.py": "de14565397037d2a9bf2f94a83ff0de28d864c8d1a440d5ed93bdd6b69ef0794"
+    },
+    "geometry_cache": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/emission-quadrature/geometry-cache/5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981",
+    "geometry_cache_key": "5ca4fb5a9d701f5fcbf2272b2cc32d58064981ceab4762a2b36970c553033981",
+    "field_release_allowed": false,
+    "emission_release_allowed": false,
+    "vela_validation": false
+  },
+  "quantity": "0.1\u2013100GeV curvature energy emitted in all directions per steady primary supply; optically thin volume display",
+  "display_band_gev": [
+    0.1,
+    100.0
+  ],
+  "display_band_quadrature": "Cell midpoint critical energy applied to integrated cell energy; pulse retains original 3-node spectral quadrature",
+  "color_quantity": "log10(cell-energy-weighted characteristic curvature photon energy in GeV), illustrative palette",
+  "projection": "Orthographic line-of-sight integral of angle-integrated emitted energy; not a photograph or beamed camera intensity",
+  "pattern": "Rigid rotation of one numerical snapshot, not time-dependent PIC plasma",
+  "stellar_marker": "Enlarged position marker; no surface brightness or physical stellar radius reconstructed",
+  "modeled_radius_rlc": [
+    0.7,
+    2.0
+  ],
+  "voxel_grid": 176,
+  "voxel_extent_rlc": 2.08,
+  "voxel_deposition": "Conservative trilinear display grid",
+  "angular_display_interpolation": {
+    "type": "Positive triangular angular interpolation of display volume about spin axis",
+    "half_width_deg": 2.8125,
+    "quadrature_samples": 9,
+    "global_energy_conservation_correction": 1.0000000015907011,
+    "scope": "Display-only finite angular footprint; no change to model trajectories, spectra or pulse profiles"
+  },
+  "display_energy_erg_per_primary": 107.12632611662734,
+  "display_deposition_relative_error": 1.1938960017874329e-15,
+  "max_particle_energy_ledger_error_erg": 8.881784197001252e-16,
+  "seed_count": 1536,
+  "observer_deg": 65.0,
+  "observer_width_deg": 2.0,
+  "period_s": 0.08937108859019084,
+  "rlc_km": 4264.20310920543,
+  "source_hashes": {
+    "prepare_reel_scene.py": "568088d2abeaa1ef4d544653c0ce26a68d2412acef132f721519573e57ed1783",
+    "src/pulsar/radiation.py": "e6e2f95a018705eb38dddcef471ae81ea5026cdf7f7e16ff5271e721e730a8dc",
+    "src/pulsar/outer_transport.py": "5201d67cebdb6b82dc7488703d4608b1ed1135b74a67367db53024cea80ea732"
+  },
+  "quantitative_vela_validation": false
+}

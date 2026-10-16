@@ -1,0 +1,11 @@
+--- a/src/algorithms/field_solver_EZ.cpp
++++ b/src/algorithms/field_solver_EZ.cpp
+@@ -729,7 +729,7 @@
+   Scalar scaleEperp = 0.25 * grid.delta[0];
+   Scalar scaleBperp = scaleEpar;
+   Scalar scaleBpar = scaleBperp;
+-  Scalar d1 = 4.0 * grid.delta[0];
++  Scalar d1 = 0.0;  // Boundary experiment: anchor B at the same Rstar as E.
+   Scalar d0 = 0;
+   Scalar phase = params.omega * t;
+   Scalar w = params.omega;

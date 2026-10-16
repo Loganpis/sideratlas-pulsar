@@ -1,0 +1,145 @@
+--- a/src/algorithms/damping_boundary.cpp
++++ b/src/algorithms/damping_boundary.cpp
+@@ -1,85 +1,36 @@
+ #include "damping_boundary.h"
+-
++#include <cmath>
+ namespace Coffee {
+-
+-void
+-damping_boundary(const vector_field<Scalar>& En,
+-                 const vector_field<Scalar>& Bn,
+-                 const vector_field<Scalar>& Bbg,
+-                 vector_field<Scalar>& E, vector_field<Scalar>& B,
+-                 multi_array<Scalar>& Pn, multi_array<Scalar>& P,
+-                 int shift, const Grid& grid,
+-                 const sim_params& params) {
+-  auto& ex = E.data(0);
+-  auto& ey = E.data(1);
+-  auto& ez = E.data(2);
+-  auto& enx = En.data(0);
+-  auto& eny = En.data(1);
+-  auto& enz = En.data(2);
+-  auto& bx = B.data(0);
+-  auto& by = B.data(1);
+-  auto& bz = B.data(2);
+-  auto& bnx = Bn.data(0);
+-  auto& bny = Bn.data(1);
+-  auto& bnz = Bn.data(2);
+-  auto& b0x = Bbg.data(0);
+-  auto& b0y = Bbg.data(1);
+-  auto& b0z = Bbg.data(2);
+-  Scalar x, y, z;
+-  Scalar sigx = 0.0, sigy = 0.0, sigz = 0.0, sig = 0.0;
+-  size_t ijk = 0;
+-
+-  Scalar xh =
+-      params.lower[0] + params.size[0] - params.pml[0] * grid.delta[0];
+-  Scalar xl = params.lower[0] + params.pml[0] * grid.delta[0];
+-  Scalar yh =
+-      params.lower[1] + params.size[1] - params.pml[1] * grid.delta[1];
+-  Scalar yl = params.lower[1] + params.pml[1] * grid.delta[1];
+-  Scalar zh =
+-      params.lower[2] + params.size[2] - params.pml[2] * grid.delta[2];
+-  Scalar zl = params.lower[2] + params.pml[2] * grid.delta[2];
+-
+-  for (int k = grid.guard[2] - shift;
+-       k < grid.dims[2] - grid.guard[2] + shift; k++) {
+-    for (int j = grid.guard[1] - shift;
+-         j < grid.dims[1] - grid.guard[1] + shift; j++) {
+-      for (int i = grid.guard[0] - shift;
+-           i < grid.dims[0] - grid.guard[0] + shift; i++) {
+-        ijk = i + j * grid.dims[0] + k * grid.dims[0] * grid.dims[1];
+-        x = grid.pos(0, i, 1);
+-        y = grid.pos(1, j, 1);
+-        z = grid.pos(2, k, 1);
+-
+-        if (x > xh || x < xl || y > yh || y < yl || z > zh || z < zl) {
+-          // if (x > xh || y < yl || y > yh) {
+-          sigx = pmlsigma(x, xl, xh, params.pmllen * grid.delta[0],
+-                          params.sigpml);
+-          sigy = pmlsigma(y, yl, yh, params.pmllen * grid.delta[1],
+-                          params.sigpml);
+-          sigz = pmlsigma(z, zl, zh, params.pmllen * grid.delta[2],
+-                          params.sigpml);
+-          sig = sigx + sigy + sigz;
+-          // sig = sigx + sigy;
+-          if (sig > TINY) {
+-            ex[ijk] = exp(-sig) * enx[ijk] +
+-                      (1.0 - exp(-sig)) / sig * (ex[ijk] - enx[ijk]);
+-            ey[ijk] = exp(-sig) * eny[ijk] +
+-                      (1.0 - exp(-sig)) / sig * (ey[ijk] - eny[ijk]);
+-            ez[ijk] = exp(-sig) * enz[ijk] +
+-                      (1.0 - exp(-sig)) / sig * (ez[ijk] - enz[ijk]);
+-            bx[ijk] = b0x[ijk] + exp(-sig) * (bnx[ijk] - b0x[ijk]) +
+-                      (1.0 - exp(-sig)) / sig * (bx[ijk] - bnx[ijk]);
+-            by[ijk] = b0y[ijk] + exp(-sig) * (bny[ijk] - b0y[ijk]) +
+-                      (1.0 - exp(-sig)) / sig * (by[ijk] - bny[ijk]);
+-            bz[ijk] = b0z[ijk] + exp(-sig) * (bnz[ijk] - b0z[ijk]) +
+-                      (1.0 - exp(-sig)) / sig * (bz[ijk] - bnz[ijk]);
+-            // P[ijk] = exp(-sig) * Pn[ijk] +
+-            //          (1.0 - exp(-sig)) / sig * (P[ijk] - Pn[ijk]);
+-          }
+-        }
+-      }
+-    }
+-  }
++// Incoming-characteristic electric penalty.  In a planar 1D wave, E_t=-n x B_t
++// is the outgoing solution. Relaxing E_t toward that value leaves this exact
++// outgoing characteristic unchanged and attenuates the incoming one. Magnetic
++// components are never independently overwritten; Faraday's divergence
++// identity is retained away from the finite-domain guard boundary.
++void damping_boundary(const vector_field<Scalar>& En,
++ const vector_field<Scalar>& Bn,const vector_field<Scalar>& Bbg,
++ vector_field<Scalar>& E,vector_field<Scalar>& B,
++ multi_array<Scalar>& Pn,multi_array<Scalar>& P,int shift,
++ const Grid& g,const sim_params& p) {
++ const Scalar xl[3]={p.lower[0]+p.pml[0]*g.delta[0],p.lower[1]+p.pml[1]*g.delta[1],p.lower[2]+p.pml[2]*g.delta[2]};
++ const Scalar xh[3]={p.lower[0]+p.size[0]-p.pml[0]*g.delta[0],p.lower[1]+p.size[1]-p.pml[1]*g.delta[1],p.lower[2]+p.size[2]-p.pml[2]*g.delta[2]};
++ for(int k=g.guard[2]-shift;k<g.dims[2]-g.guard[2]+shift;++k)
++ for(int j=g.guard[1]-shift;j<g.dims[1]-g.guard[1]+shift;++j)
++ for(int i=g.guard[0]-shift;i<g.dims[0]-g.guard[0]+shift;++i) {
++   const Scalar x[3]={g.pos(0,i,1),g.pos(1,j,1),g.pos(2,k,1)};
++   Scalar s[3]={0,0,0},n[3]={0,0,0},sig=0,nm=0;
++   for(int a=0;a<3;++a) if(p.pml[a]>0) {
++     s[a]=pmlsigma(x[a],xl[a],xh[a],p.pmllen*g.delta[a],p.sigpml);
++     sig+=s[a]; n[a]=(x[a]>xh[a]?1:-1)*s[a]; nm+=n[a]*n[a];
++   }
++   if(sig<TINY)continue;
++   nm=std::sqrt(nm);for(int a=0;a<3;++a)n[a]/=nm;
++   Scalar b[3],e[3],en=0;
++   for(int a=0;a<3;++a){b[a]=B(a,i,j,k)-Bbg(a,i,j,k);e[a]=E(a,i,j,k);en+=e[a]*n[a];}
++   const Scalar target[3]={-n[1]*b[2]+n[2]*b[1]+en*n[0],
++      -n[2]*b[0]+n[0]*b[2]+en*n[1],-n[0]*b[1]+n[1]*b[0]+en*n[2]};
++   for(int a=0;a<3;++a)E(a,i,j,k)=target[a]+std::exp(-sig)*(e[a]-target[a]);
++   // Uniform GLM is independently verified. No position-dependent magnetic
++   // damping or cleaning taper is introduced by this boundary.
++ }
+ }
+-
+-}  // namespace Coffee
++}
+--- a/src/main-verification.cpp
++++ b/src/main-verification.cpp
+@@ -23,8 +23,21 @@
+     data.E.initialize();data.B.initialize();
+     data.B.initialize(0,[&](Scalar x,Scalar,Scalar){return 1.0+0.2*std::cos(2*M_PI*x/env.params().size[0]);});
+   }
++  if(env.params().problem==5) {
++    const Scalar n=1/std::sqrt(2.0);
++    auto oblique=[](Scalar x,Scalar y,Scalar) {return 0.2*std::exp(-std::pow(((x+y)/std::sqrt(2.0)+1.5)/.35,2));};
++    data.E.initialize();data.B.initialize();
++    data.E.initialize(2,oblique);
++    data.B.initialize(0,[&](Scalar x,Scalar y,Scalar z){return n+n*oblique(x,y,z);});
++    data.B.initialize(1,[&](Scalar x,Scalar y,Scalar z){return n-n*oblique(x,y,z);});
++  }
+   solver.Bbg.initialize();
+   solver.Bbg.initialize(0,[](Scalar,Scalar,Scalar){return 1.0;});
++  if(env.params().problem==5) {
++    solver.Bbg.initialize();
++    solver.Bbg.initialize(0,[](Scalar,Scalar,Scalar){return 1/std::sqrt(2.0);});
++    solver.Bbg.initialize(1,[](Scalar,Scalar,Scalar){return 1/std::sqrt(2.0);});
++  }
+   data.P.assign(0.0); data.divB.assign(0.0);data.divE.assign(0.0);
+   data.dU_EgtB_cum.assign(0.0);data.dU_Epar_cum.assign(0.0);data.dU_KO_cum.assign(0.0);
+   env.send_guard_cells(data);

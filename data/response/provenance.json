@@ -1,0 +1,21 @@
+{
+  "retrieved_date": "2026-10-13",
+  "repository": "https://github.com/fermi-lat/irfs",
+  "commit": "b7cafb0a7a99ec36925cf8984372b4caafb5039c",
+  "irf": "P8R3_SOURCE_V3",
+  "partition": "FRONT+BACK",
+  "files": [
+    {
+      "file": "aeff_P8R3_SOURCE_V3_FB.fits",
+      "sha256": "2fee015b371b33feda646cf858f71c4c2d6071d8517c704233775cfab75d2adf",
+      "bytes": 72000,
+      "url": "https://raw.githubusercontent.com/fermi-lat/irfs/b7cafb0a7a99ec36925cf8984372b4caafb5039c/caldb/CALDB/data/glast/lat/bcf/ea/aeff_P8R3_SOURCE_V3_FB.fits"
+    },
+    {
+      "file": "edisp_P8R3_SOURCE_V3_FB.fits",
+      "sha256": "a2a4166c17af6a70e86775e86bc32bc1baba82b9c50eee266161d466822b774e",
+      "bytes": 54720,
+      "url": "https://raw.githubusercontent.com/fermi-lat/irfs/b7cafb0a7a99ec36925cf8984372b4caafb5039c/caldb/CALDB/data/glast/lat/bcf/edisp/edisp_P8R3_SOURCE_V3_FB.fits"
+    }
+  ]
+}

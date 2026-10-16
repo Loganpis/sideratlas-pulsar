@@ -1,0 +1,191 @@
+{
+  "emission_release_allowed": false,
+  "source_commit": "9986522d08b4d887e5ef9a53e12cecae4e376d22",
+  "coarse_path": "third_party/coffee-runs/pulsar-a75-n65-3rot-curl-radiative-noglm/snapshot-000684.npz",
+  "fine_path": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-001020.npz",
+  "final_snapshot_sha256": {
+    "coarse": "811f2c366ba5ea1f5dfc7abb105574ee814c7b0e2a09ea30d201a9c38a807634",
+    "fine": "fea546506dad0c969559c198a36bd7e7fddc0003b66d7b268d5971aa8616d215"
+  },
+  "boundary_model": "curl_radiative_experiment",
+  "assessment_source_sha256": "59b494e36a513710816aaf72faa24996b316db429fca5cb693186b70bed57e9b",
+  "comparison_time": 18.84955592153876,
+  "resolution_comparison": {
+    "0.75<r<1": {
+      "cells": 3128,
+      "relative_l2_E": 0.07757603623108933,
+      "relative_l2_B": 0.07437825023190274,
+      "median_B_angle_deg": 2.131492641463087,
+      "p90_B_angle_deg": 10.77550278550019
+    },
+    "1<r<1.5": {
+      "cells": 12504,
+      "relative_l2_E": 0.09272057589023668,
+      "relative_l2_B": 0.08780208434962114,
+      "median_B_angle_deg": 2.1892059974779445,
+      "p90_B_angle_deg": 13.432390091907845
+    },
+    "1.5<r<2": {
+      "cells": 24680,
+      "relative_l2_E": 0.1264267917602009,
+      "relative_l2_B": 0.12362175766939457,
+      "median_B_angle_deg": 2.60252842729207,
+      "p90_B_angle_deg": 17.398340884413194
+    },
+    "0.75<r<2": {
+      "cells": 40312,
+      "relative_l2_E": 0.10272128914928527,
+      "relative_l2_B": 0.09494953246970692,
+      "median_B_angle_deg": 2.440183541228012,
+      "p90_B_angle_deg": 15.068497920460867
+    },
+    "outer_top10percent_curlB_over_B": {
+      "cells": 3719,
+      "relative_l2_E": 0.41029005791304834,
+      "relative_l2_B": 0.43762125237978355,
+      "median_B_angle_deg": 16.331418672431344,
+      "p90_B_angle_deg": 65.76287215643096
+    }
+  },
+  "current_sheet_proxy": "Top decile of |curlB|/|B| on fine fields interpolated to coarse nodes, 1<r<2; not a geometric sheet identification.",
+  "sheet_proxy_threshold": 5.6801111738275285,
+  "quality": {
+    "65": {
+      "shell": [
+        0.75,
+        2.0
+      ],
+      "relative_rms_divB_RLC": 0.00010066709368216923,
+      "p95_abs_divB_RLC_over_B": 0.00042757324604640834,
+      "h_times_relative_rms_divB": 9.292347109123325e-06,
+      "p95_abs_EB_over_EBmag": 3.0271075129550765e-08,
+      "max_abs_EB_over_EBmag": 7.053588449418666e-08,
+      "E_exceeds_B_by_1e_6_fraction": 0.0
+    },
+    "97": {
+      "shell": [
+        0.75,
+        2.0
+      ],
+      "relative_rms_divB_RLC": 9.206028433810163e-06,
+      "p95_abs_divB_RLC_over_B": 3.0133093411811754e-05,
+      "h_times_relative_rms_divB": 5.694450577614514e-07,
+      "p95_abs_EB_over_EBmag": 3.0716170253588234e-08,
+      "max_abs_EB_over_EBmag": 8.732493054432397e-08,
+      "E_exceeds_B_by_1e_6_fraction": 0.0
+    }
+  },
+  "periodicity": {
+    "65": {
+      "from_time": 12.566370614359172,
+      "to_time": 18.84955592153876,
+      "cells": 40312,
+      "relative_l2_E": 0.041093536709397534,
+      "relative_l2_B": 0.04001228729593044,
+      "median_B_angle_deg": 0.8161354308192929,
+      "p90_B_angle_deg": 11.205950496827738
+    },
+    "97": {
+      "from_time": 12.566370614359172,
+      "to_time": 18.84955592153876,
+      "cells": 134136,
+      "relative_l2_E": 0.043237463063588756,
+      "relative_l2_B": 0.03973198452413348,
+      "median_B_angle_deg": 0.5884144376039078,
+      "p90_B_angle_deg": 10.822904543155193
+    }
+  },
+  "quarter_rotation_pattern": {
+    "65": [
+      {
+        "time": 14.137166941154069,
+        "relative_l2_E": 0.025055834353557526,
+        "relative_l2_B": 0.023570516843850798
+      },
+      {
+        "time": 15.707963267948966,
+        "relative_l2_E": 0.05616969697901739,
+        "relative_l2_B": 0.05163513359531195
+      },
+      {
+        "time": 17.278759594743864,
+        "relative_l2_E": 0.05839491096408104,
+        "relative_l2_B": 0.053918991876691184
+      },
+      {
+        "time": 18.84955592153876,
+        "relative_l2_E": 0.03500625411122738,
+        "relative_l2_B": 0.036069983417504
+      }
+    ],
+    "97": [
+      {
+        "time": 14.137166941154069,
+        "relative_l2_E": 0.01768086629217814,
+        "relative_l2_B": 0.01654808486280821
+      },
+      {
+        "time": 15.707963267948966,
+        "relative_l2_E": 0.036103760063636775,
+        "relative_l2_B": 0.03330610010015073
+      },
+      {
+        "time": 17.27875959474386,
+        "relative_l2_E": 0.0439774866652385,
+        "relative_l2_B": 0.03978112143720079
+      },
+      {
+        "time": 18.84955592153876,
+        "relative_l2_E": 0.036985386974242696,
+        "relative_l2_B": 0.035389819625432875
+      }
+    ]
+  },
+  "surfaces": {
+    "65": [
+      {
+        "radius": 1.0,
+        "luminosity_mu2_omega4_over_c3": 1.9388228019405362,
+        "unsigned_flux_one_hemisphere": 9.814416601206181
+      },
+      {
+        "radius": 1.5,
+        "luminosity_mu2_omega4_over_c3": 1.9201697093922472,
+        "unsigned_flux_one_hemisphere": 8.935018821540705
+      },
+      {
+        "radius": 2.0,
+        "luminosity_mu2_omega4_over_c3": 1.90726923742969,
+        "unsigned_flux_one_hemisphere": 8.600902557300495
+      }
+    ],
+    "97": [
+      {
+        "radius": 1.0,
+        "luminosity_mu2_omega4_over_c3": 1.773269989850345,
+        "unsigned_flux_one_hemisphere": 9.310903988289583
+      },
+      {
+        "radius": 1.5,
+        "luminosity_mu2_omega4_over_c3": 1.7603594020669904,
+        "unsigned_flux_one_hemisphere": 8.457685664052555
+      },
+      {
+        "radius": 2.0,
+        "luminosity_mu2_omega4_over_c3": 1.7418800181528382,
+        "unsigned_flux_one_hemisphere": 8.14724087242247
+      }
+    ]
+  },
+  "reference_spindown": 1.9330127018922194,
+  "limitations": [
+    "Only two grids; no asymptotic convergence estimate; sheet structure remains resolution sensitive.",
+    "Numerically enlarged radius 0.5 R_LC; finite cube plus/minus 3 R_LC.",
+    "Finite C4 dipole potential initialized by the native D4 curl; a rotating electric conductor evolves rather than hard-resets the magnetic source.",
+    "Source moment, inclination and phase must be measured separately; source diffusion is not a physical spin-down prediction.",
+    "Outer layer penalizes the incoming electric characteristic without directly damping magnetic components; it is not a perfectly matched layer.",
+    "A 45-degree pulse benchmark is separate from this report and does not establish domain-size independence of the pulsar wind or current sheet.",
+    "No self-consistent dissipative E_parallel; force-free cleanup removes it.",
+    "Comparisons use linear interpolation of fine snapshots; all quoted times are dimensionless Omega*t."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "upstream_commit": "9986522d08b4d887e5ef9a53e12cecae4e376d22",
+  "base_portable_patch_sha256": "54538e6a5ad06436dceb5a374467a1098b8138efbf156faa8832feddb960e75b",
+  "boundary_patch_sha256": "2a8a3df5fd9557fa51d43d73b7abaadb175f5cdc35afe8427072cd370e676f45",
+  "classification": "Numerical stellar-boundary model change, not pure portability",
+  "change": "Only boundary_pulsar d1 changed from 4*dx to0, collocating smooth B anchoring with E atRstar",
+  "source_equations_outside_boundary_changed": false,
+  "emission_release_allowed": false,
+  "binary_sha256": "d4676b6f4ff3c16f889a88b1d4b0bd024c03d6c56118f38bae5c8f77fd921758",
+  "boundary_source_sha256": "a967884917d999e10ed9e2ba8bad4ff8662c64791217992fb25b038e95d6e34b",
+  "base_binary_sha256": "f7655818b4c8d8a4c77a53758214b0ceb0dc26ce1bc6750b1c11e0191ad4e77e"
+}

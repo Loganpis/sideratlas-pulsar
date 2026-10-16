@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sideratlas-pulsar"
+version = "1.0.0"
+description = "Pulsar field and particle-emission research with explicit numerical verification and Vela data comparisons"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.25", "matplotlib>=3.8", "astropy>=6", "scipy>=1.12"]
+
+[project.optional-dependencies]
+coffee = ["h5py>=3.10"]
+video = ["Pillow>=10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

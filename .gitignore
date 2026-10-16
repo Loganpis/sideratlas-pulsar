@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.mpl-cache/
+.DS_Store
+third_party/coffee-tools/
+third_party/coffee-build*/
+third_party/coffee-runs/
+third_party/coffee-portable/bin/
+native-work/

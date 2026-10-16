@@ -1,0 +1,50 @@
+{
+  "upstream_url": "https://github.com/fizban007/CoffeeGPU",
+  "upstream_commit": "9986522d08b4d887e5ef9a53e12cecae4e376d22",
+  "license": "GPL-2.0 (upstream LICENSE preserved in native source directory)",
+  "build_script": "run_coffee_build_radiative.sh",
+  "patch_chain": [
+    "third_party/coffee-portable.patch",
+    "third_party/coffee-surface-anchored.patch",
+    "third_party/coffee-curl-conductor.patch",
+    "third_party/coffee-curl-radiative.patch"
+  ],
+  "patch_sha256": {
+    "third_party/coffee-portable.patch": "54538e6a5ad06436dceb5a374467a1098b8138efbf156faa8832feddb960e75b",
+    "third_party/coffee-surface-anchored.patch": "2a8a3df5fd9557fa51d43d73b7abaadb175f5cdc35afe8427072cd370e676f45",
+    "third_party/coffee-curl-conductor.patch": "9b0095d5accd8d5258c04d67bb0f236ea4533ed05ccc5ef65bf32d49e569d90e",
+    "third_party/coffee-curl-radiative.patch": "5d7463478636e196de2a5ed57702f7b78fef6e9d56b349178cd8fd8e8e4fb68c"
+  },
+  "source_file_sha256": {
+    "src/algorithms/field_solver_EZ.cpp": "babf2f680c3397951832961fb41ef19ca1c22bc82f705e5695979a6522d7915e",
+    "src/algorithms/damping_boundary.cpp": "85c761ee5eaa523e5bb0f28dcf17acc55ec7b2c9d8972531112eab3b75d8db6e",
+    "src/algorithms/regularized_dipole.h": "6ee174e096679e291a1491d3c71f22b63ada46f0de068c3223fb6136223da133",
+    "src/main-pulsar3d.cpp": "6b6359bbcc39d15ffa95bce3870c3904103e0cf8817e34a62621a567ec4ddb81",
+    "src/main-verification.cpp": "8bba0f338caa6777ce09593476293d4b8c060c52000bd75e32c8294ab7dfc773",
+    "src/user_pulsar3d_EZ.hpp": "19144d289e40f446d8d80332e02e182ef239626323f84c5c22e6b50a6444c5ef"
+  },
+  "binary_sha256": {
+    "bin/coffee-3d": "5139a443cca9e7b6f6560c7bf57589ef65a239afcb4818a5c836ff2e652a9ded",
+    "bin/coffee-verification": "3f5e68d9c0d1f132424f4bc6a7897d2b02a9dc4b2bbd43a96f77b6bf26d5880a"
+  },
+  "candidate_protocol": {
+    "star_radius_RLC": 0.5,
+    "alpha_deg": 75.0,
+    "extent_RLC": 3.0,
+    "end_Omega_t": 18.84955592153876,
+    "resolutions": [
+      65,
+      97
+    ],
+    "output_count": 12,
+    "GLM_enabled": false,
+    "KO_epsilon": 0.05,
+    "electric_layer_physical_peak_rate": 18.143663512476067,
+    "conductor_transition_width": "2 spatial cells, centered on Rstar (not fixed physical width under refinement)"
+  },
+  "status": "Bounded numerical visualization candidate; no validated Vela reconstruction or emission release claim",
+  "candidate_runs": [
+    "third_party/coffee-runs/pulsar-a75-n65-3rot-curl-radiative-noglm",
+    "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm"
+  ]
+}

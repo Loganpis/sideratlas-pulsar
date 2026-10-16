@@ -1,0 +1,930 @@
+{
+  "run_dir": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm",
+  "emission_release_allowed": false,
+  "rows": [
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000000.npz",
+      "time": 0.0,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.9659258254989802,
+          2.7755575615628914e-17,
+          0.25881904566573216
+        ],
+        "magnitude": 0.9999999993826033,
+        "phase_error_deg": 1.646376252452148e-15,
+        "inclination_deg": 74.99999995711352,
+        "relative_fit_residual": 2.595794749431543e-08
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 4.000720479532963e-07,
+        "p95_abs_divB_RLC_over_B": 7.629749409743708e-07,
+        "h_times_relative_rms_divB": 2.4746724615667725e-08,
+        "p95_abs_EB_over_EBmag": 0.0,
+        "max_abs_EB_over_EBmag": 0.0,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.4096376286723356e-05,
+          "div_rms_over_B_RLC": 4.0860299920616154e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.874965674767113e-06,
+          "div_rms_over_B_RLC": 3.899595582984702e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 8.814173985956767e-07,
+          "div_rms_over_B_RLC": 4.085753725038579e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 2.962387003067189e-07,
+          "div_rms_over_B_RLC": 3.8577905615901786e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.0605873176499212e-07,
+          "div_rms_over_B_RLC": 3.898238887640464e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 4.948538679494467e-08,
+          "div_rms_over_B_RLC": 3.913093869845271e-07
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 0.0,
+          "unsigned_flux_one_hemisphere": 6.283511972489296
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 0.0,
+          "unsigned_flux_one_hemisphere": 4.1887998982816015
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 0.0,
+          "unsigned_flux_one_hemisphere": 3.1416910396528483
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000085.npz",
+      "time": 1.5707963267948966,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.002772200145788734,
+          0.9643112816902916,
+          0.2583676929356258
+        ],
+        "magnitude": 0.9983275002932148,
+        "phase_error_deg": -0.16471333870528293,
+        "inclination_deg": 75.00109785586655,
+        "relative_fit_residual": 0.004244884813064361
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 3.913414257274415e-07,
+        "p95_abs_divB_RLC_over_B": 7.704436604493438e-07,
+        "h_times_relative_rms_divB": 2.4206686127470523e-08,
+        "p95_abs_EB_over_EBmag": 3.140837325905713e-08,
+        "max_abs_EB_over_EBmag": 8.691316668400045e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.194290692715889e-05,
+          "div_rms_over_B_RLC": 3.727065515918446e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.122401133556642e-06,
+          "div_rms_over_B_RLC": 4.1810806299624054e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0361108539573988e-06,
+          "div_rms_over_B_RLC": 3.9561897496324314e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.039037166351621e-07,
+          "div_rms_over_B_RLC": 3.8549960521494086e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 3.355552385304389e-07,
+          "div_rms_over_B_RLC": 3.932495594179369e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 7.295903372226859e-08,
+          "div_rms_over_B_RLC": 3.964925101479089e-07
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.4171153137390613,
+          "unsigned_flux_one_hemisphere": 8.335162665136759
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.499070264252462,
+          "unsigned_flux_one_hemisphere": 5.908716272182562
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 0.8751077863401913,
+          "unsigned_flux_one_hemisphere": 3.1742358677900833
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000170.npz",
+      "time": 3.141592653589793,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.9626215732615306,
+          0.005346070639420917,
+          0.25792076289372834
+        ],
+        "magnitude": 0.9965901834312181,
+        "phase_error_deg": -0.31819787134142824,
+        "inclination_deg": 75.00093783768332,
+        "relative_fit_residual": 0.007738516071562449
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 3.9008127301431535e-07,
+        "p95_abs_divB_RLC_over_B": 7.6585167884533e-07,
+        "h_times_relative_rms_divB": 2.4128738536967874e-08,
+        "p95_abs_EB_over_EBmag": 3.006747777004402e-08,
+        "max_abs_EB_over_EBmag": 7.710389228488302e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.2625551446388628e-05,
+          "div_rms_over_B_RLC": 3.849633430648176e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.973072939244822e-06,
+          "div_rms_over_B_RLC": 4.0339761309596883e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0388675112775715e-06,
+          "div_rms_over_B_RLC": 3.883620701307387e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.383861159940561e-07,
+          "div_rms_over_B_RLC": 3.9662478336311837e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 3.081862262309128e-07,
+          "div_rms_over_B_RLC": 3.8277616543903655e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 3.287250553289386e-07,
+          "div_rms_over_B_RLC": 5.799811321602215e-07
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.516065824522286,
+          "unsigned_flux_one_hemisphere": 8.771312545964204
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.471369188273875,
+          "unsigned_flux_one_hemisphere": 7.940613028738908
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.385610913586759,
+          "unsigned_flux_one_hemisphere": 7.39302188259719
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000255.npz",
+      "time": 4.71238898038469,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.007900817738809662,
+          -0.9607949076182571,
+          0.25745334714404594
+        ],
+        "magnitude": 0.9947218221099755,
+        "phase_error_deg": -0.47114457445306135,
+        "inclination_deg": 74.99997644530312,
+        "relative_fit_residual": 0.011332060336749727
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 3.8985073929793923e-07,
+        "p95_abs_divB_RLC_over_B": 7.638784497938183e-07,
+        "h_times_relative_rms_divB": 2.411447871946007e-08,
+        "p95_abs_EB_over_EBmag": 2.9955670220264414e-08,
+        "max_abs_EB_over_EBmag": 8.613254507805084e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.2312008629693388e-05,
+          "div_rms_over_B_RLC": 3.80328569674052e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.0107948889993005e-06,
+          "div_rms_over_B_RLC": 4.0699011488140825e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0782435487436654e-06,
+          "div_rms_over_B_RLC": 3.971546290113116e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.400089744727547e-07,
+          "div_rms_over_B_RLC": 3.8861675432413576e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 3.189549567207961e-07,
+          "div_rms_over_B_RLC": 3.818081331284117e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 3.938729339681893e-05,
+          "div_rms_over_B_RLC": 6.480751354622705e-05
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.6048576321306462,
+          "unsigned_flux_one_hemisphere": 8.929200090609061
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.5694999373590304,
+          "unsigned_flux_one_hemisphere": 8.092585206718635
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.5373813533974245,
+          "unsigned_flux_one_hemisphere": 7.744036298349101
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000340.npz",
+      "time": 6.283185307179586,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.9588967339163204,
+          -0.01041156848036199,
+          0.25698252181499726
+        ],
+        "magnitude": 0.9927896874927757,
+        "phase_error_deg": -0.6220852256283185,
+        "inclination_deg": 74.99822889528917,
+        "relative_fit_residual": 0.015040114396355588
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 3.889328132595716e-07,
+        "p95_abs_divB_RLC_over_B": 7.695056833448132e-07,
+        "h_times_relative_rms_divB": 2.4057699789251767e-08,
+        "p95_abs_EB_over_EBmag": 3.0707545243070626e-08,
+        "max_abs_EB_over_EBmag": 8.459160713253152e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.347951164201468e-05,
+          "div_rms_over_B_RLC": 4.0098902877710213e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.06122938332755e-06,
+          "div_rms_over_B_RLC": 4.117780507176971e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0616806175967976e-06,
+          "div_rms_over_B_RLC": 3.8753450258491866e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.549513071334865e-07,
+          "div_rms_over_B_RLC": 3.9379091532112916e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 3.275761169083788e-07,
+          "div_rms_over_B_RLC": 3.838711892863484e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 0.00017574038807726896,
+          "div_rms_over_B_RLC": 0.0002806752150099258
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.6507349794571633,
+          "unsigned_flux_one_hemisphere": 8.999276640870619
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.6293186570784686,
+          "unsigned_flux_one_hemisphere": 8.177946344056371
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.6013717880001064,
+          "unsigned_flux_one_hemisphere": 7.898495143556299
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000425.npz",
+      "time": 7.853981633974483,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.01287480183889636,
+          0.9569660387543821,
+          0.25651322347198047
+        ],
+        "magnitude": 0.9908323741519706,
+        "phase_error_deg": -0.7707977872009834,
+        "inclination_deg": 74.99599287397406,
+        "relative_fit_residual": 0.01878658411030541
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 4.444075840650403e-07,
+        "p95_abs_divB_RLC_over_B": 8.509430378588326e-07,
+        "h_times_relative_rms_divB": 2.7489128911239507e-08,
+        "p95_abs_EB_over_EBmag": 3.0834513404975986e-08,
+        "max_abs_EB_over_EBmag": 9.14156379882735e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.1742684972591952e-05,
+          "div_rms_over_B_RLC": 3.720370106368354e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.987938924413051e-06,
+          "div_rms_over_B_RLC": 4.040104623493464e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0850297303885167e-06,
+          "div_rms_over_B_RLC": 3.935759731932762e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.60207999015003e-07,
+          "div_rms_over_B_RLC": 3.9446583329861213e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 4.797370959647352e-07,
+          "div_rms_over_B_RLC": 5.568828309629667e-07
+        },
+        "2<r<2.5": {
+          "div_rms": 0.000566210171572263,
+          "div_rms_over_B_RLC": 0.0008955131613744944
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.6786184959048314,
+          "unsigned_flux_one_hemisphere": 9.058821578340781
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.6603128632729003,
+          "unsigned_flux_one_hemisphere": 8.240870804923905
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.6369718087829388,
+          "unsigned_flux_one_hemisphere": 7.940108275911487
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000510.npz",
+      "time": 9.42477796076938,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.9550230360253177,
+          0.01529328621760339,
+          0.2560478833736079
+        ],
+        "magnitude": 0.9888697601415737,
+        "phase_error_deg": -0.9174290405632848,
+        "inclination_deg": 74.99342820692311,
+        "relative_fit_residual": 0.022532340992946154
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 9.350118602853352e-07,
+        "p95_abs_divB_RLC_over_B": 1.0964367927604072e-06,
+        "h_times_relative_rms_divB": 5.783578517228857e-08,
+        "p95_abs_EB_over_EBmag": 3.0586193960978405e-08,
+        "max_abs_EB_over_EBmag": 8.291132859115411e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.2958297357412432e-05,
+          "div_rms_over_B_RLC": 3.93586431942849e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.010831229456395e-06,
+          "div_rms_over_B_RLC": 4.0597318956067017e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0937575514484312e-06,
+          "div_rms_over_B_RLC": 3.9478934759468766e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.578158227418824e-07,
+          "div_rms_over_B_RLC": 3.907312471728985e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.4474029873202935e-06,
+          "div_rms_over_B_RLC": 1.6717679518158665e-06
+        },
+        "2<r<2.5": {
+          "div_rms": 0.0010754006910813872,
+          "div_rms_over_B_RLC": 0.00169702045515876
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.6978583108808212,
+          "unsigned_flux_one_hemisphere": 9.105995598071063
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.6841059263033784,
+          "unsigned_flux_one_hemisphere": 8.305221501007544
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.663801640631139,
+          "unsigned_flux_one_hemisphere": 8.050447584739889
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000595.npz",
+      "time": 10.995574287564276,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.017670090195436635,
+          -0.9530769673437332,
+          0.25558715975721524
+        ],
+        "magnitude": 0.9869107021414868,
+        "phase_error_deg": -1.062144663462828,
+        "inclination_deg": 74.99063118148786,
+        "relative_fit_residual": 0.02625964112683063
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 1.9278925661110635e-06,
+        "p95_abs_divB_RLC_over_B": 2.6247641177464173e-06,
+        "h_times_relative_rms_divB": 1.1925108656357052e-07,
+        "p95_abs_EB_over_EBmag": 3.047966872655829e-08,
+        "max_abs_EB_over_EBmag": 8.084393692993888e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.525577310001787e-05,
+          "div_rms_over_B_RLC": 4.337932924066753e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.026586475114655e-06,
+          "div_rms_over_B_RLC": 4.072041254354042e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0920531690615553e-06,
+          "div_rms_over_B_RLC": 3.924811925455775e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.640143178414446e-07,
+          "div_rms_over_B_RLC": 3.933294765447296e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 3.1619826224166075e-06,
+          "div_rms_over_B_RLC": 3.6344952778907697e-06
+        },
+        "2<r<2.5": {
+          "div_rms": 0.001377633889582998,
+          "div_rms_over_B_RLC": 0.0021564230328041706
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.7138739878277867,
+          "unsigned_flux_one_hemisphere": 9.15170422675165
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.6996693448695375,
+          "unsigned_flux_one_hemisphere": 8.357445170806972
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.6808832729721621,
+          "unsigned_flux_one_hemisphere": 8.11806483727379
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000680.npz",
+      "time": 12.566370614359172,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.9511325853284125,
+          -0.02000778788484818,
+          0.2551313400396543
+        ],
+        "magnitude": 0.9849596474576939,
+        "phase_error_deg": -1.2050820004664395,
+        "inclination_deg": 74.9876525017179,
+        "relative_fit_residual": 0.029958276207553536
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 4.0314290413079565e-06,
+        "p95_abs_divB_RLC_over_B": 5.225644859975552e-06,
+        "h_times_relative_rms_divB": 2.4936674482317167e-07,
+        "p95_abs_EB_over_EBmag": 3.0652483483553554e-08,
+        "max_abs_EB_over_EBmag": 8.727249866706535e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.3539434199462713e-05,
+          "div_rms_over_B_RLC": 4.05072180699753e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.93990296643547e-06,
+          "div_rms_over_B_RLC": 3.9806811752667356e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.1206002283147114e-06,
+          "div_rms_over_B_RLC": 4.0116431386920033e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.637096434842274e-07,
+          "div_rms_over_B_RLC": 3.9146057478693914e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 6.720195659335878e-06,
+          "div_rms_over_B_RLC": 7.68366397958697e-06
+        },
+        "2<r<2.5": {
+          "div_rms": 0.0013762355554011896,
+          "div_rms_over_B_RLC": 0.0021365491965798745
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.7280509832480497,
+          "unsigned_flux_one_hemisphere": 9.188484391814093
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.7134610382991087,
+          "unsigned_flux_one_hemisphere": 8.368139475656918
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.6939451998295734,
+          "unsigned_flux_one_hemisphere": 8.079120606545265
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000765.npz",
+      "time": 14.137166941154069,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.022308334922129032,
+          0.9491921828387627,
+          0.2546804419809638
+        ],
+        "magnitude": 0.9830186108598514,
+        "phase_error_deg": -1.3463429226741077,
+        "inclination_deg": 74.98452157946139,
+        "relative_fit_residual": 0.033623922082864646
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 6.754226591223052e-06,
+        "p95_abs_divB_RLC_over_B": 1.1422951410302336e-05,
+        "h_times_relative_rms_divB": 4.1778721182822853e-07,
+        "p95_abs_EB_over_EBmag": 3.0544296678322236e-08,
+        "max_abs_EB_over_EBmag": 7.855736690567204e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.112456537691318e-05,
+          "div_rms_over_B_RLC": 3.641918451444796e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.965205922711748e-06,
+          "div_rms_over_B_RLC": 4.002468017723412e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.0864662388014798e-06,
+          "div_rms_over_B_RLC": 3.875574023321756e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.670725853566708e-07,
+          "div_rms_over_B_RLC": 3.9228695209343735e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.1326449814112125e-05,
+          "div_rms_over_B_RLC": 1.29043745663366e-05
+        },
+        "2<r<2.5": {
+          "div_rms": 0.0010947532431290691,
+          "div_rms_over_B_RLC": 0.0016968606854243405
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.74041524196531,
+          "unsigned_flux_one_hemisphere": 9.221766778335574
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.7273706757672045,
+          "unsigned_flux_one_hemisphere": 8.388641085434715
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.7073416900333485,
+          "unsigned_flux_one_hemisphere": 8.064336743422773
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000850.npz",
+      "time": 15.707963267948966,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.9472570579628482,
+          0.02457335237541809,
+          0.2542344840358527
+        ],
+        "magnitude": 0.9810886587767558,
+        "phase_error_deg": -1.4860102241689346,
+        "inclination_deg": 74.98125319431547,
+        "relative_fit_residual": 0.037252993898602
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 8.626638247931906e-06,
+        "p95_abs_divB_RLC_over_B": 1.8364085071842985e-05,
+        "h_times_relative_rms_divB": 5.336064895627964e-07,
+        "p95_abs_EB_over_EBmag": 3.055689835250847e-08,
+        "max_abs_EB_over_EBmag": 8.179558446814385e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.338830478212853e-05,
+          "div_rms_over_B_RLC": 4.039603497475161e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.929648092311737e-06,
+          "div_rms_over_B_RLC": 3.9628432430647723e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.1056941610705726e-06,
+          "div_rms_over_B_RLC": 3.931124464934477e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.72050052165409e-07,
+          "div_rms_over_B_RLC": 3.944801282694605e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.4514191232332316e-05,
+          "div_rms_over_B_RLC": 1.6506332242167217e-05
+        },
+        "2<r<2.5": {
+          "div_rms": 0.0007778511472854263,
+          "div_rms_over_B_RLC": 0.0012077184916185653
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.7519030187015896,
+          "unsigned_flux_one_hemisphere": 9.254163287611947
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.740143100227184,
+          "unsigned_flux_one_hemisphere": 8.427076016164001
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.7223400393865058,
+          "unsigned_flux_one_hemisphere": 8.13331710170326
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-000935.npz",
+      "time": 17.27875959474386,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          -0.026804170163089277,
+          -0.945328136208667,
+          0.25379342970991486
+        ],
+        "magnitude": 0.9791704926159721,
+        "phase_error_deg": -1.6241497461973669,
+        "inclination_deg": 74.97785986374971,
+        "relative_fit_residual": 0.040842301877312165
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 9.228950353642235e-06,
+        "p95_abs_divB_RLC_over_B": 2.6980808853212303e-05,
+        "h_times_relative_rms_divB": 5.708629084727136e-07,
+        "p95_abs_EB_over_EBmag": 3.0589265117886656e-08,
+        "max_abs_EB_over_EBmag": 8.230694866799254e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.2284098752789077e-05,
+          "div_rms_over_B_RLC": 3.8558847609088714e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 3.990671262023961e-06,
+          "div_rms_over_B_RLC": 4.020622817894458e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.1077626336658294e-06,
+          "div_rms_over_B_RLC": 3.92632180667149e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.794955121943887e-07,
+          "div_rms_over_B_RLC": 3.983954230191529e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.5578249008882763e-05,
+          "div_rms_over_B_RLC": 1.765587072180123e-05
+        },
+        "2<r<2.5": {
+          "div_rms": 0.001150809749806563,
+          "div_rms_over_B_RLC": 0.0017749006347425773
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.762988061030665,
+          "unsigned_flux_one_hemisphere": 9.284726313405804
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.7507517643006796,
+          "unsigned_flux_one_hemisphere": 8.45691756264446
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.734142810820408,
+          "unsigned_flux_one_hemisphere": 8.192653503746481
+        }
+      ]
+    },
+    {
+      "snapshot": "third_party/coffee-runs/pulsar-a75-n97-3rot-curl-radiative-noglm/snapshot-001020.npz",
+      "time": 18.84955592153876,
+      "source_fit": {
+        "radius_max": 0.35,
+        "moment": [
+          0.9434057055294711,
+          -0.02900193568373055,
+          0.2533572535870387
+        ],
+        "magnitude": 0.9772642096404275,
+        "phase_error_deg": -1.760817575152578,
+        "inclination_deg": 74.97434404268434,
+        "relative_fit_residual": 0.04439035392720985
+      },
+      "quality": {
+        "shell": [
+          0.75,
+          2.0
+        ],
+        "relative_rms_divB_RLC": 9.206028433810163e-06,
+        "p95_abs_divB_RLC_over_B": 3.0133093411811754e-05,
+        "h_times_relative_rms_divB": 5.694450577614514e-07,
+        "p95_abs_EB_over_EBmag": 3.0716170253588234e-08,
+        "max_abs_EB_over_EBmag": 8.732493054432397e-08,
+        "E_exceeds_B_by_1e_6_fraction": 0.0
+      },
+      "divergence_shells": {
+        "0<r<0.35": {
+          "div_rms": 2.4001886489225817e-05,
+          "div_rms_over_B_RLC": 4.160589660350233e-07
+        },
+        "0.35<r<0.75": {
+          "div_rms": 4.0247413571697934e-06,
+          "div_rms_over_B_RLC": 4.051236032635241e-07
+        },
+        "0.75<r<1": {
+          "div_rms": 1.1075551119400388e-06,
+          "div_rms_over_B_RLC": 3.914303508337826e-07
+        },
+        "1<r<1.5": {
+          "div_rms": 5.873680663482906e-07,
+          "div_rms_over_B_RLC": 4.02582994408686e-07
+        },
+        "1.5<r<2": {
+          "div_rms": 1.5589796690544823e-05,
+          "div_rms_over_B_RLC": 1.7598981790922144e-05
+        },
+        "2<r<2.5": {
+          "div_rms": 0.0017173334818484992,
+          "div_rms_over_B_RLC": 0.002631595204192503
+        }
+      },
+      "luminosity": [
+        {
+          "radius": 1.0,
+          "luminosity_mu2_omega4_over_c3": 1.773269989850345,
+          "unsigned_flux_one_hemisphere": 9.310903988289583
+        },
+        {
+          "radius": 1.5,
+          "luminosity_mu2_omega4_over_c3": 1.7603594020669904,
+          "unsigned_flux_one_hemisphere": 8.457685664052555
+        },
+        {
+          "radius": 2.0,
+          "luminosity_mu2_omega4_over_c3": 1.7418800181528382,
+          "unsigned_flux_one_hemisphere": 8.14724087242247
+        }
+      ]
+    }
+  ],
+  "source_fit_method": "Least-squares fit to the actual finite C4 dipole D4-curl basis at native grid nodes r<0.35; fitted moment need not imply a globally dipolar field."
+}

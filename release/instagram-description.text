@@ -1,0 +1,33 @@
+NO.002 — THE PULSAR
+
+Vela has a serious sense of rhythm: one turn every 89.371 milliseconds, about 11 times a second
+
+Around this spinning stellar remnant, electric and magnetic fields guide particles moving close to light speed. Curved trajectories let them shed energy as gamma rays. Rotation, beaming and light-travel delays shape the pulses measured at Earth
+
+This original, Vela-informed visualization maps the model's outer emission region in 0.1–100 GeV gamma rays. These invisible photons are translated into illustrative colors. One rotation takes 8 seconds here, repeated four times
+
+The calculation combines a numerical force-free magnetosphere, particle trajectories, prescribed acceleration and curvature-radiation losses. It remains an approximation: the computed pulse shape and spectrum differ from Vela's measurements. The numerical star is enlarged, particles are injected at a finite radius with assumed loading, and one field pattern is rotated rigidly. The scene is an emission map, not a photograph or a validated reconstruction
+
+Studies and data:
+Spitkovsky (2006) — force-free magnetospheres
+https://arxiv.org/abs/astro-ph/0603147
+Kalapotharakos, Harding & Kazanas (2014) — particle motion and pulse formation
+https://arxiv.org/abs/1310.3545
+Barnard et al. (2022) — acceleration and curvature emission
+https://arxiv.org/abs/2111.03405
+Smith et al. (2023), Fermi-LAT 3PC — timing, pulse and spectrum comparisons
+https://arxiv.org/abs/2307.11132
+
+Field solver adapted from COFFEE by Yajie Yuan & Alex Chen and contributors (GPL-2.0)
+https://github.com/fizban007/CoffeeGPU
+
+Visual research reference: Brambilla et al. (2018) and NASA Goddard / Tom Bridgman
+https://arxiv.org/abs/1710.03536
+https://svs.gsfc.nasa.gov/13058/
+Original rendering; no NASA footage used
+
+Code, model assumptions and reproducible v1 package:
+https://github.com/Loganpis/sideratlas-pulsar
+
+@sideratlas
+#Pulsar #VelaPulsar #NeutronStar #Astrophysics #ScientificVisualization
