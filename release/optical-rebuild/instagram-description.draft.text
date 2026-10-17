@@ -1,0 +1,43 @@
+NO.002 — THE PULSAR
+@sideratlas
+Vela optical reconstruction — research rebuild
+Visible band: 400–700 nm · Final simulation and Reel not yet available
+
+Rotating electromagnetic fields accelerate electron–positron plasma
+Optical radiation depends on particle energies and pitch angles
+Relativistic beaming changes the light directed toward the observer
+Light-travel time changes when photons arrive
+A physical surface atmosphere is separate from the magnetosphere
+t_obs = t − n·r/c (far observer, flat spacetime)
+Iν,obs = g³ Iν,em (surface frequency-intensity invariant)
+R_LC = cP/(2π) ≈ 4,264 km; P ≈ 0.08937 s
+Fν ∝ ν^(−α); measured optical α = −0.04 ± 0.04
+
+CALCULATED AND CHECKED
+Coupled 3D PIC foundation: 16³ cells, 16,384 macroparticles, 55 steps
+Upstream particle-pusher, deposition and Maxwell checks
+Separate radiation, retardation and spectral-color kernels
+Atmosphere input coverage and surface redshift relations
+These checks are not a Vela optical reconstruction
+
+ASSUMED / STILL REQUIRED
+Physical 3D pulsar data and demonstrated kinetic convergence
+Pair supply, physical energies, pitch-angle evolution and radiation reaction
+Optical intensity toward the camera and photon arrival bins
+Angle-dependent optical atmosphere and surface ray bending
+Independent optical flux and pulse comparisons
+One physical image scale; full 1080×1920 canvas; fixed exposure
+No schematic cones, glowing field lines or species-colored light
+No blackbody substituted for a magnetized optical atmosphere
+The earlier illustration is not a literal optical camera image
+
+SOURCES
+Brambilla et al. 2018; Kalapotharakos et al. 2018
+Harding et al. 2018; Mignani, Zharikov & Caraveo 2007
+Pavlov et al. 2001; Ho et al. 2008; Ho 2014
+Ofengeim & Zyuzin 2018; Watt & O’Shea 2024
+Entity contributors; Kokkos; CIE 1931 standard observer
+NASA / Goddard research reference: https://svs.gsfc.nasa.gov/13058/
+No NASA footage or code used
+Full citations, equations, limitations and verification in the repository
+The code for this research rebuild is to be found at https://github.com/Loganpis/sideratlas-pulsar

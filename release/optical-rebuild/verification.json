@@ -1,0 +1,100 @@
+{
+  "scope": "Module and toolchain verification, not a Vela production run, optical camera solver or atmosphere reconstruction",
+  "python_suite": {
+    "passed": 190,
+    "warnings": 8,
+    "seconds": 14.12,
+    "command": "PYTHONPATH=src python -m pytest -q",
+    "warning_context": "Inherited catalog FITS embedded checksum and datasum warnings, documented in original release notes"
+  },
+  "new_module_tests": {
+    "radiation": 15,
+    "atmosphere": 10,
+    "spectral_color": 11
+  },
+  "upstream_native_checks_passed": 4,
+  "coupled_pic_smoke_run": {
+    "dimension": 3,
+    "mesh": [
+      16,
+      16,
+      16
+    ],
+    "macroparticles": 16384,
+    "steps": 55,
+    "pulsar": false,
+    "visible_light": false
+  },
+  "production_vela_dataset": false,
+  "optical_movie": false,
+  "surface_atmosphere_reconstruction": false,
+  "caption_characters": 2083,
+  "files": {
+    "audit_optical_rebuild.py": {
+      "sha256": "fa8a84ed530b3ee70976af3f72a3f95186f3cba055bfd97562b9eb7ad3082b5e",
+      "bytes": 6300
+    },
+    "src/pulsar/optical_radiation.py": {
+      "sha256": "107663ee5149255158193a2b037655ab574b9413fe04f7d111df550f6c831b8f",
+      "bytes": 17607
+    },
+    "src/pulsar/atmosphere_inputs.py": {
+      "sha256": "067dc81db6102394ed932877f6ac39e673a25da2ced0aa3b616692bab0a9279a",
+      "bytes": 15168
+    },
+    "src/pulsar/optical_color.py": {
+      "sha256": "6d7e09042d8375fb48aa8a8b40f50e96636644ce333f116915e92215c50b0d0b",
+      "bytes": 10774
+    },
+    "tests/test_optical_radiation.py": {
+      "sha256": "a8f085a638d1da88d7fa922f881ad891b39c7d1ce6c13d2e8570d4b915fdc1e5",
+      "bytes": 11855
+    },
+    "tests/test_atmosphere_inputs.py": {
+      "sha256": "b575022da86679cffa6b6cf1a3a4add88be90bcdf760e8e7bd601f56b17266f5",
+      "bytes": 13157
+    },
+    "tests/test_optical_color.py": {
+      "sha256": "948a4a552afbdeef8c5c9aee40431d7cde051910a3ef987c007875a78516e33f",
+      "bytes": 7691
+    },
+    "data/atmosphere/provenance.json": {
+      "sha256": "22f74ce269ceb6cb43dddd08251138cdad1ad7fd0d0d46912394ca1aae8e038d",
+      "bytes": 4007
+    },
+    "outputs/entity-pic-benchmark/verification.json": {
+      "sha256": "704d7f6f58232a8c784c89972caf028238c1bb708882002c0699aa6b34c628f5",
+      "bytes": 3667
+    },
+    "outputs/optical-rebuild/atmosphere-coverage-audit.json": {
+      "sha256": "1c73f854bd53303a705337cb35a9b432b178caed1ae726dfc7405a0b97a011f1",
+      "bytes": 8218
+    },
+    "release/optical-rebuild/instagram-description.draft.text": {
+      "sha256": "76b4e5344df351274b2e6b53056514f35f475daba018c3d66530cb08d179f6c5",
+      "bytes": 2118
+    },
+    "data/color/CIE_xyz_1931_2deg.csv": {
+      "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "bytes": 24021
+    },
+    "data/color/CIE_xyz_1931_2deg.csv_metadata.json": {
+      "sha256": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8",
+      "bytes": 3787
+    },
+    "research/pic-benchmark/build_local_benchmark.py": {
+      "sha256": "a0a7009e89100227eea86ad224efee3715cd6a74d0f00d648efb8360cf725de4",
+      "bytes": 8474
+    },
+    "research/pic-benchmark/README.md": {
+      "sha256": "e8a0fc100f513af4e03caaa3ce5695660d450b4472d8dbbedd4d4320e017a76c",
+      "bytes": 3370
+    },
+    "outputs/entity-pic-benchmark/build-20261017T094822Z-j79q4h7h.log": {
+      "sha256": "26d525fb0a081d3140495a08e79de2b2f30e3aea70ee4f24436e84d5856d098f",
+      "bytes": 8875
+    }
+  },
+  "native_builder_checked": true,
+  "native_builder_result": "Succeeded with pinned clean sources; existing benchmark executable unchanged"
+}

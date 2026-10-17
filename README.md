@@ -1,3 +1,16 @@
+# Vela visible-light reconstruction — research rebuild
+
+**The requested physical optical Reel is not yet available.** The previously released movie below is an approximate emission-map illustration, not a physical visible-light camera image
+
+This branch adds a real CPU PIC foundation check, independently tested radiation and arrival-time kernels, atmosphere-input verification, CIE spectral color integration, and a full 1080 × 1920 camera specification. It does not claim a Vela production simulation or atmosphere fit
+
+- [Current results and missing production inputs](release/optical-rebuild/README.md)
+- [Measured native PIC benchmark](outputs/entity-pic-benchmark/verification.json)
+- [Requested-format caption draft](release/optical-rebuild/instagram-description.draft.text)
+- [Machine-readable production status](release/optical-rebuild/status.json)
+
+## Previous v1 illustration
+
 # @sideratlas · NO.002 · THE PULSAR
 
 An original **Vela-informed scientific visualization**, presented as a 32-second, full-frame Instagram Reel. Calculated outer-magnetosphere curvature emission rotates across a black canvas, with only `@sideratlas`, `THE PULSAR` and `NO.002` over the image

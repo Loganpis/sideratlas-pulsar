@@ -9,3 +9,10 @@ third_party/coffee-build*/
 third_party/coffee-runs/
 third_party/coffee-portable/bin/
 native-work/
+
+# Optical research dependencies: fetch pinned sources with the benchmark builder
+third_party/entity-research/
+third_party/kokkos-research/
+third_party/entity-build-research/
+third_party/aperture4-research/
+outputs/entity-pic-benchmark/sideratlas-pic-smoke-3d/

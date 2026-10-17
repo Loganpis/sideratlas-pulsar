@@ -1,0 +1,309 @@
+{
+  "source_sha256": "848ec0c597e0a64627787e7783ba797cf43f52abc01fd406a017e1e2b89dffff",
+  "source_bytes": 1301760,
+  "expected_hash_verified": true,
+  "energy_unit": "keV",
+  "requested_wavelength_range_nm": [
+    400.0,
+    700.0
+  ],
+  "requested_energy_range_kev": [
+    0.0017712028347600037,
+    0.0030996049608300064
+  ],
+  "any_model_covers_requested_wavelengths": false,
+  "local_angledependent_specific_intensity_available": false,
+  "quantity": "NSMAXG spectral flux, not local specific intensity",
+  "models": [
+    {
+      "model_number": 1000,
+      "name": "HB1000ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1060,
+      "name": "HB1060ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1085,
+      "name": "HB1085ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1100,
+      "name": "HB1100ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1170,
+      "name": "HB1170ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1185,
+      "name": "HB1185ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1195,
+      "name": "HB1195ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1200,
+      "name": "HB1200ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1230,
+      "name": "HB1230ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1260,
+      "name": "HB1260ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1280,
+      "name": "HB1285ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1300,
+      "name": "HB1300ThB00",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 233,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1330,
+      "name": "HB1330ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1350,
+      "name": "HB1350ThB00g1438",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1211,
+      "name": "HB1210ThB00g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 1281,
+      "name": "HB1285ThB00g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 12006,
+      "name": "CB1200ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 13006,
+      "name": "CB1300ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 12008,
+      "name": "OB1200ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 13008,
+      "name": "OB1300ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 12010,
+      "name": "NeB1200ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 13010,
+      "name": "NeB1300ThB00g1438",
+      "minimum_energy_kev": 0.049830999225378036,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 922,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 123100,
+      "name": "HB1226Thm00g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 123190,
+      "name": "HB1226Thm90g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 130100,
+      "name": "HB1300Thm00g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    },
+    {
+      "model_number": 130190,
+      "name": "HB1300Thm90g1420",
+      "minimum_energy_kev": 0.04786299914121628,
+      "maximum_energy_kev": 10.0,
+      "energy_samples": 117,
+      "spectral_columns": [
+        "FLUX"
+      ],
+      "requested_wavelengths_covered": false
+    }
+  ],
+  "source_url": "https://heasarc.gsfc.nasa.gov/FTP/software/xspec/spectral/modelData/nsmaxg.fits",
+  "model_count": 26,
+  "models_covering_requested_wavelengths": 0,
+  "audit_scope": "Inspection of actual official FITS bytes and spectral coverage; no atmosphere solution, interpolation or scientific validation"
+}

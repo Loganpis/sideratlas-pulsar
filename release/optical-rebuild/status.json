@@ -1,0 +1,89 @@
+{
+  "status": "production_inputs_missing",
+  "scope": "Prerequisite and provenance audit, not a physical validation or rendering certificate",
+  "requested_product": "Vela optical camera reconstruction with a physical surface atmosphere, full-frame Reel and published source",
+  "local_pic_foundation_checks_passed": true,
+  "local_pic_benchmark_is_production_input": false,
+  "production_vela_simulation_available": false,
+  "optical_camera_movie_available": false,
+  "validated_vela_atmosphere_available": false,
+  "publish_as_completed_vela_reconstruction": false,
+  "previous_illustration_qualifies_as_optical_camera": false,
+  "required_evidence": {
+    "pulsar_pic_dataset": {
+      "requirement": "An evolved oblique 3D pulsar PIC dataset with particle/field feedback, IDs, charges, weights, times, momenta and physical normalization",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "kinetic_convergence": {
+      "requirement": "Grid, timestep, particle number, domain, source-size and runtime convergence for the target kinetic observables",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "physical_optical_pairs": {
+      "requirement": "Physical pair energies, pitch angles and their evolution; a justified mapping from any reduced PIC scales",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "directional_optical_radiation": {
+      "requirement": "Observer-angle-dependent 400\u2013700 nm emission, retarded arrival times and independently checked radiation normalization",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "optical_surface_atmosphere": {
+      "requirement": "Optical, angle-dependent magnetized atmosphere intensities with supported mass/radius/temperature/composition; no X-ray-table extrapolation",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "surface_ray_transport": {
+      "requirement": "Surface gravitational redshift, ray bending, occultation and consistent matching to the outer camera",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "vela_comparison": {
+      "requirement": "Separate recorded optical spectrum, normalization and pulse comparisons, identifying fitted and independently assessed data",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    },
+    "full_frame_camera": {
+      "requirement": "A calculated 1080\u00d71920 optical image sequence with a single physical pixel scale, no letterboxing, fixed recorded exposure and no schematic emitters",
+      "artifact_present_and_hashed": false,
+      "scientific_review": "not_reviewed"
+    }
+  },
+  "missing_requirements": [
+    "pulsar_pic_dataset",
+    "kinetic_convergence",
+    "physical_optical_pairs",
+    "directional_optical_radiation",
+    "optical_surface_atmosphere",
+    "surface_ray_transport",
+    "vela_comparison",
+    "full_frame_camera"
+  ],
+  "camera_delivery_contract": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "target_duration_seconds": 32,
+    "wavelength_band_nm": [
+      400,
+      700
+    ],
+    "fill_entire_canvas": true,
+    "letterboxing": false,
+    "spatial_scale": "One physical pixel scale shared by star and magnetosphere; crop based on calculated emission, no independent stellar enlargement",
+    "overlays": [
+      "@sideratlas",
+      "THE PULSAR",
+      "NO.002"
+    ],
+    "bottom_text": false,
+    "optical_layers": "Calculated photon radiance only; no luminous field guides, species-colored tracks, artificial cones or arbitrary surface shading",
+    "color": "CIE 1931 spectral integration; fixed recorded exposure to sRGB, then color-managed Rec.709 export",
+    "timeline": "Must record actual simulated physical duration and slowdown; any periodic construction must be disclosed"
+  },
+  "known_atmosphere_limitation": "Official NSMAXG hydrogen grids start at 0.047863 keV (~25.9 nm), outside 400\u2013700 nm, and do not contain the required local angle-dependent optical intensity",
+  "benchmark_evidence": "outputs/entity-pic-benchmark/verification.json",
+  "benchmark_sha256": "704d7f6f58232a8c784c89972caf028238c1bb708882002c0699aa6b34c628f5"
+}
