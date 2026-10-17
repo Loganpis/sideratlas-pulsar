@@ -167,3 +167,88 @@ a continuous camera approach, but cannot simultaneously make the star large
 and keep the complete magnetosphere at a common physical scale. A visible
 star enlargement must be disclosed if selected; it cannot be presented as an
 optical camera calculation.
+
+## Follow-up availability audit: author archives and runnable source
+
+The user subsequently specified that both magnetospheric plasma and the
+stellar surface atmosphere must be calculated locally. This bounded follow-up
+looked for an actual magnetized optical atmosphere input or runnable solver;
+it did not relax that requirement.
+
+### Ioffe electronic atmosphere archive
+
+The [author archive](https://www.ioffe.ru/astro/Stars/) is reachable through its
+legacy read-only CGI entry form. Its [model description](https://www.ioffe.ru/astro/Stars/data1.html)
+explicitly states that the publicly presented models are **nonmagnetic** pure
+H, He and Fe. The [file-format description](https://www.ioffe.ru/astro/Stars/data3.html)
+does supply angle-dependent emergent intensity files (`I*T**G***.data.gz`),
+but this does not overcome the field restriction. The inspected selection
+inventory has composition, temperature and gravity axes, with no B axis.
+These files therefore cannot be relabeled as a Vela-field atmosphere.
+
+### Ioffe magnetic equation-of-state archive
+
+[Potekhin's public magnetic hydrogen tables](https://www.ioffe.ru/astro/NSG/Hmagnet/hmagtab.html)
+cover relevant magnetic field and temperature ranges and include partial
+ionization. Their documented 14 columns supply thermodynamics, species
+fractions and two **Rosseland mean** opacities, parallel and perpendicular to
+the field. Those means contain no wavelength axis and cannot supply
+`I_lambda(mu,phi)` in the visible band. The interpolation program interpolates
+these same tables; it is not the coupled frequency-dependent atmosphere
+solver. Published monochromatic-opacity calculations are not equivalent to
+a public downloadable opacity grid with verified axes.
+
+### X-PSI and McPHAC
+
+[X-PSI's surface-radiation tutorial](https://xpsi-group.github.io/xpsi/Surface_radiation_field_tools.html)
+provides public NSX angular-intensity tables and loading tools, but explicitly
+describes the demonstrated H/He atmospheres as **nonmagnetic**. Its general
+ability to accept user-defined atmosphere tables does not supply the missing
+magnetic input. [McPHAC](https://github.com/McPHAC/McPHAC) is a useful public
+nonmagnetic hydrogen atmosphere benchmark, not a direct replacement for
+Vela's strongly magnetized surface. Neither was adopted as a Vela atmosphere.
+
+### Public magnetic Julia prototype: an experimental route, not a validated input
+
+[tobiasosborne/neutronstars](https://github.com/tobiasosborne/neutronstars)
+contains a public two-mode magnetic transfer implementation. Inspection of
+its [magnetic atmosphere module](https://github.com/tobiasosborne/neutronstars/blob/master/src/atmosphere/magnetic_atmosphere.jl)
+and [visible rendering script](https://github.com/tobiasosborne/neutronstars/blob/master/scripts/render_rxj1856_visible_magnetic_atmosphere.jl)
+identified reasons not to adopt it as the requested rigorous surface model:
+
+- The visible example uses **fully ionized** H and a different neutron star
+- The example deliberately uses `B=1e12 G`; its own comments say a roughly
+  `3e12 G` case does not satisfy the local temperature-correction tolerance
+- The solver documents a heuristic global temperature/flux correction and
+  approximate mode-local scattering rather than full inter-mode redistribution
+- Output intensity has frequency, emission-cosine and mode axes; an arbitrary
+  inclined magnetic field additionally needs verified azimuthal dependence
+
+Those findings describe the inspected version, not every possible future
+version. The code was read, not executed or incorporated. Its existence is a
+possible research starting point, not evidence of agreement with Vela or a
+ready atmosphere component. Extending and independently validating such a
+solver would itself be substantial new atmosphere research.
+
+### Result and next concrete requirement
+
+**No verified public atmosphere table or author-provided solver was found that
+currently satisfies all required optical coverage, magnetic field, angular
+intensity and partial-ionization requirements.** This is an availability result
+of the inspected sources, not a statement that suitable author data cannot
+exist.
+
+A viable input would be an author-supplied or independently solved grid at the
+chosen `T_eff, B, Theta_B, g`, extending at least across the **local**
+330.3–578.1 nm band for the current `g=0.8258073` and observer 400–700 nm.
+The calculation also needs surrounding frequencies sufficient to enforce
+bolometric radiative equilibrium; solving only this narrow optical interval
+cannot determine a consistent atmosphere temperature structure. Coupled
+polarization modes, partial ionization, hydrostatic equilibrium, transfer
+boundary conditions and frequency/depth/angle convergence must be checked.
+An external-data request would require explicit user authorization before
+contacting authors; no messages were sent.
+
+The optical continuum observations may bound an additional thermal component,
+but such a bound **does not meet** the user's requirement to calculate the
+stellar atmosphere. A blackbody or Rayleigh–Jeans placeholder remains excluded.

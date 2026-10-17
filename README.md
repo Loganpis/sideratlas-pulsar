@@ -2,10 +2,12 @@
 
 **The requested physical optical Reel is not yet available.** The previously released movie below is an approximate emission-map illustration, not a physical visible-light camera image
 
-This branch adds a real CPU PIC foundation check, independently tested radiation and arrival-time kernels, atmosphere-input verification, CIE spectral color integration, and a full 1080 × 1920 camera specification. It does not claim a Vela production simulation or atmosphere fit
+This branch adds a real local coupled 3D pulsar PIC prototype and measured numerical limits, independently tested radiation and arrival-time kernels, atmosphere-input verification, CIE spectral color integration, and a full 1080 × 1920 camera specification. Both plasma and the thin stellar atmosphere remain in scope. It does not claim a Vela production simulation or atmosphere fit
 
 - [Current results and missing production inputs](release/optical-rebuild/README.md)
-- [Measured native PIC benchmark](outputs/entity-pic-benchmark/verification.json)
+- [Local pulsar PIC source, reproduction and limits](research/pic-local/README.md)
+- [Measured native PIC foundation benchmark](outputs/entity-pic-benchmark/verification.json)
+- [Local surface-atmosphere solver plan](research/ATMOSPHERE-SOLVER-PLAN.md)
 - [Requested-format caption draft](release/optical-rebuild/instagram-description.draft.text)
 - [Machine-readable production status](release/optical-rebuild/status.json)
 

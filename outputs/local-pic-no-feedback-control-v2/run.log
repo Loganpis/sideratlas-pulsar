@@ -1,0 +1,173 @@
+WARN  : No fields output specified
+WARN  : see the `*.err` file for more details
+
+
+╔══════════════════════════════════════════════════════════╗
+║ Entity v1.5.0                                            ║
+╚══════════════════════════════════════════════════════════╝
+
+    Backend
+    - Build hash: 62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3
+    - CXX: Clang/LLVM 21.0.0 (clang-2100.3.34.2) [C++20]
+    - MPI: OFF
+    - Kokkos: 5.2.1
+    - ADIOS2: OFF
+    - Precision: double
+    - Debug: OFF
+
+    Compilation flags
+    - SINGLE_PRECISION: OFF
+    - OUTPUT_ENABLED: OFF
+    - DEBUG: OFF
+    - CUDA_ENABLED: OFF
+    - HIP_ENABLED: OFF
+    - DEVICE_ENABLED: OFF
+    - MPI_ENABLED: OFF
+    - GPU_AWARE_MPI: OFF
+    - TILED_DEPOSIT: OFF
+
+    Configuration
+    - Name: local-oblique-pulsar-no-feedback-control
+    - Engine: srpic
+    - Metric: minkowski
+    - Deposit: zigzag
+    - Timestep [dt]: 2.105e-02
+    - Runtime: 8.000e-01 [38 steps]
+
+    Global domain
+    - Resolution: [48, 48, 48]
+    - Extent: [{-2.5, 2.5}, {-2.5, 2.5}, {-2.5, 2.5}]
+    - Fiducial cell size [dx0]: 6.014e-02
+    - Boundary conditions:
+      - Fields: [{match, match}, {match, match}, {match, match}]
+      - Particles: [{absorb, absorb}, {absorb, absorb}, {absorb, absorb}]
+    - Domain decomposition: [1, 1, 1] [1 total]
+
+    Nominal parameters
+    - Particles per cell [ppc0]: 4.0
+    - Larmor radius [larmor0]: 5.000e-02 [0.831 dx0]
+    - Larmor frequency [omegaB0 * dt]: 4.210e-01
+    - Skin depth [skindepth0]: 2.000e-01 [3.326 dx0]
+    - Plasma frequency [omp0 * dt]: 1.052e-01
+    - Magnetization [sigma0]: 1.600e+01
+
+    Problem generator
+      - Name: pic-local
+      - Methods defined:
+        - InitFlds: ON
+        - InitPrtls: ON
+        - CustomPostStep: ON
+        - ExternalFields: OFF
+        - ext_current: OFF
+        - AtmFields: OFF
+        - MatchFields: ON
+        - MatchFieldsInX1: OFF
+        - MatchFieldsInX2: OFF
+        - MatchFieldsInX3: OFF
+        - FixFieldsConst: OFF
+        - EmissionPolicy: OFF
+        - CustomFieldOutput: OFF
+        - CustomStatOutput: OFF
+
+    Particles
+    - Species #1:
+      - Label: electron
+      - Mass: 1.0
+      - Charge: -1.0
+      - Max #: 200000 [per domain]
+      - Clearing interval: 20
+      - Spatial sorting interval: OFF
+      - Pusher: boris
+      - Radiative drag: none
+      - Emission policy: none
+      - Tracking: ON
+      - # of real-value payloads: 0
+      - # of integer-value payloads: 1
+    - Species #2:
+      - Label: positron
+      - Mass: 1.0
+      - Charge: 1.0
+      - Max #: 200000 [per domain]
+      - Clearing interval: 20
+      - Spatial sorting interval: OFF
+      - Pusher: boris
+      - Radiative drag: none
+      - Emission policy: none
+      - Tracking: ON
+      - # of real-value payloads: 0
+      - # of integer-value payloads: 1
+
+
+    Domains
+
+    - Domain #0:
+      - Resolution: [48, 48, 48]
+      - Extent: [{-2.5, 2.5}, {-2.5, 2.5}, {-2.5, 2.5}]
+      - Boundary conditions:
+                [flds]      [prtl]      [neighbor]
+        - - - : match       absorb      .         
+        - - 0 : match       absorb      .         
+        - - + : match       absorb      .         
+        - 0 - : match       absorb      .         
+        - 0 0 : match       absorb      .         
+        - 0 + : match       absorb      .         
+        - + - : match       absorb      .         
+        - + 0 : match       absorb      .         
+        - + + : match       absorb      .         
+        0 - - : match       absorb      .         
+        0 - 0 : match       absorb      .         
+        0 - + : match       absorb      .         
+        0 0 - : match       absorb      .         
+        0 0 + : match       absorb      .         
+        0 + - : match       absorb      .         
+        0 + 0 : match       absorb      .         
+        0 + + : match       absorb      .         
+        + - - : match       absorb      .         
+        + - 0 : match       absorb      .         
+        + - + : match       absorb      .         
+        + 0 - : match       absorb      .         
+        + 0 0 : match       absorb      .         
+        + 0 + : match       absorb      .         
+        + + - : match       absorb      .         
+        + + 0 : match       absorb      .         
+        + + + : match       absorb      .         
+      - Memory footprint:
+        - Fields: 19.31 MB
+        - Particles:
+          - Species #1 (electron): 16.40 MB
+          - Species #2 (positron): 16.40 MB
+
+
+
+Step: 19........................[of 38]
+Time: 0.3999....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications............605.00 µs      1%   0.23 µs : 4.30 ns
+  CurrentDeposit..............0.00 ns      0%   0.00 ns : 0.00 ns
+  CurrentFiltering............0.00 ns      0%   0.00 ns : 0.00 ns
+  Custom.....................22.23 ms     63%   8.27 µs : 0.16 µs
+  FieldBoundaries.............6.57 ms     18%   2.44 µs : 0.05 µs
+  FieldSolver.................4.98 ms     14%   1.85 µs : 0.04 µs
+  Injector....................0.00 ns      0%   0.00 ns : 0.00 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher............501.00 µs      1%   0.19 µs : 3.56 ns
+Total                        34.89 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........1344      0%
+  species  2 (positron)..........1344      0%
+
+Timestep duration: 15ms 365µs
+Remaining time: 291ms 935µs
+Elapsed time: 307ms 358µs
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                   ]  50.00%
+................................................................................
+
+
+

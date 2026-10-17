@@ -1,0 +1,57 @@
+[simulation]
+name = "local-oblique-pulsar"
+engine = "srpic"
+runtime = 6.683185307179587
+[grid]
+resolution = [48, 48, 48]
+extent = [[-2.5, 2.5], [-2.5, 2.5], [-2.5, 2.5]]
+[grid.metric]
+metric = "minkowski"
+[grid.boundaries]
+fields = [["MATCH", "MATCH"], ["MATCH", "MATCH"], ["MATCH", "MATCH"]]
+particles = [["ABSORB", "ABSORB"], ["ABSORB", "ABSORB"], ["ABSORB", "ABSORB"]]
+[grid.boundaries.match]
+ds = 0.5
+[grid.boundaries.absorb]
+ds = 0.2
+[scales]
+larmor0 = 0.05
+skindepth0 = 0.2
+[algorithms]
+current_filters = 0
+[algorithms.timestep]
+CFL = 0.35
+[particles]
+ppc0 = 4.0
+use_weights = false
+clear_interval = 20
+[[particles.species]]
+label = "electron"
+mass = 1.0
+charge = -1.0
+maxnpart = 2e5
+pusher = "Boris"
+tracking = true
+[[particles.species]]
+label = "positron"
+mass = 1.0
+charge = 1.0
+maxnpart = 2e5
+pusher = "Boris"
+tracking = true
+[setup]
+star_radius = 0.5
+polar_field = 1.0
+inclination_deg = 75.0
+omega = 1.0
+spinup_time = 0.8
+pairs_per_step = 64
+radial_speed = 0.2
+snapshot_interval = 20
+output_directory = "native"
+[diagnostics]
+interval = 20
+colored_stdout = false
+log_level = "VERBOSE"
+[checkpoint]
+keep = 0

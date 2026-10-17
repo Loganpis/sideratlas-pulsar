@@ -12,6 +12,7 @@ dependencies = ["numpy>=1.25", "matplotlib>=3.8", "astropy>=6", "scipy>=1.12"]
 [project.optional-dependencies]
 coffee = ["h5py>=3.10"]
 video = ["Pillow>=10"]
+test = ["pytest>=7.4"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

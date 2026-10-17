@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Record optical production prerequisites without promoting tests into physics.
 
-This does not render an image or certify a Vela model. Local kernel checks and
-a periodic pair-plasma smoke run are deliberately separate from production
-data, optical emissivity, a stellar atmosphere and observational validation.
+This does not render an image or certify a Vela model. Local kernel checks,
+a periodic pair-plasma smoke run and a reduced oblique pulsar prototype are
+separate from physical Vela data, emissivity and a stellar atmosphere.
 """
 from pathlib import Path
 import argparse
@@ -61,13 +61,27 @@ def main():
                     and benchmark.get('coupled_pic_smoke_test', {}).get('exit_code') == 0
                     and len(benchmark.get('upstream_kernel_checks', [])) == 4
                     and all(x.get('exit_code') == 0 for x in benchmark.get('upstream_kernel_checks', [])))
+    local_manifest = ROOT/'outputs/pic-local/native-results.json'
+    local_records = {}
+    if local_manifest.exists():
+        local = json.loads(local_manifest.read_text())
+        for relative, record in local.get('files', {}).items():
+            path = (ROOT/relative).resolve()
+            local_records[relative] = bool(path.is_relative_to(ROOT) and path.is_file()
+                                          and sha256(path) == record.get('sha256'))
     available = all(r['artifact_present_and_hashed'] for r in evidence.values())
     report = {
         'status': 'requires_scientific_review' if available else 'production_inputs_missing',
         'scope': 'Prerequisite and provenance audit, not a physical validation or rendering certificate',
         'requested_product': 'Vela optical camera reconstruction with a physical surface atmosphere, full-frame Reel and published source',
+        'requested_computation': 'Local computation',
+        'requested_components': ['Magnetospheric plasma', 'Thin stellar surface atmosphere'],
         'local_pic_foundation_checks_passed': benchmark_ok,
         'local_pic_benchmark_is_production_input': False,
+        'local_reduced_pulsar_evidence_manifest': str(local_manifest.relative_to(ROOT)),
+        'local_reduced_pulsar_artifacts_present_and_hashed': bool(local_records) and all(local_records.values()),
+        'local_reduced_pulsar_file_checks': local_records,
+        'local_reduced_pulsar_is_production_input': False,
         'production_vela_simulation_available': False,
         'optical_camera_movie_available': False,
         'validated_vela_atmosphere_available': False,

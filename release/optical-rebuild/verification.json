@@ -1,16 +1,18 @@
 {
-  "scope": "Module and toolchain verification, not a Vela production run, optical camera solver or atmosphere reconstruction",
+  "scope": "Module, toolchain and reduced local pulsar verification; not a Vela production optical simulation or surface-atmosphere reconstruction",
   "python_suite": {
-    "passed": 190,
+    "passed": 198,
     "warnings": 8,
-    "seconds": 14.12,
+    "seconds": 99.43,
     "command": "PYTHONPATH=src python -m pytest -q",
     "warning_context": "Inherited catalog FITS embedded checksum and datasum warnings, documented in original release notes"
   },
   "new_module_tests": {
     "radiation": 15,
     "atmosphere": 10,
-    "spectral_color": 11
+    "spectral_color": 11,
+    "native_audit": 4,
+    "verified_binary_reuse": 4
   },
   "upstream_native_checks_passed": 4,
   "coupled_pic_smoke_run": {
@@ -28,51 +30,15 @@
   "production_vela_dataset": false,
   "optical_movie": false,
   "surface_atmosphere_reconstruction": false,
-  "caption_characters": 2083,
+  "caption_characters": 2046,
   "files": {
     "audit_optical_rebuild.py": {
-      "sha256": "fa8a84ed530b3ee70976af3f72a3f95186f3cba055bfd97562b9eb7ad3082b5e",
-      "bytes": 6300
-    },
-    "src/pulsar/optical_radiation.py": {
-      "sha256": "107663ee5149255158193a2b037655ab574b9413fe04f7d111df550f6c831b8f",
-      "bytes": 17607
-    },
-    "src/pulsar/atmosphere_inputs.py": {
-      "sha256": "067dc81db6102394ed932877f6ac39e673a25da2ced0aa3b616692bab0a9279a",
-      "bytes": 15168
-    },
-    "src/pulsar/optical_color.py": {
-      "sha256": "6d7e09042d8375fb48aa8a8b40f50e96636644ce333f116915e92215c50b0d0b",
-      "bytes": 10774
-    },
-    "tests/test_optical_radiation.py": {
-      "sha256": "a8f085a638d1da88d7fa922f881ad891b39c7d1ce6c13d2e8570d4b915fdc1e5",
-      "bytes": 11855
-    },
-    "tests/test_atmosphere_inputs.py": {
-      "sha256": "b575022da86679cffa6b6cf1a3a4add88be90bcdf760e8e7bd601f56b17266f5",
-      "bytes": 13157
-    },
-    "tests/test_optical_color.py": {
-      "sha256": "948a4a552afbdeef8c5c9aee40431d7cde051910a3ef987c007875a78516e33f",
-      "bytes": 7691
+      "sha256": "7355cab64b64ebb9410d99c5db2b65ba3b2cd1491c9f0a759ad32e70cf3e6872",
+      "bytes": 7218
     },
     "data/atmosphere/provenance.json": {
       "sha256": "22f74ce269ceb6cb43dddd08251138cdad1ad7fd0d0d46912394ca1aae8e038d",
       "bytes": 4007
-    },
-    "outputs/entity-pic-benchmark/verification.json": {
-      "sha256": "704d7f6f58232a8c784c89972caf028238c1bb708882002c0699aa6b34c628f5",
-      "bytes": 3667
-    },
-    "outputs/optical-rebuild/atmosphere-coverage-audit.json": {
-      "sha256": "1c73f854bd53303a705337cb35a9b432b178caed1ae726dfc7405a0b97a011f1",
-      "bytes": 8218
-    },
-    "release/optical-rebuild/instagram-description.draft.text": {
-      "sha256": "76b4e5344df351274b2e6b53056514f35f475daba018c3d66530cb08d179f6c5",
-      "bytes": 2118
     },
     "data/color/CIE_xyz_1931_2deg.csv": {
       "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
@@ -82,19 +48,325 @@
       "sha256": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8",
       "bytes": 3787
     },
-    "research/pic-benchmark/build_local_benchmark.py": {
-      "sha256": "a0a7009e89100227eea86ad224efee3715cd6a74d0f00d648efb8360cf725de4",
-      "bytes": 8474
+    "outputs/entity-pic-benchmark/build-20261017T094822Z-j79q4h7h.log": {
+      "sha256": "26d525fb0a081d3140495a08e79de2b2f30e3aea70ee4f24436e84d5856d098f",
+      "bytes": 8875
+    },
+    "outputs/entity-pic-benchmark/verification.json": {
+      "sha256": "704d7f6f58232a8c784c89972caf028238c1bb708882002c0699aa6b34c628f5",
+      "bytes": 3667
+    },
+    "outputs/local-pic-no-feedback-control-v2/native/ledger.csv": {
+      "sha256": "1c677e7f8637567a7f7382bb1253c5217b18e9a41ac6e2faef9432e90629384f",
+      "bytes": 777
+    },
+    "outputs/local-pic-no-feedback-control-v2/native/state-000000.json": {
+      "sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "bytes": 1490
+    },
+    "outputs/local-pic-no-feedback-control-v2/native/state-000020.json": {
+      "sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "bytes": 1543
+    },
+    "outputs/local-pic-no-feedback-control-v2/native/state-000038.json": {
+      "sha256": "ba8bd5a3c1656ff419e2883b4e2583cc69e9bb20ab9a23b3182f67e49f7876a6",
+      "bytes": 1540
+    },
+    "outputs/local-pic-no-feedback-control-v2/run.log": {
+      "sha256": "12cef895e7521d747e339fd72afd44c743db6bb9794a8d81b9aac4e3e7472c72",
+      "bytes": 6249
+    },
+    "outputs/local-pic-no-feedback-control-v2/verification.json": {
+      "sha256": "a4a3ac216218918ea0cb60c702d79b2c4848ea117044ba31bf48c8d3bbe3d13f",
+      "bytes": 3001
+    },
+    "outputs/local-pic-one-rotation-v2/independent-audit.json": {
+      "sha256": "4a2b562088113eb37d25361460ceae476970937faa5e2c80cbee7ba462596996",
+      "bytes": 22607
+    },
+    "outputs/local-pic-one-rotation-v2/independent-charge-audit.json": {
+      "sha256": "4127c5c6be5bee36d67fdbb56bbff8c2f64bfbbba10dc9ba406e971d95e72291",
+      "bytes": 67215
+    },
+    "outputs/local-pic-one-rotation-v2/native/ledger.csv": {
+      "sha256": "ce8a2d4fbadcc20ab4d5b79ea277eddd194270dc1254e424625a005d4f66e1cd",
+      "bytes": 3741
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000000.json": {
+      "sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "bytes": 1490
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000020.json": {
+      "sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "bytes": 1543
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000040.json": {
+      "sha256": "3dfa4f29da9a69aab703fe9686f94dd0d3b4d7fdadde7704f2c305c6140158f6",
+      "bytes": 1524
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000060.json": {
+      "sha256": "4f8994a60051c141f4690b397053f9cfa6c7ca6b79958197e90daeb82aa62498",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000080.json": {
+      "sha256": "6f0456049c24a69ccc5b6a8207ed45f0698feefcaa42fae47abe481f4a632827",
+      "bytes": 1521
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000100.json": {
+      "sha256": "a24f24e12a0a54e312edbc727fce10d9396e45af79f23262d73d7dbe8da0f586",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000120.json": {
+      "sha256": "6e5189b20e52266b7f180c1130ffb8b86cc873068240d829c01db8090f343f33",
+      "bytes": 1521
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000140.json": {
+      "sha256": "479830227f62b952b13ab6be82efc543daa258d38633b9e8900a244185e418be",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000160.json": {
+      "sha256": "2fc741a06fe536576787318c35f7486f8871aa5c9f87ba74ef80fa8839ed2857",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000180.json": {
+      "sha256": "38b3936818e56f5354acc59a5d96e1522393a1ae75df5b61e952f4663b4c2701",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000200.json": {
+      "sha256": "81f841601a5a9f05845ef27207946553ad7ceb6edd940544d3fc1e42c3284d94",
+      "bytes": 1522
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000220.json": {
+      "sha256": "29bcc5bdad7c6d291c709e1df29ce78fc496972e840fd478cfdbc4b862e1a336",
+      "bytes": 1522
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000240.json": {
+      "sha256": "03277bda3dc59bb2a2afbd5dd185f7b64f7f1022ca95dc1ea0f7c7a42a3b5ca5",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000260.json": {
+      "sha256": "1b0a933420b329ed94bdfa205e84b7ea317067f78be0350b1f67bcd664df30fd",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000280.json": {
+      "sha256": "c198746bf5f526a5e76a905601020685ff649fc4425cc699df860ce1eaa8c307",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000300.json": {
+      "sha256": "028bba62e736c8826763856b3bdedb8e22cb1345f57ec5b6e0acf50158b7192e",
+      "bytes": 1523
+    },
+    "outputs/local-pic-one-rotation-v2/native/state-000317.json": {
+      "sha256": "99f8c8a2f6d5705ecefaa0bc2ffae3f08f00619448bf22e0ee4ae08f5e4d397b",
+      "bytes": 1522
+    },
+    "outputs/local-pic-one-rotation-v2/precision-correction-comparison.json": {
+      "sha256": "063aeb10b33dbbf3fa02c8c1ac97b7e99eff2d37679119ebbe7524d83a91f286",
+      "bytes": 729
+    },
+    "outputs/local-pic-one-rotation-v2/run.log": {
+      "sha256": "d5ebc82c4bf3b5f322437fd8c46385d64c65b45819388cc4179bc422cb7bc36d",
+      "bytes": 27276
+    },
+    "outputs/local-pic-one-rotation-v2/source-audit.json": {
+      "sha256": "94b6ba9e78e3bc514a013e1883f12d234332895d21ef942a3f848d03eb893a3a",
+      "bytes": 95192
+    },
+    "outputs/local-pic-one-rotation-v2/verification.json": {
+      "sha256": "2965595285617513b84dfdf59b16f262518a4fe26d72931478e7542b81b46065",
+      "bytes": 8679
+    },
+    "outputs/local-pic-startup-v3/build.log": {
+      "sha256": "9ce858ad3c1bbbb69a4704f6adbe5e71d3de574fb62d59e9bdf813c0d0572cc8",
+      "bytes": 5838
+    },
+    "outputs/local-pic-startup-v3/feedback-comparison.json": {
+      "sha256": "4a864e7a4b0280969e9180655084cdc3b28f877cab357063214a81d8a4897433",
+      "bytes": 1021
+    },
+    "outputs/local-pic-startup-v3/independent-audit.json": {
+      "sha256": "1c161a5bc57916e804f41374d451e04a6877beffb39a7c0b6be3e70dee2c0dd7",
+      "bytes": 4619
+    },
+    "outputs/local-pic-startup-v3/independent-charge-audit.json": {
+      "sha256": "3a77d906012bcaf695f69c7ea087f211f23d5b7943741be34324aff01c9899e7",
+      "bytes": 13194
+    },
+    "outputs/local-pic-startup-v3/native/ledger.csv": {
+      "sha256": "3e03224ff6236fd8c7051aeb5817ca42af6de08efe3f84fa3b1f0ccd74eddae2",
+      "bytes": 777
+    },
+    "outputs/local-pic-startup-v3/native/state-000000.json": {
+      "sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "bytes": 1490
+    },
+    "outputs/local-pic-startup-v3/native/state-000020.json": {
+      "sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "bytes": 1543
+    },
+    "outputs/local-pic-startup-v3/native/state-000038.json": {
+      "sha256": "ba8bd5a3c1656ff419e2883b4e2583cc69e9bb20ab9a23b3182f67e49f7876a6",
+      "bytes": 1540
+    },
+    "outputs/local-pic-startup-v3/run.log": {
+      "sha256": "d5ee81edb84264cca54aea1b2373cd5ae9e17cde943fc153f00b372726efe98a",
+      "bytes": 6232
+    },
+    "outputs/local-pic-startup-v3/verification.json": {
+      "sha256": "bc96eba97dad838c4d0c59693ac73bb805252087cbf59ca33194c7455e161d9b",
+      "bytes": 3900
+    },
+    "outputs/optical-rebuild/atmosphere-coverage-audit.json": {
+      "sha256": "1c73f854bd53303a705337cb35a9b432b178caed1ae726dfc7405a0b97a011f1",
+      "bytes": 8218
+    },
+    "outputs/pic-local/diagnostics.png": {
+      "sha256": "ce4c468ddf9a216c01d636a0061e038589415c3386a410c496664880235d3a22",
+      "bytes": 250340
+    },
+    "outputs/pic-local/native-results.json": {
+      "sha256": "f9dd2a2f6abab9fe60b0dd7685be4e6a5f9b7c7daf4cb6a4c0db03131b433819",
+      "bytes": 12640
+    },
+    "outputs/pic-local/physical-scale-budget.json": {
+      "sha256": "7b9e6f173d4a66a1f6599b8f22e10a357c8b6744cec27e00ad32259d56a57b7a",
+      "bytes": 9580
+    },
+    "pyproject.toml": {
+      "sha256": "97368510483add5c15b1d4418d77b561e949ebf2b22c80028616941d8ae321ae",
+      "bytes": 522
+    },
+    "release/optical-rebuild/README.md": {
+      "sha256": "f95374063526af8aa7f4713562e383b38d7f72e866af29de3590f3a4e32e79c6",
+      "bytes": 5221
+    },
+    "release/optical-rebuild/instagram-description.draft.text": {
+      "sha256": "2d5bdcbba8ac4e91ba5088b915e67c31cbcd0f8982f90ae1636599bda2e42826",
+      "bytes": 2081
+    },
+    "release/optical-rebuild/status.json": {
+      "sha256": "0a021dd9fffcdd6419ea8e75828a3218788c1d0550f885d64e5a6581f6aedbc9",
+      "bytes": 8220
+    },
+    "research/ATMOSPHERE-SOLVER-PLAN.md": {
+      "sha256": "6ab68e8033dc135889a67d93f0e2cd5c3b8da26240d903c1bf36b37ba4b92a1f",
+      "bytes": 8016
+    },
+    "research/VELA-ATMOSPHERE-2026.md": {
+      "sha256": "a7b3e4e94b30eeda72f4321f48c42f68ea551b9f8c3670bdbff46cffd2078577",
+      "bytes": 14706
     },
     "research/pic-benchmark/README.md": {
       "sha256": "e8a0fc100f513af4e03caaa3ce5695660d450b4472d8dbbedd4d4320e017a76c",
       "bytes": 3370
     },
-    "outputs/entity-pic-benchmark/build-20261017T094822Z-j79q4h7h.log": {
-      "sha256": "26d525fb0a081d3140495a08e79de2b2f30e3aea70ee4f24436e84d5856d098f",
-      "bytes": 8875
+    "research/pic-benchmark/build_local_benchmark.py": {
+      "sha256": "a0a7009e89100227eea86ad224efee3715cd6a74d0f00d648efb8360cf725de4",
+      "bytes": 8474
+    },
+    "research/pic-local/README.md": {
+      "sha256": "b97d05bd90497a0e934dd1db4c4f49b17e4e9f57af713f12bf8641734bd25c74",
+      "bytes": 14860
+    },
+    "research/pic-local/audit_charge.py": {
+      "sha256": "ba6a90fd991bde1227923d3354aa404faee66a5a6d7dd615b7f446fb1f04f531",
+      "bytes": 20481
+    },
+    "research/pic-local/audit_native.py": {
+      "sha256": "4d7540c1f2a1f9b1376c913a5865ca5bc1bca000c9525dfaa1e5fb2f72e27f98",
+      "bytes": 8235
+    },
+    "research/pic-local/audit_source.py": {
+      "sha256": "8cec168ec9101d2bb00c9e7c28d22939f4259a8e9c12e6768ab7539b616aad73",
+      "bytes": 12957
+    },
+    "research/pic-local/compare_feedback.py": {
+      "sha256": "1f3c5588574958586334c111abbc9683fbe4acb76ecf60039f2d49588292af2a",
+      "bytes": 3515
+    },
+    "research/pic-local/one-rotation.toml": {
+      "sha256": "cf298d76b45dc17cf246f1311a0914a51460015208398579d2add27c30885dea",
+      "bytes": 1118
+    },
+    "research/pic-local/pgen.hpp": {
+      "sha256": "4b19128216b579f9f1910d1e7dafbc63e807fafb71ffd709ac2a39d4ea18da54",
+      "bytes": 16166
+    },
+    "research/pic-local/physical_scale_budget.py": {
+      "sha256": "19b70acc0a18d590a6f643da0655cdb31fbeb4ed2c40c22cea0571505a1b632b",
+      "bytes": 22178
+    },
+    "research/pic-local/plot_diagnostics.py": {
+      "sha256": "f1e775890313dec6a18565165affe3a2ee941eae81c000732c5aca5d44b8891d",
+      "bytes": 2831
+    },
+    "research/pic-local/run_local_pulsar.py": {
+      "sha256": "ca8f3e33f124d5fdf2793fc7c36314fd6199594d466de0feebc26373583b9a9f",
+      "bytes": 7534
+    },
+    "research/pic-local/startup-no-feedback.toml": {
+      "sha256": "042b4f08f889ce3d07d5a803136f57abb72e0514391568640e7eb0d310b7b943",
+      "bytes": 1160
+    },
+    "research/pic-local/startup.toml": {
+      "sha256": "effb87789b13f97e00d327307c3d14da32dd88141d39412f418bc18523c4488e",
+      "bytes": 1104
+    },
+    "src/pulsar/atmosphere_inputs.py": {
+      "sha256": "067dc81db6102394ed932877f6ac39e673a25da2ced0aa3b616692bab0a9279a",
+      "bytes": 15168
+    },
+    "src/pulsar/optical_color.py": {
+      "sha256": "6d7e09042d8375fb48aa8a8b40f50e96636644ce333f116915e92215c50b0d0b",
+      "bytes": 10774
+    },
+    "src/pulsar/optical_radiation.py": {
+      "sha256": "107663ee5149255158193a2b037655ab574b9413fe04f7d111df550f6c831b8f",
+      "bytes": 17607
+    },
+    "tests/test_atmosphere_inputs.py": {
+      "sha256": "b575022da86679cffa6b6cf1a3a4add88be90bcdf760e8e7bd601f56b17266f5",
+      "bytes": 13157
+    },
+    "tests/test_local_pic_audit.py": {
+      "sha256": "2b4c7c88a20ed49fc9c732a1ca490da818792ba1b5ef3a960d00c2a25bbd283d",
+      "bytes": 2604
+    },
+    "tests/test_local_pic_receipt.py": {
+      "sha256": "15245f64507681372296d4ab02b567d91c89e9bedebf4188e42f7a6fcef3321c",
+      "bytes": 2349
+    },
+    "tests/test_optical_color.py": {
+      "sha256": "948a4a552afbdeef8c5c9aee40431d7cde051910a3ef987c007875a78516e33f",
+      "bytes": 7691
+    },
+    "tests/test_optical_radiation.py": {
+      "sha256": "a8f085a638d1da88d7fa922f881ad891b39c7d1ce6c13d2e8570d4b915fdc1e5",
+      "bytes": 11855
     }
   },
   "native_builder_checked": true,
-  "native_builder_result": "Succeeded with pinned clean sources; existing benchmark executable unchanged"
+  "native_builder_result": "Succeeded with pinned clean sources; existing benchmark executable unchanged",
+  "recorded_utc": "2026-10-17T20:54:05.252830+00:00",
+  "standalone_self_tests": {
+    "physical_scale_budget": 7,
+    "CIC_charge_export": 5
+  },
+  "local_coupled_pulsar_prototype": {
+    "mesh": [
+      48,
+      48,
+      48
+    ],
+    "steps": 317,
+    "commanded_turns": 0.9983161642050503,
+    "alive_particles": 25735,
+    "runs_exit_zero": 3,
+    "field_feedback_control": "Particle current disabled in an otherwise identical separate startup run",
+    "coordinate_export": "Corrected; all 17 states pass independent full-storage CIC reconstruction",
+    "source_accuracy": "Unresolved; fitted source phase/magnitude drift measured and documented",
+    "production_vela_dataset": false,
+    "optical_prediction": false,
+    "evidence_manifest": "outputs/pic-local/native-results.json"
+  }
 }
