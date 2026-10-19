@@ -1,0 +1,39 @@
+NO.002 — THE PULSAR
+@sideratlas
+Original 3D model — a rotation-powered pulsar
+P = 89.37 ms · M = 1.4 M☉ · R = 13 km
+B_p = 3×10¹² G · T∞ = 0.70 MK
+Magnetic axis tilted 75° from the spin axis
+A compact star powers a rotating magnetosphere
+Magnetic fields guide charged particles
+Fast particles radiate in preferred directions
+Rotation sweeps radiation like a lighthouse
+r = L sin²θ · R_LC = cP/(2π) ≈ 4264 km
+CALCULATED
+Near-zone dipole geometry and its rotation
+Stellar light from the existing approximate hydrogen atmosphere
+Schwarzschild surface light bending and redshift, local Doppler shifts
+ILLUSTRATED
+Blue-white field curves reveal invisible magnetic geometry
+Paired polar envelopes explain the lighthouse effect
+Beam spread uses dipole tangents at an assumed radius of 6R
+These are direction guides, not photon paths or optical radiance
+Guide brightness, color, width profile and length are display choices
+ASSUMED
+Prescribed dipole; selected loops extend to 5.6R
+True star-to-field scale in a close view, not the entire magnetosphere
+Euclidean guide projection; no GR field distortion or global sweepback
+Uniform fully ionized H atmosphere with simplified magnetic opacity
+No new PIC, pair cascade, exact Vela fit or naked-eye prediction
+Existing particle cooling and optical-emission calculations remain separate
+One rotation slowed to 8 seconds, repeated four times
+SOURCES
+Spitkovsky 2006; Brambilla et al 2018; Smith et al 2023
+Preserved radiation research: Harding & Kalapotharakos 2015; Harding et al 2018
+Marcowith & Malzac 2003; van Adelsberg & Lai 2006
+Poutanen & Beloborodov 2006; Poutanen 2020; Ofengeim & Zyuzin 2018
+Visual references: NASA / Goddard 2018 and 2008
+https://svs.gsfc.nasa.gov/13058/
+No NASA footage or code used
+Full equations, source roles and limitations in the repository
+The code for this simulation is to be found at https://github.com/loganpis/sideratlas-pulsar

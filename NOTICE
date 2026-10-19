@@ -53,3 +53,7 @@ CIE1931 2-degree color matching functions
 The current optical model and complete reference roles are documented in
 release/optical-v1/MODEL-NOTES.md. The original and current model scopes
 remain distinct
+
+The current conceptual 3D close-up and its explicitly illustrative magnetic
+and beam guides are documented in release/pulsar-3d-v1/MODEL-NOTES.md.
+The earlier calculated optical observer edition is preserved separately.
