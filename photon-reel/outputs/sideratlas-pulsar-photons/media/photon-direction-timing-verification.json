@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "unit_direction_max_error": 4.440892098500626e-16,
+    "straight_ray_c1_max_error": 4.440892098500626e-16,
+    "observer_wavefront_phase_max_error_cycles": 2.220446049250313e-16,
+    "observer_wavefront_plane_max_error_rlc": 3.552713678800501e-15,
+    "packet_birth_position_max_radius_rlc": 1.9998949180341636,
+    "loop_endpoint_position_max_error_rlc": 0.0
+  },
+  "observer_scope": "Asymptotic angular observer, original 2deg polar pixel centered at zeta=65deg and azimuth=0; symbol position is a scaled bearing",
+  "receiver_equation": "t_cross=t_emit+D-n.r_emit; displayed pulse uses Phi=(t_cross-D)/(2pi)",
+  "finite_packets": "Weighted source midpoint display quadrature; receiver instead retains original full cell integration"
+}

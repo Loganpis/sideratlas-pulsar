@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "original_profile_max_relative_difference": 0.0,
+  "all_source_midpoint_phase_max_error_cycles": 8.881784197001252e-16,
+  "all_source_direction_max_norm_error": 4.440892098500626e-16,
+  "sampled_sky_relative_L1": 0.03649954480602952,
+  "note": "Receiver uses full conservative cell/latitude/phase quadrature; finite display packets are not used to estimate the pulse"
+}

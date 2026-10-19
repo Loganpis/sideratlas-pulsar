@@ -1,5 +1,7 @@
 # @sideratlas · NO.002 · THE PULSAR
 
+**New: [calculated gamma-ray photon Reel](https://github.com/Loganpis/sideratlas-pulsar/releases/tag/photon-v1.0.0)** — the original 0.1–100 GeV model rendered as outgoing photons, with a tiny central star, fixed external camera and the original delayed observer pulse. [Source and reproduction](photon-reel/README.md) · [Scientific notes](photon-reel/release/photon-v2/MODEL-NOTES.md) · [32-second video](https://github.com/Loganpis/sideratlas-pulsar/releases/download/photon-v1.0.0/sideratlas-002-pulsar-reel.mp4). This Vela-informed model remains approximate; the optical and conceptual 3D editions below are preserved
+
 A cinematic 3D close view of a plausible young rotation-powered pulsar: a prominent neutron star, a rotating oblique magnetic field and paired radiation-direction envelopes explain the lighthouse effect. The star uses the existing approximate relativistic surface-radiation calculation. Luminous magnetic curves and beam envelopes are explicitly illustrative guides
 
 - [32-second 3D Reel](media/pulsar-3d/sideratlas-no002-pulsar-3d-32s.mp4) — 1080 × 1920, 30 fps, SDR H.264
