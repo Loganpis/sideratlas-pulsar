@@ -40,3 +40,16 @@ NASA Goddard's 2018 pulsar animation and Brambilla et al. (2018) were visual
 and research references. No NASA frames, simulation data or music are
 incorporated into the original rendered movie. Full scientific credits and
 model limitations are provided in release/MODEL-NOTES.md.
+
+Entity native PIC research
+  Entity development team; BSD 3-Clause notice retained in
+  research/pic-benchmark/LICENSE-Entity-BSD3.txt. Kokkos and other native
+  dependencies are fetched or built separately under their own notices
+
+CIE1931 2-degree color matching functions
+  International Commission on Illumination, DOI 10.25039/CIE.DS.xvudnb9b
+  CC BY-SA 4.0; exact table, metadata and attribution in data/color/
+
+The current optical model and complete reference roles are documented in
+release/optical-v1/MODEL-NOTES.md. The original and current model scopes
+remain distinct

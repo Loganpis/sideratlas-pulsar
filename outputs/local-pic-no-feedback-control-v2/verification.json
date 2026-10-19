@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-17T20:48:47.026939+00:00",
+  "scope": "scaled local oblique 3D PIC startup prototype",
+  "production_vela_dataset": false,
+  "optical_prediction": false,
+  "stellar_atmosphere_model": false,
+  "convergence_claim": false,
+  "exit_code": 0,
+  "wall_seconds": 0.7430656249634922,
+  "run_command": [
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/entity-build-local-pulsar/src/entity.xc",
+    "-input",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-local/startup-no-feedback.toml"
+  ],
+  "build_commands": [],
+  "source_pins": [
+    {
+      "name": "entity",
+      "directory": "entity-research",
+      "repository": "https://github.com/entity-toolkit/entity.git",
+      "commit": "62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "kokkos",
+      "directory": "kokkos-research",
+      "repository": "https://github.com/kokkos/kokkos.git",
+      "commit": "89f0b12e43583d02bd19739810ceadcedf1ccd56",
+      "license": "Apache-2.0 WITH LLVM-exception"
+    }
+  ],
+  "external_pgen_sha256": "4b19128216b579f9f1910d1e7dafbc63e807fafb71ffd709ac2a39d4ea18da54",
+  "configuration_sha256": "042b4f08f889ce3d07d5a803136f57abb72e0514391568640e7eb0d310b7b943",
+  "native_executable_sha256": "81416eefa1a046564545d4236fa46bbeff4fcc3dedde2d79390b895a523e14ec",
+  "run_log_sha256": "12cef895e7521d747e339fd72afd44c743db6bb9794a8d81b9aac4e3e7472c72",
+  "states": [
+    {
+      "completed_step": 0,
+      "position_and_E_time": 0,
+      "metadata": "state-000000.json",
+      "metadata_sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "fields_sha256": "193c2acb41d79f2402c0da6158e861118ed59e3c893d4e5871689b1a4b0f2efc",
+      "particles_sha256": "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f"
+    },
+    {
+      "completed_step": 20,
+      "position_and_E_time": 0.4209845712841021,
+      "metadata": "state-000020.json",
+      "metadata_sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "fields_sha256": "76d3a70250801e1893a0c903c46cdd6463a0645b4af65cb569876640876e172f",
+      "particles_sha256": "76e0d0ce63a7cd6e8fdb0e06a7479f487b1be641c7c975322ea541d0f8f79ae9"
+    },
+    {
+      "completed_step": 38,
+      "position_and_E_time": 0.799870685439794,
+      "metadata": "state-000038.json",
+      "metadata_sha256": "ba8bd5a3c1656ff419e2883b4e2583cc69e9bb20ab9a23b3182f67e49f7876a6",
+      "fields_sha256": "7dc9186e2543a953daadd8573525fbac7a9c6b2b0501ea101ea291792ed3906d",
+      "particles_sha256": "f723a44480d6591c25bab565acc9b31d3fbbfe3240a141ae33e56acdf6bf423c"
+    }
+  ],
+  "reused_verified_build": {
+    "path": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/local-pic-startup-v3/verification.json",
+    "sha256": "bc96eba97dad838c4d0c59693ac73bb805252087cbf59ca33194c7455e161d9b",
+    "meaning": "Exact prior binary and problem-generator bytes; no fresh upstream tree scan"
+  }
+}

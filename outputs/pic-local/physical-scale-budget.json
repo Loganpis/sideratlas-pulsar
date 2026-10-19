@@ -1,0 +1,199 @@
+{
+  "scope": "Dimensional scale and illustrative explicit uniform-grid budget; not a run or a hardware survey",
+  "inputs": {
+    "period_s": 0.08937108859019084,
+    "stellar_radius_km": 13.0,
+    "surface_reference_field_gauss": 3000000000000.0,
+    "total_lepton_multiplicity": 6000.0,
+    "illustrative_gamma": 1.0,
+    "domain_width_rlc": 4.0,
+    "cells_per_stellar_radius": 10,
+    "cells_per_skin_depth": 2,
+    "illustrative_particles_per_cell_total": 8,
+    "local_grid_cells_per_axis": 48,
+    "local_stellar_radius_rlc": 0.5,
+    "local_domain_width_rlc": 5.0
+  },
+  "input_status": "Period reference and explicit model choices; R, B, multiplicity and gamma are not newly measured or independently inferred",
+  "constants_si": {
+    "c_m_s": 299792458.0,
+    "elementary_charge_c": 1.602176634e-19,
+    "epsilon0_f_m": 8.8541878128e-12,
+    "electron_mass_kg": 9.1093837015e-31
+  },
+  "equations": {
+    "omega": "Omega = 2*pi/P",
+    "light_cylinder": "R_LC = c/Omega",
+    "aligned_reference_number_density": "n_GJ = 2*epsilon_0*Omega*B/e",
+    "total_lepton_density": "n_total(e- plus e+) = kappa_total*n_GJ",
+    "cold_plasma_frequency": "omega_p = sqrt(n_total*e^2/(epsilon_0*m_e))",
+    "cold_skin_depth": "lambda_skin = c/omega_p",
+    "lc_reference_field": "B_LC,reference = B_star*(R_star/R_LC)^3",
+    "uniform_grid": "N_axis = ceil(L_domain/dx_max); N_cells = N_axis^3"
+  },
+  "physical_reference_scales": {
+    "omega_rad_s": 70.30445087214943,
+    "light_cylinder_radius_m": 4264203.109205429,
+    "light_cylinder_radius_km": 4264.203109205429,
+    "stellar_radius_over_rlc": 0.0030486352706642897,
+    "surface_reference_field_t": 300000000.0,
+    "lc_dipole_reference_field_t": 8.500366756581071,
+    "surface_cold_cyclotron_frequency_rad_s": 5.276460032316489e+19,
+    "surface_cold_cyclotron_to_rotation_frequency_ratio": 7.505157876720887e+17,
+    "surface_aligned_gj_reference_density_m3": 2.331161741675164e+18,
+    "lc_formal_aligned_gj_reference_density_m3": 66052432577.16399,
+    "surface_total_lepton_reference_density_m3": 1.3986970450050985e+22,
+    "lc_total_lepton_reference_density_m3": 396314595462983.94,
+    "surface_cold_pair_plasma": {
+      "omega_p_rad_s": 6671958858873.648,
+      "frequency_p_hz": 1061875232495.5024,
+      "cold_skin_depth_m": 4.493319943082062e-05
+    },
+    "lc_cold_pair_plasma": {
+      "omega_p_rad_s": 1123082252.5611084,
+      "frequency_p_hz": 178744091.99388084,
+      "cold_skin_depth_m": 0.26693722326779257
+    }
+  },
+  "gamma_illustration_only": {
+    "gamma": 1.0,
+    "surface_skin_if_effective_inertia_is_gamma_m_e_m": 4.493319943082062e-05,
+    "lc_skin_if_effective_inertia_is_gamma_m_e_m": 0.26693722326779257,
+    "used_in_uniform_grid_budgets": false,
+    "qualification": "sqrt(gamma) scaling assumes a specific transverse effective inertia; anisotropic relativistic distributions and parallel streaming have different response, so cold budgets remain explicitly gamma=1"
+  },
+  "uniform_grid_budgets": {
+    "resolve_stellar_radius_only": {
+      "maximum_requested_cell_size_m": 1300.0,
+      "actual_uniform_cell_size_m": 1299.9628410046275,
+      "cells_per_axis": 13121,
+      "cells_total": 2258919770561,
+      "field_and_current_bytes_lower_bound": 162642223480392,
+      "illustrative_particles_total": 18071358164488,
+      "particle_phase_space_bytes_lower_bound": 1156566922527232,
+      "combined_bytes_lower_bound": 1319209146007624,
+      "combined_decimal_terabytes_lower_bound": 1319.209146007624,
+      "vacuum_3d_yee_cfl_timestep_s": 2.503511599983387e-06,
+      "minimum_yee_steps_per_rotation": 35699
+    },
+    "resolve_reference_lc_skin_depth": {
+      "maximum_requested_cell_size_m": 0.13346861163389628,
+      "actual_uniform_cell_size_m": 0.1334686112625829,
+      "cells_per_axis": 127796433,
+      "cells_total": 2087162179157300297914737,
+      "field_and_current_bytes_lower_bound": 150275676899325621449861064,
+      "illustrative_particles_total": 16697297433258402383317896,
+      "particle_phase_space_bytes_lower_bound": 1068627035728537752532345344,
+      "combined_bytes_lower_bound": 1218902712627863373982206408,
+      "combined_decimal_terabytes_lower_bound": 1218902712627863.5,
+      "vacuum_3d_yee_cfl_timestep_s": 2.5703828293378134e-10,
+      "minimum_yee_steps_per_rotation": 347695634
+    },
+    "resolve_reference_surface_skin_depth": {
+      "maximum_requested_cell_size_m": 2.246659971541031e-05,
+      "actual_uniform_cell_size_m": 2.246659971540085e-05,
+      "cells_per_axis": 759207563801,
+      "cells_total": 437604297794453651142034264906011401,
+      "field_and_current_bytes_lower_bound": 31507509441200662882226467073232820872,
+      "illustrative_particles_total": 3500834382355629209136274119248091208,
+      "particle_phase_space_bytes_lower_bound": 224053400470760269384721543631877837312,
+      "combined_bytes_lower_bound": 255560909911960932266948010705110658184,
+      "combined_decimal_terabytes_lower_bound": 2.5556090991196094e+26,
+      "vacuum_3d_yee_cfl_timestep_s": 4.326692365777344e-14,
+      "minimum_yee_steps_per_rotation": 2065575294817
+    }
+  },
+  "memory_assumptions": {
+    "field_components_float64": 9,
+    "bytes_per_float64": 8,
+    "particle_coordinates_and_weight_float64": 7,
+    "id_bytes": 8,
+    "particles_per_cell_total": 8,
+    "excluded": [
+      "ghost cells",
+      "field backups and auxiliary buffers",
+      "particle previous positions and tags",
+      "sorting and deposition buffers",
+      "communication",
+      "output",
+      "runtime overhead"
+    ],
+    "qualification": "Illustrative storage lower bounds for the specified uniform layout; no actual machine RAM or runtime prediction"
+  },
+  "local_reduced_model_comparison": {
+    "grid_cells_per_axis": 48,
+    "comparison_domain_width_rlc": 5.0,
+    "numerical_stellar_radius_rlc": 0.5,
+    "numerical_radius_if_period_mapped_to_vela_km": 2132.1015546027147,
+    "radius_enlargement_relative_to_assumed_physical_star": 164.00781189251651,
+    "cell_size_if_period_mapped_to_vela_m": 444187.82387556555,
+    "numerical_stellar_radius_in_cells": 4.8,
+    "physical_stellar_radius_in_same_cells": 0.02926689859837718,
+    "cell_size_over_reference_lc_cold_skin_depth": 1664016.0500581607,
+    "cell_size_over_reference_surface_cold_skin_depth": 9885515153.654692,
+    "physical_omega_p_dt_not_inferred": true,
+    "physical_magnetic_field_and_density_mapping_validated": false,
+    "claim": "A reduced numerical pulsar can be a real coupled PIC calculation while failing to reproduce the physical Vela scale ratios"
+  },
+  "limitations": [
+    "Aligned GJ magnitude is a reference charge-density scale, not the self-consistent oblique density or multiplicity",
+    "The r^-3 LC reference is not an evolved force-free/PIC field; polar versus equatorial dipole conventions add a factor of two",
+    "Cold pair skin depths use total lepton density and do not describe a solved relativistic momentum distribution",
+    "Two cells per skin depth and ten cells per stellar radius are illustrative minimum choices, not convergence certificates",
+    "Uniform-grid and vacuum-Yee estimates do not describe AMR, implicit, guiding-centre or multiscale algorithms",
+    "Matching period alone cannot restore the physical star-to-LC, gyro, plasma, radiative-cooling and optical-emission scales",
+    "A computed reduced PIC prototype must not be described as a validated optical view or atmosphere of Vela"
+  ],
+  "references": [
+    {
+      "citation": "Goldreich & Julian 1969, Pulsar Electrodynamics",
+      "url": "https://doi.org/10.1086/150119"
+    },
+    {
+      "citation": "Brambilla et al. 2018, Electron\u2013Positron Pair Flow and Current Composition in the Pulsar Magnetosphere",
+      "url": "https://arxiv.org/abs/1710.03536"
+    },
+    {
+      "citation": "Kalapotharakos et al. 2018, 3D Kinetic Pulsar Magnetosphere Models",
+      "url": "https://arxiv.org/abs/1710.03170"
+    }
+  ],
+  "analysis_source_provenance": {
+    "research/pic-local/physical_scale_budget.py": "19b70acc0a18d590a6f643da0655cdb31fbeb4ed2c40c22cea0571505a1b632b",
+    "third_party/entity-research/src/framework/parameters/parameters.cpp": "1e504c8fb7527fff2bce02efc6c94ee3c5c13d180e01a235056ad41da283f520",
+    "third_party/entity-research/src/kernels/pushers/sr.hpp": "bd93ce2f0f61b6ad0dc774325dde17017c3722da9712a619f5d8ccaad8d211e7"
+  },
+  "recorded_native_configuration_reference": {
+    "config_path": "/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-local/startup.toml",
+    "config_sha256": "effb87789b13f97e00d327307c3d14da32dd88141d39412f418bc18523c4488e",
+    "larmor0_code": 0.05,
+    "omegaB0_code": 20.0,
+    "target_omega_code": 1.0,
+    "polar_field_reference_code": 1.0,
+    "stellar_radius_rlc": 0.5,
+    "domain_widths_rlc": [
+      5.0,
+      5.0,
+      5.0
+    ],
+    "resolution": [
+      48,
+      48,
+      48
+    ],
+    "species_reference_ratios": [
+      {
+        "species": "electron",
+        "cold_cyclotron_to_target_rotation_reference": 20.0,
+        "physical_reference_ratio_over_native_reference_ratio": 3.752578938360443e+16
+      },
+      {
+        "species": "positron",
+        "cold_cyclotron_to_target_rotation_reference": 20.0,
+        "physical_reference_ratio_over_native_reference_ratio": 3.752578938360443e+16
+      }
+    ],
+    "comparison_geometry_matches_recorded_config": true,
+    "qualification": "Reference unit-amplitude cold gyro ratio at final target rotation; spin-up Omega varies, local B and particle gamma vary, and no physical magnetic-field mapping is inferred"
+  }
+}

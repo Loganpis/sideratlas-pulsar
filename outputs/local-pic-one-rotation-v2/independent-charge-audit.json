@@ -1,0 +1,1422 @@
+{
+  "scope": "Independent first-order CIC vertex export reconstruction and total-charge bookkeeping; not a charge-continuity, Gauss-law, physical-Vela or optical validation",
+  "native_directory": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/local-pic-one-rotation-v2/native",
+  "configuration": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/local-pic-one-rotation-v2/one-rotation.toml",
+  "configuration_sha256": "cf298d76b45dc17cf246f1311a0914a51460015208398579d2add27c30885dea",
+  "script_sha256": "ba6a90fd991bde1227923d3354aa404faee66a5a6d7dd615b7f446fb1f04f531",
+  "producer_sha256": "4b19128216b579f9f1910d1e7dafbc63e807fafb71ffd709ac2a39d4ea18da54",
+  "potential_float32_coordinate_addition_in_recorded_producer": false,
+  "coordinate_precision_note": "If int particle indices are added to float32 subcell offsets before promotion to double, exported Cartesian positions lose subcell bits and pointwise reconstructed charge can differ; this is an export-consistency issue, not evidence of a physical charge source",
+  "species_charge_from_recorded_configuration": {
+    "1": -1.0,
+    "2": 1.0
+  },
+  "charge_convention": "rho_vertex_gauss_units = CIC sum(q_species*number_weight)*q0/(B0*V0)",
+  "density_units": "Native dimensionless Gauss units; no conversion to coulombs per cubic metre",
+  "total_charge_code_units": "q0*sum(q_species*number_weight) = B0*V0*sum(rho) when all shape support is retained",
+  "active_vertex_convention": "Exactly indices ghost..ghost+n_active-1; upper-face vertices can lie in the stored ghost region",
+  "required_kernel_contract": "First-order vertex CIC, matching the actual SHAPE_ORDER=1 build; this audit does not authenticate arbitrary higher-order builds",
+  "tolerance": {
+    "absolute_native_density": 1e-10,
+    "relative_pointwise": 1e-09
+  },
+  "snapshots": [
+    {
+      "completed_step": 0,
+      "position_time": 0,
+      "particles": 128,
+      "species_counts": {
+        "1": 64,
+        "2": 64
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.734723475976807e-18,
+          "rms_error": 5.733761489106033e-21,
+          "relative_l2_to_exported": 1.0,
+          "symmetric_relative_l2": 1.0,
+          "reconstructed_density_sum": 0.0,
+          "exported_density_sum": -2.7647155398380363e-18,
+          "maximum_absolute_exported_density": 1.734723475976807e-18,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.734723475976807e-18,
+          "rms_error": 6.4652121846651795e-21,
+          "relative_l2_to_exported": 1.0,
+          "symmetric_relative_l2": 1.0,
+          "reconstructed_density_sum": 0.0,
+          "exported_density_sum": -2.7647155398380363e-18,
+          "maximum_absolute_exported_density": 1.734723475976807e-18,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.734723475976807e-18,
+          "rms_error": 6.891406866704061e-21,
+          "relative_l2_to_exported": 1.0,
+          "symmetric_relative_l2": 1.0,
+          "reconstructed_density_sum": 0.0,
+          "exported_density_sum": -2.7647155398380363e-18,
+          "maximum_absolute_exported_density": 1.734723475976807e-18,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 0.0,
+          "rms_error": 0.0,
+          "relative_l2_to_exported": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "reconstructed_density_sum": 0.0,
+          "exported_density_sum": 0.0,
+          "maximum_absolute_exported_density": 0.0,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": 0.0,
+        "reconstructed_retained_density_sum": 0.0,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 0.0,
+        "absolute_particle_charge_density_sum": 39.99999999999999,
+        "particle_signed_number_weight_sum": 0.0,
+        "particle_total_charge_code_units": 0.0,
+        "exported_total_charge_code_units": -6.249809072622876e-20,
+        "exported_full_density_sum": -2.7647155398380363e-18,
+        "exported_plus_lost_minus_particle_density_sum": -2.7647155398380363e-18
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "fields_sha256": "193c2acb41d79f2402c0da6158e861118ed59e3c893d4e5871689b1a4b0f2efc",
+      "particles_sha256": "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f"
+    },
+    {
+      "completed_step": 20,
+      "position_time": 0.4209845712841021,
+      "particles": 2688,
+      "species_counts": {
+        "1": 1344,
+        "2": 1344
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.760081218080359e-15,
+          "rms_error": 7.681731977326234e-17,
+          "relative_l2_to_exported": 7.504509147757996e-15,
+          "symmetric_relative_l2": 3.752254573878998e-15,
+          "reconstructed_density_sum": -2.8449465006019636e-16,
+          "exported_density_sum": -1.0685896612017132e-15,
+          "maximum_absolute_exported_density": 0.6865906440663778,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.760081218080359e-15,
+          "rms_error": 8.661683481864707e-17,
+          "relative_l2_to_exported": 7.504509147757996e-15,
+          "symmetric_relative_l2": 3.752254573878998e-15,
+          "reconstructed_density_sum": -6.661338147750939e-16,
+          "exported_density_sum": -8.326672684688674e-16,
+          "maximum_absolute_exported_density": 0.6865906440663778,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.760081218080359e-15,
+          "rms_error": 9.232672233978793e-17,
+          "relative_l2_to_exported": 7.504509147757996e-15,
+          "symmetric_relative_l2": 3.752254573878998e-15,
+          "reconstructed_density_sum": -5.551115123125783e-16,
+          "exported_density_sum": -2.220446049250313e-16,
+          "maximum_absolute_exported_density": 0.6865906440663778,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 0.0,
+          "rms_error": 0.0,
+          "relative_l2_to_exported": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "reconstructed_density_sum": 0.0,
+          "exported_density_sum": 0.0,
+          "maximum_absolute_exported_density": 0.0,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": 0.0,
+        "reconstructed_retained_density_sum": -2.8449465006019636e-16,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -2.8449465006019636e-16,
+        "absolute_particle_charge_density_sum": 839.9999999999999,
+        "particle_signed_number_weight_sum": 0.0,
+        "particle_total_charge_code_units": 0.0,
+        "exported_total_charge_code_units": -2.415612479206709e-17,
+        "exported_full_density_sum": -1.0685896612017132e-15,
+        "exported_plus_lost_minus_particle_density_sum": -1.0685896612017132e-15
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "fields_sha256": "8856100c32f2a22c763c85ad1f633d942e101ff06af866efde6d4004f23ceed5",
+      "particles_sha256": "5178b2616ac7294d66eb2f9708cf8be14ce461cc05a7697041f623e851667a6c"
+    },
+    {
+      "completed_step": 40,
+      "position_time": 0.8419691425682042,
+      "particles": 5134,
+      "species_counts": {
+        "1": 2544,
+        "2": 2590
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.63358257213531e-15,
+          "rms_error": 1.2096662320169292e-16,
+          "relative_l2_to_exported": 4.626450612184286e-15,
+          "symmetric_relative_l2": 2.3132253060921424e-15,
+          "reconstructed_density_sum": 14.375000000000004,
+          "exported_density_sum": 14.375000000000007,
+          "maximum_absolute_exported_density": 1.3785764354562875,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.63358257213531e-15,
+          "rms_error": 1.3639822440248074e-16,
+          "relative_l2_to_exported": 4.626450612184286e-15,
+          "symmetric_relative_l2": 2.3132253060921424e-15,
+          "reconstructed_density_sum": 14.375000000000004,
+          "exported_density_sum": 14.375000000000005,
+          "maximum_absolute_exported_density": 1.3785764354562875,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.63358257213531e-15,
+          "rms_error": 1.4538976191423737e-16,
+          "relative_l2_to_exported": 4.626450612184286e-15,
+          "symmetric_relative_l2": 2.3132253060921424e-15,
+          "reconstructed_density_sum": 14.375,
+          "exported_density_sum": 14.375000000000007,
+          "maximum_absolute_exported_density": 1.3785764354562875,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.291978215169138e-16,
+          "rms_error": 2.2352503505661244e-17,
+          "relative_l2_to_exported": 4.329714647329868e-15,
+          "symmetric_relative_l2": 2.164857323664935e-15,
+          "reconstructed_density_sum": -4.892802516982426,
+          "exported_density_sum": -4.89280251698243,
+          "maximum_absolute_exported_density": 0.2292362962605707,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": 14.374999999999998,
+        "reconstructed_retained_density_sum": 14.375000000000004,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 5.329070518200751e-15,
+        "absolute_particle_charge_density_sum": 1604.3749999999998,
+        "particle_signed_number_weight_sum": 46.0,
+        "particle_total_charge_code_units": 0.32495569299768523,
+        "exported_total_charge_code_units": 0.3249556929976854,
+        "exported_full_density_sum": 14.375000000000007,
+        "exported_plus_lost_minus_particle_density_sum": 8.881784197001252e-15
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "3dfa4f29da9a69aab703fe9686f94dd0d3b4d7fdadde7704f2c305c6140158f6",
+      "fields_sha256": "7fc6686010c173356c44a493e5c4633ce910671ad7c8f68f6e2ab24021852927",
+      "particles_sha256": "ac83ad81e876dc3be952ca2efdfdc71800148eb06d08e18fac7a967cd64b330a"
+    },
+    {
+      "completed_step": 60,
+      "position_time": 1.2629537138523077,
+      "particles": 7435,
+      "species_counts": {
+        "1": 3740,
+        "2": 3695
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.105427357601002e-15,
+          "rms_error": 1.557031230694728e-16,
+          "relative_l2_to_exported": 2.740182011674997e-15,
+          "symmetric_relative_l2": 1.3700910058374983e-15,
+          "reconstructed_density_sum": -14.062499999999991,
+          "exported_density_sum": -14.0625,
+          "maximum_absolute_exported_density": 2.6275909551494756,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.105427357601002e-15,
+          "rms_error": 1.7556602770655668e-16,
+          "relative_l2_to_exported": 2.740182011674997e-15,
+          "symmetric_relative_l2": 1.3700910058374983e-15,
+          "reconstructed_density_sum": -14.062499999999998,
+          "exported_density_sum": -14.062500000000007,
+          "maximum_absolute_exported_density": 2.6275909551494756,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.105427357601002e-15,
+          "rms_error": 1.871395546408626e-16,
+          "relative_l2_to_exported": 2.740182011674997e-15,
+          "symmetric_relative_l2": 1.3700910058374983e-15,
+          "reconstructed_density_sum": -14.062499999999991,
+          "exported_density_sum": -14.062500000000004,
+          "maximum_absolute_exported_density": 2.6275909551494756,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 2.9976021664879227e-15,
+          "rms_error": 1.4013455939151053e-16,
+          "relative_l2_to_exported": 2.8960120339645577e-15,
+          "symmetric_relative_l2": 1.448006016982279e-15,
+          "reconstructed_density_sum": -61.81304451282346,
+          "exported_density_sum": -61.81304451282346,
+          "maximum_absolute_exported_density": 0.8489734241891972,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -14.062499999999998,
+        "reconstructed_retained_density_sum": -14.062499999999991,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 7.105427357601002e-15,
+        "absolute_particle_charge_density_sum": 2323.4374999999995,
+        "particle_signed_number_weight_sum": -45.0,
+        "particle_total_charge_code_units": -0.31789143880208337,
+        "exported_total_charge_code_units": -0.31789143880208337,
+        "exported_full_density_sum": -14.0625,
+        "exported_plus_lost_minus_particle_density_sum": -1.7763568394002505e-15
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "4f8994a60051c141f4690b397053f9cfa6c7ca6b79958197e90daeb82aa62498",
+      "fields_sha256": "1785c8663efac627fbeeb6cc9e2788a1b8bae18cb683770f476f558516bd1304",
+      "particles_sha256": "f7e76949326db0d83f1c3d1020945e59255aa3f9a012de99672f232aa80608c1"
+    },
+    {
+      "completed_step": 80,
+      "position_time": 1.683938285136412,
+      "particles": 9480,
+      "species_counts": {
+        "1": 4858,
+        "2": 4622
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.6058269965196814e-15,
+          "rms_error": 1.616387726432496e-16,
+          "relative_l2_to_exported": 2.770889851124149e-15,
+          "symmetric_relative_l2": 1.3854449255620746e-15,
+          "reconstructed_density_sum": -73.75,
+          "exported_density_sum": -73.75,
+          "maximum_absolute_exported_density": 2.2587638167746547,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.6058269965196814e-15,
+          "rms_error": 1.8225888265373162e-16,
+          "relative_l2_to_exported": 2.770889851124149e-15,
+          "symmetric_relative_l2": 1.3854449255620746e-15,
+          "reconstructed_density_sum": -73.74999999999999,
+          "exported_density_sum": -73.75,
+          "maximum_absolute_exported_density": 2.2587638167746547,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.6058269965196814e-15,
+          "rms_error": 1.9427361075896112e-16,
+          "relative_l2_to_exported": 2.770889851124149e-15,
+          "symmetric_relative_l2": 1.3854449255620746e-15,
+          "reconstructed_density_sum": -73.75,
+          "exported_density_sum": -73.75,
+          "maximum_absolute_exported_density": 2.2587638167746547,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.246603069191224e-15,
+          "rms_error": 2.1904828380163138e-16,
+          "relative_l2_to_exported": 2.651859489235737e-15,
+          "symmetric_relative_l2": 1.3259297446178686e-15,
+          "reconstructed_density_sum": -47.75961859692609,
+          "exported_density_sum": -47.759618596926074,
+          "maximum_absolute_exported_density": 1.0446505273291664,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -73.74999999999999,
+        "reconstructed_retained_density_sum": -73.75,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -1.4210854715202004e-14,
+        "absolute_particle_charge_density_sum": 2962.4999999999995,
+        "particle_signed_number_weight_sum": -236.0,
+        "particle_total_charge_code_units": -1.6671639901620372,
+        "exported_total_charge_code_units": -1.6671639901620374,
+        "exported_full_density_sum": -73.75,
+        "exported_plus_lost_minus_particle_density_sum": -1.4210854715202004e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "6f0456049c24a69ccc5b6a8207ed45f0698feefcaa42fae47abe481f4a632827",
+      "fields_sha256": "32ae3ee60aff4ab45d41845bc5768cae47ecc4e97fb109b3176f511c4d663583",
+      "particles_sha256": "979490973f809c8cea2160d1e0ef1e64bfab3829da0ee37cd27f346d266dcb8f"
+    },
+    {
+      "completed_step": 100,
+      "position_time": 2.104922856420515,
+      "particles": 11582,
+      "species_counts": {
+        "1": 5968,
+        "2": 5614
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 1.7287602680181605e-16,
+          "relative_l2_to_exported": 2.8415876463803596e-15,
+          "symmetric_relative_l2": 1.4207938231901796e-15,
+          "reconstructed_density_sum": -110.62499999999999,
+          "exported_density_sum": -110.62499999999997,
+          "maximum_absolute_exported_density": 1.635665558262641,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 1.9492966302124054e-16,
+          "relative_l2_to_exported": 2.8415876463803596e-15,
+          "symmetric_relative_l2": 1.4207938231901796e-15,
+          "reconstructed_density_sum": -110.62499999999999,
+          "exported_density_sum": -110.62499999999997,
+          "maximum_absolute_exported_density": 1.635665558262641,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 2.077796644408902e-16,
+          "relative_l2_to_exported": 2.8415876463803596e-15,
+          "symmetric_relative_l2": 1.4207938231901796e-15,
+          "reconstructed_density_sum": -110.62499999999999,
+          "exported_density_sum": -110.62499999999999,
+          "maximum_absolute_exported_density": 1.635665558262641,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 3.885780586188048e-15,
+          "rms_error": 2.543082517804091e-16,
+          "relative_l2_to_exported": 2.5397145491853055e-15,
+          "symmetric_relative_l2": 1.269857274592653e-15,
+          "reconstructed_density_sum": -28.258928516661523,
+          "exported_density_sum": -28.258928516661534,
+          "maximum_absolute_exported_density": 1.240460066577115,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -110.62499999999999,
+        "reconstructed_retained_density_sum": -110.62499999999999,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 0.0,
+        "absolute_particle_charge_density_sum": 3619.3749999999995,
+        "particle_signed_number_weight_sum": -354.0,
+        "particle_total_charge_code_units": -2.500745985243056,
+        "exported_total_charge_code_units": -2.5007459852430554,
+        "exported_full_density_sum": -110.62499999999997,
+        "exported_plus_lost_minus_particle_density_sum": 1.4210854715202004e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "a24f24e12a0a54e312edbc727fce10d9396e45af79f23262d73d7dbe8da0f586",
+      "fields_sha256": "531a79e96b67ea38b8c258ce23725008f6734657cf455e56d658389b444153b0",
+      "particles_sha256": "f7f7966faf486f7bab02e2b2015a55081918a695d829e78e0eaa2c01dde02c15"
+    },
+    {
+      "completed_step": 120,
+      "position_time": 2.525907427704615,
+      "particles": 13849,
+      "species_counts": {
+        "1": 7120,
+        "2": 6729
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.215650382226158e-15,
+          "rms_error": 1.890299528916708e-16,
+          "relative_l2_to_exported": 2.9048165919462855e-15,
+          "symmetric_relative_l2": 1.452408295973143e-15,
+          "reconstructed_density_sum": -122.18749999999994,
+          "exported_density_sum": -122.18749999999997,
+          "maximum_absolute_exported_density": 1.8307985820544421,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.215650382226158e-15,
+          "rms_error": 2.131443306499411e-16,
+          "relative_l2_to_exported": 2.9048165919462855e-15,
+          "symmetric_relative_l2": 1.452408295973143e-15,
+          "reconstructed_density_sum": -122.18749999999997,
+          "exported_density_sum": -122.1875,
+          "maximum_absolute_exported_density": 1.8307985820544421,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.215650382226158e-15,
+          "rms_error": 2.2719506520204244e-16,
+          "relative_l2_to_exported": 2.9048165919462855e-15,
+          "symmetric_relative_l2": 1.452408295973143e-15,
+          "reconstructed_density_sum": -122.18749999999997,
+          "exported_density_sum": -122.1875,
+          "maximum_absolute_exported_density": 1.8307985820544421,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.052314039881821e-15,
+          "rms_error": 3.160942875567619e-16,
+          "relative_l2_to_exported": 2.86004229840742e-15,
+          "symmetric_relative_l2": 1.4300211492037101e-15,
+          "reconstructed_density_sum": 9.41138608294667,
+          "exported_density_sum": 9.411386082946692,
+          "maximum_absolute_exported_density": 0.9535105174674078,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -122.18749999999997,
+        "reconstructed_retained_density_sum": -122.18749999999994,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 4327.812499999999,
+        "particle_signed_number_weight_sum": -391.0,
+        "particle_total_charge_code_units": -2.7621233904803244,
+        "exported_total_charge_code_units": -2.762123390480324,
+        "exported_full_density_sum": -122.18749999999997,
+        "exported_plus_lost_minus_particle_density_sum": 0.0
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "6e5189b20e52266b7f180c1130ffb8b86cc873068240d829c01db8090f343f33",
+      "fields_sha256": "0f3f7af94a5a09d09cc8c491d4c97cd752d345d06ea4348468c82b6990d89a63",
+      "particles_sha256": "a783b91d52115b705874eb119d3aa183631fc6ed9a15488d314287faca085f3b"
+    },
+    {
+      "completed_step": 140,
+      "position_time": 2.946891998988715,
+      "particles": 16086,
+      "species_counts": {
+        "1": 8259,
+        "2": 7827
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.756084828893563e-15,
+          "rms_error": 2.1070262818156598e-16,
+          "relative_l2_to_exported": 3.021067140318817e-15,
+          "symmetric_relative_l2": 1.510533570159408e-15,
+          "reconstructed_density_sum": -135.0,
+          "exported_density_sum": -134.99999999999994,
+          "maximum_absolute_exported_density": 1.7141053512066133,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.756084828893563e-15,
+          "rms_error": 2.3758176925368195e-16,
+          "relative_l2_to_exported": 3.021067140318817e-15,
+          "symmetric_relative_l2": 1.510533570159408e-15,
+          "reconstructed_density_sum": -135.00000000000003,
+          "exported_density_sum": -135.0,
+          "maximum_absolute_exported_density": 1.7141053512066133,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.756084828893563e-15,
+          "rms_error": 2.532434495996846e-16,
+          "relative_l2_to_exported": 3.021067140318817e-15,
+          "symmetric_relative_l2": 1.510533570159408e-15,
+          "reconstructed_density_sum": -134.99999999999997,
+          "exported_density_sum": -134.99999999999997,
+          "maximum_absolute_exported_density": 1.7141053512066133,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.884981308350689e-15,
+          "rms_error": 3.4278792835186316e-16,
+          "relative_l2_to_exported": 2.8808413818585762e-15,
+          "symmetric_relative_l2": 1.4404206909292885e-15,
+          "reconstructed_density_sum": 16.422121621172195,
+          "exported_density_sum": 16.42212162117219,
+          "maximum_absolute_exported_density": 1.146912265974625,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -134.99999999999997,
+        "reconstructed_retained_density_sum": -135.0,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 5026.874999999999,
+        "particle_signed_number_weight_sum": -432.0,
+        "particle_total_charge_code_units": -3.0517578125,
+        "exported_total_charge_code_units": -3.051757812499999,
+        "exported_full_density_sum": -134.99999999999994,
+        "exported_plus_lost_minus_particle_density_sum": 2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "479830227f62b952b13ab6be82efc543daa258d38633b9e8900a244185e418be",
+      "fields_sha256": "d0eff4b45661b33cea2d0e60688f5f53732fa19b383b19df50685bf6e2ca96cb",
+      "particles_sha256": "2d3e5c0307a979e6103955280187963e1a22b22dc0fbc7870c4bc18f3adbf5eb"
+    },
+    {
+      "completed_step": 160,
+      "position_time": 3.3678765702728146,
+      "particles": 18303,
+      "species_counts": {
+        "1": 9396,
+        "2": 8907
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.992007221626409e-15,
+          "rms_error": 2.401958675546554e-16,
+          "relative_l2_to_exported": 3.2377334007948744e-15,
+          "symmetric_relative_l2": 1.6188667003974374e-15,
+          "reconstructed_density_sum": -152.81249999999997,
+          "exported_density_sum": -152.8125,
+          "maximum_absolute_exported_density": 1.6446559512814134,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.992007221626409e-15,
+          "rms_error": 2.706635602539225e-16,
+          "relative_l2_to_exported": 3.2356968491306953e-15,
+          "symmetric_relative_l2": 1.6178484245653476e-15,
+          "reconstructed_density_sum": -152.5374654028564,
+          "exported_density_sum": -152.53746540285647,
+          "maximum_absolute_exported_density": 1.6446559512814134,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.992007221626409e-15,
+          "rms_error": 2.87635797609531e-16,
+          "relative_l2_to_exported": 3.2274772765078645e-15,
+          "symmetric_relative_l2": 1.6137386382539322e-15,
+          "reconstructed_density_sum": -151.84165215119722,
+          "exported_density_sum": -151.84165215119717,
+          "maximum_absolute_exported_density": 1.6446559512814134,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.3576253716537394e-15,
+          "rms_error": 3.626411761814767e-16,
+          "relative_l2_to_exported": 2.9492290750000846e-15,
+          "symmetric_relative_l2": 1.4746145375000425e-15,
+          "reconstructed_density_sum": -3.1971404709520588,
+          "exported_density_sum": -3.197140470952016,
+          "maximum_absolute_exported_density": 1.112706619976235,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -152.81249999999997,
+        "reconstructed_retained_density_sum": -152.81249999999997,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 0.0,
+        "absolute_particle_charge_density_sum": 5719.687499999999,
+        "particle_signed_number_weight_sum": -489.0,
+        "particle_total_charge_code_units": -3.454420301649306,
+        "exported_total_charge_code_units": -3.4544203016493062,
+        "exported_full_density_sum": -152.8125,
+        "exported_plus_lost_minus_particle_density_sum": -2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "2fc741a06fe536576787318c35f7486f8871aa5c9f87ba74ef80fa8839ed2857",
+      "fields_sha256": "d87c5a320e71f7c71a3dd2fbbba8e47abfb6ad42db75b22224b9f216fdc58ff6",
+      "particles_sha256": "d2ec819d37dbe5594ad45ed9456a4bf2f4d3f7e1e3a5c20063254830518a7d23"
+    },
+    {
+      "completed_step": 180,
+      "position_time": 3.7888611415569144,
+      "particles": 20220,
+      "species_counts": {
+        "1": 10354,
+        "2": 9866
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.103828801926284e-15,
+          "rms_error": 2.5975406165690307e-16,
+          "relative_l2_to_exported": 3.435315211023963e-15,
+          "symmetric_relative_l2": 1.7176576055119816e-15,
+          "reconstructed_density_sum": -152.49999999999994,
+          "exported_density_sum": -152.49999999999997,
+          "maximum_absolute_exported_density": 1.7643185499557748,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.103828801926284e-15,
+          "rms_error": 2.9133473056277246e-16,
+          "relative_l2_to_exported": 3.4191621774289344e-15,
+          "symmetric_relative_l2": 1.7095810887144674e-15,
+          "reconstructed_density_sum": -148.76565578393632,
+          "exported_density_sum": -148.76565578393638,
+          "maximum_absolute_exported_density": 1.7643185499557748,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 9.103828801926284e-15,
+          "rms_error": 3.0751349442919046e-16,
+          "relative_l2_to_exported": 3.394837052556167e-15,
+          "symmetric_relative_l2": 1.6974185262780838e-15,
+          "reconstructed_density_sum": -147.6319864639663,
+          "exported_density_sum": -147.6319864639663,
+          "maximum_absolute_exported_density": 1.7643185499557748,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.85722573273506e-15,
+          "rms_error": 3.748733270674496e-16,
+          "relative_l2_to_exported": 3.0125633664492696e-15,
+          "symmetric_relative_l2": 1.5062816832246348e-15,
+          "reconstructed_density_sum": -20.116473138382073,
+          "exported_density_sum": -20.11647313838207,
+          "maximum_absolute_exported_density": 1.0616046711749767,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -152.49999999999997,
+        "reconstructed_retained_density_sum": -152.49999999999994,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 6318.749999999999,
+        "particle_signed_number_weight_sum": -488.0,
+        "particle_total_charge_code_units": -3.4473560474537037,
+        "exported_total_charge_code_units": -3.4473560474537037,
+        "exported_full_density_sum": -152.49999999999997,
+        "exported_plus_lost_minus_particle_density_sum": 0.0
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "38b3936818e56f5354acc59a5d96e1522393a1ae75df5b61e952f4663b4c2701",
+      "fields_sha256": "07641a7978278f74621bd2a8bd63e5130702c4121f2078b2444f4c104fa93755",
+      "particles_sha256": "c1dcbfb0d5e5589a328bb4bc05d793542f984663e98ad3bb6a8a48aa2366b774"
+    },
+    {
+      "completed_step": 200,
+      "position_time": 4.209845712841019,
+      "particles": 21915,
+      "species_counts": {
+        "1": 11195,
+        "2": 10720
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.2212453270876722e-14,
+          "rms_error": 2.8586084725554115e-16,
+          "relative_l2_to_exported": 3.60244866618083e-15,
+          "symmetric_relative_l2": 1.801224333090415e-15,
+          "reconstructed_density_sum": -148.43750000000003,
+          "exported_density_sum": -148.43749999999994,
+          "maximum_absolute_exported_density": 2.0838370094881706,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.2212453270876722e-14,
+          "rms_error": 3.2101836476558543e-16,
+          "relative_l2_to_exported": 3.591147310758623e-15,
+          "symmetric_relative_l2": 1.795573655379311e-15,
+          "reconstructed_density_sum": -144.3662974145263,
+          "exported_density_sum": -144.36629741452631,
+          "maximum_absolute_exported_density": 2.0838370094881706,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 1.2212453270876722e-14,
+          "rms_error": 3.380156068997647e-16,
+          "relative_l2_to_exported": 3.557174102746974e-15,
+          "symmetric_relative_l2": 1.778587051373487e-15,
+          "reconstructed_density_sum": -134.4967144873711,
+          "exported_density_sum": -134.49671448737112,
+          "maximum_absolute_exported_density": 2.0838370094881706,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.7878367936959876e-15,
+          "rms_error": 3.636332441423341e-16,
+          "relative_l2_to_exported": 2.857741690939142e-15,
+          "symmetric_relative_l2": 1.428870845469571e-15,
+          "reconstructed_density_sum": -21.28092587321322,
+          "exported_density_sum": -21.280925873213207,
+          "maximum_absolute_exported_density": 1.378073679397404,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -148.43749999999997,
+        "reconstructed_retained_density_sum": -148.43750000000003,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -5.684341886080802e-14,
+        "absolute_particle_charge_density_sum": 6848.437499999999,
+        "particle_signed_number_weight_sum": -475.0,
+        "particle_total_charge_code_units": -3.3555207429108798,
+        "exported_total_charge_code_units": -3.355520742910879,
+        "exported_full_density_sum": -148.43749999999994,
+        "exported_plus_lost_minus_particle_density_sum": 2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "81f841601a5a9f05845ef27207946553ad7ceb6edd940544d3fc1e42c3284d94",
+      "fields_sha256": "b6c6adf6ea1f58f89cd0d76fc2fba34d3c249ff30e0aa457a0278ca15f682ebe",
+      "particles_sha256": "3b396ac6ac8b5495c40a42f46920debe1de0117e6e5151e11c2cae8de3a715aa"
+    },
+    {
+      "completed_step": 220,
+      "position_time": 4.630830284125127,
+      "particles": 23139,
+      "species_counts": {
+        "1": 11803,
+        "2": 11336
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 2.957250686348902e-16,
+          "relative_l2_to_exported": 3.646123528290462e-15,
+          "symmetric_relative_l2": 1.823061764145231e-15,
+          "reconstructed_density_sum": -145.9375,
+          "exported_density_sum": -145.93749999999997,
+          "maximum_absolute_exported_density": 2.056781854272129,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 3.302177117776845e-16,
+          "relative_l2_to_exported": 3.6171229885980594e-15,
+          "symmetric_relative_l2": 1.8085614942990297e-15,
+          "reconstructed_density_sum": -146.2614743059745,
+          "exported_density_sum": -146.26147430597442,
+          "maximum_absolute_exported_density": 2.056781854272129,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.881784197001252e-15,
+          "rms_error": 3.4471394221219683e-16,
+          "relative_l2_to_exported": 3.562513799395671e-15,
+          "symmetric_relative_l2": 1.7812568996978354e-15,
+          "reconstructed_density_sum": -150.11185939337588,
+          "exported_density_sum": -150.11185939337588,
+          "maximum_absolute_exported_density": 2.056781854272129,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.687222832089333e-15,
+          "rms_error": 3.5932147258159392e-16,
+          "relative_l2_to_exported": 2.825283688968194e-15,
+          "symmetric_relative_l2": 1.412641844484097e-15,
+          "reconstructed_density_sum": -20.481078961172173,
+          "exported_density_sum": -20.481078961172155,
+          "maximum_absolute_exported_density": 1.2092557174457705,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -145.93749999999997,
+        "reconstructed_retained_density_sum": -145.9375,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 7230.937499999999,
+        "particle_signed_number_weight_sum": -467.0,
+        "particle_total_charge_code_units": -3.299006709346065,
+        "exported_total_charge_code_units": -3.299006709346065,
+        "exported_full_density_sum": -145.93749999999997,
+        "exported_plus_lost_minus_particle_density_sum": 0.0
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "29bcc5bdad7c6d291c709e1df29ce78fc496972e840fd478cfdbc4b862e1a336",
+      "fields_sha256": "8e0f73cfcfda99257214d1d5e7e2824e9890ea62fc3886e4d5f6f612f1c08b21",
+      "particles_sha256": "9740e8a06b9a64405f7b79a12f684d420b0f0a3ac3f1c10fe7ded6b3ad6c5e9f"
+    },
+    {
+      "completed_step": 240,
+      "position_time": 5.051814855409236,
+      "particles": 23861,
+      "species_counts": {
+        "1": 12200,
+        "2": 11661
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.439293542825908e-15,
+          "rms_error": 3.013894845946387e-16,
+          "relative_l2_to_exported": 3.671274198176859e-15,
+          "symmetric_relative_l2": 1.8356370990884295e-15,
+          "reconstructed_density_sum": -168.4375,
+          "exported_density_sum": -168.4375,
+          "maximum_absolute_exported_density": 2.1544998082170874,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.439293542825908e-15,
+          "rms_error": 3.364284599266582e-16,
+          "relative_l2_to_exported": 3.642680203429808e-15,
+          "symmetric_relative_l2": 1.821340101714904e-15,
+          "reconstructed_density_sum": -172.7421595218731,
+          "exported_density_sum": -172.74215952187308,
+          "maximum_absolute_exported_density": 2.1544998082170874,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.439293542825908e-15,
+          "rms_error": 3.4935466040544876e-16,
+          "relative_l2_to_exported": 3.571260090608937e-15,
+          "symmetric_relative_l2": 1.7856300453044685e-15,
+          "reconstructed_density_sum": -177.623449357232,
+          "exported_density_sum": -177.62344935723206,
+          "maximum_absolute_exported_density": 2.1544998082170874,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 5.842548667089886e-15,
+          "rms_error": 3.77988991557387e-16,
+          "relative_l2_to_exported": 2.9709867528263356e-15,
+          "symmetric_relative_l2": 1.4854933764131678e-15,
+          "reconstructed_density_sum": -33.199474721732344,
+          "exported_density_sum": -33.19947472173233,
+          "maximum_absolute_exported_density": 1.3936620711544758,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -168.43749999999997,
+        "reconstructed_retained_density_sum": -168.4375,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 7456.562499999999,
+        "particle_signed_number_weight_sum": -539.0,
+        "particle_total_charge_code_units": -3.8076330114293984,
+        "exported_total_charge_code_units": -3.807633011429399,
+        "exported_full_density_sum": -168.4375,
+        "exported_plus_lost_minus_particle_density_sum": -2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "03277bda3dc59bb2a2afbd5dd185f7b64f7f1022ca95dc1ea0f7c7a42a3b5ca5",
+      "fields_sha256": "99ea19f86d3777c38edf4cc25de08a92667b91afc49771d4ee6c48f8ac97315c",
+      "particles_sha256": "d9e940ddab23f13aa39031de4f7dfdbb8402fbece4618e8020031562900c43c8"
+    },
+    {
+      "completed_step": 260,
+      "position_time": 5.472799426693345,
+      "particles": 24514,
+      "species_counts": {
+        "1": 12558,
+        "2": 11956
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.409939411535561e-15,
+          "rms_error": 3.1732034494820446e-16,
+          "relative_l2_to_exported": 3.794940388647529e-15,
+          "symmetric_relative_l2": 1.8974701943237644e-15,
+          "reconstructed_density_sum": -188.12499999999991,
+          "exported_density_sum": -188.12499999999997,
+          "maximum_absolute_exported_density": 2.6145497303901637,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.409939411535561e-15,
+          "rms_error": 3.5424468370485015e-16,
+          "relative_l2_to_exported": 3.765610957180183e-15,
+          "symmetric_relative_l2": 1.8828054785900913e-15,
+          "reconstructed_density_sum": -188.89311059735132,
+          "exported_density_sum": -188.8931105973513,
+          "maximum_absolute_exported_density": 2.6145497303901637,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.409939411535561e-15,
+          "rms_error": 3.696916589536159e-16,
+          "relative_l2_to_exported": 3.708425507652964e-15,
+          "symmetric_relative_l2": 1.8542127538264816e-15,
+          "reconstructed_density_sum": -191.2949734005327,
+          "exported_density_sum": -191.29497340053274,
+          "maximum_absolute_exported_density": 2.6145497303901637,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.217248937900877e-15,
+          "rms_error": 3.817303555101619e-16,
+          "relative_l2_to_exported": 2.9907598720147256e-15,
+          "symmetric_relative_l2": 1.4953799360073628e-15,
+          "reconstructed_density_sum": -28.430928870048874,
+          "exported_density_sum": -28.430928870048888,
+          "maximum_absolute_exported_density": 1.2738332723061176,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -188.12499999999997,
+        "reconstructed_retained_density_sum": -188.12499999999991,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 5.684341886080802e-14,
+        "absolute_particle_charge_density_sum": 7660.624999999999,
+        "particle_signed_number_weight_sum": -602.0,
+        "particle_total_charge_code_units": -4.252681025752315,
+        "exported_total_charge_code_units": -4.252681025752315,
+        "exported_full_density_sum": -188.12499999999997,
+        "exported_plus_lost_minus_particle_density_sum": 0.0
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "1b0a933420b329ed94bdfa205e84b7ea317067f78be0350b1f67bcd664df30fd",
+      "fields_sha256": "73b3ca8611e107a18573b0ffb56cda7c37f54b63efd7af7d18ab152eac0e8a55",
+      "particles_sha256": "63a808b4f304194be0ae81bde4a3fc0b03c8e56ee25d6b93d78f2e7c72825583"
+    },
+    {
+      "completed_step": 280,
+      "position_time": 5.893783997977454,
+      "particles": 25337,
+      "species_counts": {
+        "1": 12961,
+        "2": 12376
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.549516567451064e-15,
+          "rms_error": 3.2547722234999147e-16,
+          "relative_l2_to_exported": 3.880745028123725e-15,
+          "symmetric_relative_l2": 1.940372514061863e-15,
+          "reconstructed_density_sum": -182.81249999999994,
+          "exported_density_sum": -182.81249999999994,
+          "maximum_absolute_exported_density": 1.8372386680668629,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.549516567451064e-15,
+          "rms_error": 3.63725446095569e-16,
+          "relative_l2_to_exported": 3.852783047441609e-15,
+          "symmetric_relative_l2": 1.9263915237208043e-15,
+          "reconstructed_density_sum": -180.77377919843394,
+          "exported_density_sum": -180.77377919843397,
+          "maximum_absolute_exported_density": 1.8372386680668629,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.549516567451064e-15,
+          "rms_error": 3.77528498257084e-16,
+          "relative_l2_to_exported": 3.776729852887111e-15,
+          "symmetric_relative_l2": 1.8883649264435556e-15,
+          "reconstructed_density_sum": -170.63293016412732,
+          "exported_density_sum": -170.63293016412732,
+          "maximum_absolute_exported_density": 1.8372386680668629,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 6.217248937900877e-15,
+          "rms_error": 3.6276623450713067e-16,
+          "relative_l2_to_exported": 2.8313611761977036e-15,
+          "symmetric_relative_l2": 1.4156805880988522e-15,
+          "reconstructed_density_sum": -22.68098119091321,
+          "exported_density_sum": -22.680981190913194,
+          "maximum_absolute_exported_density": 1.1499212247855293,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -182.81249999999997,
+        "reconstructed_retained_density_sum": -182.81249999999994,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 2.842170943040401e-14,
+        "absolute_particle_charge_density_sum": 7917.812499999998,
+        "particle_signed_number_weight_sum": -585.0,
+        "particle_total_charge_code_units": -4.132588704427084,
+        "exported_total_charge_code_units": -4.132588704427083,
+        "exported_full_density_sum": -182.81249999999994,
+        "exported_plus_lost_minus_particle_density_sum": 2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "c198746bf5f526a5e76a905601020685ff649fc4425cc699df860ce1eaa8c307",
+      "fields_sha256": "8f5e34cba542015a4de1d3d299e30cfdefb120dbab726f5fe6636005cad27744",
+      "particles_sha256": "69b98e032f21415f172dd7015db23260b2f1930d4c6e0965e524cfb405ac9ca8"
+    },
+    {
+      "completed_step": 300,
+      "position_time": 6.314768569261562,
+      "particles": 25793,
+      "species_counts": {
+        "1": 13188,
+        "2": 12605
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.326672684688674e-15,
+          "rms_error": 3.3132383678289943e-16,
+          "relative_l2_to_exported": 3.8773516532880735e-15,
+          "symmetric_relative_l2": 1.938675826644037e-15,
+          "reconstructed_density_sum": -182.18750000000003,
+          "exported_density_sum": -182.18750000000003,
+          "maximum_absolute_exported_density": 2.134551083491163,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.326672684688674e-15,
+          "rms_error": 3.6714967696383414e-16,
+          "relative_l2_to_exported": 3.8225859775813844e-15,
+          "symmetric_relative_l2": 1.9112929887906926e-15,
+          "reconstructed_density_sum": -181.40614068342862,
+          "exported_density_sum": -181.40614068342865,
+          "maximum_absolute_exported_density": 2.134551083491163,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 8.326672684688674e-15,
+          "rms_error": 3.778029258644126e-16,
+          "relative_l2_to_exported": 3.722893846230007e-15,
+          "symmetric_relative_l2": 1.861446923115004e-15,
+          "reconstructed_density_sum": -178.64349355002224,
+          "exported_density_sum": -178.6434935500222,
+          "maximum_absolute_exported_density": 2.134551083491163,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 4.1494585545365226e-15,
+          "rms_error": 3.5214831105659514e-16,
+          "relative_l2_to_exported": 2.698481062174636e-15,
+          "symmetric_relative_l2": 1.3492405310873185e-15,
+          "reconstructed_density_sum": -19.484654878017263,
+          "exported_density_sum": -19.484654878017263,
+          "maximum_absolute_exported_density": 1.4153144557126653,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -182.18749999999997,
+        "reconstructed_retained_density_sum": -182.18750000000003,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": -5.684341886080802e-14,
+        "absolute_particle_charge_density_sum": 8060.312499999998,
+        "particle_signed_number_weight_sum": -583.0,
+        "particle_total_charge_code_units": -4.11846019603588,
+        "exported_total_charge_code_units": -4.118460196035881,
+        "exported_full_density_sum": -182.18750000000003,
+        "exported_plus_lost_minus_particle_density_sum": -5.684341886080802e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "028bba62e736c8826763856b3bdedb8e22cb1345f57ec5b6e0acf50158b7192e",
+      "fields_sha256": "4d1e543e9e3eb81e87c5380f39676cc61e9e21e8fdd049ebe5b360a88083fc02",
+      "particles_sha256": "3701b00563dc983c214d8ff1119222d6a1b4f4edb8cb17417ed48b38ad9bb45d"
+    },
+    {
+      "completed_step": 317,
+      "position_time": 6.672605454853055,
+      "particles": 25735,
+      "species_counts": {
+        "1": 13149,
+        "2": 12586
+      },
+      "coefficient_q0_over_B0_V0": 0.31249999999999994,
+      "comparison_regions": {
+        "full_stored_vertices_including_ghosts": {
+          "vertices": 140608,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.382983113757291e-15,
+          "rms_error": 3.29304336159327e-16,
+          "relative_l2_to_exported": 3.862115234964245e-15,
+          "symmetric_relative_l2": 1.931057617482122e-15,
+          "reconstructed_density_sum": -175.93749999999991,
+          "exported_density_sum": -175.93749999999994,
+          "maximum_absolute_exported_density": 2.5149838489137046,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "all_active_vertices_excluding_ghosts": {
+          "vertices": 110592,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.382983113757291e-15,
+          "rms_error": 3.6508695342511497e-16,
+          "relative_l2_to_exported": 3.8096682779823704e-15,
+          "symmetric_relative_l2": 1.9048341389911852e-15,
+          "reconstructed_density_sum": -181.54120877982785,
+          "exported_density_sum": -181.54120877982785,
+          "maximum_absolute_exported_density": 2.5149838489137046,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "strict_interior_active_vertices_one_vertex_margin": {
+          "vertices": 97336,
+          "comparison_available": true,
+          "maximum_absolute_error": 7.382983113757291e-15,
+          "rms_error": 3.7532950968550336e-16,
+          "relative_l2_to_exported": 3.709154128115748e-15,
+          "symmetric_relative_l2": 1.8545770640578737e-15,
+          "reconstructed_density_sum": -179.95956917697953,
+          "exported_density_sum": -179.9595691769796,
+          "maximum_absolute_exported_density": 2.5149838489137046,
+          "pointwise_within_recorded_tolerance": true
+        },
+        "exterior_diagnostic_shell_active_vertices": {
+          "vertices": 19696,
+          "comparison_available": true,
+          "maximum_absolute_error": 5.689893001203927e-15,
+          "rms_error": 3.824771349750859e-16,
+          "relative_l2_to_exported": 2.9147046284495477e-15,
+          "symmetric_relative_l2": 1.4573523142247738e-15,
+          "reconstructed_density_sum": -11.553177428912765,
+          "exported_density_sum": -11.553177428912782,
+          "maximum_absolute_exported_density": 1.207507147528109,
+          "pointwise_within_recorded_tolerance": true
+        }
+      },
+      "shape_support_and_global_charge": {
+        "expected_full_density_sum_from_particles": -175.93749999999997,
+        "reconstructed_retained_density_sum": -175.93749999999991,
+        "lost_support_signed_density_sum": 0.0,
+        "lost_support_absolute_density_sum": 0.0,
+        "particles_with_nonzero_charge_support_outside_storage": 0,
+        "all_nonzero_charge_shape_support_inside_storage": true,
+        "retained_plus_lost_minus_expected": 5.684341886080802e-14,
+        "absolute_particle_charge_density_sum": 8042.187499999998,
+        "particle_signed_number_weight_sum": -563.0,
+        "particle_total_charge_code_units": -3.977175112123843,
+        "exported_total_charge_code_units": -3.977175112123842,
+        "exported_full_density_sum": -175.93749999999994,
+        "exported_plus_lost_minus_particle_density_sum": 2.842170943040401e-14
+      },
+      "shell_vertex_radii_code": [
+        0.8125,
+        1.8
+      ],
+      "metadata_sha256": "99f8c8a2f6d5705ecefaa0bc2ffae3f08f00619448bf22e0ee4ae08f5e4d397b",
+      "fields_sha256": "98da250c991176055f1af4ff619bab500f4a066d2fa4ad9ee8d79e90c8093c6b",
+      "particles_sha256": "d695aee5c5c178045b7786c1fe50c9ed021322dd2c3cf80f5af319499ee4a4f2"
+    }
+  ],
+  "all_snapshots_pointwise_match_full_storage": true,
+  "all_snapshots_have_retained_full_charge_shape_support": true,
+  "physical_charge_conservation_or_convergence_established": false
+}

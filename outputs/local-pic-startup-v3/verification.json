@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-17T10:25:18.176385+00:00",
+  "scope": "scaled local oblique 3D PIC startup prototype",
+  "production_vela_dataset": false,
+  "optical_prediction": false,
+  "stellar_atmosphere_model": false,
+  "convergence_claim": false,
+  "exit_code": 0,
+  "wall_seconds": 1.3368685830500908,
+  "run_command": [
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/entity-build-local-pulsar/src/entity.xc",
+    "-input",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-local/startup.toml"
+  ],
+  "build_commands": [
+    [
+      "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/coffee-tools/env/bin/cmake",
+      "-S",
+      "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/entity-research",
+      "-B",
+      "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/entity-build-local-pulsar",
+      "-Doutput=OFF",
+      "-Dmpi=OFF",
+      "-Dpgen=/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-local",
+      "-Dprecision=double",
+      "-DTESTS=OFF",
+      "-DKokkos_ENABLE_SERIAL=ON",
+      "-DKokkos_ENABLE_OPENMP=OFF",
+      "-DKokkos_VERSION=5.2.1",
+      "-DFETCHCONTENT_SOURCE_DIR_KOKKOS=/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/kokkos-research",
+      "-DCONNECTION_CHECKED=TRUE",
+      "-DFETCHCONTENT_FULLY_DISCONNECTED=OFF",
+      "-DKokkos_ARCH_ARMV8=ON",
+      "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+      "-DCMAKE_C_COMPILER=/usr/bin/clang"
+    ],
+    [
+      "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/coffee-tools/env/bin/cmake",
+      "--build",
+      "/Users/Logan/Documents/New project/sideratlas-pulsar/third_party/entity-build-local-pulsar",
+      "--target",
+      "entity.xc",
+      "--parallel",
+      "2"
+    ]
+  ],
+  "source_pins": [
+    {
+      "name": "entity",
+      "directory": "entity-research",
+      "repository": "https://github.com/entity-toolkit/entity.git",
+      "commit": "62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "kokkos",
+      "directory": "kokkos-research",
+      "repository": "https://github.com/kokkos/kokkos.git",
+      "commit": "89f0b12e43583d02bd19739810ceadcedf1ccd56",
+      "license": "Apache-2.0 WITH LLVM-exception"
+    }
+  ],
+  "external_pgen_sha256": "4b19128216b579f9f1910d1e7dafbc63e807fafb71ffd709ac2a39d4ea18da54",
+  "configuration_sha256": "effb87789b13f97e00d327307c3d14da32dd88141d39412f418bc18523c4488e",
+  "native_executable_sha256": "81416eefa1a046564545d4236fa46bbeff4fcc3dedde2d79390b895a523e14ec",
+  "run_log_sha256": "d5ee81edb84264cca54aea1b2373cd5ae9e17cde943fc153f00b372726efe98a",
+  "states": [
+    {
+      "completed_step": 0,
+      "position_and_E_time": 0,
+      "metadata": "state-000000.json",
+      "metadata_sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78",
+      "fields_sha256": "193c2acb41d79f2402c0da6158e861118ed59e3c893d4e5871689b1a4b0f2efc",
+      "particles_sha256": "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f"
+    },
+    {
+      "completed_step": 20,
+      "position_and_E_time": 0.4209845712841021,
+      "metadata": "state-000020.json",
+      "metadata_sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01",
+      "fields_sha256": "8856100c32f2a22c763c85ad1f633d942e101ff06af866efde6d4004f23ceed5",
+      "particles_sha256": "5178b2616ac7294d66eb2f9708cf8be14ce461cc05a7697041f623e851667a6c"
+    },
+    {
+      "completed_step": 38,
+      "position_and_E_time": 0.799870685439794,
+      "metadata": "state-000038.json",
+      "metadata_sha256": "ba8bd5a3c1656ff419e2883b4e2583cc69e9bb20ab9a23b3182f67e49f7876a6",
+      "fields_sha256": "30a4a2eaeebfff7ee97bc0715c5a114d092634687f105273afb825fe12fe9ef6",
+      "particles_sha256": "ff19f4d36e0222e2ab6cb5d22e0166c5c44b990fbc2f44ac786a65cea6190b7e"
+    }
+  ]
+}

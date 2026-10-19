@@ -1,0 +1,116 @@
+{
+  "scope": "Raw export integrity and discrete constraints of a reduced local kinetic prototype; not a Vela model or optical image",
+  "finite_native_exports": true,
+  "snapshots": [
+    {
+      "step": 0,
+      "position_and_E_time": 0,
+      "momentum_B_and_J_time": -0.010524614282102553,
+      "mesh": [
+        48,
+        48,
+        48
+      ],
+      "dx": 0.10416666666666667,
+      "alive_particles": 128,
+      "species_counts": {
+        "1": 64,
+        "2": 64
+      },
+      "gamma_min": 1.0206207261596576,
+      "gamma_max": 1.0206207261596576,
+      "gamma_mean": 1.0206207261596576,
+      "divB_rms_over_B0": 5.998141605026484e-16,
+      "divB_rms_over_rms_B_per_rlc": 1.1954447277514367e-14,
+      "gauss_rms_over_B0": 0.0,
+      "gauss_reference_rms_over_B0": 0.0,
+      "relative_gauss_reference_roundoff_floor_over_B0": 6.374304541381351e-13,
+      "gauss_relative_l2_symmetric": null,
+      "gauss_relative_defined_above_roundoff": false,
+      "charge_rms_over_B0": 0.0,
+      "raw_current_l2": 0.0,
+      "no_surface_inside_alive_particles": true,
+      "field_sha256": "193c2acb41d79f2402c0da6158e861118ed59e3c893d4e5871689b1a4b0f2efc",
+      "particles_sha256": "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f",
+      "metadata_sha256": "fbe03684a45cd775e114434dd2e48009aa5a784e14d970d51eacb196e374bf78"
+    },
+    {
+      "step": 20,
+      "position_and_E_time": 0.4209845712841021,
+      "momentum_B_and_J_time": 0.41045995700199955,
+      "mesh": [
+        48,
+        48,
+        48
+      ],
+      "dx": 0.10416666666666667,
+      "alive_particles": 2688,
+      "species_counts": {
+        "1": 1344,
+        "2": 1344
+      },
+      "gamma_min": 1.0018973904767614,
+      "gamma_max": 1.1884668785744839,
+      "gamma_mean": 1.039457229990273,
+      "divB_rms_over_B0": 6.633346748067902e-16,
+      "divB_rms_over_rms_B_per_rlc": 1.3901663752422696e-14,
+      "gauss_rms_over_B0": 3.031874248062983e-17,
+      "gauss_reference_rms_over_B0": 3.0318742480629826e-17,
+      "relative_gauss_reference_roundoff_floor_over_B0": 6.356280301366997e-13,
+      "gauss_relative_l2_symmetric": null,
+      "gauss_relative_defined_above_roundoff": false,
+      "charge_rms_over_B0": 0.0,
+      "raw_current_l2": 29.683033439439598,
+      "no_surface_inside_alive_particles": true,
+      "field_sha256": "8856100c32f2a22c763c85ad1f633d942e101ff06af866efde6d4004f23ceed5",
+      "particles_sha256": "5178b2616ac7294d66eb2f9708cf8be14ce461cc05a7697041f623e851667a6c",
+      "metadata_sha256": "eccf721e38cc34afcd426ba835f9e879e43941bdbac7d1679b42462ba8b95f01"
+    },
+    {
+      "step": 38,
+      "position_and_E_time": 0.799870685439794,
+      "momentum_B_and_J_time": 0.7893460711576914,
+      "mesh": [
+        48,
+        48,
+        48
+      ],
+      "dx": 0.10416666666666667,
+      "alive_particles": 4895,
+      "species_counts": {
+        "1": 2430,
+        "2": 2465
+      },
+      "gamma_min": 1.0008611172741986,
+      "gamma_max": 1.2635851528336917,
+      "gamma_mean": 1.1077016023732393,
+      "divB_rms_over_B0": 7.099607705563569e-16,
+      "divB_rms_over_rms_B_per_rlc": 1.4413098403520875e-14,
+      "gauss_rms_over_B0": 8.218621219090232e-07,
+      "gauss_reference_rms_over_B0": 0.0060802517697098515,
+      "relative_gauss_reference_roundoff_floor_over_B0": 5.933478056923789e-13,
+      "gauss_relative_l2_symmetric": 0.00013516909381998214,
+      "gauss_relative_defined_above_roundoff": true,
+      "charge_rms_over_B0": 0.0030402318548775867,
+      "raw_current_l2": 54.59363301886183,
+      "no_surface_inside_alive_particles": true,
+      "field_sha256": "30a4a2eaeebfff7ee97bc0715c5a114d092634687f105273afb825fe12fe9ef6",
+      "particles_sha256": "ff19f4d36e0222e2ab6cb5d22e0166c5c44b990fbc2f44ac786a65cea6190b7e",
+      "metadata_sha256": "ba8bd5a3c1656ff419e2883b4e2583cc69e9bb20ab9a23b3182f67e49f7876a6"
+    }
+  ],
+  "relative_gauss_definition": "norm(divE-rho)/(norm(divE)+norm(rho)); null when the RMS reference is below an explicitly recorded roundoff floor; not a convergence tolerance",
+  "particle_inventory_matches_birth_death_events": true,
+  "particle_inventory_checks_per_snapshot": [
+    true,
+    true,
+    true
+  ],
+  "events_sha256": "006fa3c41c646a456882dcc32b87c7e7e56b19154a17b00d63909020f747c484",
+  "script_sha256": "4d7540c1f2a1f9b1376c913a5865ca5bc1bca000c9525dfaa1e5fb2f72e27f98",
+  "source_and_boundary_interventions_require_separate_energy_accounting": true,
+  "complete_energy_conservation_test": false,
+  "kinetic_convergence_established": false,
+  "physical_vela_scaling_established": false,
+  "optical_prediction": false
+}

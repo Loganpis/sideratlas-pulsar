@@ -1,0 +1,178 @@
+{
+  "schema": "sideratlas.physical-pair-refinement.v1",
+  "baseline": "baseline-v2",
+  "status": "Finite quadrature sensitivity study, not a Vela-model or image validation",
+  "no_parameters_fit_to_optical_data": true,
+  "comparisons": {
+    "phase-refined": {
+      "changed_parameters": {
+        "phase_nodes": [
+          128,
+          256
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.869773993110741e+20,
+      "relative_energy_change_vs_baseline": 0.019185905392244115,
+      "relative_energy_difference_normalized_to_refined": 0.018824735792299072,
+      "normalized_source_phase_profile_L1": 0.04687660850642479,
+      "largest_source_phase_power_difference_over_refined_peak": 0.09706537757344073,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "azimuth-refined": {
+      "changed_parameters": {
+        "azimuth_nodes": [
+          64,
+          128
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.853796116363408e+20,
+      "relative_energy_change_vs_baseline": 0.016815459611159173,
+      "relative_energy_difference_normalized_to_refined": 0.016537376032411604,
+      "normalized_source_phase_profile_L1": 0.05765806155869685,
+      "largest_source_phase_power_difference_over_refined_peak": 0.12579341645596104,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "cooling-refined": {
+      "changed_parameters": {
+        "cooling_nodes": [
+          32,
+          64
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.950704758986299e+20,
+      "relative_energy_change_vs_baseline": 0.031192631665289815,
+      "relative_energy_difference_normalized_to_refined": 0.030249083156186178,
+      "normalized_source_phase_profile_L1": 0.06227409817425559,
+      "largest_source_phase_power_difference_over_refined_peak": 0.1048049288112461,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "radial-refined": {
+      "changed_parameters": {
+        "radial_nodes": [
+          3,
+          5
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.765468211030907e+20,
+      "relative_energy_change_vs_baseline": 0.003711308549132498,
+      "relative_energy_difference_normalized_to_refined": 0.003697585667832322,
+      "normalized_source_phase_profile_L1": 0.08163262207731455,
+      "largest_source_phase_power_difference_over_refined_peak": 0.11358789649060247,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "annulus-refined": {
+      "changed_parameters": {
+        "annulus_nodes": [
+          1,
+          2
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.84415748518975e+20,
+      "relative_energy_change_vs_baseline": 0.01538549160212166,
+      "relative_energy_difference_normalized_to_refined": 0.015152365017394259,
+      "normalized_source_phase_profile_L1": 0.07856769983398161,
+      "largest_source_phase_power_difference_over_refined_peak": 0.12852155173013466,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "combined-refined": {
+      "changed_parameters": {
+        "azimuth_nodes": [
+          64,
+          128
+        ],
+        "cooling_nodes": [
+          32,
+          64
+        ],
+        "phase_nodes": [
+          128,
+          256
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.889999719568e+20,
+      "relative_energy_change_vs_baseline": 0.02218655364533506,
+      "relative_energy_difference_normalized_to_refined": 0.021704994617873893,
+      "normalized_source_phase_profile_L1": 0.058697861845485144,
+      "largest_source_phase_power_difference_over_refined_peak": 0.10146425129970663,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    },
+    "production-spatial": {
+      "changed_parameters": {
+        "radial_nodes": [
+          3,
+          5
+        ],
+        "annulus_nodes": [
+          1,
+          2
+        ],
+        "azimuth_nodes": [
+          64,
+          128
+        ],
+        "cooling_nodes": [
+          32,
+          64
+        ],
+        "phase_nodes": [
+          128,
+          256
+        ]
+      },
+      "baseline_band_energy_j_sr": 6.740452312737624e+20,
+      "refined_band_energy_j_sr": 6.882475616921771e+20,
+      "relative_energy_change_vs_baseline": 0.021070292851974044,
+      "relative_energy_difference_normalized_to_refined": 0.02063549688936904,
+      "normalized_source_phase_profile_L1": 0.10422279894382025,
+      "largest_source_phase_power_difference_over_refined_peak": 0.1564349012991014,
+      "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+      "one_percent_energy_and_profile_gate_passed": false,
+      "spatial_image_convergence_established": false
+    }
+  },
+  "limitations": [
+    "One-at-a-time changes are not a full multidimensional convergence proof",
+    "Source phase profile comparison does not validate final finite-exposure image rasterization",
+    "Band-integrated scalar convergence can coexist with unresolved spatial/color structure",
+    "The explicit population and field assumptions dominate scientific uncertainty even when quadrature errors are small"
+  ],
+  "combined_to_production": {
+    "changed_parameters": {
+      "radial_nodes": [
+        3,
+        5
+      ],
+      "annulus_nodes": [
+        1,
+        2
+      ]
+    },
+    "baseline_band_energy_j_sr": 6.889999719568e+20,
+    "refined_band_energy_j_sr": 6.882475616921771e+20,
+    "relative_energy_change_vs_baseline": -0.0010920323588489698,
+    "relative_energy_difference_normalized_to_refined": 0.0010932261972318883,
+    "normalized_source_phase_profile_L1": 0.09683337137677969,
+    "largest_source_phase_power_difference_over_refined_peak": 0.14439950401483512,
+    "phase_profile_comparison": "Fine source-time phase bins averaged to baseline bins; no artificial phase shifting, fitting, peak alignment or pulse smoothing",
+    "one_percent_energy_and_profile_gate_passed": false,
+    "spatial_image_convergence_established": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Coordinate-export precision correction comparison; not a physical validation",
+  "old_pgen_sha256": "cea73a3207c7c7f95a775068dd41d533d4053319aa24e61043211a061a543d37",
+  "corrected_pgen_sha256": "4b19128216b579f9f1910d1e7dafbc63e807fafb71ffd709ac2a39d4ea18da54",
+  "compared_snapshots": 17,
+  "all_field_and_charge_arrays_bit_identical": true,
+  "all_particle_ids_species_momenta_and_weights_identical": true,
+  "largest_exported_coordinate_correction_RLC": 1.9868214939933182e-07,
+  "interpretation": "Correct double reconstruction changed saved coordinates and birth-event positions; saved field/charge arrays and numerical particle momenta/IDs are unchanged in this run",
+  "scientific_vela_validation": false
+}

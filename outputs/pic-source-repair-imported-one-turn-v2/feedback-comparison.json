@@ -1,0 +1,21 @@
+{
+  "scope": "causal field-feedback check for the scaled local PIC startup; not Vela validation",
+  "time": 6.672605454853055,
+  "completed_step": 317,
+  "initial_field_arrays_bit_identical": true,
+  "initial_particle_csv_sha256": [
+    "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f",
+    "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f"
+  ],
+  "changed_input": "algorithms.deposit.enable=false in the separate control; geometry/injection/solver/source otherwise identical",
+  "mask": "Rstar+3*dx < vertex-radius < 1.8",
+  "measured_vertices": 19696,
+  "claim": "Disabling particle current deposition changes the electromagnetic fields; the enabled run is not a prescribed-field test-particle replay",
+  "E_difference_RMS_B0": 0.02730197896521077,
+  "E_difference_relative_L2": 0.5524564642139563,
+  "B_difference_RMS_B0": 0.033957569487825766,
+  "B_difference_relative_L2": 0.47133083904835366,
+  "current_feedback_run_L2_n0": 13.567226682070636,
+  "current_control_L2_n0": 0.0,
+  "other_configuration_change": "Control snapshots are stored every 80 rather than 20 steps; diagnostic cadence only; final state compared at identical step/time"
+}

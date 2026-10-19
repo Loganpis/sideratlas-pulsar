@@ -1,0 +1,358 @@
+{
+  "schema": "sideratlas.optical-release.v1",
+  "version": "optical-v1.0.0",
+  "created_utc": "2026-10-19T01:21:16.235146+00:00",
+  "scope": "Calculated approximate optical visualization of a plausible young rotation-powered pulsar; Vela is a physical reference, not a fitted target",
+  "artifact_ready": true,
+  "observational_reconstruction": false,
+  "self_consistent_global_optical_pic": false,
+  "movie": "media/optical/sideratlas-no002-optical-32s.mp4",
+  "movie_sha256": "5a38de8c1dc7c2f420eee7381d7239be0711989b5f1babbdcd84fff81f49b127",
+  "caption": "release/optical-v1/instagram-description.text",
+  "caption_characters": 1954,
+  "source_archive": {
+    "url": "https://github.com/Loganpis/sideratlas-pulsar/releases/download/optical-v1.0.0/physical-pair-events.npz",
+    "bytes": 124646782,
+    "sha256": "c2044bb43659951d4a7f78830f8be4b71517f462683fcb2f00cf1e3be92451f8",
+    "events": 5271172
+  },
+  "surface": {
+    "file": "scene/optical/surface-intensity-si.npz",
+    "sha256": "0915abb9b0e9f4cedfd328e1a2e5e905a42b7c56ac004bd02245b688552d6f37",
+    "numerical_equilibrium_pass": true,
+    "refinement_pass": false,
+    "scientific_validation_pass": false
+  },
+  "software_checks": {
+    "passed": 268,
+    "inherited_fits_warnings": 8,
+    "record": "release/optical-v1/software-tests.log"
+  },
+  "export_checks": {
+    "codec_name": true,
+    "pix_fmt": true,
+    "width": true,
+    "height": true,
+    "r_frame_rate": true,
+    "avg_frame_rate": true,
+    "color_space": true,
+    "color_transfer": true,
+    "color_primaries": true,
+    "color_range": true,
+    "frames": true,
+    "duration": true,
+    "no_audio": true,
+    "decoded_repeats_identical": true
+  },
+  "full_cycle_relative_energy_error": 3.4159066712384476e-14,
+  "camera": {
+    "scene_sha256": "c2044bb43659951d4a7f78830f8be4b71517f462683fcb2f00cf1e3be92451f8",
+    "surface_sha256": "0915abb9b0e9f4cedfd328e1a2e5e905a42b7c56ac004bd02245b688552d6f37",
+    "width": 1080,
+    "height": 1920,
+    "arrival_bins": 240,
+    "meters_per_pixel": 100.0,
+    "roll_deg": -10.0,
+    "motion_quadrature_max_arc_pixels": 2.0,
+    "motion_arc_pixel_grid": "Plasma raster pixels",
+    "plasma_scale": 8,
+    "plasma_center_fraction": [
+      0.49675925925925923,
+      0.5281770833333334
+    ],
+    "exposure_reference": "surface",
+    "psf_sigma_pixels": 0.6,
+    "renderer_sha256": "61d142097fe7525a5c74e5d6b45dd43acb9b0a845d475c0273efd68b2080692f",
+    "optical_camera_sha256": "9a57b52a744dbf6c5ef18d46287ab83b4748500add7443415f5ab9f350c837d5",
+    "finite_volume_camera_sha256": "6fb1630fcce2dca202b5f02f508dba6cfe608436bbd30ce8205e3a86d9631795",
+    "geometry_compaction_sha256": "951a874767cad70154fddd4a26d85b444c37123849795ba9c4fdb819b9c256a5",
+    "multiresolution_camera_sha256": "5b7ae51e81f733f58af586c486dc809b63d3f47210e2b6f3e7194849aa6aff2a",
+    "volume_raster_sha256": "0f3d7ba0f6dc30fce99c1ffccd0cb24937ca018c35ff10f1436e7d0d814e4c0c",
+    "surface_adapter_sha256": "b2c8011485c3f720f3a9fb97e54d7f0b5ed53a89c83d616bb02417e88d119326",
+    "surface_camera_sha256": "3e5594711a506e5ba3d820391174ccf182660739d09b6a314f2cd55d4aa31c1f",
+    "optical_color_sha256": "6d7e09042d8375fb48aa8a8b40f50e96636644ce333f116915e92215c50b0d0b",
+    "cie_csv_sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1"
+  },
+  "files": {
+    "download_optical_assets.py": {
+      "bytes": 2042,
+      "sha256": "87e5b8e81c053ef3427d73c40b4c19b10305ec5a9a50186614d6d2522f74bf61"
+    },
+    "media/optical/preview-00.png": {
+      "bytes": 543102,
+      "sha256": "703031d63b7ec7003f40e949f83c994cded5d407a788298a9af61773438e921f"
+    },
+    "media/optical/preview-01.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-02.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-03.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-04.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-05.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-06.png": {
+      "bytes": 77443,
+      "sha256": "b361e293fd17670e27c12cfbabc72846c9622fedcb7e1614b07a533a902b96bf"
+    },
+    "media/optical/preview-07.png": {
+      "bytes": 264636,
+      "sha256": "7f41ef3d0d56ededfb5adf430a41c4f92be0e69d3e4432bba633fc047904b3f2"
+    },
+    "media/optical/sideratlas-no002-optical-32s.mp4": {
+      "bytes": 4358068,
+      "sha256": "5a38de8c1dc7c2f420eee7381d7239be0711989b5f1babbdcd84fff81f49b127"
+    },
+    "release/optical-v1/MODEL-NOTES.md": {
+      "bytes": 11662,
+      "sha256": "c418782763f40efcf4d26847d5511150a747f75d544cc92d3916b56d7eb6555d"
+    },
+    "release/optical-v1/README.md": {
+      "bytes": 1724,
+      "sha256": "59063b06ffe547964b18352fef15ae83b74e125481c949c68a4464708a2a3a7c"
+    },
+    "release/optical-v1/instagram-description.text": {
+      "bytes": 1994,
+      "sha256": "95111aef42c93f8127235db33e6a26d1b252be73994270f0332aab2a31e95dc0"
+    },
+    "release/optical-v1/requirements-tested.txt": {
+      "bytes": 90,
+      "sha256": "5f4723c2fd8a441e865578a81939a4758c03131ac3e0916ae5591039c26fddd0"
+    },
+    "release/optical-v1/runtime.json": {
+      "bytes": 436,
+      "sha256": "e56d93553c7681a534622230ccdd212ee7afcc67a341e29277dd73bca81b02c9"
+    },
+    "release/optical-v1/software-tests.log": {
+      "bytes": 1704,
+      "sha256": "040fcda06f3be17b3c5af7048487a72d02478a63e139bc9dac9f692a4a65ac0f"
+    },
+    "release/optical-v1/status.json": {
+      "bytes": 548,
+      "sha256": "14284b265cb2e44e41a075da4f81a508dad24b1187d91cd83702146e6cedff13"
+    },
+    "release/optical-v1/verification.json": {
+      "bytes": 2489,
+      "sha256": "f6a7d67463c5b014c9e815902cfe6f196d50478af25957c81de672c650e18eee"
+    },
+    "research/optical-finish/PHYSICAL-CONSISTENCY.md": {
+      "bytes": 6978,
+      "sha256": "b2bea2f50996673c0765263f8c762211841ba3dd704bffe63c02ebd9b737837a"
+    },
+    "research/optical-finish/RELEASE-NOTES-DRAFT.md": {
+      "bytes": 8693,
+      "sha256": "e416882620d8adbb9ef14c862c8a2ad5e51bedebc48aaaf4d72946c75db54aad"
+    },
+    "research/optical-finish/atmosphere/.gitignore": {
+      "bytes": 64,
+      "sha256": "b13988c05732079ef466269ebfe845a4f2e200ac267f77d232a438374f4960b1"
+    },
+    "research/optical-finish/atmosphere/CONSERVATIVE-SOLVER-NOTES.md": {
+      "bytes": 7820,
+      "sha256": "92981221452b53fdb6d58b4459212a73b8b34ac1f64c48e46888db1cf897e02b"
+    },
+    "research/optical-finish/atmosphere/FINAL-SURFACE-HANDOFF.json": {
+      "bytes": 9810,
+      "sha256": "d5fe8b991857524f7bf25a8119281a79baac3d2cb9fb071e3fb61aff69035a85"
+    },
+    "research/optical-finish/atmosphere/README.md": {
+      "bytes": 9294,
+      "sha256": "2027c192ead67156d74fff4c3a4c11afb171bde6b448b0dec362643038542bfc"
+    },
+    "research/optical-finish/atmosphere/audit_surface_column.py": {
+      "bytes": 3610,
+      "sha256": "1bd694adde7f9645fdf1676e54d52107a066e66daffee5477d2e5b92a290ecec"
+    },
+    "research/optical-finish/atmosphere/compare_surface_intensities.py": {
+      "bytes": 2671,
+      "sha256": "a47d16f7c798c96b519afd51f13dbd720886625e0113ec6ffb4ec95f3fd43c8a"
+    },
+    "research/optical-finish/atmosphere/conservative_magnetic_column.py": {
+      "bytes": 9750,
+      "sha256": "0b994f07d7529f5df5926617b3875d4a167addac91decb0e60cc82b722f3d255"
+    },
+    "research/optical-finish/atmosphere/eos_audit.py": {
+      "bytes": 4079,
+      "sha256": "e73053f2837ceb6e31ea75b82da73a10ae6487ec3ec7c27da517e9807c9bae2c"
+    },
+    "research/optical-finish/atmosphere/export_conservative_surface.py": {
+      "bytes": 5003,
+      "sha256": "9f50d4b4cd34f26ade045b9dc9bd2713bb1a9fe572ab61f242dabab83e9c5e35"
+    },
+    "research/optical-finish/atmosphere/freeze_checkpoint.py": {
+      "bytes": 3194,
+      "sha256": "2ecf9de75421c3bdaa00c3d62e2060488134f40232dc96555337d1c5f46c6669"
+    },
+    "research/optical-finish/atmosphere/linear_magnetic_column.py": {
+      "bytes": 9981,
+      "sha256": "457771e9aa1efb0ed023e9487fb683659fc520956325fe4d3c75d13d75286bd9"
+    },
+    "research/optical-finish/atmosphere/magnetic_column.py": {
+      "bytes": 15117,
+      "sha256": "930346417289bfb37a8bec6c247b146893c807ec4ec2a60595ce4a214d08b063"
+    },
+    "research/optical-finish/atmosphere/polish_conservative_column.py": {
+      "bytes": 4189,
+      "sha256": "095401dbd3f127b3c1c80ad2741feb0ffc51dbc4ef1938a5d63be5891ab7a7f4"
+    },
+    "research/optical-finish/atmosphere/test_conservative_column.py": {
+      "bytes": 1684,
+      "sha256": "73223ff8bceed92dc012af3ce43aa85541f0d2a4cd48450d7b5d9323b6d8287d"
+    },
+    "research/optical-finish/atmosphere/test_magnetic_column.py": {
+      "bytes": 3910,
+      "sha256": "26630ed4ce3bd715e17965278525ab00f56bef2085ff1808198f798aeb788665"
+    },
+    "research/optical-finish/camera/README.md": {
+      "bytes": 8553,
+      "sha256": "abce9cc2ffb682ebc67d1b861976fe67b883eb78ac7753c4376e8e883bfd6dd0"
+    },
+    "research/optical-finish/camera/atmosphere_camera.py": {
+      "bytes": 6955,
+      "sha256": "b2c8011485c3f720f3a9fb97e54d7f0b5ed53a89c83d616bb02417e88d119326"
+    },
+    "research/optical-finish/camera/compact_render_geometry.py": {
+      "bytes": 10563,
+      "sha256": "951a874767cad70154fddd4a26d85b444c37123849795ba9c4fdb819b9c256a5"
+    },
+    "research/optical-finish/camera/event_camera.py": {
+      "bytes": 9418,
+      "sha256": "d19764d2e1a516b8e78f97c66710abf3fe2456a424f7057a99d08421771dad83"
+    },
+    "research/optical-finish/camera/finite_volume_camera.py": {
+      "bytes": 10214,
+      "sha256": "6fb1630fcce2dca202b5f02f508dba6cfe608436bbd30ce8205e3a86d9631795"
+    },
+    "research/optical-finish/camera/multiresolution_camera.py": {
+      "bytes": 6474,
+      "sha256": "5b7ae51e81f733f58af586c486dc809b63d3f47210e2b6f3e7194849aa6aff2a"
+    },
+    "research/optical-finish/camera/render_optical.py": {
+      "bytes": 15420,
+      "sha256": "9a57b52a744dbf6c5ef18d46287ab83b4748500add7443415f5ab9f350c837d5"
+    },
+    "research/optical-finish/camera/render_parallel.py": {
+      "bytes": 17641,
+      "sha256": "61d142097fe7525a5c74e5d6b45dd43acb9b0a845d475c0273efd68b2080692f"
+    },
+    "research/optical-finish/camera/surface_camera.py": {
+      "bytes": 10393,
+      "sha256": "3e5594711a506e5ba3d820391174ccf182660739d09b6a314f2cd55d4aa31c1f"
+    },
+    "research/optical-finish/camera/test_atmosphere_camera.py": {
+      "bytes": 1936,
+      "sha256": "1f5fa3a3f58d02227b1716fd0a90dc98da1a88b4393f2291c954117ee0c322bd"
+    },
+    "research/optical-finish/camera/test_compact_render_geometry.py": {
+      "bytes": 4846,
+      "sha256": "8b953ed951280f9691a4ade84bd1756694baca443e0bab87012b9c416d71588b"
+    },
+    "research/optical-finish/camera/test_event_camera.py": {
+      "bytes": 3653,
+      "sha256": "6e2c2bb4a660a98f7ae80fa32a5db11c70a9c79431c868c9170ff6f59b4e3893"
+    },
+    "research/optical-finish/camera/test_finite_volume_camera.py": {
+      "bytes": 1350,
+      "sha256": "c9d5bcc3d1f66c3b68a1c6a87bd3e34c2b956c68e8c76e74c4b7ed9c01044775"
+    },
+    "research/optical-finish/camera/test_surface_camera.py": {
+      "bytes": 5649,
+      "sha256": "4570228e9a5a22557986988bfc9d15dd23b3075369d5c2ad43f157a3c0c00198"
+    },
+    "research/optical-finish/camera/test_volume_raster.py": {
+      "bytes": 8902,
+      "sha256": "5bd2db361b3b3ed2d16132a2a26dd827a6adb2e38d0306912d4bd70d186b5217"
+    },
+    "research/optical-finish/camera/verify_export.py": {
+      "bytes": 3270,
+      "sha256": "f49587fc8a0d312ae19614eebc59485d326be52b2d543433fcb3d65e08125b74"
+    },
+    "research/optical-finish/camera/volume_raster.py": {
+      "bytes": 21715,
+      "sha256": "0f3d7ba0f6dc30fce99c1ffccd0cb24937ca018c35ff10f1436e7d0d814e4c0c"
+    },
+    "research/optical-finish/particle-emission/README.md": {
+      "bytes": 11106,
+      "sha256": "db450e1e35887dc360a7c6887b6982ccf7424a6bfc76bd5eeaa8bc1408810474"
+    },
+    "research/optical-finish/particle-emission/audit_component.py": {
+      "bytes": 8326,
+      "sha256": "dafb3e47026d5a968d33b65d5f5ec7b850225516f5fdd24ae239df60d4953314"
+    },
+    "research/optical-finish/particle-emission/load_camera_events.py": {
+      "bytes": 1699,
+      "sha256": "874900eacdf942f07fb3813864df82beef9ef767726726a5057c1d83aae0b9e2"
+    },
+    "research/optical-finish/particle-emission/physical_synchrotron.py": {
+      "bytes": 40556,
+      "sha256": "80b918537d9573847f7ef6206d18824d631e5e0624d6b2849b1842c0575e9c5d"
+    },
+    "research/optical-finish/particle-emission/refinement_report.py": {
+      "bytes": 3386,
+      "sha256": "dcb1854b0c4bf785cb43cf4e49d4fd20833bb275d592b11406463598e775f9be"
+    },
+    "research/optical-finish/particle-emission/run_component.py": {
+      "bytes": 1930,
+      "sha256": "6825c50e9f64e5c074c8fac8b864e6835e5c8ba14c98d734489d72278fa5d67d"
+    },
+    "research/optical-finish/particle-emission/test_physical_synchrotron.py": {
+      "bytes": 7729,
+      "sha256": "d6b7f4d15babba3b54b91d854cbd5c83cc048e3a6d85c07b47b357df24f63ac3"
+    },
+    "research/pic-source-repair/README.md": {
+      "bytes": 9555,
+      "sha256": "37ee0adbe7d23f3aa45ce191837a514d2c613ef097df2c6bab806d649a8e1512"
+    },
+    "research/pic-source-repair/assemble_report.py": {
+      "bytes": 7613,
+      "sha256": "4aa5561fc98b66066e89df766ec059cb4eea9bb23ab13a1fdc667af366683dc6"
+    },
+    "research/pic-source-repair/audit_source.py": {
+      "bytes": 13270,
+      "sha256": "92e1c73128c5c6c22cd9e1f3d8d63a2d4f84a9f421b2c2f0b9aa09928bdb6721"
+    },
+    "research/pic-source-repair/check_compatible_source.py": {
+      "bytes": 3221,
+      "sha256": "c26a62aa37d837f5537fec73073cb9d95c261b07a8429b8b2df065d1052b6799"
+    },
+    "research/pic-source-repair/matched-resolution96.toml": {
+      "bytes": 1165,
+      "sha256": "e3ccf1b1f02520841ad9c24eec1759d0f74b53a39cfbd4ef66c2350e46c42f07"
+    },
+    "research/pic-source-repair/one-rotation-core95.toml": {
+      "bytes": 1176,
+      "sha256": "d6eee75d00d11ef97da5c6ac86eee63cba3a552baf6df2ca6a2eb622c3c12d72"
+    },
+    "research/pic-source-repair/one-rotation-no-feedback.toml": {
+      "bytes": 1211,
+      "sha256": "171e312d8ef8ad1518bf15aa76419ee06ee2eeed0ec303c4997ecb6d18fa2b31"
+    },
+    "research/pic-source-repair/one-rotation.toml": {
+      "bytes": 1175,
+      "sha256": "b44e15c2de37a91fbd032678c9b57693a7a4ced0a7d68c10747d30c760d45032"
+    },
+    "research/pic-source-repair/pgen.hpp": {
+      "bytes": 18230,
+      "sha256": "7df8d90444f5752493e073badcb1ff5adf40a9b3d6294b0c0e60dee608e52c8a"
+    },
+    "research/pic-source-repair/run_source_repair.py": {
+      "bytes": 9120,
+      "sha256": "76f785eda8f73ada8bf41dfe26f20d04c827143424b0e4f732532ede1ff4b5f5"
+    },
+    "scene/optical/surface-intensity-si.npz": {
+      "bytes": 38484,
+      "sha256": "0915abb9b0e9f4cedfd328e1a2e5e905a42b7c56ac004bd02245b688552d6f37"
+    }
+  }
+}

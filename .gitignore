@@ -9,3 +9,16 @@ third_party/coffee-build*/
 third_party/coffee-runs/
 third_party/coffee-portable/bin/
 native-work/
+third_party/entity-research/
+third_party/kokkos-research/
+third_party/aperture4-research/
+third_party/entity-build*/
+outputs/local-pic-*/native/*-fields.bin
+outputs/local-pic-*/native/*-particles.csv
+outputs/local-pic-*/native/events.csv
+
+scene/optical/physical-pair-events.npz
+outputs/optical-finish/camera/*/frames/
+outputs/pic-source-repair*/native/*-fields.bin
+outputs/pic-source-repair*/native/*-particles.csv
+outputs/pic-source-repair*/native/events.csv

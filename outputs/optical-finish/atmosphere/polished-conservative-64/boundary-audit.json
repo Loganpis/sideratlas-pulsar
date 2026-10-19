@@ -1,0 +1,839 @@
+{
+  "input_sha256": "4d6c83f90085322e23b4ab1e956a1c7fd9f52f18feae68b4ebb90af9225fbecc",
+  "integrated_surface_flux_ratio": 1.0000516551972425,
+  "optical_band_emitted_nm": [
+    300,
+    650
+  ],
+  "optical_bottom_total_tau_min": 338.0661315245041,
+  "optical_bottom_sqrt3_abs_total_tau_min": 585.547694413411,
+  "supported_bolometric_bottom_sqrt3_abs_total_tau_min": 40.85773537772573,
+  "optical_bottom_diffusion_intensity_correction_max": 0.0006478102813862338,
+  "supported_bolometric_bottom_diffusion_intensity_correction_max": 0.009271124017301006,
+  "zero_irradiation_boundary": true,
+  "lower_boundary_extension_test_pass": false,
+  "notes": [
+    "sqrt(3 kappa_abs kappa_tot) depth is a diagnostic in an anisotropic two-mode medium, not an exact independent solution",
+    "Dense-cell pressure and opacity use the arithmetic mean of nodal temperatures",
+    "Neutral and dispersive microphysics errors remain unbounded"
+  ],
+  "optical_formation_rows": [
+    {
+      "wavelength_nm": 641.0256411972938,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 53,
+          "density_g_cm3": 50.66055899997965,
+          "temperature_k": 1793555.9680733958,
+          "plasma_energy_over_photon_energy": 105.65188365066263
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.18848605221991271
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 632.0512822205317,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 53,
+          "density_g_cm3": 50.66055899997965,
+          "temperature_k": 1793555.9680733958,
+          "plasma_energy_over_photon_energy": 104.17275727955334
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.18584724748883388
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 623.0769232437696,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 53,
+          "density_g_cm3": 50.66055899997965,
+          "temperature_k": 1793555.9680733958,
+          "plasma_energy_over_photon_energy": 102.69363090844408
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.18320844275775514
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 614.1025642670076,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 53,
+          "density_g_cm3": 50.66055899997965,
+          "temperature_k": 1793555.9680733958,
+          "plasma_energy_over_photon_energy": 101.21450453733478
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.18056963802667633
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 605.1282052902452,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 53,
+          "density_g_cm3": 50.66055899997965,
+          "temperature_k": 1793555.9680733958,
+          "plasma_energy_over_photon_energy": 99.73537816622552
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.17793083329559758
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 596.1538463134833,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 82.79052541207655
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.17529202856451884
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 587.1794873367212,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 81.54421642737863
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.17265322383344003
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 578.205128359959,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 80.29790744268067
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.1700144191023612
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 569.2307693831968,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 79.05159845798275
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.16737561437128246
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 560.2564104064348,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 77.80528947328483
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.16473680964020368
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 554.830068748121,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 77.05170937020351
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.1631412576818426
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 551.2820514296726,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 76.55898048858691
+        },
+        {
+          "mode": 1,
+          "cell_index": 20,
+          "density_g_cm3": 0.00016124042176078777,
+          "temperature_k": 87374.99743477437,
+          "plasma_energy_over_photon_energy": 0.1620980049091249
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 542.3076924529106,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 75.31267150388899
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.19729758016079812
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 533.3333334761484,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 74.06636251919103
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.19403260838508746
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 524.3589744993864,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 72.82005353449313
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1907676366093769
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 515.3846155226241,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 71.5737445497952
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1875026648336663
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 506.410256545862,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 70.32743556509726
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.18423769305795565
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 497.4358975691,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 69.08112658039936
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1809727212822451
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 488.46153859233794,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 67.83481759570144
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1777077495065345
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 479.4871796155757,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 66.58850861100349
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.17444277773082387
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 470.5128206388136,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 65.34219962630556
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.17117780595511325
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 462.16271949787887,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 64.18258409253536
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.16813994613469888
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 461.53846166205153,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 64.09589064160765
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1679128341794027
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 452.5641026852894,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 52,
+          "density_g_cm3": 35.96755108762619,
+          "temperature_k": 1570814.2612027926,
+          "plasma_energy_over_photon_energy": 62.84958165690972
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.16464786240369206
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 443.5897437085273,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 52.19214693755306
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.16138289062798145
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 434.61538473176523,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 51.13623645037713
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.15811791885227083
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 425.6410257550031,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 50.08032596320121
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.15485294707656025
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 416.666666778241,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 49.024415476025275
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.15158797530084964
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 407.6923078014788,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 47.96850498884934
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.148323003525139
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 398.71794882471676,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 46.91259450167342
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1450580317494284
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 389.7435898479546,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 45.85668401449748
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.14179305997371777
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 384.9726093173254,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 45.295337138419974
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.14005732410497174
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 380.7692308711925,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 44.80077352732156
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1385280881980072
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 371.79487189443046,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 43.74486304014563
+        },
+        {
+          "mode": 1,
+          "cell_index": 21,
+          "density_g_cm3": 0.0002468415586512202,
+          "temperature_k": 91789.29364025118,
+          "plasma_energy_over_photon_energy": 0.1352631164222966
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 362.8205129176682,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 42.68895255296969
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.1627224192628003
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 353.84615394090616,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 41.633042065793774
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.15869748309728937
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 344.871794964144,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 40.57713157861783
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.15467254693177837
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 335.8974359873819,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 51,
+          "density_g_cm3": 25.81746660310726,
+          "temperature_k": 1360732.8657128778,
+          "plasma_energy_over_photon_energy": 39.52122109144191
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.15064761076626743
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 326.92307701061986,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 50,
+          "density_g_cm3": 18.32775962335398,
+          "temperature_k": 1191867.3193240569,
+          "plasma_energy_over_photon_energy": 32.4091112688541
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.14662267460075648
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 320.67474002578086,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 50,
+          "density_g_cm3": 18.32775962335398,
+          "temperature_k": 1191867.3193240569,
+          "plasma_energy_over_photon_energy": 31.78969017922461
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.1438203399081396
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 317.9487180338577,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 50,
+          "density_g_cm3": 18.32775962335398,
+          "temperature_k": 1191867.3193240569,
+          "plasma_energy_over_photon_energy": 31.519449390885555
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.1425977384352455
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 308.9743590570957,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 50,
+          "density_g_cm3": 18.32775962335398,
+          "temperature_k": 1191867.3193240569,
+          "plasma_energy_over_photon_energy": 30.629787512917023
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.1385728022697346
+        }
+      ]
+    },
+    {
+      "wavelength_nm": 300.00000008033345,
+      "formation_diagnostics": [
+        {
+          "mode": 0,
+          "cell_index": 50,
+          "density_g_cm3": 18.32775962335398,
+          "temperature_k": 1191867.3193240569,
+          "plasma_energy_over_photon_energy": 29.74012563494847
+        },
+        {
+          "mode": 1,
+          "cell_index": 22,
+          "density_g_cm3": 0.00037512621172935767,
+          "temperature_k": 97136.4221355592,
+          "plasma_energy_over_photon_energy": 0.1345478661042236
+        }
+      ]
+    }
+  ]
+}
