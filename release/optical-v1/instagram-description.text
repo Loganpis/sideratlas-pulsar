@@ -1,0 +1,41 @@
+NO.002 — THE PULSAR
+@sideratlas
+Original optical model — rotation-powered pulsar
+Vela provides physical reference parameters, not a fitted target
+P = 89.37 ms · M = 1.4 M☉ · R = 13 km
+B_p = 3×10¹² G · T∞ = 0.70 MK
+Magnetic inclination 75° · Observer 65°
+Magnetic fields steer charged particles
+Accelerated pairs emit optical harmonics
+Radiation cools their transverse motion
+Rotation sweeps pulsed light past the observer
+Gravity bends and redshifts surface light
+ν_n = n eB/[2πγm_e(1−β∥cosθ)]
+τ = t−n·r/c · Optical band: 400–700 nm
+CALCULATED
+Guiding-centre paths, cooling and directional harmonic emission
+Photon Doppler shifts, aberration and relative arrival times
+Two-mode LTE atmosphere transfer and Schwarzschild surface rays
+CIE1931 spectral color with fixed exposure and sRGB tone mapping
+ASSUMED
+Prescribed near-zone dipole and pair supply, separate from local PIC
+Pairs activated at 0.08–0.18 R_LC with γ=300, pitch=0.1 rad
+6000 pairs per primary; cap annulus 0.8–0.9; both poles
+Uniform normal-field, fully ionized H surface; unity Gaunt factors
+No cascade, radio heating, plasma absorption or extinction
+No atomic opacity, dispersion or vacuum mode conversion
+Spherical surface; no frame dragging or GR plasma transport
+Finite emitting cells and pulse sampling; surface grid sensitivity ≈5%
+One rotation slowed to 8 seconds, repeated four times
+Display exposure enhanced; no naked-eye or exact Vela prediction
+SOURCES
+Spitkovsky 2006; Smith et al 2023; Harding et al 2018; Harding & Kalapotharakos 2015
+Marcowith & Malzac 2003; Lai et al 2025
+van Adelsberg & Lai 2006; Ofengeim & Zyuzin 2018
+Poutanen & Beloborodov 2006; Poutanen 2020; Mignani et al 2007; CIE1931
+PIC context: Philippov & Spitkovsky 2014; Belyaev 2015
+Motion/context reference: NASA / Goddard 2018
+https://svs.gsfc.nasa.gov/13058/
+No NASA footage or code used
+Full citations, equations, assumptions and checks in the repository
+https://github.com/loganpis/sideratlas-pulsar

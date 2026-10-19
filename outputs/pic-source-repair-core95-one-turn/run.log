@@ -1,0 +1,621 @@
+WARN  : No fields output specified
+WARN  : see the `*.err` file for more details
+
+
+╔══════════════════════════════════════════════════════════╗
+║ Entity v1.5.0                                            ║
+╚══════════════════════════════════════════════════════════╝
+
+    Backend
+    - Build hash: 62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3
+    - CXX: Clang/LLVM 21.0.0 (clang-2100.3.34.2) [C++20]
+    - MPI: OFF
+    - Kokkos: 5.2.1
+    - ADIOS2: OFF
+    - Precision: double
+    - Debug: OFF
+
+    Compilation flags
+    - SINGLE_PRECISION: OFF
+    - OUTPUT_ENABLED: OFF
+    - DEBUG: OFF
+    - CUDA_ENABLED: OFF
+    - HIP_ENABLED: OFF
+    - DEVICE_ENABLED: OFF
+    - MPI_ENABLED: OFF
+    - GPU_AWARE_MPI: OFF
+    - TILED_DEPOSIT: OFF
+
+    Configuration
+    - Name: local-oblique-pulsar
+    - Engine: srpic
+    - Metric: minkowski
+    - Deposit: zigzag
+    - Timestep [dt]: 2.105e-02
+    - Runtime: 6.683e+00 [317 steps]
+
+    Global domain
+    - Resolution: [48, 48, 48]
+    - Extent: [{-2.5, 2.5}, {-2.5, 2.5}, {-2.5, 2.5}]
+    - Fiducial cell size [dx0]: 6.014e-02
+    - Boundary conditions:
+      - Fields: [{match, match}, {match, match}, {match, match}]
+      - Particles: [{absorb, absorb}, {absorb, absorb}, {absorb, absorb}]
+    - Domain decomposition: [1, 1, 1] [1 total]
+
+    Nominal parameters
+    - Particles per cell [ppc0]: 4.0
+    - Larmor radius [larmor0]: 5.000e-02 [0.831 dx0]
+    - Larmor frequency [omegaB0 * dt]: 4.210e-01
+    - Skin depth [skindepth0]: 2.000e-01 [3.326 dx0]
+    - Plasma frequency [omp0 * dt]: 1.052e-01
+    - Magnetization [sigma0]: 1.600e+01
+
+    Problem generator
+      - Name: pic-source-repair
+      - Methods defined:
+        - InitFlds: ON
+        - InitPrtls: ON
+        - CustomPostStep: ON
+        - ExternalFields: OFF
+        - ext_current: OFF
+        - AtmFields: OFF
+        - MatchFields: ON
+        - MatchFieldsInX1: OFF
+        - MatchFieldsInX2: OFF
+        - MatchFieldsInX3: OFF
+        - FixFieldsConst: OFF
+        - EmissionPolicy: OFF
+        - CustomFieldOutput: OFF
+        - CustomStatOutput: OFF
+
+    Particles
+    - Species #1:
+      - Label: electron
+      - Mass: 1.0
+      - Charge: -1.0
+      - Max #: 200000 [per domain]
+      - Clearing interval: 20
+      - Spatial sorting interval: OFF
+      - Pusher: boris
+      - Radiative drag: none
+      - Emission policy: none
+      - Tracking: ON
+      - # of real-value payloads: 0
+      - # of integer-value payloads: 1
+    - Species #2:
+      - Label: positron
+      - Mass: 1.0
+      - Charge: 1.0
+      - Max #: 200000 [per domain]
+      - Clearing interval: 20
+      - Spatial sorting interval: OFF
+      - Pusher: boris
+      - Radiative drag: none
+      - Emission policy: none
+      - Tracking: ON
+      - # of real-value payloads: 0
+      - # of integer-value payloads: 1
+
+
+    Domains
+
+    - Domain #0:
+      - Resolution: [48, 48, 48]
+      - Extent: [{-2.5, 2.5}, {-2.5, 2.5}, {-2.5, 2.5}]
+      - Boundary conditions:
+                [flds]      [prtl]      [neighbor]
+        - - - : match       absorb      .         
+        - - 0 : match       absorb      .         
+        - - + : match       absorb      .         
+        - 0 - : match       absorb      .         
+        - 0 0 : match       absorb      .         
+        - 0 + : match       absorb      .         
+        - + - : match       absorb      .         
+        - + 0 : match       absorb      .         
+        - + + : match       absorb      .         
+        0 - - : match       absorb      .         
+        0 - 0 : match       absorb      .         
+        0 - + : match       absorb      .         
+        0 0 - : match       absorb      .         
+        0 0 + : match       absorb      .         
+        0 + - : match       absorb      .         
+        0 + 0 : match       absorb      .         
+        0 + + : match       absorb      .         
+        + - - : match       absorb      .         
+        + - 0 : match       absorb      .         
+        + - + : match       absorb      .         
+        + 0 - : match       absorb      .         
+        + 0 0 : match       absorb      .         
+        + 0 + : match       absorb      .         
+        + + - : match       absorb      .         
+        + + 0 : match       absorb      .         
+        + + + : match       absorb      .         
+      - Memory footprint:
+        - Fields: 19.31 MB
+        - Particles:
+          - Species #1 (electron): 16.40 MB
+          - Species #2 (positron): 16.40 MB
+
+
+
+Step: 19........................[of 317]
+Time: 0.3999....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications.............10.13 ms      8%   3.77 µs : 0.07 µs
+  CurrentDeposit..............1.75 ms      1%   0.65 µs : 0.01 µs
+  CurrentFiltering..........714.00 µs      0%   0.27 µs : 5.08 ns
+  Custom.....................22.28 ms     19%   8.29 µs : 0.16 µs
+  FieldBoundaries............27.80 ms     24%  10.34 µs : 0.20 µs
+  FieldSolver................34.37 ms     29%  12.79 µs : 0.24 µs
+  Injector....................3.00 µs      0%   1.12 ns : 0.02 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher.............18.07 ms     15%   6.72 µs : 0.13 µs
+Total                       115.13 ms
+  ParticleSort................2.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........1344      0%
+  species  2 (positron)..........1344      0%
+
+Timestep duration: 49ms 612µs
+Remaining time: 14s 784ms
+Elapsed time: 992ms 330µs
+[■■■■                                                                  ]   5.99%
+................................................................................
+
+
+
+Step: 39........................[of 317]
+Time: 0.8209....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............3.54 ms      3%   0.68 µs : 0.03 µs
+  CurrentDeposit..............3.16 ms      3%   0.60 µs : 0.02 µs
+  CurrentFiltering..........252.00 µs      0%   0.05 µs : 1.79 ns
+  Custom.....................57.11 ms     54%  10.88 µs : 0.41 µs
+  FieldBoundaries............24.83 ms     23%   4.73 µs : 0.18 µs
+  FieldSolver................12.88 ms     12%   2.45 µs : 0.09 µs
+  Injector....................2.00 µs      0%   0.38 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.32 ms      2%   0.44 µs : 0.02 µs
+Total                       104.09 ms
+  ParticleSort................2.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........2624      1%
+  species  2 (positron)..........2624      1%
+
+Timestep duration: 81ms 705µs
+Remaining time: 22s 714ms
+Elapsed time: 3s 268ms
+[■■■■■■■■                                                              ]  12.30%
+................................................................................
+
+
+
+Step: 59........................[of 317]
+Time: 1.2419....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............2.84 ms      3%   0.37 µs : 0.02 µs
+  CurrentDeposit..............1.25 ms      1%   0.16 µs : 8.86 ns
+  CurrentFiltering..........336.00 µs      0%   0.04 µs : 2.39 ns
+  Custom.....................42.28 ms     55%   5.50 µs : 0.30 µs
+  FieldBoundaries............14.76 ms     19%   1.92 µs : 0.10 µs
+  FieldSolver................12.71 ms     16%   1.65 µs : 0.09 µs
+  Injector....................2.00 µs      0%   0.26 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.98 ms      2%   0.26 µs : 0.01 µs
+Total                        76.15 ms
+  ParticleSort................2.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........3819      1%
+  species  2 (positron)..........3862      1%
+
+Timestep duration: 67ms 861µs
+Remaining time: 17s 508ms
+Elapsed time: 4s 71ms
+[■■■■■■■■■■■■■                                                         ]  18.61%
+................................................................................
+
+
+
+Step: 79........................[of 317]
+Time: 1.6629....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............3.38 ms      4%   0.34 µs : 0.02 µs
+  CurrentDeposit..............1.13 ms      1%   0.11 µs : 8.01 ns
+  CurrentFiltering..........302.00 µs      0%   0.03 µs : 2.15 ns
+  Custom.....................43.28 ms     61%   4.34 µs : 0.31 µs
+  FieldBoundaries............11.99 ms     17%   1.20 µs : 0.09 µs
+  FieldSolver.................8.49 ms     12%   0.85 µs : 0.06 µs
+  Injector....................2.00 µs      0%   0.20 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.53 ms      2%   0.15 µs : 0.01 µs
+Total                        70.10 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........5016      2%
+  species  2 (positron)..........4951      2%
+
+Timestep duration: 58ms 110µs
+Remaining time: 13s 830ms
+Elapsed time: 4s 648ms
+[■■■■■■■■■■■■■■■■■                                                     ]  24.92%
+................................................................................
+
+
+
+Step: 99........................[of 317]
+Time: 2.0839....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.70 ms      2%   0.14 µs : 0.01 µs
+  CurrentDeposit............981.00 µs      1%   0.08 µs : 6.98 ns
+  CurrentFiltering..........226.00 µs      0%   0.02 µs : 1.61 ns
+  Custom.....................49.26 ms     69%   4.12 µs : 0.35 µs
+  FieldBoundaries.............9.32 ms     13%   0.78 µs : 0.07 µs
+  FieldSolver.................7.48 ms     10%   0.63 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.08 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.46 ms      2%   0.12 µs : 0.01 µs
+Total                        70.43 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........6128      3%
+  species  2 (positron)..........5837      2%
+
+Timestep duration: 51ms 766µs
+Remaining time: 11s 285ms
+Elapsed time: 5s 176ms
+[■■■■■■■■■■■■■■■■■■■■■                                                 ]  31.23%
+................................................................................
+
+
+
+Step: 119.......................[of 317]
+Time: 2.5049....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.72 ms      2%   0.12 µs : 0.01 µs
+  CurrentDeposit..............1.01 ms      1%   0.07 µs : 7.17 ns
+  CurrentFiltering..........217.00 µs      0%   0.02 µs : 1.54 ns
+  Custom.....................57.81 ms     73%   4.12 µs : 0.41 µs
+  FieldBoundaries.............8.78 ms     11%   0.62 µs : 0.06 µs
+  FieldSolver.................7.06 ms      9%   0.50 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.07 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.56 ms      1%   0.11 µs : 0.01 µs
+Total                        78.14 ms
+  ParticleSort................2.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........7215      3%
+  species  2 (positron)..........6831      3%
+
+Timestep duration: 47ms 605µs
+Remaining time: 9s 425ms
+Elapsed time: 5s 712ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■                                            ]  37.54%
+................................................................................
+
+
+
+Step: 139.......................[of 317]
+Time: 2.9258....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.71 ms      1%   0.11 µs : 0.01 µs
+  CurrentDeposit..............1.04 ms      1%   0.06 µs : 7.40 ns
+  CurrentFiltering..........254.00 µs      0%   0.02 µs : 1.81 ns
+  Custom.....................67.71 ms     76%   4.17 µs : 0.48 µs
+  FieldBoundaries.............9.13 ms     10%   0.56 µs : 0.06 µs
+  FieldSolver.................7.18 ms      8%   0.44 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.06 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.85 ms      2%   0.11 µs : 0.01 µs
+Total                        88.89 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........8348      4%
+  species  2 (positron)..........7909      3%
+
+Timestep duration: 44ms 642µs
+Remaining time: 7s 946ms
+Elapsed time: 6s 249ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        ]  43.85%
+................................................................................
+
+
+
+Step: 159.......................[of 317]
+Time: 3.3468....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.76 ms      1%   0.10 µs : 0.01 µs
+  CurrentDeposit..............1.12 ms      1%   0.06 µs : 7.94 ns
+  CurrentFiltering..........247.00 µs      0%   0.01 µs : 1.76 ns
+  Custom.....................83.63 ms     78%   4.54 µs : 0.59 µs
+  FieldBoundaries.............9.97 ms      9%   0.54 µs : 0.07 µs
+  FieldSolver.................7.35 ms      6%   0.40 µs : 0.05 µs
+  Injector....................2.00 µs      0%   0.11 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............1.85 ms      1%   0.10 µs : 0.01 µs
+Total                       105.93 ms
+  ParticleSort................3.00 µs      0%
+  Output......................0.00 ns      0%
+  Render.....................66.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)..........9444      4%
+  species  2 (positron)..........8961      4%
+
+Timestep duration: 42ms 689µs
+Remaining time: 6s 744ms
+Elapsed time: 6s 830ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                   ]  50.16%
+................................................................................
+
+
+
+Step: 179.......................[of 317]
+Time: 3.7678....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.82 ms      1%   0.09 µs : 0.01 µs
+  CurrentDeposit..............1.10 ms      1%   0.05 µs : 7.83 ns
+  CurrentFiltering..........221.00 µs      0%   0.01 µs : 1.57 ns
+  Custom.....................77.87 ms     74%   3.79 µs : 0.55 µs
+  FieldBoundaries............10.81 ms     10%   0.53 µs : 0.08 µs
+  FieldSolver.................9.66 ms      9%   0.47 µs : 0.07 µs
+  Injector....................2.00 µs      0%   0.10 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.62 ms      2%   0.13 µs : 0.02 µs
+Total                       104.11 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.05e+04      5%
+  species  2 (positron)......1.00e+04      5%
+
+Timestep duration: 41ms 176µs
+Remaining time: 5s 682ms
+Elapsed time: 7s 412ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                               ]  56.47%
+................................................................................
+
+
+
+Step: 199.......................[of 317]
+Time: 4.1888....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............2.44 ms      1%   0.11 µs : 0.02 µs
+  CurrentDeposit..............2.81 ms      1%   0.13 µs : 0.02 µs
+  CurrentFiltering..........365.00 µs      0%   0.02 µs : 2.60 ns
+  Custom....................106.43 ms     75%   4.76 µs : 0.76 µs
+  FieldBoundaries............14.43 ms     10%   0.64 µs : 0.10 µs
+  FieldSolver.................8.71 ms      6%   0.39 µs : 0.06 µs
+  Injector....................1.00 µs      0%   0.04 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............5.23 ms      3%   0.23 µs : 0.04 µs
+Total                       140.41 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.14e+04      5%
+  species  2 (positron)......1.09e+04      5%
+
+Timestep duration: 40ms 699µs
+Remaining time: 4s 802ms
+Elapsed time: 8s 141ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                           ]  62.78%
+................................................................................
+
+
+
+Step: 219.......................[of 317]
+Time: 4.6098....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.63 ms      1%   0.07 µs : 0.01 µs
+  CurrentDeposit..............1.21 ms      1%   0.05 µs : 8.59 ns
+  CurrentFiltering..........234.00 µs      0%   9.77 ns : 1.66 ns
+  Custom.....................87.86 ms     80%   3.67 µs : 0.62 µs
+  FieldBoundaries.............9.07 ms      8%   0.38 µs : 0.06 µs
+  FieldSolver.................7.38 ms      6%   0.31 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.04 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.30 ms      2%   0.10 µs : 0.02 µs
+Total                       109.69 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.22e+04      6%
+  species  2 (positron)......1.17e+04      5%
+
+Timestep duration: 40ms 9µs
+Remaining time: 3s 920ms
+Elapsed time: 8s 802ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                      ]  69.09%
+................................................................................
+
+
+
+Step: 239.......................[of 317]
+Time: 5.0308....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.72 ms      1%   0.07 µs : 0.01 µs
+  CurrentDeposit..............1.42 ms      1%   0.06 µs : 0.01 µs
+  CurrentFiltering..........233.00 µs      0%   9.36 ns : 1.66 ns
+  Custom.....................94.82 ms     80%   3.81 µs : 0.67 µs
+  FieldBoundaries.............9.56 ms      8%   0.38 µs : 0.07 µs
+  FieldSolver.................7.46 ms      6%   0.30 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.04 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.99 ms      2%   0.12 µs : 0.02 µs
+Total                       118.21 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................1.00 µs      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.28e+04      6%
+  species  2 (positron)......1.21e+04      6%
+
+Timestep duration: 39ms 271µs
+Remaining time: 3s 63ms
+Elapsed time: 9s 425ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                  ]  75.39%
+................................................................................
+
+
+
+Step: 259.......................[of 317]
+Time: 5.4518....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............2.00 ms      1%   0.08 µs : 0.01 µs
+  CurrentDeposit..............1.46 ms      1%   0.06 µs : 0.01 µs
+  CurrentFiltering..........239.00 µs      0%   9.38 ns : 1.70 ns
+  Custom.....................93.16 ms     80%   3.66 µs : 0.66 µs
+  FieldBoundaries.............9.35 ms      8%   0.37 µs : 0.07 µs
+  FieldSolver.................7.52 ms      6%   0.30 µs : 0.05 µs
+  Injector....................1.00 µs      0%   0.04 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.50 ms      2%   0.10 µs : 0.02 µs
+Total                       116.22 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.31e+04      6%
+  species  2 (positron)......1.24e+04      6%
+
+Timestep duration: 38ms 670µs
+Remaining time: 2s 242ms
+Elapsed time: 10s 54ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■             ]  81.70%
+................................................................................
+
+
+
+Step: 279.......................[of 317]
+Time: 5.8727....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............1.73 ms      1%   0.07 µs : 0.01 µs
+  CurrentDeposit..............1.38 ms      1%   0.05 µs : 9.79 ns
+  CurrentFiltering..........247.00 µs      0%   9.43 ns : 1.76 ns
+  Custom.....................93.49 ms     80%   3.57 µs : 0.66 µs
+  FieldBoundaries.............8.88 ms      7%   0.34 µs : 0.06 µs
+  FieldSolver.................7.28 ms      6%   0.28 µs : 0.05 µs
+  Injector....................0.00 ns      0%   0.00 ns : 0.00 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............2.58 ms      2%   0.10 µs : 0.02 µs
+Total                       115.59 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.35e+04      6%
+  species  2 (positron)......1.27e+04      6%
+
+Timestep duration: 38ms 48µs
+Remaining time: 1s 445ms
+Elapsed time: 10s 653ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■         ]  88.01%
+................................................................................
+
+
+
+Step: 299.......................[of 317]
+Time: 6.2937....................[Δt = 0.0210]
+
+[SUBSTEP]..................[DURATION] [% TOT] [per PRTL : CELL]
+  Communications..............2.12 ms      1%   0.08 µs : 0.02 µs
+  CurrentDeposit..............1.88 ms      1%   0.07 µs : 0.01 µs
+  CurrentFiltering..........235.00 µs      0%   8.74 ns : 1.67 ns
+  Custom....................106.94 ms     80%   3.98 µs : 0.76 µs
+  FieldBoundaries.............9.44 ms      7%   0.35 µs : 0.07 µs
+  FieldSolver.................7.97 ms      6%   0.30 µs : 0.06 µs
+  Injector....................1.00 µs      0%   0.04 ns : 0.01 ns
+  LoadBalance.................0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticleBoundaries..........0.00 ns      0%   0.00 ns : 0.00 ns
+  ParticlePusher..............3.99 ms      3%   0.15 µs : 0.03 µs
+Total                       132.57 ms
+  ParticleSort................1.00 µs      0%
+  Output......................0.00 ns      0%
+  Render......................0.00 ns      0%
+  Checkpoint..................0.00 ns      0%
+
+[PARTICLE SPECIES]            [TOTAL] [% TOT]
+  species  1 (electron)......1.38e+04      6%
+  species  2 (positron)......1.31e+04      6%
+
+Timestep duration: 38ms 283µs
+Remaining time: 689ms 95µs
+Elapsed time: 11s 484ms
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    ]  94.32%
+................................................................................
+
+
+

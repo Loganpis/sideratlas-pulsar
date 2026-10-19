@@ -16,3 +16,9 @@ third_party/entity-build*/
 outputs/local-pic-*/native/*-fields.bin
 outputs/local-pic-*/native/*-particles.csv
 outputs/local-pic-*/native/events.csv
+
+scene/optical/physical-pair-events.npz
+outputs/optical-finish/camera/*/frames/
+outputs/pic-source-repair*/native/*-fields.bin
+outputs/pic-source-repair*/native/*-particles.csv
+outputs/pic-source-repair*/native/events.csv

@@ -4,3 +4,9 @@ data/color/CIE_xyz_1931_2deg.csv -text -whitespace
 data/color/CIE_xyz_1931_2deg.csv_metadata.json -text -whitespace
 outputs/entity-pic-benchmark/*.log -text -whitespace
 outputs/local-pic-*/*.log -text -whitespace
+
+outputs/**/*.log -text -whitespace
+*.npz -text -diff
+*.mp4 -text -diff
+
+release/optical-v1/*.log -text -whitespace

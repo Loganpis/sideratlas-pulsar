@@ -1,0 +1,5 @@
+vendor/
+*.dat.gz
+ioffe-hmagtab.html
+__pycache__/
+.pytest_cache/

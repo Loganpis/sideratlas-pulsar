@@ -1,0 +1,30 @@
+{
+  "final_interior_magnitude_relative_to_initial": 0.9999999999999973,
+  "final_interior_inclination_deg": 74.99999999999996,
+  "final_interior_inclination_change_deg": -5.684341886080802e-14,
+  "final_interior_phase_error_deg": -1.7926401323398747e-12,
+  "final_interior_fit_residual_L2": 6.5226074820791835e-15,
+  "max_abs_interior_magnitude_change_fraction": 3.1308289294429414e-14,
+  "max_abs_interior_inclination_change_deg": 4.689582056016661e-13,
+  "max_abs_interior_phase_error_deg": 1.7926401323398747e-12,
+  "interior_moment_phase_rate_after_spinup": 0.9999999999999952,
+  "prescribed_final_rotation_rate": 1,
+  "before_nominal_boundary_light_time_state": {
+    "magnetic_time": 1.2524290995702052,
+    "fit": {
+      "moment_B0_RLC3": [
+        0.03973313342020828,
+        0.04545172136870549,
+        0.016176190318907557
+      ],
+      "magnitude": 0.06250000000000024,
+      "magnitude_relative_to_initial_seed": 1.0000000000000038,
+      "inclination_deg": 75.00000000000006,
+      "phase_deg_mod_360": 48.840589739509575,
+      "phase_error_deg_vs_rigid_rotation_at_B_time": -1.9719439025073803e-13,
+      "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+      "relative_fit_residual_L2": 4.155057667410596e-15,
+      "design_condition_number": 1.0000000000000029
+    }
+  }
+}

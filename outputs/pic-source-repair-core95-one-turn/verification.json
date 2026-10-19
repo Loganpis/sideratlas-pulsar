@@ -1,0 +1,181 @@
+{
+  "created_utc": "2026-10-18T15:01:52.874272+00:00",
+  "imported_kokkos_package": null,
+  "upstream_receipt": null,
+  "scope": "scaled local oblique 3D PIC startup prototype",
+  "production_vela_dataset": false,
+  "optical_prediction": false,
+  "stellar_atmosphere_model": false,
+  "convergence_claim": false,
+  "exit_code": 0,
+  "wall_seconds": 12.154293042000063,
+  "run_command": [
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/pic-source-repair-build-imported/src/entity.xc",
+    "-input",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-source-repair/one-rotation-core95.toml"
+  ],
+  "build_commands": [],
+  "source_pins": [
+    {
+      "name": "entity",
+      "directory": "entity-research",
+      "repository": "https://github.com/entity-toolkit/entity.git",
+      "commit": "62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "kokkos",
+      "directory": "kokkos-research",
+      "repository": "https://github.com/kokkos/kokkos.git",
+      "commit": "89f0b12e43583d02bd19739810ceadcedf1ccd56",
+      "license": "Apache-2.0 WITH LLVM-exception"
+    }
+  ],
+  "external_pgen_sha256": "7df8d90444f5752493e073badcb1ff5adf40a9b3d6294b0c0e60dee608e52c8a",
+  "configuration_sha256": "d6eee75d00d11ef97da5c6ac86eee63cba3a552baf6df2ca6a2eb622c3c12d72",
+  "native_executable_sha256": "f56aa7e54f902d67e98c41634355ddb4ff4da825c55a17374892794771fef3a5",
+  "run_log_sha256": "ccfd91deba7b179cf9ebf95016d15c9be31c8f8768b0994ed4d336150d74b59c",
+  "states": [
+    {
+      "completed_step": 0,
+      "position_and_E_time": 0,
+      "metadata": "state-000000.json",
+      "metadata_sha256": "4b3112e3123a739cdae52ad33af004c58f804214deae3bb1943234be23c361ba",
+      "fields_sha256": "9ef0c47c8d18f6abecb770300acf8885b5aaad0ce3a5f273f95e28b73166a745",
+      "particles_sha256": "eed385efb4697ecb981951ed4ba5833c02599a969ade16d7fb73900d7cf7400f"
+    },
+    {
+      "completed_step": 20,
+      "position_and_E_time": 0.4209845712841021,
+      "metadata": "state-000020.json",
+      "metadata_sha256": "ff7ac58070371df706fa26e615a8d5bec9143b929ae1c20c8c91b3ec7273e074",
+      "fields_sha256": "62ddac5d8a70a03735562877edde7f519cb3625a6146010910a1f2f3bf15986e",
+      "particles_sha256": "f434ccadfa17e035876e94948dcc3f83926cb3a5343a948fc33d3ff108266ac7"
+    },
+    {
+      "completed_step": 40,
+      "position_and_E_time": 0.8419691425682042,
+      "metadata": "state-000040.json",
+      "metadata_sha256": "5275ec4c10d9d81936d1d20aa8b56dc58daf317bf7cad6a1925b87f77c32a27f",
+      "fields_sha256": "cd9153bd092e884cb3e63b1c4106b9ab7e5e2546c55ee645605b521b9d587c9a",
+      "particles_sha256": "ea0c63abc458f696d90a9edb653688279cfaf7377a489091d3dbeb7fa58d19cb"
+    },
+    {
+      "completed_step": 60,
+      "position_and_E_time": 1.2629537138523077,
+      "metadata": "state-000060.json",
+      "metadata_sha256": "8a865f0b0a4c19a4cd4d395f7ee9138955a6c7c11489a4d82797a7b72312f31f",
+      "fields_sha256": "f59dccae227427801cb369311489aa297e52a586145cbf5be133d7c019c39cb7",
+      "particles_sha256": "ddb6c49ef6d7418ccf3f89aa6816242d58f9681da5d814e74823db1a17978310"
+    },
+    {
+      "completed_step": 80,
+      "position_and_E_time": 1.683938285136412,
+      "metadata": "state-000080.json",
+      "metadata_sha256": "b6fb8a1ca3f2739b2115012322998b3199d0b55d342eebb5d985ac3708d1a592",
+      "fields_sha256": "78059a1fc649a881af7c017ea11a4253322aa342dac820ce56bb2ab29231febd",
+      "particles_sha256": "2d96f770efc112d6ed824f8a58b80bcfd650585a407e571dc0f1668da8e0b16c"
+    },
+    {
+      "completed_step": 100,
+      "position_and_E_time": 2.104922856420515,
+      "metadata": "state-000100.json",
+      "metadata_sha256": "3d4bffda91e3db8b4a8baefabdb586e5a2b017df02f30608a31391203e2bd19c",
+      "fields_sha256": "8b5743b368ad4a65b232088b3bc31b6aa006084c7272b763be24db65919a89bb",
+      "particles_sha256": "87ef2ac85e7dd817acf61e28929f32e37290cd83dd88a2287a79a56bda101075"
+    },
+    {
+      "completed_step": 120,
+      "position_and_E_time": 2.525907427704615,
+      "metadata": "state-000120.json",
+      "metadata_sha256": "67a290ef0ca3ff9111f34d96f6f4972c5d6db6218a46f3b807cece3ddf02cdbf",
+      "fields_sha256": "3f9e9c2c28c73bff162182756282ec7a617f8d0428915bde9dd5df3e5f86c59c",
+      "particles_sha256": "e040cbc149ace2ff5c92fc305ee18e86072b460b9b73c7ffdd7a20343efe5577"
+    },
+    {
+      "completed_step": 140,
+      "position_and_E_time": 2.946891998988715,
+      "metadata": "state-000140.json",
+      "metadata_sha256": "1051338ea77a456d453fed7b3d7b2d586c0997e45f081abcaa57c2b503fb805c",
+      "fields_sha256": "f36ba6efed59f60f57e62021f8bc82ec584515b3c024a55c6847daecbbe4ae64",
+      "particles_sha256": "a2da75a3accf166e21098c1f6c18adaab2c98f6469aa49244d700717f29d01b5"
+    },
+    {
+      "completed_step": 160,
+      "position_and_E_time": 3.3678765702728146,
+      "metadata": "state-000160.json",
+      "metadata_sha256": "8e899c7f5fc5351e43516014f07571327cc5def67e449637750cce6ccd49a970",
+      "fields_sha256": "193bbb632799715e7d05a7088f2746220f992833d6ab1f6b6ecf7999b83f4076",
+      "particles_sha256": "e92602f2410cf359188d1b124345d0a1d5867151b73dce13784cf4ba34014372"
+    },
+    {
+      "completed_step": 180,
+      "position_and_E_time": 3.7888611415569144,
+      "metadata": "state-000180.json",
+      "metadata_sha256": "7cf3f4d2cd0b347327bc97152aae84f71e4d6d3df66146bcd55f0b49201a2be1",
+      "fields_sha256": "d2828504158aa228bafd973fac9914b2e591a06017f5cabcddc19b46fc0c6479",
+      "particles_sha256": "361b0efe71255afdaab2288477d90f1644049de8c41399d22ebfc36fdb8bfeb0"
+    },
+    {
+      "completed_step": 200,
+      "position_and_E_time": 4.209845712841019,
+      "metadata": "state-000200.json",
+      "metadata_sha256": "87add7e2cb27b8513c77e753a225f0b54b2122f9d21465adb06fa8a9bc0b15d3",
+      "fields_sha256": "3be54daaaa07c58beab3cd437580880a6748642d8ce7bf3d3996444ba0a00629",
+      "particles_sha256": "a3ed3aa649a64e5b97a5f7f1934b2afb7a4b7b5140bfc8343f9905d22d6d8e39"
+    },
+    {
+      "completed_step": 220,
+      "position_and_E_time": 4.630830284125127,
+      "metadata": "state-000220.json",
+      "metadata_sha256": "602eaf04aad186bd157703dbd0e6411f62758805680f3d3d442b2ac81c08c16e",
+      "fields_sha256": "a1f3fd6201d8786799eb4a67f6a359905d418e73183bec76e696b431110e9fec",
+      "particles_sha256": "baa8831dd1a7ae17cb7df8aa5abca92cd2b15469f69290e74f17964b3afcf706"
+    },
+    {
+      "completed_step": 240,
+      "position_and_E_time": 5.051814855409236,
+      "metadata": "state-000240.json",
+      "metadata_sha256": "1d0adf202d65bf2cf426919326323e90b3047133dc5dcd4920c9a0fe18d25da2",
+      "fields_sha256": "db2cb3a28f139c5a047a7def581332143068ede052c0eba1c33a5ce1f9e72da7",
+      "particles_sha256": "d5912047704e93bdc660ba34e6a385f01649083767ae849cf400cd74bd28d9d3"
+    },
+    {
+      "completed_step": 260,
+      "position_and_E_time": 5.472799426693345,
+      "metadata": "state-000260.json",
+      "metadata_sha256": "99983cae30c660eb0319da7a2105ec60cba242bdb632033b7e6ea49799901d20",
+      "fields_sha256": "346e89cfc6f843e7418cea956d1f1c6838b59b3cbe9d2a4b22ef3f969022450e",
+      "particles_sha256": "de4e68508bb2e3b643ae4b0f7e9e0193bb73fedf73e3411a6c5fc34b9a6962f8"
+    },
+    {
+      "completed_step": 280,
+      "position_and_E_time": 5.893783997977454,
+      "metadata": "state-000280.json",
+      "metadata_sha256": "5ab53b19b81065afeb45e75c68f6edc4751513b0373251eee95b057779e0980f",
+      "fields_sha256": "566219d5fb019c5225f62e9ffe9b021d19f2b8fc60aa056a41191a814186bb8a",
+      "particles_sha256": "da81a0bd1b7794780286eb38d5987a8685b3ad655594ab96b54b0a40335bcf63"
+    },
+    {
+      "completed_step": 300,
+      "position_and_E_time": 6.314768569261562,
+      "metadata": "state-000300.json",
+      "metadata_sha256": "759f6f4d5a4ebd302c1d174a2d705da468f5095e5fceb3ab9ee35d70f7612144",
+      "fields_sha256": "34d5322bb93c4b0d51a09334b8588180c8b1d6289edc6dda8dbea8c1d6c20e57",
+      "particles_sha256": "17fcbc2bf833f26019a2b4bff2ed64dd7237e7df04fe099e0611aed459bbd941"
+    },
+    {
+      "completed_step": 317,
+      "position_and_E_time": 6.672605454853055,
+      "metadata": "state-000317.json",
+      "metadata_sha256": "8aa045871e58fb191e8476d10b911a564b09f8b97472e5bad9dbf43a2d7d6a5b",
+      "fields_sha256": "b5f170ef527ba77707a53f86a056b4000a25d9ea89bcc39078f2a0fed803ed1f",
+      "particles_sha256": "79cb839092d1ccfcb966f602fbc7685aa645f3f157dbf3225ae3dbac1f25c610"
+    }
+  ],
+  "reused_verified_build": {
+    "path": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/pic-source-repair-imported-one-turn-v2/verification.json",
+    "sha256": "4e36ca1b3cb8ccb4d818c8bfdbdc3ebe13c618d30e5b274c7d987444994bca32",
+    "meaning": "Exact prior binary and problem-generator bytes; no fresh upstream tree scan"
+  }
+}

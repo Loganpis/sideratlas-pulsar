@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-10-18T15:06:17.338836+00:00",
+  "imported_kokkos_package": null,
+  "upstream_receipt": null,
+  "scope": "scaled local oblique 3D PIC startup prototype",
+  "production_vela_dataset": false,
+  "optical_prediction": false,
+  "stellar_atmosphere_model": false,
+  "convergence_claim": false,
+  "exit_code": 0,
+  "wall_seconds": 166.58110595900143,
+  "run_command": [
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/pic-source-repair-build-imported/src/entity.xc",
+    "-input",
+    "/Users/Logan/Documents/New project/sideratlas-pulsar/research/pic-source-repair/matched-resolution96.toml"
+  ],
+  "build_commands": [],
+  "source_pins": [
+    {
+      "name": "entity",
+      "directory": "entity-research",
+      "repository": "https://github.com/entity-toolkit/entity.git",
+      "commit": "62ab34fa0a0d1d6965918abb16d1d0c4b4740cf3",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "kokkos",
+      "directory": "kokkos-research",
+      "repository": "https://github.com/kokkos/kokkos.git",
+      "commit": "89f0b12e43583d02bd19739810ceadcedf1ccd56",
+      "license": "Apache-2.0 WITH LLVM-exception"
+    }
+  ],
+  "external_pgen_sha256": "7df8d90444f5752493e073badcb1ff5adf40a9b3d6294b0c0e60dee608e52c8a",
+  "configuration_sha256": "e3ccf1b1f02520841ad9c24eec1759d0f74b53a39cfbd4ef66c2350e46c42f07",
+  "native_executable_sha256": "f56aa7e54f902d67e98c41634355ddb4ff4da825c55a17374892794771fef3a5",
+  "run_log_sha256": "fd8475c49a48bc9cd327a5baab068e063e0ce3d53196faa8b42cbf82f7c82c1f",
+  "states": [
+    {
+      "completed_step": 0,
+      "position_and_E_time": 0,
+      "metadata": "state-000000.json",
+      "metadata_sha256": "63360c7b90f3c5449e2e2af52a9b6545578806b7167347c351c40abb0e9ebf64",
+      "fields_sha256": "c23374ae8be4ced9ecb69c0c98543d259dc6e2c45b4bf51de9c9718435d3a969",
+      "particles_sha256": "3e9c4945422b6d6b4f0b08bc6576f4f2c11bfa1fda1a10e49ae4536934b8f500"
+    },
+    {
+      "completed_step": 160,
+      "position_and_E_time": 1.6839382851364073,
+      "metadata": "state-000160.json",
+      "metadata_sha256": "f84ad15db1474b2c92b0474724ca0e57c6f49c1ec3bd81a1c302d3297386c7f4",
+      "fields_sha256": "9ac167f864ed208643e150bdb84251bca982822cd7f8bbe01a3c03062a6a2584",
+      "particles_sha256": "cf826a246b15eb22b8f62aff61d1c220e08295e4fdd0dcd92f993cd4c16e47cb"
+    },
+    {
+      "completed_step": 320,
+      "position_and_E_time": 3.3678765702728355,
+      "metadata": "state-000320.json",
+      "metadata_sha256": "3eaf12280724f3e9085c3db9ee9bc2fed0e1dc29e65a5b9c8944fdb719b77090",
+      "fields_sha256": "8bd28e76ea6266a2714378cec689d48c5358aa31ee80c8511b1cd6f77042493c",
+      "particles_sha256": "a4405ae195bc27895157fe48b450238fdbbe97fe43f8710fbbf3f8f50c87facc"
+    },
+    {
+      "completed_step": 480,
+      "position_and_E_time": 5.05181485540927,
+      "metadata": "state-000480.json",
+      "metadata_sha256": "eddd81c611ef208bc5a2e3da6f9e7082002f53608164519448b4c4e0535d327b",
+      "fields_sha256": "42ea77bddcfb2b01ee666bdf45667799a53149f256421c16c2460af29db20c19",
+      "particles_sha256": "e2de93832c3b62fcd9c76d74211d30698542be6cfc5553462b558bb9d2cab869"
+    },
+    {
+      "completed_step": 634,
+      "position_and_E_time": 6.672605454853088,
+      "metadata": "state-000634.json",
+      "metadata_sha256": "074694e44aa7e8a32bdebba2d3f4c38368cbc266633a98bda315dd48d79cf278",
+      "fields_sha256": "b68ffc78f286bc88e27b205a2e57477d10a8fa22fa6fb5f95d2ef1ab87ae61b7",
+      "particles_sha256": "f3534529e2b9cf0bdca9e6a6e413a908544a0cdc40030fb9b2405117dc4c4dd9"
+    }
+  ],
+  "reused_verified_build": {
+    "path": "/Users/Logan/Documents/New project/sideratlas-pulsar/outputs/pic-source-repair-imported-one-turn-v2/verification.json",
+    "sha256": "4e36ca1b3cb8ccb4d818c8bfdbdc3ebe13c618d30e5b274c7d987444994bca32",
+    "meaning": "Exact prior binary and problem-generator bytes; no fresh upstream tree scan"
+  }
+}

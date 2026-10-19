@@ -1,0 +1,693 @@
+{
+  "scope": "independent numerical-source audit of saved scaled kinetic prototype; no Vela inference",
+  "method": "linear least-squares finite discrete-curl dipole family at actual staggered B positions; shell radial/tangential fits use separately interpolated component grids",
+  "raw_to_tetrad": "B_normalized = dx * B_U; no collocated-component assumption",
+  "body_mask": "each magnetic component sampled at its own Yee location inside the guaranteed anchored B core, r < anchor_core_fraction*Rstar-dx/2",
+  "body_data_rows": 456,
+  "sphere_samples": 4096,
+  "seed_magnitude_B0_RLC3": 0.0625,
+  "initial_inclination_deg": 75.00000000000001,
+  "summary": {
+    "final_interior_magnitude_relative_to_initial": 0.9999999999999934,
+    "final_interior_inclination_deg": 74.99999999999993,
+    "final_interior_inclination_change_deg": -8.526512829121202e-14,
+    "final_interior_phase_error_deg": -1.8041696430601798e-12,
+    "final_interior_fit_residual_L2": 3.15895274278704e-15,
+    "max_abs_interior_magnitude_change_fraction": 2.8199664825478976e-14,
+    "max_abs_interior_inclination_change_deg": 4.689582056016661e-13,
+    "max_abs_interior_phase_error_deg": 1.8041696430601798e-12,
+    "interior_moment_phase_rate_after_spinup": 0.999999999999994,
+    "prescribed_final_rotation_rate": 1,
+    "before_nominal_boundary_light_time_state": {
+      "magnetic_time": -0.010524614282102553,
+      "fit": {
+        "moment_B0_RLC3": [
+          0.060370364143066874,
+          -1.734723475976807e-18,
+          0.016176190318907532
+        ],
+        "magnitude": 0.0625000000000001,
+        "magnitude_relative_to_initial_seed": 1.0000000000000016,
+        "inclination_deg": 75.00000000000004,
+        "phase_deg_mod_360": 360.0,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": -1.646376251105476e-15,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+        "relative_fit_residual_L2": 1.7478800745362507e-15,
+        "design_condition_number": 1.0000000000000016
+      }
+    }
+  },
+  "boundary_and_source_risk": {
+    "star_radius_RLC": 0.5,
+    "star_radius_cells": 4.8,
+    "box_half_extent_RLC": 2.5,
+    "zero_match_layer_width_RLC": 0.5,
+    "zero_match_layer_inner_face_RLC": 2.0,
+    "nominal_continuum_initial_boundary_to_surface_light_time": 1.5,
+    "nominal_continuum_source_wave_roundtrip_light_time": 3.0,
+    "final_time": 6.672605454853055,
+    "causally_isolated_for_entire_run": false,
+    "boundary_or_resolution_sensitivity_measured": false,
+    "interpretation": "The source-repair experiment prescribes a rotating interior magnetization through a compatible compact interior electric field constructed from a rotating edge potential and a vertex scalar potential. No B reset is applied; exterior fields remain native PIC evolved. The guaranteed core fit tests the imposed maintained magnetization. Surface/exterior behavior still includes source staircasing, the blend layer, loading and possible later boundary influence. No single-run fit separates those causes. Exterior fitted moments also include genuine induction/wave/plasma structure and are not conserved source moments."
+  },
+  "limits": [
+    "B and fitted magnetic phase are evaluated at t-dt/2, not the E/position timestamp",
+    "The fit seed has the model's finite interior current profile, not a uniform-field or singular-dipole replacement",
+    "Tangential fits near the stellar surface can have large residuals and should not be mistaken for direct magnetization measurements",
+    "No changed-resolution, source-radius, spinup, loading or boundary-control run was performed in this audit",
+    "Boundary times are continuum c=1 light-travel estimates, not a proof of exact finite-difference isolation; numerical stencil tails or constraint errors require explicit boundary controls",
+    "A finite-grid seed-field conductor is not a validated fixed-obliquity magnetized neutron star atmosphere"
+  ],
+  "states": [
+    {
+      "completed_step": 0,
+      "position_E_time": 0,
+      "magnetic_time": -0.010524614282102553,
+      "expected_phase_at_B_time_rad": 0.0,
+      "interior_fit": {
+        "moment_B0_RLC3": [
+          0.060370364143066874,
+          -1.734723475976807e-18,
+          0.016176190318907532
+        ],
+        "magnitude": 0.0625000000000001,
+        "magnitude_relative_to_initial_seed": 1.0000000000000016,
+        "inclination_deg": 75.00000000000004,
+        "phase_deg_mod_360": 360.0,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": -1.646376251105476e-15,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+        "relative_fit_residual_L2": 1.7478800745362507e-15,
+        "design_condition_number": 1.0000000000000016
+      },
+      "spherical_shell_fits": [
+        {
+          "radius_RLC": 0.3958333333333333,
+          "region": "interior",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.060370364143066936,
+              1.0408340855860843e-17,
+              0.01617619031890756
+            ],
+            "magnitude": 0.06250000000000017,
+            "magnitude_relative_to_initial_seed": 1.0000000000000027,
+            "inclination_deg": 75.00000000000003,
+            "phase_deg_mod_360": 9.878257506632846e-15,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 9.878257506632846e-15,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 2.8243707332769764e-15,
+            "design_condition_number": 1.0000265226032397
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.060370364143066894,
+              -3.469446951953614e-18,
+              0.01617619031890756
+            ],
+            "magnitude": 0.06250000000000012,
+            "magnitude_relative_to_initial_seed": 1.000000000000002,
+            "inclination_deg": 75.00000000000001,
+            "phase_deg_mod_360": 360.0,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -3.2927525022109516e-15,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 3.1181569583012617e-15,
+            "design_condition_number": 1.0000318380666853
+          }
+        },
+        {
+          "radius_RLC": 0.5,
+          "region": "stellar_surface",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.06037036414306683,
+              0.0,
+              0.01617619031890755
+            ],
+            "magnitude": 0.06250000000000006,
+            "magnitude_relative_to_initial_seed": 1.0000000000000009,
+            "inclination_deg": 75.00000000000001,
+            "phase_deg_mod_360": 0.0,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 1.2610271147682327e-15,
+            "design_condition_number": 1.000056333685056
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.060370364143066804,
+              1.3877787807814457e-17,
+              0.0161761903189076
+            ],
+            "magnitude": 0.06250000000000004,
+            "magnitude_relative_to_initial_seed": 1.0000000000000007,
+            "inclination_deg": 74.99999999999997,
+            "phase_deg_mod_360": 1.3171010008843825e-14,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 1.3171010008843825e-14,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 2.6451704525392453e-15,
+            "design_condition_number": 1.0000879859745637
+          }
+        },
+        {
+          "radius_RLC": 0.7083333333333334,
+          "region": "exterior_effective_moment",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.060370364143066735,
+              -6.938893903907228e-18,
+              0.016176190318907595
+            ],
+            "magnitude": 0.06249999999999998,
+            "magnitude_relative_to_initial_seed": 0.9999999999999997,
+            "inclination_deg": 74.99999999999996,
+            "phase_deg_mod_360": 360.0,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -6.58550500442192e-15,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 1.2247996116783296e-15,
+            "design_condition_number": 1.000028454240963
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.06037036414306633,
+              6.938893903907228e-18,
+              0.016176190318907543
+            ],
+            "magnitude": 0.06249999999999958,
+            "magnitude_relative_to_initial_seed": 0.9999999999999932,
+            "inclination_deg": 74.9999999999999,
+            "phase_deg_mod_360": 6.585505004421964e-15,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 6.585505004421964e-15,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+            "relative_fit_residual_L2": 7.28829632009789e-15,
+            "design_condition_number": 1.000046700866283
+          }
+        }
+      ],
+      "fields_sha256": "56f254f93a92b38bd766b471b1821cdd5f2e127a6e107db97c197bbdc8d9b222"
+    },
+    {
+      "completed_step": 80,
+      "position_E_time": 1.683938285136412,
+      "magnetic_time": 1.6734136708543095,
+      "expected_phase_at_B_time_rad": 1.2734136708543096,
+      "interior_fit": {
+        "moment_B0_RLC3": [
+          0.0176896488195474,
+          0.0577205092788305,
+          0.01617619031890757
+        ],
+        "magnitude": 0.062499999999999924,
+        "magnitude_relative_to_initial_seed": 0.9999999999999988,
+        "inclination_deg": 74.99999999999997,
+        "phase_deg_mod_360": 72.9612289142129,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": -4.0711099922733015e-13,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+        "relative_fit_residual_L2": 2.40505368178696e-15,
+        "design_condition_number": 1.0000000000000016
+      },
+      "spherical_shell_fits": [
+        {
+          "radius_RLC": 0.3958333333333333,
+          "region": "interior",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.01815925786278884,
+              0.05728230266842189,
+              0.016099105499642715
+            ],
+            "magnitude": 0.06221094793533191,
+            "magnitude_relative_to_initial_seed": 0.9953751669653106,
+            "inclination_deg": 75.00216690794849,
+            "phase_deg_mod_360": 72.41068695564547,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -0.5505419585678272,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.5317896683739934,
+            "relative_fit_residual_L2": 0.039939766545641124,
+            "design_condition_number": 1.0000265226032397
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.023401855929052008,
+              0.05159921047927392,
+              0.014514894866444791
+            ],
+            "magnitude": 0.05848767011937186,
+            "magnitude_relative_to_initial_seed": 0.9358027219099497,
+            "inclination_deg": 75.63074151841057,
+            "phase_deg_mod_360": 65.60422159166592,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -7.357007322547388,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 7.14423603665534,
+            "relative_fit_residual_L2": 0.1636067793584595,
+            "design_condition_number": 1.0000318380666853
+          }
+        },
+        {
+          "radius_RLC": 0.5,
+          "region": "stellar_surface",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.019373767982022443,
+              0.05550716568424599,
+              0.01540066066968846
+            ],
+            "magnitude": 0.06077473716259464,
+            "magnitude_relative_to_initial_seed": 0.9723957946015143,
+            "inclination_deg": 75.32086813112745,
+            "phase_deg_mod_360": 70.75938666711332,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -2.2018422470999868,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 2.1524422492748654,
+            "relative_fit_residual_L2": 0.11666836425399883,
+            "design_condition_number": 1.000056333685056
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.00911500034559268,
+              0.0703579615500902,
+              0.022825070605046325
+            ],
+            "magnitude": 0.07452724221993912,
+            "magnitude_relative_to_initial_seed": 1.1924358755190259,
+            "inclination_deg": 72.16572677440517,
+            "phase_deg_mod_360": 82.61834268061534,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 9.657113766402034,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 9.685304748821295,
+            "relative_fit_residual_L2": 0.3286699494158567,
+            "design_condition_number": 1.0000879859745637
+          }
+        },
+        {
+          "radius_RLC": 0.7083333333333334,
+          "region": "exterior_effective_moment",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.023922370368111665,
+              0.05678600324669131,
+              0.015196781023241573
+            ],
+            "magnitude": 0.06346551915986111,
+            "magnitude_relative_to_initial_seed": 1.0154483065577777,
+            "inclination_deg": 76.14595370434525,
+            "phase_deg_mod_360": 67.15565575533743,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -5.805573158875865,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 5.737835748738339,
+            "relative_fit_residual_L2": 0.02925379464501535,
+            "design_condition_number": 1.000028454240963
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.0023763568777596545,
+              0.04943439042542784,
+              0.014324665869789694
+            ],
+            "magnitude": 0.051522830677528046,
+            "magnitude_relative_to_initial_seed": 0.8243652908404487,
+            "inclination_deg": 73.85759842220112,
+            "phase_deg_mod_360": 87.24785746811355,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 14.28662855390024,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 13.806753493906161,
+            "relative_fit_residual_L2": 0.345326121966519,
+            "design_condition_number": 1.000046700866283
+          }
+        }
+      ],
+      "fields_sha256": "1868a97b0b87fd8522e82358e37965a85f9727cbd3095ab6645df448ef3c4fcd"
+    },
+    {
+      "completed_step": 160,
+      "position_E_time": 3.3678765702728146,
+      "magnetic_time": 3.357351955990712,
+      "expected_phase_at_B_time_rad": 2.957351955990712,
+      "interior_fit": {
+        "moment_B0_RLC3": [
+          -0.059348634264969745,
+          0.011059858844009184,
+          0.01617619031890754
+        ],
+        "magnitude": 0.06250000000000054,
+        "magnitude_relative_to_initial_seed": 1.0000000000000087,
+        "inclination_deg": 75.00000000000014,
+        "phase_deg_mod_360": 169.44378561302776,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": 1.1958885602302823e-12,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+        "relative_fit_residual_L2": 2.75469922593219e-15,
+        "design_condition_number": 1.0000000000000016
+      },
+      "spherical_shell_fits": [
+        {
+          "radius_RLC": 0.3958333333333333,
+          "region": "interior",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.05829135557903509,
+              0.011533957306078953,
+              0.015910225236825695
+            ],
+            "magnitude": 0.061514628938704345,
+            "magnitude_relative_to_initial_seed": 0.9842340630192695,
+            "inclination_deg": 75.01054145806354,
+            "phase_deg_mod_360": 168.80760654307502,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -0.6361790699515589,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.6146071334984305,
+            "relative_fit_residual_L2": 0.0802444909299336,
+            "design_condition_number": 1.0000265226032397
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              -0.045768692027715635,
+              0.018696668883894162,
+              0.011700913078051598
+            ],
+            "magnitude": 0.05080600322936233,
+            "magnitude_relative_to_initial_seed": 0.8128960516697973,
+            "inclination_deg": 76.68492866458683,
+            "phase_deg_mod_360": 157.77981545545947,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -11.663970157567107,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 11.432880814676091,
+            "relative_fit_residual_L2": 0.35523227349006786,
+            "design_condition_number": 1.0000318380666853
+          }
+        },
+        {
+          "radius_RLC": 0.5,
+          "region": "stellar_surface",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.055360004007369186,
+              0.013502949397860424,
+              0.014668202334178817
+            ],
+            "magnitude": 0.058840596919588775,
+            "magnitude_relative_to_initial_seed": 0.9414495507134204,
+            "inclination_deg": 75.5646689737203,
+            "phase_deg_mod_360": 166.29254139064278,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -3.151244222383789,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 3.099677416592106,
+            "relative_fit_residual_L2": 0.16836261912082587,
+            "design_condition_number": 1.000056333685056
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              -0.07241000190410839,
+              -0.0012180265877025295,
+              0.023804856975869964
+            ],
+            "magnitude": 0.07623229748710815,
+            "magnitude_relative_to_initial_seed": 1.2197167597937304,
+            "inclination_deg": 71.80407565127847,
+            "phase_deg_mod_360": 180.96369561993436,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 11.519910006907768,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 11.489986492131697,
+            "relative_fit_residual_L2": 0.32489970681795727,
+            "design_condition_number": 1.0000879859745637
+          }
+        },
+        {
+          "radius_RLC": 0.7083333333333334,
+          "region": "exterior_effective_moment",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.057821853288742994,
+              0.01767570212544223,
+              0.014462802030596772
+            ],
+            "magnitude": 0.06216888133100447,
+            "magnitude_relative_to_initial_seed": 0.9947021012960715,
+            "inclination_deg": 76.54760822635374,
+            "phase_deg_mod_360": 163.00200497050284,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -6.44178064252372,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 6.432744523371269,
+            "relative_fit_residual_L2": 0.041924736100803286,
+            "design_condition_number": 1.000028454240963
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              -0.04416401403006043,
+              -0.00196468933591047,
+              0.013538350784332218
+            ],
+            "magnitude": 0.04623426306748755,
+            "magnitude_relative_to_initial_seed": 0.7397482090798008,
+            "inclination_deg": 72.97309513307975,
+            "phase_deg_mod_360": 182.54719230259087,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 13.1034066895643,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 12.75412496972635,
+            "relative_fit_residual_L2": 0.18100872329249096,
+            "design_condition_number": 1.000046700866283
+          }
+        }
+      ],
+      "fields_sha256": "021de44c1f1e18a606bce31cbf5ff3ee929d27443fd49c63f703dd394b76d69a"
+    },
+    {
+      "completed_step": 240,
+      "position_E_time": 5.051814855409236,
+      "magnetic_time": 5.041290241127133,
+      "expected_phase_at_B_time_rad": 4.641290241127134,
+      "interior_fit": {
+        "moment_B0_RLC3": [
+          -0.00428864144467888,
+          -0.060217841387131155,
+          0.016176190318907498
+        ],
+        "magnitude": 0.06250000000000176,
+        "magnitude_relative_to_initial_seed": 1.0000000000000282,
+        "inclination_deg": 75.00000000000048,
+        "phase_deg_mod_360": 265.92634231184053,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": -4.1983321795318423e-13,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.0,
+        "relative_fit_residual_L2": 2.9511259242331904e-15,
+        "design_condition_number": 1.0000000000000016
+      },
+      "spherical_shell_fits": [
+        {
+          "radius_RLC": 0.3958333333333333,
+          "region": "interior",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.004129023507315579,
+              -0.058994346748600546,
+              0.01566600053656401
+            ],
+            "magnitude": 0.06117847134597026,
+            "magnitude_relative_to_initial_seed": 0.9788555415355241,
+            "inclination_deg": 75.162974614606,
+            "phase_deg_mod_360": 265.9963883530165,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 0.07004604117554938,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.17647090368422036,
+            "relative_fit_residual_L2": 0.11490925618678952,
+            "design_condition_number": 1.0000265226032397
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              -0.007055875449534541,
+              -0.04245518356748375,
+              0.008372595527668662
+            ],
+            "magnitude": 0.043844365042477504,
+            "magnitude_relative_to_initial_seed": 0.7015098406796401,
+            "inclination_deg": 78.99108538669168,
+            "phase_deg_mod_360": 260.56392635598627,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -5.36241595585466,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 6.573762541186137,
+            "relative_fit_residual_L2": 0.6011469264045158,
+            "design_condition_number": 1.0000318380666853
+          }
+        },
+        {
+          "radius_RLC": 0.5,
+          "region": "stellar_surface",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.005990699851919046,
+              -0.05474877361138088,
+              0.013826162012554296
+            ],
+            "magnitude": 0.056784500109302874,
+            "magnitude_relative_to_initial_seed": 0.908552001748846,
+            "inclination_deg": 75.90769287626767,
+            "phase_deg_mod_360": 263.75544575101526,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -2.170896560825704,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 2.288944108538182,
+            "relative_fit_residual_L2": 0.28254664373244714,
+            "design_condition_number": 1.000056333685056
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.010503469156098316,
+              -0.07813634033985056,
+              0.0249602006826444
+            ],
+            "magnitude": 0.08269596219971051,
+            "magnitude_relative_to_initial_seed": 1.3231353951953682,
+            "inclination_deg": 72.43239264482082,
+            "phase_deg_mod_360": 277.6560838644354,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 11.729741552594458,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 11.545585240924106,
+            "relative_fit_residual_L2": 0.48779137126245625,
+            "design_condition_number": 1.0000879859745637
+          }
+        },
+        {
+          "radius_RLC": 0.7083333333333334,
+          "region": "exterior_effective_moment",
+          "radial": {
+            "moment_B0_RLC3": [
+              -0.009885777198609579,
+              -0.057334463898345595,
+              0.013591595249915888
+            ],
+            "magnitude": 0.05974697316825999,
+            "magnitude_relative_to_initial_seed": 0.9559515706921599,
+            "inclination_deg": 76.85089751548374,
+            "phase_deg_mod_360": 260.21708366068293,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -5.709258651158007,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 5.8385892518791005,
+            "relative_fit_residual_L2": 0.06291613942845896,
+            "design_condition_number": 1.000028454240963
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.008838314830380965,
+              -0.04296244160482797,
+              0.013083745365235946
+            ],
+            "magnitude": 0.04577195200634902,
+            "magnitude_relative_to_initial_seed": 0.7323512321015844,
+            "inclination_deg": 73.39055443504378,
+            "phase_deg_mod_360": 281.6248139127263,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 15.698471600885364,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 15.186378227102953,
+            "relative_fit_residual_L2": 0.17297784218605092,
+            "design_condition_number": 1.000046700866283
+          }
+        }
+      ],
+      "fields_sha256": "36ff799feb0e3efe9f52c12a74531e2041df6b86c1f992356023b5d5e49a5d67"
+    },
+    {
+      "completed_step": 317,
+      "position_E_time": 6.672605454853055,
+      "magnetic_time": 6.662080840570952,
+      "expected_phase_at_B_time_rad": 6.2620808405709525,
+      "interior_fit": {
+        "moment_B0_RLC3": [
+          0.06035692020692591,
+          -0.0012739897571057129,
+          0.016176190318907525
+        ],
+        "magnitude": 0.06249999999999959,
+        "magnitude_relative_to_initial_seed": 0.9999999999999934,
+        "inclination_deg": 74.99999999999993,
+        "phase_deg_mod_360": 358.7908031344487,
+        "phase_error_deg_vs_rigid_rotation_at_B_time": -1.8041696430601798e-12,
+        "orientation_error_deg_vs_rigid_rotation_at_B_time": 8.537736462515939e-07,
+        "relative_fit_residual_L2": 3.15895274278704e-15,
+        "design_condition_number": 1.0000000000000016
+      },
+      "spherical_shell_fits": [
+        {
+          "radius_RLC": 0.3958333333333333,
+          "region": "interior",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.05972137082001566,
+              -0.0008539954854546051,
+              0.015492678186723735
+            ],
+            "magnitude": 0.061704088343548034,
+            "magnitude_relative_to_initial_seed": 0.9872654134967686,
+            "inclination_deg": 75.45855473570738,
+            "phase_deg_mod_360": 359.18074549061174,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 0.3899423561612166,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 0.5936690162258283,
+            "relative_fit_residual_L2": 0.17104108601841556,
+            "design_condition_number": 1.0000265226032397
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.047114524650130406,
+              0.0002498545973082097,
+              0.006316961051973077
+            ],
+            "magnitude": 0.04753677373633687,
+            "magnitude_relative_to_initial_seed": 0.7605883797813899,
+            "inclination_deg": 82.36361774212222,
+            "phase_deg_mod_360": 0.3038442990962851,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 1.5130411646457862,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 7.511363590659917,
+            "relative_fit_residual_L2": 0.7124463325824006,
+            "design_condition_number": 1.0000318380666853
+          }
+        },
+        {
+          "radius_RLC": 0.5,
+          "region": "stellar_surface",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.05575527851851839,
+              -0.0014568037508503884,
+              0.013172705388518047
+            ],
+            "magnitude": 0.05730875611194805,
+            "magnitude_relative_to_initial_seed": 0.9169400977911688,
+            "inclination_deg": 76.7114635689654,
+            "phase_deg_mod_360": 358.50328575532563,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -0.28751737912485553,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 1.7340215040128264,
+            "relative_fit_residual_L2": 0.40758477687935923,
+            "design_condition_number": 1.000056333685056
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.07693012994370159,
+              0.009256070745908476,
+              0.02727289976809795
+            ],
+            "magnitude": 0.08214457255697902,
+            "magnitude_relative_to_initial_seed": 1.3143131609116643,
+            "inclination_deg": 70.6091208742001,
+            "phase_deg_mod_360": 6.860727815200041,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 8.069924680749542,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 8.869370711684287,
+            "relative_fit_residual_L2": 0.6697155363553284,
+            "design_condition_number": 1.0000879859745637
+          }
+        },
+        {
+          "radius_RLC": 0.7083333333333334,
+          "region": "exterior_effective_moment",
+          "radial": {
+            "moment_B0_RLC3": [
+              0.05889520463309203,
+              -0.005335461046530782,
+              0.01283152853096125
+            ],
+            "magnitude": 0.06051248133892465,
+            "magnitude_relative_to_initial_seed": 0.9681997014227944,
+            "inclination_deg": 77.75762408830747,
+            "phase_deg_mod_360": 354.82356492689007,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": -3.9672382075604,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 4.739922493516378,
+            "relative_fit_residual_L2": 0.10018099792287115,
+            "design_condition_number": 1.000028454240963
+          },
+          "tangential": {
+            "moment_B0_RLC3": [
+              0.04239819976415397,
+              0.013326100798356052,
+              0.012264323049998985
+            ],
+            "magnitude": 0.04610429400396223,
+            "magnitude_relative_to_initial_seed": 0.7376687040633957,
+            "inclination_deg": 74.57286975741667,
+            "phase_deg_mod_360": 17.448359641226688,
+            "phase_error_deg_vs_rigid_rotation_at_B_time": 18.65755650677619,
+            "orientation_error_deg_vs_rigid_rotation_at_B_time": 18.00317580562734,
+            "relative_fit_residual_L2": 0.21804063294704157,
+            "design_condition_number": 1.000046700866283
+          }
+        }
+      ],
+      "fields_sha256": "6b94f637c03b3479f879f0f45601d841420389de7f32114cb51e910117a6a719"
+    }
+  ]
+}
