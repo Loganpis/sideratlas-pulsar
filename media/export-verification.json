@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": {
+    "native1080x1920": true,
+    "h264_high_420": true,
+    "duration32": true,
+    "fps30": true,
+    "frame_count960": true,
+    "rec709_limited": true,
+    "four_exact_repeats": true,
+    "faststart": true,
+    "no_audio": true,
+    "no_b_frames": true,
+    "three_labels_only": true,
+    "mathematical_loop_endpoint": true,
+    "source_frame_psnr_above35": true,
+    "quantitative_claim_disabled": true
+  },
+  "scope": "Local export and repeated-loop checks; not an Instagram upload or scientific model validation",
+  "source_frame_psnr_db": 45.97692267788326,
+  "source_frame_mean_absolute_error_codes": 0.8656647055041152,
+  "final_sha256": "9cdbbd13f3fb267c28a83bb58e45f4815b07e936983a4223ebf818bbf9d630bd",
+  "file_bytes": 55432220,
+  "stream": {
+    "codec_name": "h264",
+    "profile": "High",
+    "pix_fmt": "yuv420p",
+    "width": 1080,
+    "height": 1920,
+    "avg_frame_rate": "30/1",
+    "nb_read_frames": "960",
+    "bit_rate": "13856717",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709",
+    "color_range": "tv",
+    "chroma_location": "left"
+  },
+  "mp4_atoms": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ]
+}

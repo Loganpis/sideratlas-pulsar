@@ -1,0 +1,2526 @@
+{
+  "version": "photon-v1.1.0",
+  "scope": "Current calculated gamma-ray photon animation only",
+  "verification_passed": true,
+  "scene_sha256": "451bd98ea72d892b7cf1a981f58436345a1611e1b5f1de366181700d98a0d222",
+  "video": "media/sideratlas-002-pulsar-reel.mp4",
+  "caption": "instagram-description.text",
+  "files": {
+    ".gitattributes": {
+      "bytes": 113,
+      "sha256": "33db866ad6a9d3b68ea7bbb0fd9bae2e968611b1af82763224b5e00006be1d52"
+    },
+    ".gitignore": {
+      "bytes": 300,
+      "sha256": "99d91c3f8c5ccf19714b9195ec811c897a425a6a444a9012f4604e7cd6debbf7"
+    },
+    "LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "NOTICE": {
+      "bytes": 1517,
+      "sha256": "36ddf2e7173604e1445fd057d39793116a8a75d7e085064cd40ad7714b0578d2"
+    },
+    "README.md": {
+      "bytes": 3116,
+      "sha256": "3730e6bfd78e12c47cb3f1f6e65ac3db0e510228e7a79277044578ade89ccd2d"
+    },
+    "build_package.py": {
+      "bytes": 3355,
+      "sha256": "b52e0ba7ea6f1d7c22ad7af0a55b5ca042bfdb013f2c5817b5a6d07c702c7eef"
+    },
+    "docs/MODEL-NOTES.md": {
+      "bytes": 11901,
+      "sha256": "db2105896eb865d56cb1f8080fbf36e68e6fe534ec6c9a46e4ca0d05648afb73"
+    },
+    "docs/requirements-tested.txt": {
+      "bytes": 103,
+      "sha256": "9d1a35bc25d1139b4978f552ceb9f191b70a53623c8da97bdb1296be000b17f1"
+    },
+    "fonts/FONT-SOURCES.md": {
+      "bytes": 781,
+      "sha256": "1a936666a5974685d40ffc9198427099d7afc068258690a58d55c45f52a41794"
+    },
+    "fonts/GUST-FONT-LICENSE.txt": {
+      "bytes": 1377,
+      "sha256": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050"
+    },
+    "fonts/LPPL-1.3c.txt": {
+      "bytes": 19102,
+      "sha256": "3d262cdf34dafa6955f703c634a8c238ec44109bc8dd6ef34fb7aa54809f7e66"
+    },
+    "fonts/lmroman10-regular.otf": {
+      "bytes": 111536,
+      "sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852"
+    },
+    "fonts/lmroman12-bold.otf": {
+      "bytes": 110496,
+      "sha256": "28c8782ac2b6486958b5dc7610ada7800c53546ff7f36bc65909a876e1cd338e"
+    },
+    "media/contact-sheet.jpg": {
+      "bytes": 274332,
+      "sha256": "4455f32f0c768707e5e2429d67fc36da3c7a7a36006503e53ffc4c4efdb761d0"
+    },
+    "media/export-verification.json": {
+      "bytes": 1211,
+      "sha256": "ea97785459817f3d0912a49fed63165119b17d2b5dec9e23ee6f85844173a92c"
+    },
+    "media/observer-frame-flux.csv": {
+      "bytes": 16600,
+      "sha256": "33e4af45fb07acc4505ab36968f8137de41fefc055049acf36f9daaf99a8ee6d"
+    },
+    "media/photon-direction-timing-verification.json": {
+      "bytes": 776,
+      "sha256": "989dea1d36e74940bbd2066537b9eafcc0f772ccbfb2c60c74fd10efc850428e"
+    },
+    "media/preview-00.png": {
+      "bytes": 1556477,
+      "sha256": "f7d9f7d6783e56036c873b3bb021539532c61c420738b6f9d03c27335f1bd89a"
+    },
+    "media/pulse-timing-check.png": {
+      "bytes": 167916,
+      "sha256": "2b63b0620003167e2891724e52c85d926726eb5a86ef8062be6fa83eeb50b307"
+    },
+    "media/render-metadata.json": {
+      "bytes": 6892,
+      "sha256": "7c740488cfbab5af73ef5982ca6f7fc7379580ffb6b3a331e2b4f616ffde7d37"
+    },
+    "media/sideratlas-002-pulsar-reel.mp4": {
+      "bytes": 55432220,
+      "sha256": "9cdbbd13f3fb267c28a83bb58e45f4815b07e936983a4223ebf818bbf9d630bd"
+    },
+    "physics/MODEL-NOTES.md": {
+      "bytes": 12112,
+      "sha256": "6f8b996fe0381f2eb678d59acb584cdc7ed1d2fa3189867f9efdc3606ae5e0f1"
+    },
+    "physics/README.md": {
+      "bytes": 2502,
+      "sha256": "6fb7559241c0d7771a8d16bc6570295706b7d2adeb6cc8d81b8fae26db2b2c74"
+    },
+    "physics/audit_curl_source_independent.py": {
+      "bytes": 12445,
+      "sha256": "12d82bdda314192213f038b38fd6c53acff495693221a33d9ec561084e1936a3"
+    },
+    "physics/build_native_release.py": {
+      "bytes": 3453,
+      "sha256": "3947dffe9ccc528caf92d805067bddf837a34f1cec15448af7eb7a0a03b4b04b"
+    },
+    "physics/data/J0835-4510_3PC_data.asc": {
+      "bytes": 454026,
+      "sha256": "858c75db4dff1a03ba0b5e1bc3461aa84dc44af446cce3eef88ddb912923a361"
+    },
+    "physics/data/J0835-4510_3PC_data.fits": {
+      "bytes": 146880,
+      "sha256": "4f9fc8a8d64cebeb41bf6a57d1e3ffec9846a68c3611657e42ec2fd9b227b935"
+    },
+    "physics/data/README.md": {
+      "bytes": 508,
+      "sha256": "7db6d0c53a35797bfeea3c6d9ec5b2eed6a9384bb8a1c45b0206be285486c8de"
+    },
+    "physics/data/provenance.json": {
+      "bytes": 448,
+      "sha256": "4ea936416fd7eee15a4590e572c04a393285876a22426e5aaf87be871f3d57f4"
+    },
+    "physics/data/spectra/3PC_Catalog+SEDs_20230803.fits": {
+      "bytes": 944640,
+      "sha256": "df6e610774d3de90213eff933662b30046709c85d37aa3486bc8f352bb5bab10"
+    },
+    "physics/data/spectra/provenance.json": {
+      "bytes": 1140,
+      "sha256": "7b671c1c0fd9d8b1404c5efbdb102c99f3a98febbfc9fc1ce41f30e4f5125ab9"
+    },
+    "physics/diagnostics/final-field-audit/cap512-diagnosis.json": {
+      "bytes": 757,
+      "sha256": "4de37b711b42440e09b923a90003bbc03948cc90e3064444b4a8f46156ff4ef7"
+    },
+    "physics/diagnostics/final-field-audit/cap512-step-check.json": {
+      "bytes": 642,
+      "sha256": "98f61aab1e1144df1ba46f41ae20e1e511ca4526234f7f0645a1b7cdb49c8547"
+    },
+    "physics/diagnostics/final-field-audit/grid-assessment.json": {
+      "bytes": 6730,
+      "sha256": "ade64e1c5a5ac8e8a9389cf6495fc3d6224213e4c0b293fe8c047b82442e7b3a"
+    },
+    "physics/diagnostics/final-field-audit/summary.json": {
+      "bytes": 15082,
+      "sha256": "d3fb736c264a95593f64a73288133d272e890c6c9f9432ef964aa939b523fe31"
+    },
+    "physics/diagnostics/n97-final-illustration-a128-r6/profiles.npz": {
+      "bytes": 82768,
+      "sha256": "d74a755cffd614ecb51228b8b2f163665abad696a8f5c4db90eed1bfec6a5d54"
+    },
+    "physics/diagnostics/n97-final-illustration-a128-r6/protocol.json": {
+      "bytes": 8290,
+      "sha256": "b830493f54f89ead0f38ad95018e49ffb9ead37c6e0c802ffe55a8ad4d0c0378"
+    },
+    "physics/diagnostics/n97-final-illustration-a128-r6/results.json": {
+      "bytes": 11987,
+      "sha256": "50fb25c32c383b1083e99a9aababd8663a8954dce451e550c38d3599a47ab044"
+    },
+    "physics/inputs/config.toml": {
+      "bytes": 647,
+      "sha256": "7632681a807b4e7f18f2c1d86296b2328eb2cba39242d50224c3025e09011010"
+    },
+    "physics/inputs/curl-audit.json": {
+      "bytes": 30164,
+      "sha256": "105df62722373c2a51c3632ab0a794e38b5396cd04dce6cb7f350451b17709b7"
+    },
+    "physics/inputs/run-result.json": {
+      "bytes": 2734,
+      "sha256": "08b6779c581407dba65f9554a08c4d21aa6a01947beaec6f89bcea48a5437a9f"
+    },
+    "physics/inputs/snapshot-001020.npz": {
+      "bytes": 20243296,
+      "sha256": "fea546506dad0c969559c198a36bd7e7fddc0003b66d7b268d5971aa8616d215"
+    },
+    "physics/research/COFFEE-CURL-REPAIR.md": {
+      "bytes": 5723,
+      "sha256": "776663c9d0b7db95f498daee3dd22724304ea7cf576251401e04296136951044"
+    },
+    "physics/research/OUTER-TRANSPORT.md": {
+      "bytes": 8986,
+      "sha256": "3c60b11998ca1be6219ff54f3cbf6a346c50999ae81aa764fac3397dd292a267"
+    },
+    "physics/research/VELA-DATA-AUDIT.md": {
+      "bytes": 7555,
+      "sha256": "da38aaa45b8efe92c6f682104914a18e79e3ce54c22a27e4602552e748052b4d"
+    },
+    "physics/run_coffee.py": {
+      "bytes": 10288,
+      "sha256": "010b2013177538543ce464de38538417f3d4d786e5372c73989b0f25f8fa8465"
+    },
+    "physics/run_coffee_assessment.py": {
+      "bytes": 9454,
+      "sha256": "59b494e36a513710816aaf72faa24996b316db429fca5cb693186b70bed57e9b"
+    },
+    "physics/run_coffee_curl_audit.py": {
+      "bytes": 3165,
+      "sha256": "b495dbf187021fcf687ca10d38caaf41dd5c8b0e5b48ebf39e5426bd3e90cb0c"
+    },
+    "physics/run_coffee_divergence_audit.py": {
+      "bytes": 8709,
+      "sha256": "43c3307505832586e53efa46b504736c8f8088c18be0f712f13339884ae7966c"
+    },
+    "physics/run_emission_quadrature.py": {
+      "bytes": 12385,
+      "sha256": "933b6c46dfb1b3cbf9fb6a69838f8e3b088af4c5be02278862c5f9ec350fbb9a"
+    },
+    "physics/run_selected_field.py": {
+      "bytes": 1269,
+      "sha256": "b935b547e7dea747dcc11412bb2fb53d1ad68954eac71516b9161a84e93f4789"
+    },
+    "physics/tests/test_coffee_divergence_audit.py": {
+      "bytes": 2943,
+      "sha256": "4e2b22ca8033b13920f0a2f426d6d087ddbdb8434525899701d47e8678cbe47c"
+    },
+    "physics/tests/test_curl_source_independent.py": {
+      "bytes": 4347,
+      "sha256": "628d9137b5834d5f830724c2b5863acba143a01a8d969a20407a669e21c64d49"
+    },
+    "physics/tests/test_field_injection.py": {
+      "bytes": 6251,
+      "sha256": "1782ca6cd756333d7e44977b3e4ce08f01ea6fb0beec0f73723fc9416229e318"
+    },
+    "physics/tests/test_snapshot_fields.py": {
+      "bytes": 3109,
+      "sha256": "840af0b06d9f59ef901b0e15d5d8bbb268269a76bcb1c1eee755b4a39a73ce5d"
+    },
+    "physics/third_party/coffee-curl-conductor.patch": {
+      "bytes": 12085,
+      "sha256": "9b0095d5accd8d5258c04d67bb0f236ea4533ed05ccc5ef65bf32d49e569d90e"
+    },
+    "physics/third_party/coffee-curl-radiative-provenance.json": {
+      "bytes": 2546,
+      "sha256": "3e0ed94cb91a2c59efddf4e2d54d3f11b36ad330e79674e5c1319dabefe7036d"
+    },
+    "physics/third_party/coffee-curl-radiative.patch": {
+      "bytes": 6650,
+      "sha256": "5d7463478636e196de2a5ed57702f7b78fef6e9d56b349178cd8fd8e8e4fb68c"
+    },
+    "physics/third_party/coffee-dependencies.json": {
+      "bytes": 12575,
+      "sha256": "957ecbeba7767a8124b770651a98ee5efecab1ff2b8e078a197dd44d3d2a84a6"
+    },
+    "physics/third_party/coffee-portable.patch": {
+      "bytes": 8449,
+      "sha256": "54538e6a5ad06436dceb5a374467a1098b8138efbf156faa8832feddb960e75b"
+    },
+    "physics/third_party/coffee-provenance.json": {
+      "bytes": 11560,
+      "sha256": "6bf56d5ecffd3426dd2ce1de1396617a63935779a06ae57f82b42b3ecf326cd5"
+    },
+    "physics/third_party/coffee-src/.ccls": {
+      "bytes": 285,
+      "sha256": "7cd2ef14280e826866d8a26f9eaab51869b88fdfa6c46a44afe07f192a334f59"
+    },
+    "physics/third_party/coffee-src/.clang-format": {
+      "bytes": 2006,
+      "sha256": "81c0519349c5470c8710615b0e30cb60735d2260e6d0c3b7a51717e6ce29a594"
+    },
+    "physics/third_party/coffee-src/.editorconfig": {
+      "bytes": 233,
+      "sha256": "4ad65aaf8f0eceb63fe6b398cef2cdc47005233969d9ee8dc3c5b850f0e3255c"
+    },
+    "physics/third_party/coffee-src/.gitignore": {
+      "bytes": 157,
+      "sha256": "118507e3a04cf633195e65a2829f99e6e95c92ead17c1df2d40f0f0bc414c2ca"
+    },
+    "physics/third_party/coffee-src/CMakeLists.txt": {
+      "bytes": 4365,
+      "sha256": "7fea8b7a06561b9b7fabdea8f73277a2f1607274ddabf626dccb5122a0a54a19"
+    },
+    "physics/third_party/coffee-src/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "physics/third_party/coffee-src/README.md": {
+      "bytes": 8288,
+      "sha256": "c833f96ed324addc7652f33f5a96301ffe75ad54b30491e99d822203a7857546"
+    },
+    "physics/third_party/coffee-src/config.toml.example": {
+      "bytes": 1622,
+      "sha256": "3e75e01ef1a02e14a22b9a19a8a1ef7b110c4a0d1ca0aaeb9024901b9383136a"
+    },
+    "physics/third_party/coffee-src/deps/catch/.conan/build.py": {
+      "bytes": 3044,
+      "sha256": "49c1892e7e45b3d3b57d3f8a92b4144cf8402d3ff717791feb596634f6eb251f"
+    },
+    "physics/third_party/coffee-src/deps/catch/.conan/test_package/CMakeLists.txt": {
+      "bytes": 353,
+      "sha256": "e64bd2d990cc02dee2523efa4082cff40d5abd132075227bb184f4595e3605b1"
+    },
+    "physics/third_party/coffee-src/deps/catch/.conan/test_package/conanfile.py": {
+      "bytes": 551,
+      "sha256": "1f000435774b26649734a565a02d126cfa2a733c9ba9a6c8febc44448ddd35c9"
+    },
+    "physics/third_party/coffee-src/deps/catch/.conan/test_package/test_package.cpp": {
+      "bytes": 380,
+      "sha256": "4fe9e5a385cc67cf9f12b7bcaa6f73fbdc8c757b4387f37fc158001b8bcf595c"
+    },
+    "physics/third_party/coffee-src/deps/catch/.gitattributes": {
+      "bytes": 613,
+      "sha256": "fa5b21b74c4ac22723b8fbbe43e748513afa569bdee9ce6de9f1158ea73f70a3"
+    },
+    "physics/third_party/coffee-src/deps/catch/.github/ISSUE_TEMPLATE/bug_report.md": {
+      "bytes": 711,
+      "sha256": "00d6d6efdc1f4d924d6b956b7c2481c6e0f0ce76ef6c25ed6ce1c83b2e91d71c"
+    },
+    "physics/third_party/coffee-src/deps/catch/.github/ISSUE_TEMPLATE/feature_request.md": {
+      "bytes": 308,
+      "sha256": "901a73ab9c2f152c3f16a0d70d2b27dca9a4bea7307f51b7a419741df9779dc5"
+    },
+    "physics/third_party/coffee-src/deps/catch/.github/pull_request_template.md": {
+      "bytes": 1066,
+      "sha256": "343070f90ec1c11109753770c44f12971fb8aaa55029678b170865c009bc3594"
+    },
+    "physics/third_party/coffee-src/deps/catch/.gitignore": {
+      "bytes": 504,
+      "sha256": "9cc79e7df2959339eab2cd7267e2ff52258075d5fbd8ca9d0a9d648ad9552c49"
+    },
+    "physics/third_party/coffee-src/deps/catch/.travis.yml": {
+      "bytes": 8026,
+      "sha256": "56b0526d2ab88f1c21977718fcc0686316168e3b5fd8851d617dd643299eabc4"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/Catch2Config.cmake.in": {
+      "bytes": 250,
+      "sha256": "f6fbdc1921d3ab0fdaa59999ec516500adefa508919128a6b1622308ce47a430"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/FindGcov.cmake": {
+      "bytes": 5086,
+      "sha256": "c6af9fa80f17fbb70bdc403bebcd474f1c34e130834d96b2c3ffb8eabae9f8f5"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/FindLcov.cmake": {
+      "bytes": 12328,
+      "sha256": "300ebe0344d450a06be18c8689d881f24c5df0d906e19951692e3d6b47192269"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/Findcodecov.cmake": {
+      "bytes": 8419,
+      "sha256": "26e74299602b926f7855f26ce377c17d3c12d5b224e717fa4307bb6e434ab35d"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/MiscFunctions.cmake": {
+      "bytes": 1226,
+      "sha256": "aa2eae47b4fa3acb611b27d5a04938206d43dfee1121ea17b8e2b329463fca2a"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/catch2.pc.in": {
+      "bytes": 220,
+      "sha256": "177d90098181b595c4611ece9f70488801a34f33687e33914cec89cdcae5c85b"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMake/llvm-cov-wrapper": {
+      "bytes": 1071,
+      "sha256": "1c3e6df30f852f3e776fb10e7eeca6c67c254d1d357ae7143fc706d8960b6de7"
+    },
+    "physics/third_party/coffee-src/deps/catch/CMakeLists.txt": {
+      "bytes": 6169,
+      "sha256": "5ce9d7b088e5b6c29482a991d6dd419c3b5dbb26f40bceab54968c1c68a75492"
+    },
+    "physics/third_party/coffee-src/deps/catch/CODE_OF_CONDUCT.md": {
+      "bytes": 3215,
+      "sha256": "402627368c9ed473da261916ab258b1facc53b3fb8ba4429fc099ccb1e51200f"
+    },
+    "physics/third_party/coffee-src/deps/catch/LICENSE.txt": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "physics/third_party/coffee-src/deps/catch/README.md": {
+      "bytes": 2241,
+      "sha256": "b24bc8d00a8bb36d483be9f3532836997f74b8d356df80259459b75c6b666357"
+    },
+    "physics/third_party/coffee-src/deps/catch/appveyor.yml": {
+      "bytes": 2601,
+      "sha256": "9790214f4b4a26d06db1d084b96c1bceff3b1ee30f18e254aa9a21a6db74a4d6"
+    },
+    "physics/third_party/coffee-src/deps/catch/artwork/catch2-c-logo.png": {
+      "bytes": 18222,
+      "sha256": "10e41020a179a3505549fcd6fbbe01016a53f67d63ff6b785f8367fa869bd2d0"
+    },
+    "physics/third_party/coffee-src/deps/catch/artwork/catch2-hand-logo.png": {
+      "bytes": 57969,
+      "sha256": "612e1d7979b3381d4efb6105e01032c9643c6349c3f6d65c397937ceeea4bd36"
+    },
+    "physics/third_party/coffee-src/deps/catch/artwork/catch2-logo-small.png": {
+      "bytes": 29025,
+      "sha256": "511b9193b1815788e76b8a051d54cfd04cbed07a595217c469f26fe0e8f606c9"
+    },
+    "physics/third_party/coffee-src/deps/catch/codecov.yml": {
+      "bytes": 400,
+      "sha256": "813656c6fc1d4e0fd408f0c19cd16e8992c81c210a66a71ac9b3cd1b4fc7b660"
+    },
+    "physics/third_party/coffee-src/deps/catch/conanfile.py": {
+      "bytes": 909,
+      "sha256": "5208924993b606cacb2db16b8bf5918d219814aeb462e2e0900ed1e515f957a5"
+    },
+    "physics/third_party/coffee-src/deps/catch/contrib/Catch.cmake": {
+      "bytes": 7060,
+      "sha256": "b8d12cf02d37861253509e9a8c49982374d1c3df99a8081535b4e5dc37714975"
+    },
+    "physics/third_party/coffee-src/deps/catch/contrib/CatchAddTests.cmake": {
+      "bytes": 2835,
+      "sha256": "00ef3df98b8ba0d9a2d8fcbbd49315d5978c8531657c331ccf511547c4d0051e"
+    },
+    "physics/third_party/coffee-src/deps/catch/contrib/ParseAndAddCatchTests.cmake": {
+      "bytes": 13337,
+      "sha256": "c95ef118b95e3667afced27ce11f64326e14e79366b11810948ae3e00f392a85"
+    },
+    "physics/third_party/coffee-src/deps/catch/contrib/gdbinit": {
+      "bytes": 645,
+      "sha256": "5687eeb95ffbfca637168d1fe51a40f9735ba4dc0fc0a25c26961e364f684a72"
+    },
+    "physics/third_party/coffee-src/deps/catch/contrib/lldbinit": {
+      "bytes": 624,
+      "sha256": "c6263acda48e51a59ab2a7b3bbc0b0b10332ac74d212265baed8d53ea648f262"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/Readme.md": {
+      "bytes": 1222,
+      "sha256": "8e26c033823dbf00e1ec632802f14dca70de326045c431e5b0d8993e955c2d8b"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/assertions.md": {
+      "bytes": 8284,
+      "sha256": "0436d3d69a77353c4deca2ceacf15b7593dfa75d198951d57dbfae4ef78fd398"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/ci-and-misc.md": {
+      "bytes": 5294,
+      "sha256": "c397ea96ff40b83a74ebf4697e25dc6814a097fd48ae17c6ed9def895d8e3320"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/cmake-integration.md": {
+      "bytes": 7359,
+      "sha256": "3736cd1ae63791566871a248f900149b20cbedbf87a82ff50cc8d7f8ac82cb75"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/command-line.md": {
+      "bytes": 17412,
+      "sha256": "244748b79e2f930a3a724b5a8ee7812c4cc0c373bd3e61a427c1aeb666aa1c2c"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/commercial-users.md": {
+      "bytes": 1007,
+      "sha256": "5ef544e7a46256ffc7cba463183219486a0a3071171c207d5e9bf56d16e79c16"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/configuration.md": {
+      "bytes": 12519,
+      "sha256": "52fd1c10ba0280561e7029fa6f5d45fe72921406497cc74e73149fc3853d843c"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/contributing.md": {
+      "bytes": 4981,
+      "sha256": "a74d3311c3ca9c57170c8f85b87f7e78d5d3ab15bc71dd2405d345421775cf02"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/deprecations.md": {
+      "bytes": 3071,
+      "sha256": "f9828699aeceeb9c666849fa9a82b5d7dd3ebf4e9291834befe6ce6fb642abca"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/event-listeners.md": {
+      "bytes": 2810,
+      "sha256": "db10486d56167ec71c78af4b4da6157bded37ca2b60c2335e056d2ba788dbf45"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/generators.md": {
+      "bytes": 5670,
+      "sha256": "ab8e10b64cd6f9928704350a32a6d6aff69cd1062e03c02ba2e03c54c193c635"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/limitations.md": {
+      "bytes": 6864,
+      "sha256": "513400344b222d467969df04562a2caa2f37340563092881988ecdca329a157c"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/list-of-examples.md": {
+      "bytes": 2854,
+      "sha256": "bba6405e21b243f7ee03cf53b5fb1c99df81b990e4fb3c40225b82bdf73120d9"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/logging.md": {
+      "bytes": 4792,
+      "sha256": "80e375a88377266e4ceafd7d0453cf739c170351a77828f3fd76ef198d9ce060"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/matchers.md": {
+      "bytes": 5397,
+      "sha256": "1133cfa146528f5f2a907f6ea28d6eef2c386805fb8adb880ee2d0a65413f32b"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/opensource-users.md": {
+      "bytes": 5665,
+      "sha256": "5d0ac347b82333ecb4129de700e9f2f60a6968fc401fe9514a93d2c60f5dcba0"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/other-macros.md": {
+      "bytes": 3904,
+      "sha256": "5df5b686c8270da1f48adc7ecdb3f51fe3279605b0b9093b4062939969724985"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/own-main.md": {
+      "bytes": 4300,
+      "sha256": "b531a107f31886829d71668bd2ed01bfbd182ece9cdebb2727a7b8c155393721"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/release-notes.md": {
+      "bytes": 40975,
+      "sha256": "33bce9944b0d56cac7a364d55e864eb4040586f2cc4776ce5b1ea991e6173be5"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/release-process.md": {
+      "bytes": 3216,
+      "sha256": "4712198d39b845697b870f45dcacba1fec367d07b6496f5ec12d4a085e5b8368"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/reporters.md": {
+      "bytes": 2738,
+      "sha256": "0c9a0e935f6339badc57e00659087adad29de6ff58575a49cdd3945703fa32a0"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/slow-compiles.md": {
+      "bytes": 4219,
+      "sha256": "7312e944ce40b30260b097f36f825acc3297ab3d4c24ff0f6f293aa0a2ec5548"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/test-cases-and-sections.md": {
+      "bytes": 12156,
+      "sha256": "c24657ae740f602a936999e5c08796d71e6055ee6cd5f18a75266ea476857c83"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/test-fixtures.md": {
+      "bytes": 4319,
+      "sha256": "6918958c8251f9e22cb4bb4b80c7c6ebfc10c7df45adad564e2e5152e0891a34"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/tostring.md": {
+      "bytes": 4665,
+      "sha256": "692712f337f0afbb6ba0d1031f34b081a4a393b108a570bd09efd39022ea5e5e"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/tutorial.md": {
+      "bytes": 14794,
+      "sha256": "09efbadf809fe0d94b775b3fb2b15cae66036f9379bb504d61be9cdcbb0f329d"
+    },
+    "physics/third_party/coffee-src/deps/catch/docs/why-catch.md": {
+      "bytes": 2513,
+      "sha256": "ef0a76b6e789cae72449193535c259f3a39ea23b61acebb7ae99ba4580967155"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/000-CatchMain.cpp": {
+      "bytes": 488,
+      "sha256": "5d8186ecc5f8d2e03cc5e076234458938e7635804f0cae032a10341e5109b569"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/010-TestCase.cpp": {
+      "bytes": 1323,
+      "sha256": "787263f37d8def19dcfd630e50ad521d5f26f70983d19f00e42c1ce4447aa358"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/020-TestCase-1.cpp": {
+      "bytes": 1232,
+      "sha256": "31d477b79d439fe4437ae05578de3badf9d51cbc267e72cd3dd96f24f8242ec3"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/020-TestCase-2.cpp": {
+      "bytes": 1168,
+      "sha256": "9f2911e3e0a55a4b54015867026812401fa8995f2fce991862067112d883014c"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/030-Asn-Require-Check.cpp": {
+      "bytes": 2791,
+      "sha256": "2c3b97d9bd57fa0f29204bd0f873f70d2bb9cb5354b9f103d7cc9aa22ab8b154"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/100-Fix-Section.cpp": {
+      "bytes": 2513,
+      "sha256": "96838e5e32ecc50b3f8175c9afc6cce532affa31ce403d744a59569d600865b0"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/110-Fix-ClassFixture.cpp": {
+      "bytes": 1963,
+      "sha256": "994a3a25967663e331ee60a945bf8994d18a0869b2b432200f72502d9df070ae"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/120-Bdd-ScenarioGivenWhenThen.cpp": {
+      "bytes": 3040,
+      "sha256": "e23888c4f81484033817f8fbf4af47178101f3f30f19aa616d1c14f78305c6f2"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/200-Rpt-CatchMain.cpp": {
+      "bytes": 884,
+      "sha256": "cbec0cf5565e48a8fc0ed35563c3b0d06bbae82e2477ca25e2b7d1a6217d1f3c"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/207-Rpt-TeamCityReporter.cpp": {
+      "bytes": 5701,
+      "sha256": "4f6bed907ec3cefec4951c3d7062fd58fc32f6413880447d74638ac25032f9a4"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/210-Evt-EventListeners.cpp": {
+      "bytes": 14779,
+      "sha256": "1c204f835f2535a0f08dbee4b8153c4ab8cdb4d41f61041d40e76886681c7d6a"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/231-Cfg-OutputStreams.cpp": {
+      "bytes": 1282,
+      "sha256": "30cbaa06acbfae4a6017063de48e55615610f81f55ed3e4e6c299ae17bc68307"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/300-Gen-OwnGenerator.cpp": {
+      "bytes": 1965,
+      "sha256": "bcade2ea263f0f753a9e04cb46b1f6cd128530b4548502247adeb397f608061c"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/301-Gen-MapTypeConversion.cpp": {
+      "bytes": 1695,
+      "sha256": "c681e20fba395861a3dc02ba1813dd1c9db02900c6151df80f4f5a59f906c7c2"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/310-Gen-VariablesInGenerators.cpp": {
+      "bytes": 1230,
+      "sha256": "42282e5c312452fcde0ccdaabed4ce5ddf4bfb3c840094f802eaccb991c81854"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/311-Gen-CustomCapture.cpp": {
+      "bytes": 1470,
+      "sha256": "3efad007bfb5d7d4ded8cc961ad59aea4b6ffb0c9b36573479f7a3bbecb24eae"
+    },
+    "physics/third_party/coffee-src/deps/catch/examples/CMakeLists.txt": {
+      "bytes": 5403,
+      "sha256": "7562f116892a5efc097f6b759e1a1fa158b511410dfae2832dc85aba07793068"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/catch.hpp": {
+      "bytes": 28483,
+      "sha256": "e0b758e5b67cc55fbdf70668debd032c965cfd78290c3548d2456603c7dd7de1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/catch_with_main.hpp": {
+      "bytes": 462,
+      "sha256": "6d9b883532695f61f6f685e54393ecd7655f40bbce42f5563f3fe928d85d1cdc"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/external/clara.hpp": {
+      "bytes": 40635,
+      "sha256": "2d6b36bfe5b10d5c244e60a90f28084ad657c16889023c42ab944c3032402dac"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_approx.cpp": {
+      "bytes": 2556,
+      "sha256": "6ef19f2f18d97c5ecdf2c0b18be5de394dcd305aa2368315f151a5466b8994bd"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_approx.h": {
+      "bytes": 5044,
+      "sha256": "91df196e1d5fcebb73f5102f92b9a14d053cef049c04e1325c55a42893bb20ca"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_assertionhandler.cpp": {
+      "bytes": 4450,
+      "sha256": "be4622785403a4b64346bb435cb1361bc0d71b38f5cbdfc7e55f07ada244ebc8"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_assertionhandler.h": {
+      "bytes": 2714,
+      "sha256": "798516df2ea0012010a7ea9a2ed5d79715d23bc8aad2ce7800346f10b3d1246b"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_assertioninfo.h": {
+      "bytes": 910,
+      "sha256": "981058cab678ce68affcc4f0df28ddfdb364275b33f94d89696daca6a95fce9f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_assertionresult.cpp": {
+      "bytes": 3063,
+      "sha256": "3a9d2202fb048bac21cf0f3bf52c3c933163ecc248f884139e2696b29477dc9c"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_assertionresult.h": {
+      "bytes": 1800,
+      "sha256": "6694d9372f2f8ee33abfc5568e8f1b9605914c472ea2d88e83f6b8fceaffa235"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_benchmark.cpp": {
+      "bytes": 1140,
+      "sha256": "a99b268d00b277e5e252a607796378cea488b2ebfaa36a74236b37ea034f4c47"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_benchmark.h": {
+      "bytes": 1476,
+      "sha256": "8ab161c671772d36e97e07d608726d884548858c87d2b976b85dab05bcad8675"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_capture.hpp": {
+      "bytes": 7815,
+      "sha256": "582d204e1de6eb94a2edc5235496fe4c3b2d3ab1acbd9048c69dd1bd189a9387"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_capture_matchers.cpp": {
+      "bytes": 1035,
+      "sha256": "f03f95fbe1a4549496d7f7db5bc6a2009870e3bd6a2d66d22dc9884278214f48"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_capture_matchers.h": {
+      "bytes": 3762,
+      "sha256": "e21715fb616b216c0aa8b04cd5ef029d8c570736004bb72b65b27bac162e6db1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_clara.h": {
+      "bytes": 1275,
+      "sha256": "114ff4fc2e0698afaa2a4f4ea7a7bf2ab7a940587c8276e6e4e94ca87cf8199a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_commandline.cpp": {
+      "bytes": 9501,
+      "sha256": "4f4c7a43b0792e1393d930eb225e5971e77d1c5afdf13813eb1d34e4ec3f2b68"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_commandline.h": {
+      "bytes": 582,
+      "sha256": "9a5bbecedca703b5644c7a7f3b8899543030b2ad2c51da594cbc4ac712335d19"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_common.cpp": {
+      "bytes": 1476,
+      "sha256": "5fe79cb9e561c435a4949ab5ba25b99c1e25bf4ef4ac80276dc706390c17b93f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_common.h": {
+      "bytes": 3023,
+      "sha256": "71b93a5ff5aafbe8779e34eac218231a7dfa9db22506b012d01855f52cd9be5d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_compiler_capabilities.h": {
+      "bytes": 12305,
+      "sha256": "fcb210b9ca62ff03a490b95d3340317b8852e4d4a05819c4c529f09fa8d9e745"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_config.cpp": {
+      "bytes": 3234,
+      "sha256": "059f6efa2700adaf39d8475062b9f83761f57a7f6f1b97cac7e565d51bdf0d75"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_config.hpp": {
+      "bytes": 3783,
+      "sha256": "8aefd462911f51bdf42eeb8c69e4fb3cced72da21a15363b6f548960b1469f93"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_console_colour.cpp": {
+      "bytes": 8206,
+      "sha256": "1e67d889e78c2b1cfbab3fd6f1b83cf444f254fcd84abdcca94dd6e52184c866"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_console_colour.h": {
+      "bytes": 1797,
+      "sha256": "dff4c1395956f017af0511160e47248eabcd7c13fbb0424e326d2cb1561793c6"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_context.cpp": {
+      "bytes": 1696,
+      "sha256": "b695c6f0d78bd7b28924e2123d3a76ad822335be7ee3ed174b030381365ab892"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_context.h": {
+      "bytes": 1627,
+      "sha256": "2a2383e703bc7a55c383c493ec7e3aef153fdff38e2d4daa1b1ab7428710d2e5"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_debug_console.cpp": {
+      "bytes": 739,
+      "sha256": "c0957433cb0e7948f19e63fed485d4f1cba48651701359ec59c3aeb226068714"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_debug_console.h": {
+      "bytes": 461,
+      "sha256": "32f0212de177b05842035ce1be9ccce8ce879bfe6ac309df4e85da6de5715266"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_debugger.cpp": {
+      "bytes": 4344,
+      "sha256": "6fd8e188d26faccfd1a0440fbf228925a152c582e2086e89a25dd4faa19f8b8e"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_debugger.h": {
+      "bytes": 1469,
+      "sha256": "00dddd6dc2e986cf09a76f13938ac834fe9b1af069b9cc064f30923a8ec98627"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_decomposer.cpp": {
+      "bytes": 807,
+      "sha256": "77b02a7ebd1ad449b09f1059a1d87eac52090d308bed5056a1519b51065ac5cd"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_decomposer.h": {
+      "bytes": 9742,
+      "sha256": "d32f162d1b1d39e4002f5b5afe1e0fb51247b356a5079aa8fb075b6a908db7a1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_default_main.hpp": {
+      "bytes": 1193,
+      "sha256": "db229dbf54857b0ec83e2d7a6da8b87c78aa2d2351cfd95009659e78e965eca7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_enforce.cpp": {
+      "bytes": 641,
+      "sha256": "9a2e8cc55dd31925986b6ec7230e6a22dea8077fceea8adcaf103439931a7e94"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_enforce.h": {
+      "bytes": 1401,
+      "sha256": "9004a57714f87c559df619b9a6fd4e3a6534111ec671a1d9842dd1a77b93b239"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_enum_values_registry.cpp": {
+      "bytes": 2284,
+      "sha256": "d9a7015a7e1664f6b2773e6b933966b92bcb208a65c7b22028fff7203e7e497d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_enum_values_registry.h": {
+      "bytes": 1057,
+      "sha256": "bd0c064bf674c08503fd37b729ca3eaec731ce908eaf235c34105a393b0f7177"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_errno_guard.cpp": {
+      "bytes": 385,
+      "sha256": "e3aa8756648fbef291f6d8a7d353ebdab97a5f71e865b413b4bd1e12beed5998"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_errno_guard.h": {
+      "bytes": 502,
+      "sha256": "8a14182f439d4f3cf6f6d74d053496c0b53ebb86b1e819a4f84eebaf8f6cb674"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_exception_translator_registry.cpp": {
+      "bytes": 3073,
+      "sha256": "b8078669837563a2ac669fe6da3315ec15a5f5a1e6761be349fefcb1c239ff23"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_exception_translator_registry.h": {
+      "bytes": 1011,
+      "sha256": "5d9ecc3cfc51c8ec92a40524e346da93ccdb4f582f24e530e7c2d5bc9c97a3af"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_external_interfaces.h": {
+      "bytes": 752,
+      "sha256": "1db3c563437ad0ea16bf7ed6bc27b1ff8e23d772c0f21f253ea8400cf6cae768"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_fatal_condition.cpp": {
+      "bytes": 5738,
+      "sha256": "23bc33f3370152487fb286f4a3b470db892be160d82ec6d0d75af888144d97dd"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_fatal_condition.h": {
+      "bytes": 1509,
+      "sha256": "219f38cfe54a0b407c091cb506e072560c13e3e95f705efec8098449efa98d3e"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_generators.cpp": {
+      "bytes": 787,
+      "sha256": "36afcf97d2bd0ba69fbbc8067e070fbe9c3ac1edee849418ba2b8ea4ba77f171"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_generators.hpp": {
+      "bytes": 7169,
+      "sha256": "967965eece9599f5422d42e861c624b0a243e8c34619046c5f1d8c8f1c914e67"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_generators_generic.hpp": {
+      "bytes": 8825,
+      "sha256": "ee942512a8be1b064fde5422ba627a1cc0b351a70624d4f198f68917434ee3e7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_generators_specific.hpp": {
+      "bytes": 3864,
+      "sha256": "4288d22cc94d32a701ffca5922952054f1c255546a5377e62d4323cd70396ff7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_impl.hpp": {
+      "bytes": 848,
+      "sha256": "7b23c922159203056ab1ce14baaf8875a40cc3b7379b182d98ab9f9753809361"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_capture.cpp": {
+      "bytes": 108,
+      "sha256": "f4c152ffe3abd42629719c9d76e10a8c3793867558d8eea50bb82f432da7b05f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_capture.h": {
+      "bytes": 3214,
+      "sha256": "0b50f459d6b4b9595da307a74d6d501d92287bc74a61537ba8f247744fa5d0fd"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_config.cpp": {
+      "bytes": 102,
+      "sha256": "eda65e75d10b222a2e46492f8a4e16d3e2eee74210d1d6a502651582ad1c7ad0"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_config.h": {
+      "bytes": 2460,
+      "sha256": "f66fedcee666e23b79c52539f3d30491dabb01780813a12a6367d13ed4cafc30"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_enum_values_registry.h": {
+      "bytes": 1454,
+      "sha256": "c0f144478ca5e40b995700f0d4623ec64d29691ca8738154083754e3faf5ae22"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_exception.cpp": {
+      "bytes": 208,
+      "sha256": "aa84a4c3e3a9a5aaee71aabb8cbf89a6d6e0fded50a2883a8cff91e34c6d3d4c"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_exception.h": {
+      "bytes": 3122,
+      "sha256": "3f891b82c031cd570ce22163aca06cef4d367c0167602b1aa96e74199c50dce2"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_generatortracker.h": {
+      "bytes": 1273,
+      "sha256": "f5afbe6cbec8de0d7fcdc364a139d37f0405f547c72672da5eb2a81da7597af8"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_registry_hub.cpp": {
+      "bytes": 177,
+      "sha256": "9483f1fda611a01436dd0ebecb0493e3ad9caa33baf28c1edb0cba5a48cd8475"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_registry_hub.h": {
+      "bytes": 2216,
+      "sha256": "2ce8fae87c25bf52f5eb013cb0c794ca7d460b804568c678b967e637ec587555"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_reporter.cpp": {
+      "bytes": 4091,
+      "sha256": "f22999ae58eb28e62fcf5daaf683c04317beea6f4848d7185e8f179cbecb2433"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_reporter.h": {
+      "bytes": 7955,
+      "sha256": "4b6b2ed5303837f15632699556a08e86831580b5dd5475db704123108421de83"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_runner.cpp": {
+      "bytes": 102,
+      "sha256": "0711cddf2d0e5690ec415ea33bf45da5048531ee56ea5135c286434cabeb5b4c"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_runner.h": {
+      "bytes": 552,
+      "sha256": "bdcb5eaa53760e6afe06a9ddb2e666b45b914763b354333d6c03fa273ae45152"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_tag_alias_registry.h": {
+      "bytes": 881,
+      "sha256": "b005a82947a1bd5fc12a6e8ce9e3b576da4e24325d12f83323c0539fbb22dde0"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_testcase.cpp": {
+      "bytes": 169,
+      "sha256": "52bb537c6635a6519bc991c871961045183cd180bced0daec03649e092a9b143"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_interfaces_testcase.h": {
+      "bytes": 1204,
+      "sha256": "9020a6261d3fa1181d2534cc30a88994a9126a5a745e9d4e0e2388cddc42d087"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_leak_detector.cpp": {
+      "bytes": 924,
+      "sha256": "8f0ee1c9992925d81cbd1c3c7c589ddf381763f318bbf8eee7c8b7563ee52a9d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_leak_detector.h": {
+      "bytes": 465,
+      "sha256": "ddf0897ba432f6e886e118eb55e405ccdfdf80446ceca21f2191cfe5cac592ea"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_list.cpp": {
+      "bytes": 6544,
+      "sha256": "038190a775b410c8e98b81a3b0fff0a9f469919a986022f230026e3c5a59479f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_list.h": {
+      "bytes": 967,
+      "sha256": "fe25f49f9aebbb07545a469bbbb944cb901c74e665606bf0ded1bd12bdee9cab"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers.cpp": {
+      "bytes": 685,
+      "sha256": "910c14c4abf1bdc7ab823a4b9136c2f95b8fbd1a7f3ab92db17bed6c9bdc8eb0"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers.h": {
+      "bytes": 5290,
+      "sha256": "850d0cb48612d2b67fc8b2adfb247630063979268e7a3e49b3411c40e49d8076"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_floating.cpp": {
+      "bytes": 4203,
+      "sha256": "6e0541f1052a01430c2e9e5c15e58dd523b5a4c2472ca7f3b1660c22a7b366bf"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_floating.h": {
+      "bytes": 1652,
+      "sha256": "d1116bff98db94c9fc2884583f867849cc29dc26a524010d0b1352d4b4bcae39"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_generic.cpp": {
+      "bytes": 278,
+      "sha256": "710bc77cf09f51d02ddada1591254dbf5d892c4a560aa639cfa5a1a7121e53f0"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_generic.hpp": {
+      "bytes": 1698,
+      "sha256": "769dda39ac22501b4a316c8bb4e07cd88447d47a37f0bc631e787f026e6c165f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_string.cpp": {
+      "bytes": 4847,
+      "sha256": "b4ec67b8b5ba88a34f466286e8b873e2c276291eb869355540ed5472e600c523"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_string.h": {
+      "bytes": 3169,
+      "sha256": "5ea1dc19ff857fdaa2d7e036937c837a3fff06436064b814fb7cb5796ef14f8e"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_matchers_vector.h": {
+      "bytes": 6810,
+      "sha256": "fe089d733ed71f70d3a15c9492c55d4bc5cf6cdafc990870a55f64f11b301131"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_message.cpp": {
+      "bytes": 4738,
+      "sha256": "589de3adc71dac0d9bf3fd320041710b286be06f21a23b0fbcb5358716beebd6"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_message.h": {
+      "bytes": 2892,
+      "sha256": "18503710e9679bb6ec718dc0846d44950aae5d9073781442dc7cf4e6b6c34f99"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_meta.hpp": {
+      "bytes": 535,
+      "sha256": "94c5ad25f4417cfa91a5e86c6455f8ce4b3f8c65c444cbb690c13840d7aa6e96"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_objc.hpp": {
+      "bytes": 7666,
+      "sha256": "cb5d34e99b056764aee8c76eae05f487eca071a4b1fdfc1579aef498c19065ab"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_objc_arc.hpp": {
+      "bytes": 1414,
+      "sha256": "059cc071cf2270f5875656a413afe0ba838ff1702316898500e84dd9a476deab"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_option.hpp": {
+      "bytes": 2141,
+      "sha256": "e39280f9f15e4e2fd57af0bc039b0df752edf6f19aec7eb01afb6dbb8692d631"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_output_redirect.cpp": {
+      "bytes": 4115,
+      "sha256": "37009c5cc675564af4795441d87ae35c7106d7c020b660866baa6b133c19af3d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_output_redirect.h": {
+      "bytes": 3335,
+      "sha256": "82deb68aa0dc3c518d7af6f27eb31fbe7923893a4d330360ef07cb32a4e1b098"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_platform.h": {
+      "bytes": 822,
+      "sha256": "c0bfe812d696cf5cbf24200880f396417f83adbd4cf21dc7ed0ab390712c3d84"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_polyfills.cpp": {
+      "bytes": 653,
+      "sha256": "d589c72e7632a475ee0402c6edfa8dc32da1a73706c8be84c9ef70e5a064e752"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_polyfills.hpp": {
+      "bytes": 427,
+      "sha256": "143673154906820a2a571862cb10ae308f47158156198de1b86ce4b43c9dfef3"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_preprocessor.hpp": {
+      "bytes": 21168,
+      "sha256": "14cae6e28bef33ba9498d3f89bfb3482cc988f5d65de5aaf1e9bae949841309c"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_random_number_generator.cpp": {
+      "bytes": 703,
+      "sha256": "13e3385b0d03de59da79b971a2e97bce4bf77a2e00818a8ef987d7e66b066254"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_random_number_generator.h": {
+      "bytes": 571,
+      "sha256": "c55d8bd9ceba1230f6763bfb9c88ca375387138f0a5ac637bc5169b8411059b8"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_reenable_warnings.h": {
+      "bytes": 594,
+      "sha256": "cd8cf18af7f43f8ebbe16441b579c2345fe43dfb9d149f93598f98d68e01bc91"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_registry_hub.cpp": {
+      "bytes": 3692,
+      "sha256": "06f1b4c2ef932fbe88d39ceff5614ba69b36206bd99ab4b9fee75b50fdb6ade9"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_reporter_registrars.hpp": {
+      "bytes": 2385,
+      "sha256": "e29230b6c7d3411d14beca1e919de41885f83cfb36b65e866ea732e0b86aaf5a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_reporter_registry.cpp": {
+      "bytes": 1132,
+      "sha256": "55c60beaa7347f9f61b8ee13086c3aff4f38367cbb79345c374f408a4273b24b"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_reporter_registry.h": {
+      "bytes": 1086,
+      "sha256": "c54a923d9789b11560ce28a90107fae62f70a226436b9e72e3b8efb344fa89e8"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_result_type.cpp": {
+      "bytes": 979,
+      "sha256": "18326e90a4391d757a4c4b966dcd79cd7b55ea06ba65593d15bf11fcdfeb46b7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_result_type.h": {
+      "bytes": 1634,
+      "sha256": "90924a57ba4777749f63839ac7fdf4e9426c1f163e203fb49b2a3c075aff66fd"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_run_context.cpp": {
+      "bytes": 18741,
+      "sha256": "c187599746aaa14a2ef9fb2a919e87f6d35176a407a17ba4d9cc0ed42fd56bee"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_run_context.h": {
+      "bytes": 5417,
+      "sha256": "4d51bbd9db8f1688e94807ac0925ee57f718337d80100c3bf7f289f423b8f486"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_section.cpp": {
+      "bytes": 1093,
+      "sha256": "35ba7c9300d69b1963e338498c7293c7e39e8ddcfe62f5691473e1233c70a200"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_section.h": {
+      "bytes": 1587,
+      "sha256": "01ba627c98416b733bb1e1b7ceeec0f3e1dcc3edbfd03d2887efda716af06cff"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_section_info.cpp": {
+      "bytes": 454,
+      "sha256": "b0f0864b1054355f6cb72a40e026e05cfc9f66c146b1a9512b2201f20eda7d0d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_section_info.h": {
+      "bytes": 1156,
+      "sha256": "33a0c9fad56aeb2e347d40e88e4c346f54b771c19ac12217385748b4ea37632d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_session.cpp": {
+      "bytes": 10414,
+      "sha256": "848e3215e7aef1f0dc51957da800a9e7ffa458be6e4344bd5c00a8d38b5961b6"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_session.h": {
+      "bytes": 1691,
+      "sha256": "ada085fa1924dc85e9062ca933ba90785a33a65babc73d840f53c242e8cda270"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_singletons.cpp": {
+      "bytes": 945,
+      "sha256": "bb230bad26573e770554ff7f6e0970c7c01a320db856324d201fa0b03da7535a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_singletons.hpp": {
+      "bytes": 1215,
+      "sha256": "adc135147cb08cc6ec04f4cfefbea5271e58c411f4960d56d858cf50d940301e"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_startup_exception_registry.cpp": {
+      "bytes": 863,
+      "sha256": "68b7d85b2185c33b4c544cbd3d7fb5625ac1165bb59c810a9e7fd042ef5bb86d"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_startup_exception_registry.h": {
+      "bytes": 813,
+      "sha256": "fee90aeac6a9f85146cf52b1fe5784376bd4b65c61b8c6bdff3e4fc88435e057"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_stream.cpp": {
+      "bytes": 5972,
+      "sha256": "5ddf1c9cda0786a024003918cf2e8c132ad65aafc51a310f7b83f90f41ea9121"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_stream.h": {
+      "bytes": 1194,
+      "sha256": "cd9b3101f8b0df47fb76dc62ae2ad783b0d34ce9bf2dc679385969c97b0fd6c3"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_string_manip.cpp": {
+      "bytes": 3316,
+      "sha256": "8835ebcd3fd46bb4edd1f7fe4702070a4cc2fc59fad6cbdf294804ef6c466970"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_string_manip.h": {
+      "bytes": 1460,
+      "sha256": "d413ecaa981cc7d2e4e3638fe77ceb536484c01e55c10bf69ec066acb25ced19"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_stringref.cpp": {
+      "bytes": 3854,
+      "sha256": "1c24a144b2e83b94f6d5ccd3920a2c2e0ef2b698f216422b32bed61a3a0bb2ba"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_stringref.h": {
+      "bytes": 4209,
+      "sha256": "9b6988663648f16ca95359a1f38cdb5a50e46e6e02f84eb77e202152110c8930"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_suppress_warnings.h": {
+      "bytes": 1019,
+      "sha256": "e7a23b049197e83bad1d4e1c21a6a9289ca6bfe6b9f2d2bd5811f19d0f162a16"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias.cpp": {
+      "bytes": 164,
+      "sha256": "8e5e37febff78738d3214beec6993d9fd0d0d4ea25f1c01dcb99995851186046"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias.h": {
+      "bytes": 655,
+      "sha256": "6ebccce51b8421972f407a01aee21c8e4267c06131940b5f623a7bfbf7ae8cb7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias_autoregistrar.cpp": {
+      "bytes": 590,
+      "sha256": "2cbaa2bd0200f49d4c4a62dbd8aee486035981405cbc7a4adee296adcba571e7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias_autoregistrar.h": {
+      "bytes": 895,
+      "sha256": "289182f50764d42bb4d83739e0ed253d7785f8ddd87479f2613e085966d3d62b"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias_registry.cpp": {
+      "bytes": 2198,
+      "sha256": "c3a4c4790ad24926d941535bfb592b93665f4dc2b0b6a44aa95c2345b75d65de"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tag_alias_registry.h": {
+      "bytes": 1019,
+      "sha256": "b890093debb8fd1f6f106e149a5691c30668bbd223a8f2d3028a04b860b26370"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_info.cpp": {
+      "bytes": 6417,
+      "sha256": "632ae187a3aacc3f12b829eb5fbd41d1c73ce4325781bc659ee6c0b925610a48"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_info.h": {
+      "bytes": 2502,
+      "sha256": "65ac318762de07a0ed14cb77922172a74df257164b6c66d3e9e7d62a7fb7e9bb"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_registry_impl.cpp": {
+      "bytes": 4428,
+      "sha256": "8bbb307d35a9771d1894c42c4e73ba120effe03f3e173214d7506cf193a2fa30"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_registry_impl.h": {
+      "bytes": 2341,
+      "sha256": "9e80b65f71493b441977b858a7f48bc68bc19dbb234e207b5c9563e7982bf343"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_tracker.cpp": {
+      "bytes": 7676,
+      "sha256": "c3b36beaef4546a2e537dc520d1af59639f46ced72054ac08e85257cd10224ac"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_case_tracker.h": {
+      "bytes": 4474,
+      "sha256": "17def8ff0c645cd3a75cd5a93ca58b6079310808c12851ec5ab2e25a58b797a3"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_registry.cpp": {
+      "bytes": 1392,
+      "sha256": "4a812e77b3d882afdff2d7db96973e5706bb36cee5f2840708418764bf2b7042"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_registry.h": {
+      "bytes": 23776,
+      "sha256": "78da005b1f3048e3a9b3303635504439ed1a2a620ccd087bfe9c19021c34a5b7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_spec.cpp": {
+      "bytes": 2139,
+      "sha256": "efec14b9c922a624f9d3bd9df0dc829e024c4a3ac05fad6a820654f9667f2912"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_spec.h": {
+      "bytes": 2179,
+      "sha256": "3a1f961e1051de429d3ac5aa06d2a17566050a27a7916d7a2327e5ed3b7d89e1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_spec_parser.cpp": {
+      "bytes": 2879,
+      "sha256": "78254200077d3e461de42694afcf57f915a3f25c7fae86dd7997954e090d4514"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_test_spec_parser.h": {
+      "bytes": 2424,
+      "sha256": "9b203872866db611d4b926b13e837386520bbfc00f7f307f700539755299712f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_text.h": {
+      "bytes": 475,
+      "sha256": "de4f5ee1f475a590c432f9ed74750976f2e455833c8b41c73230a02edea98c23"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_timer.cpp": {
+      "bytes": 2552,
+      "sha256": "a1c72be0f9f7685e6f398a408bc1dd2ff537b12c84c61bafe73bddf5d2fdca5b"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_timer.h": {
+      "bytes": 885,
+      "sha256": "c09e2097a45755bdf7910ce24d263e58e060b9320298cdda3097020246701a2e"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_to_string.hpp": {
+      "bytes": 717,
+      "sha256": "8bbf29edf567bcf82bcc64284394f0ddc13240e855212546bf02b2628ee43479"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tostring.cpp": {
+      "bytes": 7231,
+      "sha256": "0c35f65c1271d43803bc9371bdb23ed55f392eca7d9daeddf9b93148aeaeb746"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_tostring.h": {
+      "bytes": 20244,
+      "sha256": "fae8e0c9fbe09e335c453eda09f6afd35616d0c3a51d1ea9a2a9b2c21a1bd83b"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_totals.cpp": {
+      "bytes": 1695,
+      "sha256": "940f3f009fe1e69670ee342ff32a95d87f11c96a33a23bc38b5cfaee698e4d1f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_totals.h": {
+      "bytes": 1063,
+      "sha256": "2962fbcb1460e483725fa500dd97f72dc6428d5a75c49f1d8087623a79f4b40a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_type_traits.hpp": {
+      "bytes": 1059,
+      "sha256": "72d59c1471bb10e0457932eb4e269f8b9a12820fd33b0e234b9a58801847d912"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_uncaught_exceptions.cpp": {
+      "bytes": 595,
+      "sha256": "f73f02826c6de774c6c46518def0add10e3369248634016468b8d8c0fb7928e0"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_uncaught_exceptions.h": {
+      "bytes": 511,
+      "sha256": "d7b0091b685a741a6167d51168427924dc8429b0d3dd08641941ec1c183c829a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_user_interfaces.h": {
+      "bytes": 596,
+      "sha256": "934d91180af2a40decfb625749c4b0d95f42bfbe448f9b997fe3fa732a5caf8f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_version.cpp": {
+      "bytes": 1297,
+      "sha256": "70cc8a5c2f68bace3ac53c37cb33242744109ad39294009782206d97a9872383"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_version.h": {
+      "bytes": 1234,
+      "sha256": "64317b28f33663223699f78e479923a73cdad878447a3fc42c6ae4541a676ec6"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_wildcard_pattern.cpp": {
+      "bytes": 1675,
+      "sha256": "818f3f2a31f46770e7fa7138fd252de86cbe8707b6cdd48b60e231976da22798"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_wildcard_pattern.h": {
+      "bytes": 1141,
+      "sha256": "98508e97b0c199d9fec2de2fd581cbbf1c29c4b8d15b755cf4108403eefed95a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_windows_h_proxy.h": {
+      "bytes": 966,
+      "sha256": "769d7f9f28c990d78c29c9dc45d36b3bb7bf153a8d123d9666989aa45758ab41"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_xmlwriter.cpp": {
+      "bytes": 8862,
+      "sha256": "c0670ca7c10cc3201838b7f98a707600b82dbf0f6f10253db2c48397427fa682"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/internal/catch_xmlwriter.h": {
+      "bytes": 2892,
+      "sha256": "14f2f420d849753816a0c0f772c8e07cb53972613d0bc7f6a4f76e3fc0809465"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_automake.hpp": {
+      "bytes": 2206,
+      "sha256": "6e83050f228a90f750751fbf1d4a66f3033e94240b28364d15e672ec6ac498b1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_bases.cpp": {
+      "bytes": 2234,
+      "sha256": "0dccbc98327e0e2b530a3de262b4498eaacbfbb84760dfe81dd09471178118dc"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_bases.hpp": {
+      "bytes": 10799,
+      "sha256": "606ac9fc409d1505ffdba3b302c4d94b1d886bfa238e4d57f31b72b921735ae6"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_compact.cpp": {
+      "bytes": 10160,
+      "sha256": "701c24207c571ce95f284d132a54d212ea44d7a1e65b779231975e07b5403ba1"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_compact.h": {
+      "bytes": 1155,
+      "sha256": "5acb21d7fec34bb9b7c30d04d55945e9e186ccc551aa1f4d0284089b77bf337f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_console.cpp": {
+      "bytes": 21875,
+      "sha256": "01fe5d7be2cf725a68214c025759a95ebe07e22c3841471e4c0023656b43c4eb"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_console.h": {
+      "bytes": 2814,
+      "sha256": "c2890048ed3e8b51d554af3a71b56f1c838bd383cb6b96277155065178181a8f"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_junit.cpp": {
+      "bytes": 10040,
+      "sha256": "1b1f861ae5b53422e637bd3e1857318feaaaef75142e31893b1f31f2a1cc7ae7"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_junit.h": {
+      "bytes": 1949,
+      "sha256": "c4c87cfd5bec41838a95445172777ee933c60d53b8d1db1ace5ec8d3816453bf"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_listening.cpp": {
+      "bytes": 4978,
+      "sha256": "0d6315380d49f0e21d60c7bd1b06f0bc5998e9b80a8137bfce8f42cad7f4304a"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_listening.h": {
+      "bytes": 2201,
+      "sha256": "659f321a0f9a1c259af758e751000b6669af0cf61bf21ad47ea53d6f2dc49e53"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_tap.hpp": {
+      "bytes": 9583,
+      "sha256": "bf635c20a336af9a1e333b07dd1ba1582f6898db523a8135a02b254893e70abc"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_teamcity.hpp": {
+      "bytes": 8732,
+      "sha256": "2d5b660d9c4d83ebaaf8a9450705ffd991187c524aa51228afefe536119247b4"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_xml.cpp": {
+      "bytes": 9057,
+      "sha256": "5c6cdb3060c1e6007f09582f5a2b3f334309a5164848fefec9f8f861d8b51f41"
+    },
+    "physics/third_party/coffee-src/deps/catch/include/reporters/catch_reporter_xml.h": {
+      "bytes": 1781,
+      "sha256": "5462109ac647fa347b0b92c86315dba4260a8fb2689bdb0406ceefc696f11117"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/CMakeLists.txt": {
+      "bytes": 416,
+      "sha256": "2fe04867309037a5f73ffaeb3c6b635221d42c7c8de94f2c3a01e162f0791356"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/SelfTest.vcxproj.user": {
+      "bytes": 867,
+      "sha256": "71d72619af986afe4d09c8756310f142bf34c47c8ac702b6c67b845c08cbb9f2"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/appveyorBuildConfigurationScript.bat": {
+      "bytes": 1031,
+      "sha256": "d4ec01ba5b9bf9b75b14ded7d1de0eb0c7bec336b320503adf034daf13ba32f5"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/appveyorMergeCoverageScript.py": {
+      "bytes": 305,
+      "sha256": "b6f8864c51cd61b90663d1200a6eac3eccfc09bd70ee716b7084bcfbd45dcd46"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/appveyorTestRunScript.bat": {
+      "bytes": 530,
+      "sha256": "80fc1c537ab9e3319b2340d7f5cd1a22396e3eae0780614521d5cba5b9d803db"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/coverage-helper.cpp": {
+      "bytes": 4049,
+      "sha256": "c97b346cab5b53de18046860639cc3d69eb24a4e18468f64cc09c1dcc4377105"
+    },
+    "physics/third_party/coffee-src/deps/catch/misc/installOpenCppCoverage.ps1": {
+      "bytes": 1020,
+      "sha256": "12fa9b420fcef98dfeedd2d9bb5eb61bb5b994f4e51eaf6c056259c607810b53"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/CMakeLists.txt": {
+      "bytes": 17880,
+      "sha256": "6870e1ce3d1a193d5967aefcd9bfb07da8ebacbf5b3f098068d521884797ebab"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/CMakeLists.txt": {
+      "bytes": 4773,
+      "sha256": "b6cf860b5ea1e3c7650419ff927a36c8f2644342adb7a78bc1c96dd41799d462"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/ToDo.txt": {
+      "bytes": 720,
+      "sha256": "96b9ea2bf5b3e0dc6ffc10863fc702f73a510e4325c3a43f434af55f30cff688"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X01-PrefixedMacros.cpp": {
+      "bytes": 3139,
+      "sha256": "bd2f31dbe88b08098f074a37a9924099def985c929f66a710123c5bb2e92593e"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X02-DisabledMacros.cpp": {
+      "bytes": 803,
+      "sha256": "97a828b3a9c478c40bfc87096e17827741bbcbbcaeb965bd4aac66c3c95ede10"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X03-DisabledExceptions-DefaultHandler.cpp": {
+      "bytes": 567,
+      "sha256": "1bde669b313c29f4f222f8af1b37b9f99ba5354cae6e87d1a8d6b8b90fbfff5d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X04-DisabledExceptions-CustomHandler.cpp": {
+      "bytes": 876,
+      "sha256": "dff09bac097290627914c714bb3a3c88cf6405e6cb7b2363e9bae3ffc7b41154"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X10-FallbackStringifier.cpp": {
+      "bytes": 396,
+      "sha256": "d4bc19ae5ff36af70074ba82f34db22be050d90e70202625c641aa04736b3930"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/ExtraTests/X11-DisableStringification.cpp": {
+      "bytes": 469,
+      "sha256": "c97f950cd8f62d547a9c0327c246a3e996972281487682651fe16046f0188903"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/automake.std.approved.txt": {
+      "bytes": 9171,
+      "sha256": "801e85c61341a91a74f9368ba8197082b821d3da0fe9d1221dc9b3472167f616"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/compact.sw.approved.txt": {
+      "bytes": 140020,
+      "sha256": "98db0ed0d289aa7d68d2eb8990a00a25df3caacf443f3e833cafe6f1edfa1b6f"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/console.std.approved.txt": {
+      "bytes": 49257,
+      "sha256": "20d740fb8cd094b5fb397f3743cd9b2b704b21b196b78ce7f8f963b6afedc470"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/console.sw.approved.txt": {
+      "bytes": 394169,
+      "sha256": "56b0d65c15be0207ca42ec8a4f7e981409fe76013481abdede3739722d8e7530"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/console.swa4.approved.txt": {
+      "bytes": 11972,
+      "sha256": "6bdb283e3e25406ccb14ebe64781c28c20b19f202554f311eb6c48c819315839"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/junit.sw.approved.txt": {
+      "bytes": 88311,
+      "sha256": "9cccae3b39c761ed0cdc41f21119950b823ee631cb79124f3107bc9328a8c33e"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/Baselines/xml.sw.approved.txt": {
+      "bytes": 588775,
+      "sha256": "c7e864a087d29b8f4c89a2a99c837e74ba9bf583b6a40e210c91238049ba2546"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/CompileTimePerfTests/10.tests.cpp": {
+      "bytes": 351,
+      "sha256": "a233516192a44b24c4c36b7b02b696a29bfbab91c60fde4bc9abacb269b604cd"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/CompileTimePerfTests/100.tests.cpp": {
+      "bytes": 341,
+      "sha256": "614196a5281052a2b779d8defb9e1ce7b6d98eae54992b67aaf7053d3349ea75"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/CompileTimePerfTests/All.tests.cpp": {
+      "bytes": 695,
+      "sha256": "7794fc77f499d3764f205e84387512d42a428e7fcb6985432610f23e2223a81a"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/CmdLine.tests.cpp": {
+      "bytes": 16475,
+      "sha256": "daa458193ffa55e3dc4d745741783a780cb853ff5212b0c9a20dfb9d034ec13a"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/GeneratorsImpl.tests.cpp": {
+      "bytes": 8976,
+      "sha256": "d4d70ef3c6e9ce79ae19d7fc59a07d1a4ca18c59a30cba904241bdaf35457be7"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/PartTracker.tests.cpp": {
+      "bytes": 6050,
+      "sha256": "136132f0edf1d2efcbb8f51bf7ed23f356001f569fadc28b5a8818f152f1b19f"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/String.tests.cpp": {
+      "bytes": 6990,
+      "sha256": "2b0f94700018ec677a821c256e27ab5a3af535bc6bebd2fa385603481f7d3839"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/Tag.tests.cpp": {
+      "bytes": 1922,
+      "sha256": "1991dec33b810dbcafe39501e8ec8907d4c0820faf37bb25adc2d0093b094bfc"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/ToString.tests.cpp": {
+      "bytes": 1759,
+      "sha256": "5e83f20a936052b5b0605fdb1e27c03bc03347dc6308967676a9ba9b2b6cde54"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/IntrospectiveTests/Xml.tests.cpp": {
+      "bytes": 4985,
+      "sha256": "7c2e76203aa933b62f40c0f8f73e43b0b50620f4d8ecfe005843648151c45812"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_console_colour.cpp": {
+      "bytes": 185,
+      "sha256": "f7a8b2b8b4ac2020cac398a10163a531c385ee58ae89610a299235b58255c8cf"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_debugger.cpp": {
+      "bytes": 133,
+      "sha256": "a2821ffdd097f4be0fdc6211b1776004f05426e7ee33bbb4a7bd6e0890cd2b63"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_interfaces_reporter.cpp": {
+      "bytes": 94,
+      "sha256": "af702cf76c8c59af9cf903aae7ccf6776de2f721493e54c5948f13a5427cc430"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_option.cpp": {
+      "bytes": 179,
+      "sha256": "150692b1c3e4d2a2bab91aa816ec6f8d997361b2983a5ec6a992a4b5143f50f5"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_stream.cpp": {
+      "bytes": 177,
+      "sha256": "f418cc9f9375a31b4bcd7ada7a98e517dfb37360e8280bb93b1bcd03a2cb1a1d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_test_case_tracker.cpp": {
+      "bytes": 142,
+      "sha256": "54a4142c0b0f355fe1da878d176671efc037cba461cb97b036527a23b33a7bde"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_test_spec.cpp": {
+      "bytes": 180,
+      "sha256": "a3b010004743d3d9cea9429423d9154556fc0c346eb65178da000765f379e69f"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/SurrogateCpps/catch_xmlwriter.cpp": {
+      "bytes": 226,
+      "sha256": "59db70ff66b1de323140f691faabab00448b8c4d2dfe8a19308d1da821949bef"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/TestMain.cpp": {
+      "bytes": 1032,
+      "sha256": "a0ec70b7ca615d8f2bcbc49b2a19707051f8e570f89b789f79f435ddd1610ee8"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Approx.tests.cpp": {
+      "bytes": 6475,
+      "sha256": "8e20e0cfb864976fdc401e187a8fb15673bf0ca97ba0e42cc1560dabf3a740bf"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/BDD.tests.cpp": {
+      "bytes": 3775,
+      "sha256": "e944b1ee4092ddf3e8be717dd196805f3fabf4a3140d3888f18eee6dd98561df"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Benchmark.tests.cpp": {
+      "bytes": 1003,
+      "sha256": "7fa711f2b03c19ec2b19dd43ab774a387f31aa093a8eda2b1b23f676edebc676"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Class.tests.cpp": {
+      "bytes": 3854,
+      "sha256": "b837c05a4556c8fff8eba11da136809f958503b1e1a3309796c91f0aa33152c4"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Compilation.tests.cpp": {
+      "bytes": 4902,
+      "sha256": "ee16819d80db0030b774af3b7487c3e51fe5c87ac2edbb33074ee11a64422649"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Condition.tests.cpp": {
+      "bytes": 9116,
+      "sha256": "26744f5cab550729cd4647895ec88d9d1cb28820a5f733cb49f21d3982b8dc45"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Decomposition.tests.cpp": {
+      "bytes": 915,
+      "sha256": "a0a1d3c3bcb7c86c8756468a44a7bbb6e8f4d2cecb1af338f9a4a683752cef62"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/EnumToString.tests.cpp": {
+      "bytes": 3440,
+      "sha256": "7ea8d147b22fcdf4fcabff4579af0abf38e8f30a5611798c621fe8ab6c0e8c0d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Exception.tests.cpp": {
+      "bytes": 6230,
+      "sha256": "39bd66b506f84d172cc4d3810477bc1b21edbe31267f1fc3590f967a14fcb0a3"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Generators.tests.cpp": {
+      "bytes": 7422,
+      "sha256": "bd3ae79a46c5abf6ea4fe0c11fed57e2c919199417911a33d803975bfdb1ea00"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Matchers.tests.cpp": {
+      "bytes": 19303,
+      "sha256": "899688404fdfc804412363fd8032baea853916957bb3a33d984352bca3af6ded"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Message.tests.cpp": {
+      "bytes": 8031,
+      "sha256": "250133174d7a0bff67f31513b9eb2ff6aae230744be7574f37cbf3e75357cafa"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Misc.tests.cpp": {
+      "bytes": 12400,
+      "sha256": "e85f061fe5611faca88bf2755fee0ffe82a3bb8b4d9488af4f9cec7e1854ae2d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringChrono.tests.cpp": {
+      "bytes": 1696,
+      "sha256": "94b1152d0da64072340697abbfd5f1c437b45358e49a0b21ecfffca0e01c3624"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringGeneral.tests.cpp": {
+      "bytes": 5928,
+      "sha256": "bb39ccd64757581f9ec79c97fac3a8d6586a8252d0063cc61594551950a743c0"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringOptional.tests.cpp": {
+      "bytes": 915,
+      "sha256": "f26922aca413b0fad9a1d41e121fff92d2152a3b35a10461e2fe788f95c00a19"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringPair.tests.cpp": {
+      "bytes": 1245,
+      "sha256": "ce3d8e8f0251db0d841f5761726601e35944d560366d0fc6ac8a935d53f9312c"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringTuple.tests.cpp": {
+      "bytes": 1416,
+      "sha256": "2bae8ae22130111f1e0a8b74ae8affe1f008be79f6a37998ea240a8ff662532d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringVariant.tests.cpp": {
+      "bytes": 3160,
+      "sha256": "318904ab6b44df20c2be1891b19cf5bb64c694ae6de083a7ec79843865b707b2"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringVector.tests.cpp": {
+      "bytes": 3165,
+      "sha256": "63556cdefb15093137dbff1ac34a07e8aa58afd8cfe11d56ce202325ce9cf217"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/ToStringWhich.tests.cpp": {
+      "bytes": 5390,
+      "sha256": "d39a4950c960d17e70b7b1d29aadd2a7b3f07edf5578b403625e5044d4b5bc0b"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/Tricky.tests.cpp": {
+      "bytes": 9791,
+      "sha256": "6538f3c1a8c289e729838a8bda2d1c9e3b511a81279d937085e7eed97fe040a2"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/SelfTest/UsageTests/VariadicMacros.tests.cpp": {
+      "bytes": 570,
+      "sha256": "25add77e07c7e6ba3e8fe9b3adbcac8449eb2091ea510a20c2c55c6d2a135c7d"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest.xcodeproj/project.pbxproj": {
+      "bytes": 11513,
+      "sha256": "56dc00234b588686872a376804299268a8545fa0822b742629e96aba1ba10270"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata": {
+      "bytes": 151,
+      "sha256": "20d3cc2ec3c10d0902c400cf274854c68890bb5e824523b74ed89d64c79e469e"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist": {
+      "bytes": 238,
+      "sha256": "dfa0f9bb85b95ccba9c6811adadf8cb407fb5d52088e89db83ebc308ec448542"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/CatchOCTestCase.h": {
+      "bytes": 581,
+      "sha256": "92717d040377e2c3f939b0c7114b2eb086b42f70d68f128813688a67104240b2"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/CatchOCTestCase.mm": {
+      "bytes": 2108,
+      "sha256": "e0708ff49f49ecc7740bd71550b06510ba9f4638675dbb0a6a9f37af7b7cb4f3"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/Main.mm": {
+      "bytes": 46,
+      "sha256": "2c2b8322c4eeddd1768824fe958dafe583280df1ab4e4095e0a1224dcc0a2218"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/OCTest.1": {
+      "bytes": 3012,
+      "sha256": "d180861ef6f105eaaed670de55d3f9512c912955e4e40a9c1f62208672329387"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/OCTest.mm": {
+      "bytes": 546,
+      "sha256": "d4053c3c57330c989a1c32c2fbc5e40fc996f54eda8729ea43a0d0966f270eba"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/TestObj.h": {
+      "bytes": 581,
+      "sha256": "c784755867cb5fee0f50b56caf5a76f50ed7234ef6591ef718e3142b6af81fab"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/OCTest/TestObj.m": {
+      "bytes": 430,
+      "sha256": "9068b4aa68a4827ab682c03a663af2fe71ee38d90e7babfdbf7f18cbc68e39d0"
+    },
+    "physics/third_party/coffee-src/deps/catch/projects/XCode/OCTest/catch_objc_impl.mm": {
+      "bytes": 3990,
+      "sha256": "96657177bdc0842627fd69dfa0b90f595d7fa04e163daa00358ee577b779b861"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/approvalTests.py": {
+      "bytes": 7813,
+      "sha256": "5331d568c3e83e38d381e3455d357de0f9cd6ca82a1676bf6f5871cdb4c32816"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/approve.py": {
+      "bytes": 959,
+      "sha256": "4c2e12e5eb4e1a43d0fe31388254f0a7a894ae81b5ee0e71b526b2987b946ad5"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/benchmarkCompile.py": {
+      "bytes": 4645,
+      "sha256": "3d4f54ced166352ffd3de8073d0da8cf1f691c8385b5d13e5470de5e345b9a42"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/benchmarkRunner.py": {
+      "bytes": 1632,
+      "sha256": "d6471749fd2d21627ce0761db3d7737c7c3c047b1afbb33952bbb9e3410fc7aa"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/developBuild.py": {
+      "bytes": 259,
+      "sha256": "52ffd2f5cbe8759f1d1a6fa56fb0b6fffde07baa3aa3533ef54b0f09c3a7cb58"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/embed.py": {
+      "bytes": 2726,
+      "sha256": "57414f16812e80501f857ef2b30d54b9b6c41314a00effeab5824ce5f4608fb7"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/embedClara.py": {
+      "bytes": 923,
+      "sha256": "5907719ed6516aabdcd38c277d3b84a8d268e49606de9ad7fd2b982643db6dc2"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/fixWhitespace.py": {
+      "bytes": 1440,
+      "sha256": "d9f132a6d7a239dd0d6c12031417fbc3de4a62306b85a1fd1ad474ce8a8df449"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/generateSingleHeader.py": {
+      "bytes": 5229,
+      "sha256": "4d8c3f9910f7a2a9535fdb92690cfd17169d7a9d213d878f611e2e5a813260fb"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/majorRelease.py": {
+      "bytes": 260,
+      "sha256": "04c1867e661372b413532210b1fab8966ddc08d3f24ac3a73c668b71abc31260"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/minorRelease.py": {
+      "bytes": 260,
+      "sha256": "8027909f201b62d88c94ed6df17dd745f0a4cf017f5d204d25bc9d6823b91b26"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/patchRelease.py": {
+      "bytes": 259,
+      "sha256": "63492c091225d875e3ccd3fb534ca0ab51909b8a7fa06ad9fe80733703893c16"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/releaseCommon.py": {
+      "bytes": 5551,
+      "sha256": "47537ea016617ef8e54ad9a8b0d95ecfad45fbdab9594d6b65f440c73c107efc"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/releaseNotes.py": {
+      "bytes": 1713,
+      "sha256": "d346ca6c25d2eee4342404dd94ddc98a1db55155593d91a0159b8c4bf9f8a0c5"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/scriptCommon.py": {
+      "bytes": 830,
+      "sha256": "51928658ddd68d7d192d4aca150c29c0d8215faa25cd69787cd37fe55b485d85"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/updateDocumentToC.py": {
+      "bytes": 13776,
+      "sha256": "f3da30cd101ad411d113e5bf6a40e192a744b7a6fddea296145f8e0d37cfb6cc"
+    },
+    "physics/third_party/coffee-src/deps/catch/scripts/updateWandbox.py": {
+      "bytes": 1367,
+      "sha256": "346d0e1f71d0d2137991aa50a0a1284974804f6c5afecb974cc518522bebea79"
+    },
+    "physics/third_party/coffee-src/deps/catch/single_include/catch2/catch.hpp": {
+      "bytes": 553023,
+      "sha256": "2791047e459b981a1035f4ee16a2ad031f5bfb4ba66487ad4d3fc816c8946f61"
+    },
+    "physics/third_party/coffee-src/deps/catch/single_include/catch2/catch_reporter_automake.hpp": {
+      "bytes": 2206,
+      "sha256": "6e83050f228a90f750751fbf1d4a66f3033e94240b28364d15e672ec6ac498b1"
+    },
+    "physics/third_party/coffee-src/deps/catch/single_include/catch2/catch_reporter_tap.hpp": {
+      "bytes": 9583,
+      "sha256": "bf635c20a336af9a1e333b07dd1ba1582f6898db523a8135a02b254893e70abc"
+    },
+    "physics/third_party/coffee-src/deps/catch/single_include/catch2/catch_reporter_teamcity.hpp": {
+      "bytes": 8732,
+      "sha256": "2d5b660d9c4d83ebaaf8a9450705ffd991187c524aa51228afefe536119247b4"
+    },
+    "physics/third_party/coffee-src/deps/catch/third_party/clara.hpp": {
+      "bytes": 43543,
+      "sha256": "50ac62f588603164e7f06acb920ee6fa0d3c4b51b6f94a7f800830984da0786d"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/.clang-format": {
+      "bytes": 1596,
+      "sha256": "b0a17e0f2e5660112a323b3471c6ac115fff97dcf06e3edd2bd28e38c0968f4e"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/.gitignore": {
+      "bytes": 34,
+      "sha256": "8235d033fce504499b07c9e54600a6d01b0e8ccd8677872dc7960fe320f4958f"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/.travis.yml": {
+      "bytes": 1162,
+      "sha256": "2fd9a567a9c24b022da05c3cfe50010eb6c7d23290dc6604df3cd2dbf01c6ed1"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/CMakeLists.txt": {
+      "bytes": 2679,
+      "sha256": "e022d74ca024d199b3b476dd64c820350ecbba865790e050e783fced1db6467c"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/LICENSE": {
+      "bytes": 1056,
+      "sha256": "e020e5d4f3e7c2a49b66822b3c3fb99aba9a04f3d2edb3907c493976436f876c"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/README.md": {
+      "bytes": 7848,
+      "sha256": "33b297d24c2fc629df2a8d81e0ecccbc3951dcbfa8064a3e5356ddf7ea6e7a88"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/cmake/cpptomlConfig.cmake.in": {
+      "bytes": 58,
+      "sha256": "02193119207d0e01d268b097cea3100cdf95b694fe05cb4e443b4bb415bd6694"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/cpptoml.doxygen.in": {
+      "bytes": 76593,
+      "sha256": "ec1292c38126af8875c9c8283a5cab29075abd366a13cca342c9700cb4fdf7c9"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/examples/CMakeLists.txt": {
+      "bytes": 817,
+      "sha256": "9d8aa7a7766665e243ff5184857c85744990dd0ca0c743ddbfb1ba020527ce85"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/examples/build_toml.cpp": {
+      "bytes": 2039,
+      "sha256": "a921445c239ac586f627ff10315ddb4d6fb61da07fc663fd22598ae7f7f6ace9"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/examples/conversions.cpp": {
+      "bytes": 1106,
+      "sha256": "18dc74420096f45b09b05bbcaed38947243619e2188681874f9f5345fc2074bf"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/examples/parse.cpp": {
+      "bytes": 528,
+      "sha256": "377656e3c9e879d428a17f57f62e58ed1239498753cb8a17301776be64b4066a"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/examples/parse_stdin.cpp": {
+      "bytes": 3284,
+      "sha256": "66c9a0a32108ad2b2d69f64afe86bd085940ab518d0f7f832a73c0cb7baec3c7"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/include/cpptoml.h": {
+      "bytes": 96163,
+      "sha256": "3e4e1d315fa1229921c7a4297ead08775b5bb1220c18a7eac62db9ca7e79df0d"
+    },
+    "physics/third_party/coffee-src/deps/cpptoml/travis/install_libcxx.sh": {
+      "bytes": 495,
+      "sha256": "5b5be9a30aa1c79e27ff17b222b90cac577ce5bb8df421f6b22ef797bcdac4a4"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/.gitignore": {
+      "bytes": 98,
+      "sha256": "554dc3a59707e7bf71108cc27510568e7688aca6f112d21981b7816189f25dba"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/.travis.yml": {
+      "bytes": 1839,
+      "sha256": "ebef1867ccc36b5f3320a4f85c6785f4d455e05094613df59fb50d84abc9c8e9"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/CHANGELOG.md": {
+      "bytes": 3229,
+      "sha256": "fd148cc42a05d419668888c2302e486f79acba4ca1b3cf785d12fe21fe6b3104"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/CMakeLists.txt": {
+      "bytes": 4474,
+      "sha256": "f5c031fb3566c849e6329a22c8870147e38e8c64c296bd773749323768d6d122"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/INSTALL": {
+      "bytes": 656,
+      "sha256": "a70493fe3bae83b1b0c8c4cf0088a3d72e12a92ab6db00633c3e0508c57e0cfb"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/LICENSE": {
+      "bytes": 1055,
+      "sha256": "aa324fbe633a96546bebca975fbbab65caa175894bd00cfa13d7335e7363400c"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/README.md": {
+      "bytes": 6053,
+      "sha256": "cc7e849587ae4fbd8f1f40e3da4809343f80bfd61b768f3bc9418c891fc12d32"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/cxxopts-config.cmake.in": {
+      "bytes": 114,
+      "sha256": "c5ddf3ee3de2f10d86e4d8628dd8254d7a80497d9262e2e4a6f5ea3e4cae0c81"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/include/cxxopts.hpp": {
+      "bytes": 44916,
+      "sha256": "e543f529ea85319aeec9be99f0283354eff67cb51667a32c8edac65c12d0e878"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/src/.gitignore": {
+      "bytes": 8,
+      "sha256": "13550350a8681c84c861aac2e5b440161c2b33a3e4f302ac680ca5b686de48de"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/src/CMakeLists.txt": {
+      "bytes": 1212,
+      "sha256": "a11903daaa1e162fafac6e630df29a26b7dcd21790c095d3bd44a80f0335d6dd"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/src/example.cpp": {
+      "bytes": 4977,
+      "sha256": "8c165c8b5e2aa4177299675c975271a88512d812478196452a207199c49c509e"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/.gitignore": {
+      "bytes": 13,
+      "sha256": "de23fa540e0147828168d0d7e32884f83094217bbd1f75173571eeba43897d25"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/CMakeLists.txt": {
+      "bytes": 1359,
+      "sha256": "e66df87138a333275d53177ae8822b448df1853896b84ed2562266dbead6a809"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/add-subdirectory-test/CMakeLists.txt": {
+      "bytes": 267,
+      "sha256": "4945775304f0bc893d0a494caea1e58fb66d711849dc4ab665e13f3adca80a7d"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/catch.hpp": {
+      "bytes": 377366,
+      "sha256": "c07fadaa297de1013ccd9be0becb2afc64dc231a3c37012a9ec6f7c97febf74b"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/find-package-test/CMakeLists.txt": {
+      "bytes": 258,
+      "sha256": "b9d8b38984f056001a02e8159e5eb13c14698b7bf3bbadb3919c5f9860ed96f7"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/link_a.cpp": {
+      "bytes": 62,
+      "sha256": "c1893d90d37d6ad8f5aed9d66f89c6c8e48443998fcde0b76c2d144ffc267917"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/link_b.cpp": {
+      "bytes": 23,
+      "sha256": "71ec4573fa5c6a89aa580f200a8adcb671a32e828ab6ff86b2a403aa0a3fe6e8"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/main.cpp": {
+      "bytes": 47,
+      "sha256": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+    },
+    "physics/third_party/coffee-src/deps/cxxopt/test/options.cpp": {
+      "bytes": 21364,
+      "sha256": "e17d195cceceee6401ed794b0de9e73e89ac1c117fb6f29db1d92608ce4430ab"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/LICENSE": {
+      "bytes": 10758,
+      "sha256": "0810b528dd84430d8c06791a6be26b3d7b136c17713d3b8efbf35d8866fef1fe"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/README.md": {
+      "bytes": 476,
+      "sha256": "3991753ec3b919cbb17dbc3585e744c6c858bcbb419023f584ae631c13f68288"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/dispatch_example.cpp": {
+      "bytes": 3806,
+      "sha256": "eb60c5efbeefbc832f7ed721d7f4031642b13b64e931125e000bb844a7172129"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/instrset.h": {
+      "bytes": 15567,
+      "sha256": "d250a2bee28123d1b34de8afa3b127e8adb7992e156ef5a286840cc94c3bf5f4"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/instrset_detect.cpp": {
+      "bytes": 7947,
+      "sha256": "2ebce7118793a663d0a79a9cb173e1c2d5bbde17f1c575c67c28240952a8b9e5"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vector_convert.h": {
+      "bytes": 9669,
+      "sha256": "fb30fea5f3905e9517436f809cdc790bb434e7cdb184962ef17949c131e359f6"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorclass.h": {
+      "bytes": 3218,
+      "sha256": "52785200ef8377678b07f1fa0267abb66d4a7c9c4eb855c9d27a23d0ffd92936"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorf128.h": {
+      "bytes": 100287,
+      "sha256": "eb080db68f12c416985bf325fad34e7bd7c79c3e15b452d9a2dc3eec02868973"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorf256.h": {
+      "bytes": 122898,
+      "sha256": "356bec92c555f8f7a1411119f9e6630bd208deb6b01657449a13742fe03f0535"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorf256e.h": {
+      "bytes": 78284,
+      "sha256": "81ca5f60602693426105295acf4e427d545c4b1e58371dc018e8c7576d9a48b7"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorf512.h": {
+      "bytes": 91941,
+      "sha256": "92838a6454b1128384f773d5e35c1b37a2a2ba6051a02082a00386afb6a41cae"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectorf512e.h": {
+      "bytes": 85033,
+      "sha256": "73d48de0b9f736f135d500bad9e38657c6560f8c0cefde13af29882a67f2bae9"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori128.h": {
+      "bytes": 262221,
+      "sha256": "3040ef183ffa7677cbe674bc1bcbe1f06e499dcf75b220776afb181c70d5611a"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori256.h": {
+      "bytes": 260925,
+      "sha256": "59884a9a646b304c7ae2f2cba08ef6bdcd255b5406de975b380f2202d3ac3f58"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori256e.h": {
+      "bytes": 173467,
+      "sha256": "a001ddfe645efdfdc73d99c6354e311acecec4ea42455058f5ed93a337e6c089"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori512.h": {
+      "bytes": 114460,
+      "sha256": "cb1d285b3e1f97febc0e418932baee523aeda8077c40b61eaafac1c9c4d20c0c"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori512e.h": {
+      "bytes": 100471,
+      "sha256": "9799bc52f106104d2eaca3fde4acdeba3b0ed550f738dafae3da9f1766502e16"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori512s.h": {
+      "bytes": 82669,
+      "sha256": "f3777ceaf8bdac93eb2b3ac1ca6f248793a00e977c6507e7a4e7651782769b36"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectori512se.h": {
+      "bytes": 69146,
+      "sha256": "9949a14553eef0daaca16fdc592a10030c6762bb1a65b85afaeb9dea0d5c757f"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectormath_common.h": {
+      "bytes": 11785,
+      "sha256": "df0dc37761867475fc35b494289658f66e5c92ce02644bfa155488e2452648cc"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectormath_exp.h": {
+      "bytes": 84795,
+      "sha256": "88bb912bff1d5dc2a48b876320b5c23fc1e52aab2a40fea2c8999cafa91011a4"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectormath_hyp.h": {
+      "bytes": 24427,
+      "sha256": "b45465c497e40a98c5589a7f87fcb0df51b48a7f5e935ddfe15796e95963cb83"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectormath_lib.h": {
+      "bytes": 81595,
+      "sha256": "3cf98dab715f7733bccf0ecb993ccab599ad56a2d200b2496d74da78473f4876"
+    },
+    "physics/third_party/coffee-src/deps/vectorclass/vectormath_trig.h": {
+      "bytes": 30070,
+      "sha256": "82056cd6a70b74b9ca8639af897b1395548908de39f06369e88ea2bbccc00fb3"
+    },
+    "physics/third_party/coffee-src/fix_permissions.sh": {
+      "bytes": 236,
+      "sha256": "bb19d3d3b067982245711992ac27b626b7f58ddbb2cf7a590ec290cbf64855d5"
+    },
+    "physics/third_party/coffee-src/load-cpu-modules.sh": {
+      "bytes": 129,
+      "sha256": "1ff972e37d69df882f488081d28ddbc7820776becbb8874f153c5f42d72885a3"
+    },
+    "physics/third_party/coffee-src/load-gpu-modules.sh": {
+      "bytes": 291,
+      "sha256": "9032f3dd07be3f5a9e49b1b21e1d02a2c00e2b8657a43cbd711da70b59855040"
+    },
+    "physics/third_party/coffee-src/original/.gitignore": {
+      "bytes": 16,
+      "sha256": "31806490757160e35bb36b2b968a73655c9082f515fec170b0aa159fb55a1bdc"
+    },
+    "physics/third_party/coffee-src/original/CMakeLists.txt": {
+      "bytes": 929,
+      "sha256": "478a6fdcec008e667af7635ba90822ceee67c77a01ea8a0d07222092e279cf1e"
+    },
+    "physics/third_party/coffee-src/original/LICENSE": {
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "physics/third_party/coffee-src/original/Makefile": {
+      "bytes": 1052,
+      "sha256": "d2549772d7ceb513588ebc35ac76229c43e3250927ae90082042094942fda974"
+    },
+    "physics/third_party/coffee-src/original/README.md": {
+      "bytes": 2247,
+      "sha256": "fcf270c7332a7728207762e6312b3c0b5ae4dfd57577f599561be70d471c8c19"
+    },
+    "physics/third_party/coffee-src/original/input": {
+      "bytes": 1439,
+      "sha256": "69ba8f94c81e8e56fa97e109ff6607933d594f4815f031f827ee46e4ac97244a"
+    },
+    "physics/third_party/coffee-src/original/precomp.sh": {
+      "bytes": 175,
+      "sha256": "5d64b8aaf5b40aa7c461e07a3257997ba179f7fc189846b5c33816a64a7257f3"
+    },
+    "physics/third_party/coffee-src/original/src/algorithm.f90": {
+      "bytes": 18165,
+      "sha256": "8f8a414305c05eecf1e48939afb0df2999f5f94311df7e1d8c0557e8648c0566"
+    },
+    "physics/third_party/coffee-src/original/src/auxiliary.f90": {
+      "bytes": 20317,
+      "sha256": "48d31533c26e5428264d5e9d69962ab279bde10595cf1afa6d290c7b0760a9ae"
+    },
+    "physics/third_party/coffee-src/original/src/boundary_conditions.f90": {
+      "bytes": 5690,
+      "sha256": "d9ec14227cd36616ec8377f1aaa84b39af970607b83825d39dd5894efa0053af"
+    },
+    "physics/third_party/coffee-src/original/src/defs.f90": {
+      "bytes": 1004,
+      "sha256": "17577a0c6047402f8c6adf5c29975d8ce6b0213071ad0254b853aeb171d77f8d"
+    },
+    "physics/third_party/coffee-src/original/src/ffree3D.F90": {
+      "bytes": 6244,
+      "sha256": "e01ba11e265b00149db90bc77f1832c0826f72e599f1f6cb5aa3bfd1ffcf9723"
+    },
+    "physics/third_party/coffee-src/original/src/output.f90": {
+      "bytes": 7637,
+      "sha256": "a5349da51d64fb4c3e9b13d6aaf3a3b018194d683c7858ec386f06258d86f7fe"
+    },
+    "physics/third_party/coffee-src/original/src/user_bc_loop.f90": {
+      "bytes": 2339,
+      "sha256": "7d4d2239ae81cb91af04fddbb6606f2770e223b46e7d6fa4c853fa8a59b287d6"
+    },
+    "physics/third_party/coffee-src/original/src/user_bc_uniform.f90": {
+      "bytes": 1764,
+      "sha256": "a14cb9e4390256eac4f77122fb2d7bb3aff43f5b9f354a1538edc57bd84d4aee"
+    },
+    "physics/third_party/coffee-src/original/src/user_init_loop.f90": {
+      "bytes": 2318,
+      "sha256": "fc9499c339b37837908bafb1604a61a000700a5859a2545bd0bf7722ea1d1098"
+    },
+    "physics/third_party/coffee-src/original/src/user_init_uniform.f90": {
+      "bytes": 394,
+      "sha256": "1c44b96fe8d033e1071226b80f224cf4020428ee117feeaff66a91a0d1401ab0"
+    },
+    "physics/third_party/coffee-src/python/analysis.example.ipynb": {
+      "bytes": 291264,
+      "sha256": "9681c74d7d9804c2298c73181210a1cd153b63b6000f2093460d2b86fc967371"
+    },
+    "physics/third_party/coffee-src/python/compute_flux.py": {
+      "bytes": 307,
+      "sha256": "d9ffc581292c8c8f363a6d48b8761e4175a003be4fc191fca0707e9e9a98a012"
+    },
+    "physics/third_party/coffee-src/python/datalib.py": {
+      "bytes": 3911,
+      "sha256": "75d9475e8c4aa55d81242945487dc48cf0e09983bc3d1fd0d128c21454ad4c8e"
+    },
+    "physics/third_party/coffee-src/python/datalib_logsph.py": {
+      "bytes": 7168,
+      "sha256": "d755591d8ddebb93ec4419a0f704270a90330869e94ae0eada470a7c2018fc7e"
+    },
+    "physics/third_party/coffee-src/python/gen_xmf.py": {
+      "bytes": 3513,
+      "sha256": "224bf48f58632be90438c7e36796f4fb30c164352923956aee0ee07ab34819b7"
+    },
+    "physics/third_party/coffee-src/python/gen_xmf_logsph.py": {
+      "bytes": 2999,
+      "sha256": "207d66d471ea483a7ea5f5d5b4abef43c47b20104321854b350ba9bbeb6cebea"
+    },
+    "physics/third_party/coffee-src/src/CMakeLists.txt": {
+      "bytes": 2423,
+      "sha256": "27f25c49dbe0410fc9d0d604435a969f5bd475c72dd5d74cb9107f3aefa9a3bc"
+    },
+    "physics/third_party/coffee-src/src/algorithms/boundary.cu": {
+      "bytes": 6263,
+      "sha256": "7ba7366290fff1e349d2c94db5a8e49c497ee978853d4dbac1bc82fea60ea0eb"
+    },
+    "physics/third_party/coffee-src/src/algorithms/boundary.h": {
+      "bytes": 1090,
+      "sha256": "c4172421e3e457e02f0e5b0f5dff5776c5f43c537c199cb0cc5c648676e2791d"
+    },
+    "physics/third_party/coffee-src/src/algorithms/damping_boundary.cpp": {
+      "bytes": 3297,
+      "sha256": "283c65be0e1e4933f62eb79d924cd31b06e718766f53bddfecc0d3008dc0abb1"
+    },
+    "physics/third_party/coffee-src/src/algorithms/damping_boundary.h": {
+      "bytes": 976,
+      "sha256": "9fa44eaaa7f9d7fda50a2ccfabf5e91c608cb9aa2678fa6845a48eeafe5fc58e"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver.cu": {
+      "bytes": 37233,
+      "sha256": "b7a85b13b0869782798ca8ee4c91bea2dc5eaf0e60ee0f4fc2b6712c25ba1f15"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver.h": {
+      "bytes": 616,
+      "sha256": "2cf2debf4966ba5a8edebce4806b9160dfe1b84dfc37a8662b4ead12095998ce"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ.cpp": {
+      "bytes": 37515,
+      "sha256": "7b0cbde75bd136fd24bc82ba12c933d3601e10a18e30d4d0f95a4886dce0620f"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ.cu": {
+      "bytes": 29841,
+      "sha256": "dd3c45e71383f917ff0c92a2d449f0ccc9b0d99e79097f316aba9ed8512de563"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ.h": {
+      "bytes": 699,
+      "sha256": "d8fc3443502a4a9c8bfcb7b4cdac5abebd98efd91099e181d9d817d3526a4bfa"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ_cylindrical.cu": {
+      "bytes": 29102,
+      "sha256": "61c074e41a100ce8183b370e5652eefd8460fb917ee5ce45756f7ccfe761c84b"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ_cylindrical.h": {
+      "bytes": 660,
+      "sha256": "6774db7383d466485e29c420c4403c2811efd68aa685160381dd89295b7254b6"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ_spherical.cpp": {
+      "bytes": 334,
+      "sha256": "d2950da46b26bf11fbb318af80c6e844ce37982cfccd16898bff1a17d9c8d3ae"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ_spherical.cu": {
+      "bytes": 37900,
+      "sha256": "97c1742acc2c1d31a4a38b29054c7760801337319e56312f4643d3e79479a6fb"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_EZ_spherical.h": {
+      "bytes": 679,
+      "sha256": "7dabcd904e9c209585760bbf5808e541f68a50e6e01481339ce1479462800460"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_gr.cu": {
+      "bytes": 45586,
+      "sha256": "bd978fd1682d16bcdc7734c96c308b41a5da8dd67445b059db442c297bab5a2b"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_gr.h": {
+      "bytes": 579,
+      "sha256": "06d2aef97bccdb826735bc245b924f67e1cd50eb8e23ef70fa35e549da37dabb"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_gr_EZ.cu": {
+      "bytes": 36994,
+      "sha256": "4888400a11553d1e8cdc7159ff1b4b5524e3b93038be66bd5656fe74e4c6b8b1"
+    },
+    "physics/third_party/coffee-src/src/algorithms/field_solver_gr_EZ.h": {
+      "bytes": 616,
+      "sha256": "a8aabc5e4109508ef74b17dc4ab0d2aa1f3fd1f70018bbb53c87282d40b0b1a1"
+    },
+    "physics/third_party/coffee-src/src/algorithms/finite_diff.h": {
+      "bytes": 2793,
+      "sha256": "b7a61c846593ba4807e9b7da3fb7e96cb8f6105193c2921f1d85ee17943f4f9f"
+    },
+    "physics/third_party/coffee-src/src/algorithms/finite_diff_simd.h": {
+      "bytes": 2969,
+      "sha256": "c32714ed7077788c887040d612bb8cd13bfb978717f266758ac27ffb2d25ffab"
+    },
+    "physics/third_party/coffee-src/src/algorithms/interpolation.h": {
+      "bytes": 4137,
+      "sha256": "410e079527f8ce4e6e03a783fa6a01a0a459cb6a898f29cdeca79e34a37e7c04"
+    },
+    "physics/third_party/coffee-src/src/algorithms/metric_cks.cu": {
+      "bytes": 103,
+      "sha256": "ca9dd20926dff5f9b09f6dc3aa33942e2df3ddb8838d7eaf48e493dd0eec3774"
+    },
+    "physics/third_party/coffee-src/src/algorithms/metric_cks.h": {
+      "bytes": 1939,
+      "sha256": "d779102a106b9db70f564f952b1448c9b231f65d50eebff706fdc12b021c6458"
+    },
+    "physics/third_party/coffee-src/src/algorithms/metric_cks_impl.hpp": {
+      "bytes": 5566,
+      "sha256": "b643f18d54328d77502976642c2982d14c44f72f7fa5f14b4db465c7373a2958"
+    },
+    "physics/third_party/coffee-src/src/algorithms/metric_sph.h": {
+      "bytes": 2738,
+      "sha256": "da17d285042d2e850390c8cf5033e52e5e5b57dfff57aaf96c8985e957a570c3"
+    },
+    "physics/third_party/coffee-src/src/algorithms/pulsar.cpp": {
+      "bytes": 97,
+      "sha256": "1a11414c112a3c5caba2a4df3e5e6e98c3eb95a93465c391c3a191ad63ae90a8"
+    },
+    "physics/third_party/coffee-src/src/algorithms/pulsar.cu": {
+      "bytes": 96,
+      "sha256": "e23aac8917fdbfe88024beaf1f59a9a6d5e12b12123e7c839ac567365ab8897b"
+    },
+    "physics/third_party/coffee-src/src/algorithms/pulsar.h": {
+      "bytes": 1564,
+      "sha256": "b0b466d6e07d1b5d3231e31e99c11ed73d9e0823d57f8c873cc48d3afd79e3c3"
+    },
+    "physics/third_party/coffee-src/src/algorithms/pulsar_impl.hpp": {
+      "bytes": 4585,
+      "sha256": "b96178929b8ddd54d97208d89f6cc09aafe335952ae98004114e2f24a55c971b"
+    },
+    "physics/third_party/coffee-src/src/cuda/constant_mem.cu": {
+      "bytes": 508,
+      "sha256": "dde74b2340aa86f933bc3b165c66295e8923c61fe6b09d709d02c804dc898d4d"
+    },
+    "physics/third_party/coffee-src/src/cuda/constant_mem.h": {
+      "bytes": 379,
+      "sha256": "510403748dcb1472941d7c4d01de68585f1ab8438d51a454e2f51d27e580a2b6"
+    },
+    "physics/third_party/coffee-src/src/cuda/constant_mem_func.h": {
+      "bytes": 428,
+      "sha256": "a525683c23115005f417393def50eb72acec9168dc6d162588466a364b7c8654"
+    },
+    "physics/third_party/coffee-src/src/cuda/cuda_control.h": {
+      "bytes": 344,
+      "sha256": "8895fbb21bb85f3200e06a57a2432422fc3d9f66af7178ed8e8d04ede2ec9b9d"
+    },
+    "physics/third_party/coffee-src/src/cuda/cuda_utility.h": {
+      "bytes": 1594,
+      "sha256": "3b3a29787ecdde83ecbebf3e6984a35ef5bf98168c524c5ef7c1991600be3388"
+    },
+    "physics/third_party/coffee-src/src/cuda/data/multi_array.cu": {
+      "bytes": 5987,
+      "sha256": "7b1a9d34cd6e2c64e74c3e41c8da9c109b6d70c212b777759cddde816b055670"
+    },
+    "physics/third_party/coffee-src/src/cuda/sim_env.cpp": {
+      "bytes": 10196,
+      "sha256": "6a2fad6914fe608cdb040d3e61dda88babe286c5788d9e1d44d58273cc03e5ff"
+    },
+    "physics/third_party/coffee-src/src/data/fields.cpp": {
+      "bytes": 3506,
+      "sha256": "08da147f51fcb424b4c7dbee55d2a8dbfe364844e616bcf85f9e24eea10a4a1f"
+    },
+    "physics/third_party/coffee-src/src/data/fields.h": {
+      "bytes": 4104,
+      "sha256": "34f2ed089b3dce2cc19de40baf7e32b9dd1ef8193761f167fca923d9423e67fb"
+    },
+    "physics/third_party/coffee-src/src/data/fields_impl.hpp": {
+      "bytes": 1366,
+      "sha256": "ebc0771739553fd9564b59d764ff0e481710f073492ba2f06f702d09cb1c4e46"
+    },
+    "physics/third_party/coffee-src/src/data/grid.h": {
+      "bytes": 8186,
+      "sha256": "c3300de0f87b0e5e6d9be422c7711cdcfe27b63f269778215a6537032c9c9119"
+    },
+    "physics/third_party/coffee-src/src/data/multi_array.cpp": {
+      "bytes": 2602,
+      "sha256": "cedba5112a13f4dbef43afd8eefdefff9b5086c23d9ddaf53e1471e1baf67bd2"
+    },
+    "physics/third_party/coffee-src/src/data/multi_array.h": {
+      "bytes": 3702,
+      "sha256": "1d7fe77869529f1ad00c87dcdb6573fd027d4a9126e85c4f4259eea1bf0dfea1"
+    },
+    "physics/third_party/coffee-src/src/data/multi_array_impl.hpp": {
+      "bytes": 3097,
+      "sha256": "c542a1fd4697891423d637613bbfcaf42d74c31efd447938d72d6053769562c5"
+    },
+    "physics/third_party/coffee-src/src/data/sim_data.cpp": {
+      "bytes": 1779,
+      "sha256": "bcb5f5f56b1a57e0c9effe8804a689a10768782323675f8c5a2360081dcf707c"
+    },
+    "physics/third_party/coffee-src/src/data/sim_data.h": {
+      "bytes": 515,
+      "sha256": "5e021f6069f61eb6852707ca014d1b31c483ceba20b140256c47a5413622e6e2"
+    },
+    "physics/third_party/coffee-src/src/data/stagger.h": {
+      "bytes": 2064,
+      "sha256": "da113998023c0e2131bd8d68e6f71aad183f69189029a86fd7d21bdb14157c39"
+    },
+    "physics/third_party/coffee-src/src/data/typedefs.h": {
+      "bytes": 216,
+      "sha256": "d8231dfebd069a45b26195df7afd39d73c33f9a01604db43ac176efa0eea94a7"
+    },
+    "physics/third_party/coffee-src/src/data/vec3.h": {
+      "bytes": 5837,
+      "sha256": "7d0db74f326faccf4a34ee373c8bb3141980abc20a9f1242350c3a82ac17c755"
+    },
+    "physics/third_party/coffee-src/src/main-alfven3d.cpp": {
+      "bytes": 3576,
+      "sha256": "e6d0f41e76cdad336ed93a0540a55b6cee15ad724709f82294fa9a8db4c05092"
+    },
+    "physics/third_party/coffee-src/src/main-gr-Yee.cpp": {
+      "bytes": 2881,
+      "sha256": "5986b2efb5cd471085a4f86fd52ba4cbce9abdebcf3e768b9bb95cb9492e13a2"
+    },
+    "physics/third_party/coffee-src/src/main-gr.cpp": {
+      "bytes": 2884,
+      "sha256": "c2f30ca5165929df16daf74dd665ee045570779ef5efffbf6422c22047c1fbb0"
+    },
+    "physics/third_party/coffee-src/src/main-pulsar2d-cylindrical.cpp": {
+      "bytes": 2032,
+      "sha256": "09ce1afd1e1273ddcf44531d3cc7d05552f76f8804854e43bd1ed1f3c831ee0d"
+    },
+    "physics/third_party/coffee-src/src/main-pulsar2d-spherical.cpp": {
+      "bytes": 2506,
+      "sha256": "13baa2a31a06acff624e0582eda2bfabd8f3f5498a6827ae3b59c38f54a5604b"
+    },
+    "physics/third_party/coffee-src/src/main-pulsar3d.cpp": {
+      "bytes": 2564,
+      "sha256": "783da12efe0aabcc5e2e572b24f9eb79f002d94c3be4f8f2372e6736b7ec2aed"
+    },
+    "physics/third_party/coffee-src/src/main-wave.cpp": {
+      "bytes": 2293,
+      "sha256": "732c7a3c93f075de44fc66f77eeacc79e9312bd2b602fa0237d2572b6cc2a5ad"
+    },
+    "physics/third_party/coffee-src/src/main.cpp": {
+      "bytes": 2464,
+      "sha256": "1bfe1ea8c40a454118d40968bfe90e0e8d565484fa45ab09c3efcc721ea4de24"
+    },
+    "physics/third_party/coffee-src/src/sim_env.cpp": {
+      "bytes": 6024,
+      "sha256": "6aad79d66e6c71fe7d50d0381fdc89150e8708463c8b4e13778f24d62291bc27"
+    },
+    "physics/third_party/coffee-src/src/sim_env.h": {
+      "bytes": 2879,
+      "sha256": "5039ebc4bf8438b787039aa8a21f36e95c2f79f35bd0d3b03ddb82cb0dc52c62"
+    },
+    "physics/third_party/coffee-src/src/sim_env_impl.hpp": {
+      "bytes": 6968,
+      "sha256": "1eba4100a5007d943353c68a719180792cffd1ed0b0732ec9b772293208c5e4b"
+    },
+    "physics/third_party/coffee-src/src/sim_params.cpp": {
+      "bytes": 7086,
+      "sha256": "c7a3b004a4c3e49b24912762442d064754615a6485b3bf995e6594ef0527a38b"
+    },
+    "physics/third_party/coffee-src/src/sim_params.h": {
+      "bytes": 5597,
+      "sha256": "e6a8da44aa3398ca08c62857e10f8d1ab6bfa1f4e151865bdd1bc95e6ec40bfb"
+    },
+    "physics/third_party/coffee-src/src/user_alfven.hpp": {
+      "bytes": 3698,
+      "sha256": "d4b4582e03e76a0bf700844f8d2b2fc0c17c9c69b050401130b35decaade80bc"
+    },
+    "physics/third_party/coffee-src/src/user_emwave.hpp": {
+      "bytes": 1320,
+      "sha256": "27aef32e01ac60ced9ef268a21c2442cd7f88667f58aa39443b3490093266c22"
+    },
+    "physics/third_party/coffee-src/src/user_init.hpp": {
+      "bytes": 815,
+      "sha256": "409ed8101b6598ca4e53da3b05d3c451292363542252271f0257856b0fb7a7d0"
+    },
+    "physics/third_party/coffee-src/src/user_pulsar.hpp": {
+      "bytes": 878,
+      "sha256": "40a07476a82259bb4cc835b70d23d92469bd7a860aea1aafd44a49aeac309083"
+    },
+    "physics/third_party/coffee-src/src/user_pulsar3d.hpp": {
+      "bytes": 800,
+      "sha256": "64edbf7a37566fbafb4ed108d4f25cd170795d43f539fab910120b564fc28f55"
+    },
+    "physics/third_party/coffee-src/src/user_pulsar3d_EZ.hpp": {
+      "bytes": 1045,
+      "sha256": "c05652b3ba77df9c31768483a9f4679f8b2488606070c1c9422198ee13306d94"
+    },
+    "physics/third_party/coffee-src/src/user_pulsar_sph.hpp": {
+      "bytes": 1365,
+      "sha256": "01fc1d665554358e06f0a709098f10b55aa560367130da979e3abef57695cebe"
+    },
+    "physics/third_party/coffee-src/src/user_wald.hpp": {
+      "bytes": 8592,
+      "sha256": "bd0ba6f8163d20454eafdd6dcdd98b07607ca9fe18ce66efb94ca505d26125b3"
+    },
+    "physics/third_party/coffee-src/src/user_wald1.hpp": {
+      "bytes": 8303,
+      "sha256": "76a36d2fbb66078ec376028d6385e2c388fefd6ebf58fc6037252190c5a289bd"
+    },
+    "physics/third_party/coffee-src/src/user_wald2.hpp": {
+      "bytes": 1852,
+      "sha256": "171914739925908f13605269bb354d3cec524137259afb16adf3a6a63c87d1a2"
+    },
+    "physics/third_party/coffee-src/src/utils/data_exporter.cpp": {
+      "bytes": 38068,
+      "sha256": "6af93caa4bc3b14ccb8d8c7208601f2ed710814b5fc2bd32a0da2c0b3c1b3b0f"
+    },
+    "physics/third_party/coffee-src/src/utils/data_exporter.h": {
+      "bytes": 3528,
+      "sha256": "dd5acaefcda6d1c0005dff2ba784c7ca4f7f5f9fdf554c4d5fd334d686fb3d5b"
+    },
+    "physics/third_party/coffee-src/src/utils/hdf_wrapper.cpp": {
+      "bytes": 2632,
+      "sha256": "c3c84f21dfae480421c019aa8f7f11c7767ed61df4eea08f616545eae4cff11f"
+    },
+    "physics/third_party/coffee-src/src/utils/hdf_wrapper.h": {
+      "bytes": 1876,
+      "sha256": "7abf7e1d59b51b8af766f5cf6c4d273b949ab54faca790f17938057fc841a2a0"
+    },
+    "physics/third_party/coffee-src/src/utils/hdf_wrapper_impl.hpp": {
+      "bytes": 5613,
+      "sha256": "560c338e3bbc1a6ddc50d78856cce22052e7c81c91364972590ef049111ebdec"
+    },
+    "physics/third_party/coffee-src/src/utils/memory.cpp": {
+      "bytes": 565,
+      "sha256": "90e0661b61841532e1a66692a2baf91f5ece6423e65fd42580ad7916d8c83c2a"
+    },
+    "physics/third_party/coffee-src/src/utils/memory.h": {
+      "bytes": 486,
+      "sha256": "4793b0c4c433b242bea837ca34c755aa3037ac3068a52561a71face344b218c2"
+    },
+    "physics/third_party/coffee-src/src/utils/nvproftool.h": {
+      "bytes": 926,
+      "sha256": "1bd6a8fbe6a0e34ccbe125f95768e0e92595c58160670d1451133f8d09801fd8"
+    },
+    "physics/third_party/coffee-src/src/utils/simd.h": {
+      "bytes": 2018,
+      "sha256": "8b98e2d184f6f9c7533ff57fd5ec39a37e3215e801779bed063097d292ef1b55"
+    },
+    "physics/third_party/coffee-src/src/utils/timer.cpp": {
+      "bytes": 2381,
+      "sha256": "a3d664ad39f39944b8a5c928cfbb815fc5b9e33779176356fc8652dc8ec57415"
+    },
+    "physics/third_party/coffee-src/src/utils/timer.h": {
+      "bytes": 760,
+      "sha256": "fdc80ee28457e5df3866b1ae49cc7f411ced95c28deeda59da7cc5efca24569a"
+    },
+    "physics/third_party/coffee-src/src/utils/util_functions.h": {
+      "bytes": 297,
+      "sha256": "e35f09fc2c84956f5f7283a831a0b266322373df8e6b0fead2d654cdf5ad08e8"
+    },
+    "physics/third_party/coffee-src/submit.lsf.example": {
+      "bytes": 281,
+      "sha256": "85feda4259ddd949ed0f1961b5901966b9067a6843e094e8e5a023002468539e"
+    },
+    "physics/third_party/coffee-src/summit": {
+      "bytes": 295,
+      "sha256": "403deebd60f2d0d18463d74236599846997d34f60cedfa789353736a28a59af0"
+    },
+    "physics/third_party/coffee-src/tests/CMakeLists.txt": {
+      "bytes": 1038,
+      "sha256": "d6f9a30e4202c3efca7961ab860e339aa573233cf28288abe31f8331542d89f7"
+    },
+    "physics/third_party/coffee-src/tests/test.cpp": {
+      "bytes": 47,
+      "sha256": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+    },
+    "physics/third_party/coffee-src/tests/test.cu": {
+      "bytes": 47,
+      "sha256": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+    },
+    "physics/third_party/coffee-src/tests/test_algorithm.cpp": {
+      "bytes": 4753,
+      "sha256": "7a8603365e09f5db8811de64ba0554cd47c1a26a0fc116f4bd2426a78da7b9df"
+    },
+    "physics/third_party/coffee-src/tests/test_array.cu": {
+      "bytes": 178,
+      "sha256": "6050a45e0d79a6a6403a9a9864af1135ed63a39b6d576196080dfe682232c230"
+    },
+    "physics/third_party/coffee-src/tests/test_hdf5.cpp": {
+      "bytes": 990,
+      "sha256": "c4792f3694af0d47a4a5bd47d428cd0cd7f886cd04d5bff297ae1c2b0db08f9f"
+    },
+    "physics/third_party/coffee-src/tests/test_interp.cpp": {
+      "bytes": 945,
+      "sha256": "4e3df56b2dd1e5dc99f473b0be3763b9e9051cc679190d8e31a8c7fec19f5185"
+    },
+    "physics/third_party/coffee-src/tests/test_mpi.cpp": {
+      "bytes": 1335,
+      "sha256": "361e070ab5894e91d418d22550e5d68867ca00c1779ea84d3846143aac194992"
+    },
+    "physics/third_party/coffee-src/tests/test_mpi2.cpp": {
+      "bytes": 1572,
+      "sha256": "df24536f8af751f2619f7e0f9611d55f3025da6d5e9ee90dd9a830d5d0c3a407"
+    },
+    "physics/third_party/coffee-src/tests/test_multi_array.cpp": {
+      "bytes": 776,
+      "sha256": "b309ab67eb2f6a9f8b4a24257710697f6eaeccb921fc49c272d9367be833eceb"
+    },
+    "physics/third_party/coffee-src/tests/test_output.cpp": {
+      "bytes": 1947,
+      "sha256": "38f6282e6ff4cc19a312abf787bf4a1cde46737c7a5a46b9018ae62025cb56f2"
+    },
+    "physics/third_party/coffee-src/tests/test_rho.cu": {
+      "bytes": 1229,
+      "sha256": "2e063c25168d680b8b87c62787f6fb9961b7c440e8ef3dcd653de67f2da7bfda"
+    },
+    "physics/third_party/coffee-src/tests/test_stagger.cpp": {
+      "bytes": 611,
+      "sha256": "88439fb8b69386d60a0d7fcb96c0334dc5dc4e50f0c70a57802b68222cc09cd1"
+    },
+    "physics/third_party/coffee-surface-anchored-provenance.json": {
+      "bytes": 822,
+      "sha256": "8852a52207459bc77043b7eb70b9d45dc047ce4ce02ebd2f032bec813749c8c9"
+    },
+    "physics/third_party/coffee-surface-anchored.patch": {
+      "bytes": 411,
+      "sha256": "2a8a3df5fd9557fa51d43d73b7abaadb175f5cdc35afe8427072cd370e676f45"
+    },
+    "prepare_photon_scene.py": {
+      "bytes": 7396,
+      "sha256": "f732b6d6142cd7b0b3730e60e31985182636446dcea36fbf13cbe9a762049e2d"
+    },
+    "pyproject.toml": {
+      "bytes": 590,
+      "sha256": "031a50f37a9258f22e7e07c6f6257e8919a942a1b4a5d6538f1ba05abc2ddda5"
+    },
+    "reel_export.py": {
+      "bytes": 4744,
+      "sha256": "ac92e7c87543a3deea101ee051efa8204422fdb9e76c2b4ae01e099eb413a930"
+    },
+    "render_photon_reel.py": {
+      "bytes": 14308,
+      "sha256": "94e2402d18b4c2060049eaf76fe412b6f95c157e37b340dcb9f2bbcd12987a3f"
+    },
+    "requirements.txt": {
+      "bytes": 35,
+      "sha256": "c135535b946ed0036fa6c23863628915ec2772c0f8ed1cbffdf27c1fd58e967b"
+    },
+    "scene/calculation-verification.json": {
+      "bytes": 392,
+      "sha256": "a58975021e7ab5377f5b0a9f037cbe89bc3b8c5b0fc6971d56a3f3b453568144"
+    },
+    "scene/photons.npz": {
+      "bytes": 1008762,
+      "sha256": "451bd98ea72d892b7cf1a981f58436345a1611e1b5f1de366181700d98a0d222"
+    },
+    "scene/scene.json": {
+      "bytes": 2637,
+      "sha256": "b016e64452488726da0ff087fac06b2aa0c914b3ded8e083c9efc8a9c136ee14"
+    },
+    "src/pulsar/__init__.py": {
+      "bytes": 72,
+      "sha256": "d27eb3eabac50f98c60400fcefd353c0746bd6c6104e558ecb6d7a7e45bafd2b"
+    },
+    "src/pulsar/emission_quadrature.py": {
+      "bytes": 8982,
+      "sha256": "a36e3d0bf171f5300bf6fa679b08f775ed8e9031977e0a000197bf0c30079bd6"
+    },
+    "src/pulsar/field_injection.py": {
+      "bytes": 8458,
+      "sha256": "8fee1e68927c5c007eb2b0e3fcd1c1d5fab867354d4ff61b67987f0c68dd36f7"
+    },
+    "src/pulsar/model.py": {
+      "bytes": 7377,
+      "sha256": "b12f313f39482f869f9492de040885ed8c2b12168de46181aca8da2fb1342cc4"
+    },
+    "src/pulsar/multiband.py": {
+      "bytes": 10711,
+      "sha256": "1603bc153a6775496911f50206c12f25773f01ebd0abbdb98c9f1f399c805766"
+    },
+    "src/pulsar/observations.py": {
+      "bytes": 3431,
+      "sha256": "26f79c4123deafd9d887482501cd4370bc698bb1ab1fd8a75d5082da716420f6"
+    },
+    "src/pulsar/outer_transport.py": {
+      "bytes": 20542,
+      "sha256": "5201d67cebdb6b82dc7488703d4608b1ed1135b74a67367db53024cea80ea732"
+    },
+    "src/pulsar/photon_scene.py": {
+      "bytes": 2578,
+      "sha256": "8688d49b4500b2c6bb70e488976ebaf9f9b4e2a8da03fa546c3997340a04b391"
+    },
+    "src/pulsar/published_acceleration.py": {
+      "bytes": 6767,
+      "sha256": "dea3e8710af12894d4d3967ece8a8f3fbbdfb41af2db68d6cc4c1c0576590517"
+    },
+    "src/pulsar/radiation.py": {
+      "bytes": 13977,
+      "sha256": "e6e2f95a018705eb38dddcef471ae81ea5026cdf7f7e16ff5271e721e730a8dc"
+    },
+    "src/pulsar/snapshot_fields.py": {
+      "bytes": 7570,
+      "sha256": "e2c58d26d0e178984cf1e38eeaca9987ecb2b0ec1afb9aca3dab8e0e944a0d7e"
+    },
+    "src/pulsar/spectral_observations.py": {
+      "bytes": 7207,
+      "sha256": "015e215e880fd6db3db7e6553987bc8437926ebf188ea4597c27637fd0c4113a"
+    },
+    "src/pulsar/trajectories.py": {
+      "bytes": 10953,
+      "sha256": "3406a7235a0780a9b340ecdf2545a8803c266e9be7ad090726fbc49bb20ffd89"
+    },
+    "tests/test_emission_quadrature.py": {
+      "bytes": 5737,
+      "sha256": "b0c20fcc28d2ed63fdc09058a088e77e351c36deb7a57135d3b17ffce34f93ce"
+    },
+    "tests/test_outer_transport.py": {
+      "bytes": 14384,
+      "sha256": "24d40624c08f525b65e176b939d312a453a9fce054dc74e73f98ebb73efd4998"
+    },
+    "tests/test_photon_scene.py": {
+      "bytes": 2743,
+      "sha256": "4747a8d49384864c7fe24e20c7bad45623e09d28b62e23a75f3150294e46a512"
+    },
+    "tests/test_radiation.py": {
+      "bytes": 6236,
+      "sha256": "29b3a77836a11767137a4f6d7548c2e862f1fd734f5c6ac427903e10de4237db"
+    },
+    "verification.json": {
+      "bytes": 2413,
+      "sha256": "f2baa946dd8742b11ab1c39609b526399aba5d7d166c4a36634e722022681e14"
+    },
+    "verify_reel.py": {
+      "bytes": 3813,
+      "sha256": "16168720a2c1877f5af6012af3baaf4d938a443c02fd1e9a8af327d2920562d8"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+NO.002 — THE PULSAR
+@sideratlas
+P = 89.371 ms; α = 75°; ζ = 65°
+
+Rapid rotation sweeps gamma rays through space
+Particles shed energy through curvature radiation
+Photon directions and travel delays shape the received pulses
+Blue waves and white markers show the same photon population
+
+CALCULATED
+Numerical force-free magnetosphere and particle trajectories
+Laboratory curvature, acceleration–loss integration and 0.1–100 GeV photon yields
+Emission directions, straight photon propagation and the original delayed observer pulse
+r(t) = r_em + c(t − t_em)n
+t_arr − D/c = t_em − n·r_em/c
+R_LC = cP/(2π) ≈ 4,264 km
+
+ASSUMPTIONS
+One field snapshot rotates rigidly
+Injection and acceleration are prescribed; no self-consistent pair plasma
+Radiation follows particle velocity; no resolved finite beaming cone
+Emission calculated over 0.7–2 R_LC; flat-space photon propagation
+Enlarged numerical star; the tiny central dot is a position marker
+Finite photon sampling, fixed exposure and a schematic distant observer
+Blue → cyan → cream → orange codes increasing gamma-ray energy, not visible color
+White markers highlight sampled photon directions, not extra emission
+Pulse shape and spectrum differ from Vela; no validated reconstruction
+32 seconds = four 8-second loops; one physical rotation per cycle
+
+SOURCES
+Spitkovsky 2006; Kalapotharakos, Harding & Kazanas 2014
+Barnard et al. 2022; Smith et al. 2023, Fermi-LAT 3PC
+COFFEE — Yajie Yuan, Alex Chen & contributors, GPL-2.0
+Visual reference: Brambilla et al. 2018; NASA/Goddard/Tom Bridgman 2018
+No NASA footage, simulation data or code used
+Full citations, equations, assumptions and validation in the repository
+
+The code for this simulation is to be found at https://github.com/Loganpis/sideratlas-pulsar

@@ -1,8 +1,0 @@
-{
-  "release_url": "https://github.com/Loganpis/sideratlas-pulsar/releases/tag/photon-v1.0.0",
-  "tag": "photon-v1.0.0",
-  "source_base_commit": "b8ab6285a0632d78161077738902622ee39591ac",
-  "original_bundle_sha256": "ab6bcf428283c16baa47db78ebd5a14bf270a69816a9e8d9056ff58b50e91b3d",
-  "original_video_sha256": "e2304dd7f18f86e98d503db68bd1e2e3cecbd5cb396c4f3ef1222b17c84ab14a",
-  "note": "Publication requested after creation of the bundle. Its original generation manifest records the pre-publication state. Video is a release asset; code, scene, caption and verification are also browsable in photon-reel/"
-}

@@ -1,59 +1,34 @@
 SIDERATLAS — NO.002 / THE PULSAR
 
 Project code: Copyright (C) 2026 Loganpis, except where upstream authorship
-or other notices are identified. Distributed under the GNU General Public
-License, version 2. The full license is provided in LICENSE. This program
-is distributed without any warranty; see the license for details.
+or other notices are identified. Distributed under GNU GPL version 2;
+see LICENSE. No warranty is provided.
 
-Original rendered movie, still images and Instagram caption:
-Copyright (C) 2026 Loganpis. All rights reserved. The project code license
-does not grant a separate license to these media or caption assets.
-
-THIRD-PARTY MATERIALS
+Original rendered movies, stills and Instagram caption:
+Copyright (C) 2026 Loganpis. All rights reserved. The code license does not
+grant a separate license to these media or caption assets.
 
 COFFEE / CoffeeGPU
-  Developed by Yajie Yuan and Alex Chen, with repository contributors
+  Yajie Yuan, Alex Chen and contributors
   https://github.com/fizban007/CoffeeGPU
   Pinned commit: 9986522d08b4d887e5ef9a53e12cecae4e376d22
-  Original code and local modifications retain GPL-2.0. The upstream source
-  archive/source tree, original LICENSE and complete local patch chain are
-  retained or reproducibly fetched as documented in third_party/. Native
-  dependencies retain their own copyright and license notices.
+  Original GPL-2.0 source and the applied local source/boundary patches
+  are retained under physics/third_party/. Native dependencies retain
+  their original notices and licenses.
 
-Latin Modern font subset
-  Copyright 2003–2021 by B. Jackowski and J. M. Nowacki
-  (on behalf of TeX Users Groups), based on Donald E. Knuth's Computer Modern
-  GUST Font License; see fonts/GUST-FONT-LICENSE.txt, fonts/LPPL-1.3c.txt
-  and fonts/FONT-SOURCES.md
+Latin Modern fonts
+  B. Jackowski and J. M. Nowacki, on behalf of TeX Users Groups
+  Based on Donald E. Knuth's Computer Modern
+  Unmodified lmroman10-regular.otf and lmroman12-bold.otf
+  GUST Font License / LPPL 1.3c; see fonts/.
 
-STIX Two Math
-  Copyright 2001–2021 The STIX Fonts Project Authors
-  SIL Open Font License 1.1; see fonts/STIX-OFL.txt and fonts/STIX-FONTLOG.txt
-
-Fermi-LAT Third Pulsar Catalog data
+Fermi-LAT Third Pulsar Catalog
   Smith et al. (2023), https://arxiv.org/abs/2307.11132
   https://fermi.gsfc.nasa.gov/ssc/data/access/lat/3rd_PSR_catalog/
-  Retain the original data provenance, notices and applicable distribution
-  terms. This project does not grant a new license to third-party data.
+  Original data and provenance are retained under physics/data/.
+  This project does not grant a new license to third-party data.
 
-NASA Goddard's 2018 pulsar animation and Brambilla et al. (2018) were visual
-and research references. No NASA frames, simulation data or music are
-incorporated into the original rendered movie. Full scientific credits and
-model limitations are provided in release/MODEL-NOTES.md.
-
-Entity native PIC research
-  Entity development team; BSD 3-Clause notice retained in
-  research/pic-benchmark/LICENSE-Entity-BSD3.txt. Kokkos and other native
-  dependencies are fetched or built separately under their own notices
-
-CIE1931 2-degree color matching functions
-  International Commission on Illumination, DOI 10.25039/CIE.DS.xvudnb9b
-  CC BY-SA 4.0; exact table, metadata and attribution in data/color/
-
-The current optical model and complete reference roles are documented in
-release/optical-v1/MODEL-NOTES.md. The original and current model scopes
-remain distinct
-
-The current conceptual 3D close-up and its explicitly illustrative magnetic
-and beam guides are documented in release/pulsar-3d-v1/MODEL-NOTES.md.
-The earlier calculated optical observer edition is preserved separately.
+NASA Goddard and Brambilla et al. (2018) supplied visual research context.
+No NASA footage, simulation data, code or music is included in this render.
+Full scientific source roles are documented in docs/MODEL-NOTES.md and
+physics/MODEL-NOTES.md.

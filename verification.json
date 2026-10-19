@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "saved_photon_scene_sha256": "451bd98ea72d892b7cf1a981f58436345a1611e1b5f1de366181700d98a0d222",
+  "selected_field_sha256": "fea546506dad0c969559c198a36bd7e7fddc0003b66d7b268d5971aa8616d215",
+  "original_full_observer_profile_exactly_preserved": true,
+  "new_field_solves": 0,
+  "new_particle_simulations": 0,
+  "only_title_region_changed_in_source_frames": true,
+  "maximum_pixel_difference_outside_title_across_eight_phases": 0,
+  "title_bounds_1080p": [
+    145,
+    318,
+    934,
+    397
+  ],
+  "title_horizontal_center_pixel": 539.5,
+  "pulsar_horizontal_center_pixel": 540,
+  "caption_characters": 1756,
+  "software_tests": {
+    "passed": 63,
+    "failed": 0,
+    "elapsed_seconds": 4.42
+  },
+  "native_patch_source_prepare_passed": true,
+  "native_selected_source_hashes_match_recorded_calculation": {
+    "src/algorithms/field_solver_EZ.cpp": true,
+    "src/algorithms/damping_boundary.cpp": true,
+    "src/algorithms/regularized_dipole.h": true,
+    "src/main-pulsar3d.cpp": true,
+    "src/main-verification.cpp": true,
+    "src/user_pulsar3d_EZ.hpp": true
+  },
+  "video_export": {
+    "passed": true,
+    "checks": {
+      "native1080x1920": true,
+      "h264_high_420": true,
+      "duration32": true,
+      "fps30": true,
+      "frame_count960": true,
+      "rec709_limited": true,
+      "four_exact_repeats": true,
+      "faststart": true,
+      "no_audio": true,
+      "no_b_frames": true,
+      "three_labels_only": true,
+      "mathematical_loop_endpoint": true,
+      "source_frame_psnr_above35": true,
+      "quantitative_claim_disabled": true
+    },
+    "scope": "Local export and repeated-loop checks; not an Instagram upload or scientific model validation",
+    "source_frame_psnr_db": 45.97692267788326,
+    "source_frame_mean_absolute_error_codes": 0.8656647055041152,
+    "final_sha256": "9cdbbd13f3fb267c28a83bb58e45f4815b07e936983a4223ebf818bbf9d630bd",
+    "file_bytes": 55432220,
+    "stream": {
+      "codec_name": "h264",
+      "profile": "High",
+      "pix_fmt": "yuv420p",
+      "width": 1080,
+      "height": 1920,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "960",
+      "bit_rate": "13856717",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "chroma_location": "left"
+    },
+    "mp4_atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  }
+}

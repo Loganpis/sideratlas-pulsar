@@ -8,8 +8,9 @@ from reel_export import BT709_TO_SRGB_FILTER
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('folder',type=Path);a=p.parse_args()
-    folder=a.folder;video=folder/'sideratlas-002-pulsar-reel.mp4'
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('folder',type=Path)
+    p.add_argument('--video-name',default='sideratlas-002-pulsar-reel.mp4');a=p.parse_args()
+    folder=a.folder;video=folder/a.video_name
     metadata=json.loads((folder/'render-metadata.json').read_text())
     info=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(video)]))
     streams=info['streams'];stream=next(x for x in streams if x['codec_type']=='video')

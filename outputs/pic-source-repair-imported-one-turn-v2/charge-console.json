@@ -1,8 +1,0 @@
-{
-  "output": "outputs/pic-source-repair-imported-one-turn-v2/independent-charge-audit.json",
-  "snapshots": 17,
-  "all_snapshots_pointwise_match_full_storage": true,
-  "all_shape_support_inside_storage": true,
-  "potential_float32_coordinate_addition_in_recorded_producer": false,
-  "largest_pointwise_native_density_error": 1.021405182655144e-14
-}

@@ -1,7 +1,0 @@
-# Python 3.12; versions used by the v1 numerical and rendering verification
-numpy==1.26.4
-scipy==1.13.1
-matplotlib==3.8.4
-astropy==6.1.0
-h5py==3.11.0
-Pillow==10.3.0

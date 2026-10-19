@@ -4,15 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sideratlas-pulsar"
-version = "1.0.0"
-description = "Pulsar field and particle-emission research with explicit numerical verification and Vela data comparisons"
+version = "1.1.0"
+description = "Calculated gamma-ray photon visualization from a recorded force-free pulsar model"
 requires-python = ">=3.12"
-dependencies = ["numpy>=1.25", "matplotlib>=3.8", "astropy>=6", "scipy>=1.12"]
+dependencies = ["numpy>=1.26", "scipy>=1.13", "Pillow>=10"]
 
 [project.optional-dependencies]
-coffee = ["h5py>=3.10"]
-video = ["Pillow>=10"]
-test = ["pytest>=7.4"]
+test = ["pytest>=7.4", "h5py>=3.10"]
+physics = ["astropy>=6", "h5py>=3.10", "matplotlib>=3.8"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests", "physics/tests"]
