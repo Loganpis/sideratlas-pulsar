@@ -1,0 +1,130 @@
+{
+  "scope": "Conceptual 3D close-up, not a telescope image or global PIC reconstruction",
+  "parameters": {
+    "period_s": 0.08937108859,
+    "mass_solar": 1.4,
+    "radius_m": 13000.0,
+    "polar_field_gauss": 3000000000000.0,
+    "magnetic_obliquity_deg": 75,
+    "temperature_infinity_K": 700000
+  },
+  "physical_scale": {
+    "pixels_per_stellar_radius_at_1080": 105,
+    "field_apex_radii_Rstar": [
+      2,
+      3.2,
+      4.7,
+      5.6
+    ],
+    "polar_guides_max_radius_Rstar": 11,
+    "light_cylinder_m": 4264203.109196324,
+    "star_separately_enlarged": false
+  },
+  "geometry": {
+    "field": "Analytic near-zone dipole: r=L sin^2(theta), rigidly rotated",
+    "polar_guides": "Local nominal last-open dipole surface, r=R_LC sin^2(theta); no global openness solution",
+    "field_projection": "Euclidean orthographic; not lensed field lines",
+    "line_sampling": "Representative, not a magnetic flux density or plasma density map"
+  },
+  "beams": {
+    "role": "Illustrative emission-direction envelopes; not optical intensity, photon paths or material jets",
+    "reference_radius_Rstar": 6,
+    "angular_width_rad": 0.2038080033861806,
+    "width_rule": "theta+atan(tan(theta)/2), theta=asin(sqrt(6R*/R_LC))",
+    "reference_height_assumed": true,
+    "gaussian_profile_assumed": true,
+    "graphical_axial_fade_Rstar": [
+      10,
+      14
+    ],
+    "two_poles_symmetric": true
+  },
+  "surface": {
+    "surface_table": "/Users/Logan/Documents/New project/sideratlas-pulsar-optical-rebuild/scene/optical/surface-intensity-si.npz",
+    "surface_table_sha256": "0915abb9b0e9f4cedfd328e1a2e5e905a42b7c56ac004bd02245b688552d6f37",
+    "numerical_equilibrium_pass": true,
+    "scientific_validation_pass": false,
+    "mass_solar": 1.4,
+    "radius_m": 13000.0,
+    "frequency_ratio_gravity": 0.8258072923583811,
+    "apparent_radius_pixels": 127.14830805155017,
+    "surface_subpixels_per_axis": 2,
+    "observer_wavelength_step_nm": 2,
+    "surface_assumption": "Uniform normal-B atmosphere column; no surface temperature or field map",
+    "geodesics": "Direct outward Schwarzschild integrals with local SR Doppler and aberration",
+    "phase_scope": "Uniform surface has no temperature pattern; common GR-vs-flat outer propagation offset is not an aligned pulse prediction",
+    "composition_translation_pixels_y": 38
+  },
+  "display": {
+    "stellar_exposure_normalization": 4.5,
+    "guides_palette": "Illustrative blue-white",
+    "common_absolute_radiometry": false,
+    "bloom": "Screen-space presentation effect",
+    "tone_map": "Fixed per-channel x/(1+x), then sRGB; compresses color toward white at high exposure"
+  },
+  "camera": {
+    "inclination_deg": 65,
+    "roll_deg": -32,
+    "azimuth_excursion_deg": 12,
+    "center_height_fraction": 0.55,
+    "projection": "Orthographic"
+  },
+  "time": "One 89.371ms stellar rotation displayed in 8 seconds; smooth periodic virtual-camera azimuth; repeated four times",
+  "calculated_optical_particle_archive_displayed": false,
+  "existing_physics_recalculated": false,
+  "labels": [
+    "@sideratlas",
+    "NO.002",
+    "THE PULSAR"
+  ],
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 960,
+  "duration_seconds": 32,
+  "export": {
+    "pipeline_version": 1,
+    "container": "MP4",
+    "codec": "H.264",
+    "encoder": "libx264",
+    "profile": "High",
+    "preset": "slow",
+    "crf": 14,
+    "maximum_rate_bps": 20000000,
+    "vbv_buffer_bits": 40000000,
+    "rate_control": "quality-targeted VBR with a VBV cap; CRF is not a platform requirement",
+    "pixel_format": "yuv420p",
+    "progressive": true,
+    "frame_rate_mode": "constant",
+    "gop_seconds": 2,
+    "closed_gop": true,
+    "b_frames": 0,
+    "scene_cut_keyframes": false,
+    "faststart": true,
+    "edit_lists": false,
+    "audio": "none",
+    "input": {
+      "pixel_format": "rgb24",
+      "primaries": "bt709",
+      "transfer": "iec61966-2-1",
+      "range": "full"
+    },
+    "output_color_tags": {
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "chroma_location": "left"
+    },
+    "color_conversion": "sRGB RGB to Rec.709 limited-range YCbCr via zscale; pixels transformed before tagging",
+    "conversion_reference": "display-referred: sRGB EOTF to linear light, then inverse BT.1886 (gamma 2.4) for Rec.709 display encoding",
+    "filter": "format=gbrp16le,zscale=primariesin=709:transferin=iec61966-2-1:matrixin=gbr:rangein=full:primaries=709:transfer=709:matrix=709:range=limited:chromal=left:filter=spline36:agamma=0:dither=none,format=yuv420p",
+    "resize": "none",
+    "added_sharpening": false,
+    "added_grain": false,
+    "instagram_processing": "Instagram generates its own delivery encodings; playback quality is not guaranteed by local export"
+  },
+  "elapsed_seconds": 106.7,
+  "source_sha256": "7c38e57f58325700ac724cac4eeea4d83e0b99c73c77753b2ae5b66c923270c3",
+  "video_sha256": "b05cfb409326db89006cafc440be2ebeed971a9d9a11dcdcb93ccb9a5a013ab3"
+}

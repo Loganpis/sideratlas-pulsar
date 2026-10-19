@@ -49,7 +49,7 @@ def main():
             'duration_seconds':float(p['format']['duration']),
             'decoded_cycle_last_to_first_rgb_rmse':float(seam),
             'seam_note':'Adjacent phases of a periodic source are not identical frames; repeated cycles must be identical',
-            'scientific_validation':'This verifies delivery encoding only, not the Vela physical model'}
+            'scientific_validation':'This verifies delivery encoding only, not physical or observational validation'}
     target=args.output or args.movie.with_suffix('.verification.json')
     target.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({'all_export_checks_pass':report['all_export_checks_pass'],'checks':checks},indent=2))

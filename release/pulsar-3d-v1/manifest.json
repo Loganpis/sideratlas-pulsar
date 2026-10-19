@@ -1,0 +1,72 @@
+{
+  "edition": "SiderAtlas NO.002 \u2014 3D pulsar",
+  "release_tag": "pulsar-3d-v1.0.0",
+  "created_utc": "2026-10-19T01:50:03.163342+00:00",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 960,
+    "seconds": 32,
+    "repeated_cycles": 4
+  },
+  "verification": {
+    "focused_tests_passed": 18,
+    "all_export_checks_pass": true,
+    "seam_to_neighbor_rmse_ratio": 1.0049879771068995
+  },
+  "physics_scope": "Retained physical parameters and approximate calculated surface; analytic near-zone dipole; explicitly illustrative luminous guides and beam envelopes; no new plasma or atmosphere evolution",
+  "caption_characters": 1904,
+  "reproduction_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python render_pulsar_3d.py --output outputs/pulsar-3d --width 1080 --workers 2",
+  "python_version": "3.12.2",
+  "files": {
+    "render_pulsar_3d.py": {
+      "bytes": 16266,
+      "sha256": "7c38e57f58325700ac724cac4eeea4d83e0b99c73c77753b2ae5b66c923270c3"
+    },
+    "tests/test_pulsar_3d.py": {
+      "bytes": 5906,
+      "sha256": "0c82b21d596bc2ccfc54ee4f1b9ce7c69ee1899f1d160df2d53b57684e814fe2"
+    },
+    "scene/optical/surface-intensity-si.npz": {
+      "bytes": 38484,
+      "sha256": "0915abb9b0e9f4cedfd328e1a2e5e905a42b7c56ac004bd02245b688552d6f37"
+    },
+    "reel_export.py": {
+      "bytes": 4744,
+      "sha256": "ac92e7c87543a3deea101ee051efa8204422fdb9e76c2b4ae01e099eb413a930"
+    },
+    "media/pulsar-3d/sideratlas-no002-pulsar-3d-32s.mp4": {
+      "bytes": 43639124,
+      "sha256": "b05cfb409326db89006cafc440be2ebeed971a9d9a11dcdcb93ccb9a5a013ab3"
+    },
+    "media/pulsar-3d/preview-03.png": {
+      "bytes": 1065754,
+      "sha256": "df0322345a9361eef31781708aec454534a925bb3e83160926f6d5888b3d8d0a"
+    },
+    "media/pulsar-3d/contact-sheet.jpg": {
+      "bytes": 276250,
+      "sha256": "80b090f9a6345f816b866ee1117584353e4f170833159f4e5cb533f80a399812"
+    },
+    "release/pulsar-3d-v1/instagram-description.text": {
+      "bytes": 1925,
+      "sha256": "ccb389c52e59279656e120fc452fd7f7f6fcb351ccd35c665de6bd2ffb9ced21"
+    },
+    "release/pulsar-3d-v1/MODEL-NOTES.md": {
+      "bytes": 9856,
+      "sha256": "2a2011604df6a73898c6bd1b3cbe55519640f1b6c0cb5df4420e3ceafdf10237"
+    },
+    "release/pulsar-3d-v1/render-metadata.json": {
+      "bytes": 5012,
+      "sha256": "a8be353060e41f6f5b743eb4003538a019ff4e251234c1b14091f8185c19798e"
+    },
+    "release/pulsar-3d-v1/verification.json": {
+      "bytes": 2765,
+      "sha256": "b9885ab6bf430b89b2d9c37095969ccfb0095b0bf9224aa91a6bc48c28e29fdb"
+    },
+    "release/pulsar-3d-v1/software-tests.log": {
+      "bytes": 99,
+      "sha256": "91c7bac04e3dace461a4bc03db898a10a60c7d19b38dea6cb89ae015447fbbe1"
+    }
+  }
+}

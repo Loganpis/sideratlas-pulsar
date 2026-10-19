@@ -22,3 +22,5 @@ outputs/optical-finish/camera/*/frames/
 outputs/pic-source-repair*/native/*-fields.bin
 outputs/pic-source-repair*/native/*-particles.csv
 outputs/pic-source-repair*/native/events.csv
+outputs/pulsar-3d-preview/
+outputs/pulsar-3d/

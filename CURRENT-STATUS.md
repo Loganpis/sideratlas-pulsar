@@ -1,3 +1,5 @@
+> Historical research status retained from October 17. Current 3D delivery: [CURRENT-3D-STATUS.md](CURRENT-3D-STATUS.md). The completed optical research edition is recorded separately in CURRENT-OPTICAL-STATUS.md.
+
 # v1 visualization release scope — 16 October 2026
 
 The v1 package now presents the user-approved **Vela-informed visualization**: a 32-second full-frame Reel with three title labels. Scientific explanation and limitations accompany the video in [the model notes](release/MODEL-NOTES.md) and [Instagram description](release/instagram-description.text). The image is an illustrative projection of calculated outer emission; it does not claim a quantitative fit to Vela
